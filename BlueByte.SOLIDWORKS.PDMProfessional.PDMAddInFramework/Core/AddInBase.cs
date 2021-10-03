@@ -587,85 +587,95 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
             return false;
         }
 
-        /// <summary>
-        /// Task cancellation callback.
-        /// </summary>
-        /// <param name="taskInstance">Task instance.</param>
-        /// <returns>True or false</returns>
-        public virtual bool TaskCancelCallback(IEdmTaskInstance taskInstance = null)
-        {
-            if (taskInstance == null)
-                taskInstance = Instance;
-
-            if (taskInstance != null)
-            {
-                if (taskInstance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending
-                 )
-                {
-                    string message = "Task has been canceled.";
-
-                    taskInstance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, message);
-                    taskInstance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
-                    return true;
-                }
-                else
-                    return false;
-            }
-            return false;
-        }
 
         /// <summary>
-        /// Task pause callback.
+        /// Sets the status of the task. Supports cancellation and suspension.
         /// </summary>
-        /// <param name="taskInstance">Task instance.</param>
-        public virtual void TaskPauseCallBack(IEdmTaskInstance taskInstance = null)
+        /// <param name="status">Status type.</param>
+        /// <param name="message">Message</param>
+        /// <param name="beforeCancellationAction">Cleanup action before cancellation</param>
+        /// <param name="cancellationAndSuspensionLogAction">Action used to log cancellation and or suspension</param>
+        /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.CancellationException">
+        /// </exception>
+        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
         {
+            string pauseCancellationMessage;
 
-
-            if (taskInstance == null)
-                taskInstance = Instance;
-
-            var isDebug = IsAssemblyDebugBuild(Assembly.GetCallingAssembly());
-
-            if (taskInstance != null)
+            if (Instance != null)
             {
-                if (isDebug)
+                if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
                 {
-                    var process = System.Diagnostics.Process.GetCurrentProcess();
-                    var stringBuilder = new StringBuilder();
-                    stringBuilder.AppendLine("This dialog box simulates a task being paused via the administration tool. Clicking OK will resume the code execution.");
-                    stringBuilder.AppendLine("");
-                    stringBuilder.AppendLine("This dialog will appear in DEBUG mode. Always compile as RELEASE when sharing with customer.");
-                    stringBuilder.AppendLine("");
+                    pauseCancellationMessage = "Task has been cancelled.";
 
-                    stringBuilder.AppendLine($"Process name = { process.ProcessName}");
-                    stringBuilder.AppendLine($"Command Id   = { process.Id}");
-                    stringBuilder.AppendLine($"Command type = { poCmd.meCmdType.ToString()}");
-
-                    Vault.MsgBox(poCmd.mlParentWnd, stringBuilder.ToString(), EdmMBoxType.EdmMbt_OKOnly);
-                }
-                else
-                {
-                    if (taskInstance.GetStatus() == EdmTaskStatus.EdmTaskStat_SuspensionPending)
+                    if (beforeCancellationAction != null)
                     {
-                        taskInstance.SetStatus(EdmTaskStatus.EdmTaskStat_Suspended, 0, "Task has been suspended.");
-                        while (taskInstance.GetStatus() == EdmTaskStatus.EdmTaskStat_Suspended)
-                        {
-                            System.Threading.Thread.Sleep(1000);
-                        }
-                        if (taskInstance.GetStatus() == EdmTaskStatus.EdmTaskStat_ResumePending)
-                        {
-                            taskInstance.SetStatus(EdmTaskStatus.EdmTaskStat_Running, 0, "Task has resumed execution.");
-                            taskInstance.SetStatus(EdmTaskStatus.EdmTaskStat_Running);
-                        }
+                        beforeCancellationAction();
                     }
 
+                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
+                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
+                    
+                    if (cancellationAndSuspensionLogAction != null)
+                    {
+                        cancellationAndSuspensionLogAction(pauseCancellationMessage);
+                    }
+               
+
+                    throw new CancellationException(pauseCancellationMessage);
                 }
 
-            
+                if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_SuspensionPending)
+                {
+                    pauseCancellationMessage = "Task has been suspended.";
+                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Suspended, 0, pauseCancellationMessage);
+                    if (cancellationAndSuspensionLogAction != null)
+                    {
+                        cancellationAndSuspensionLogAction(pauseCancellationMessage);
+                    }
+
+                    while (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_Suspended)
+                    {
+                        System.Threading.Thread.Sleep(1000);
+                    }
+
+                    if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_ResumePending)
+                    {
+                        pauseCancellationMessage = "Task has resumed execution.";
+                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Running, 0, pauseCancellationMessage);
+                        if (cancellationAndSuspensionLogAction != null)
+                        {
+                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
+                        }
+
+                    }
+
+                    //Check for cancellation if user cancels after pausing
+
+                    if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
+                    {
+                        pauseCancellationMessage = "Task has been cancelled.";
+
+                        if (beforeCancellationAction != null)
+                        {
+                            beforeCancellationAction();
+                        }
+
+                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
+                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
+                        if (cancellationAndSuspensionLogAction != null)
+                        {
+                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
+                        }
+
+
+                        throw new CancellationException(pauseCancellationMessage);
+                    }
+                }
+
+                Instance.SetStatus(status, 0, message);
             }
-        
         }
+
 
         /// <summary>
         /// Performs an action on affected data while allowing user to cancel or pause task.
@@ -678,10 +688,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 
             foreach (var datum in affectedData)
             {
-                // check for cancellation and pause
-                TaskCancelCallback(taskInstance);
-                TaskPauseCallBack(taskInstance);
-
+               
                 Action(datum);
             }
         }
@@ -706,10 +713,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                 catch (Exception)
                 {
                 }
-
-                // check for cancellation and pause
-                TaskCancelCallback(taskInstance);
-                TaskPauseCallBack(taskInstance);
+ 
 
                 if (file != null)
                     Action(file);

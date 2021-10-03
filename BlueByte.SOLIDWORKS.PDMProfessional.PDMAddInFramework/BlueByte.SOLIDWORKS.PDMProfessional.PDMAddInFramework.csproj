@@ -88,6 +88,7 @@
     <Compile Include="Attributes\AddInVersionAttribute.cs" />
     <Compile Include="Attributes\RequiredVersionAttribute.cs" />
     <Compile Include="Attributes\TaskFlagsAttribute.cs" />
+    <Compile Include="Core\CancellationException.cs" />
     <Compile Include="Core\Identity.cs" />
     <Compile Include="Core\ITaskSetupPage.cs" />
     <Compile Include="Core\AddInBase.cs" />
