@@ -52,7 +52,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
         /// <summary>
         /// ViewModel
         /// </summary>
-        public T ViewModel { get; private set; }
+        public T ViewModel { get; set; }
         /// <summary>
         /// Name of the setup page.
         /// </summary>
