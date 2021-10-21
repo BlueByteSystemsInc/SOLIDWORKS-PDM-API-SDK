@@ -1,5 +1,6 @@
 ﻿using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
 using EPDM.Interop.epdm;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
@@ -13,14 +14,17 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
     /// <typeparam name="T">ViewModel</typeparam>
     public class TaskSetupPage<T> : UserControl, ITaskSetupPage where T : INotifyPropertyChanged
     {
+        #region Public Properties
+
         /// <summary>
-        /// Creates a new instance of the task page setup.
+        /// Container
         /// </summary>
-        public TaskSetupPage() : base()
-        {
+        public new SimpleInjector.Container Container { get; set; }
 
-        }
-
+        /// <summary>
+        /// Name of the setup page.
+        /// </summary>
+        public new string Name { get; set; }
 
         /// <summary>
         /// Saves and loads data from variable
@@ -28,35 +32,34 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
         public bool SaveLoadDataToVariable { get; set; }
 
         /// <summary>
-        /// Gets the vault object.
-        /// </summary>
-        public IEdmVault5 Vault { get; private set; }
-
-        /// <summary>
         /// Id of the variable to save and load data from.
         /// </summary>
         public int SaveLoadDataToVariableId { get; set; }
 
         /// <summary>
-        /// Fires when data is loaded.
+        /// Gets the vault object.
         /// </summary>
-        public virtual void OnDataLoaded()
-        {
-
-        }
-        /// <summary>
-        /// Container
-        /// </summary>
-        public new SimpleInjector.Container Container { get; set; }
+        public IEdmVault5 Vault { get; private set; }
 
         /// <summary>
         /// ViewModel
         /// </summary>
-        public T ViewModel { get; set; }
+        public T ViewModel { get; private set; }
+
+        #endregion
+
+        #region Public Constructors
+
         /// <summary>
-        /// Name of the setup page.
+        /// Creates a new instance of the task page setup.
         /// </summary>
-        public new string Name { get; set; }
+        public TaskSetupPage() : base()
+        {
+        }
+
+        #endregion
+
+        #region Public Methods
 
         /// <summary>
         /// Load data.
@@ -75,10 +78,8 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
 
             if (SaveLoadDataToVariable == false)
             {
-
                 data = taskProperties.GetValEx($"{taskProperties.AddInName}{taskProperties.TaskName}{typeof(T).Name}");
             }
-
             else
             if (SaveLoadDataToVariable == true)
             {
@@ -86,12 +87,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
                 data = taskProperties.GetVar(SaveLoadDataToVariableId);
             }
 
-
-
             if (data != null)
             {
                 var dataStr = data.ToString();
-
 
                 var deserializedViewModel = default(T);
 
@@ -101,7 +99,6 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
                     try
                     {
                         deserializedViewModel = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(dataStr);
-
                     }
                     catch (Exception e)
                     {
@@ -116,6 +113,74 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
                 }
             }
         }
+
+        /// <summary>
+        /// Loads task settings from a file
+        /// </summary>
+        public void LoadSettings()
+        {
+            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            dialog.Title = "Browse to task settings";
+            dialog.Filters.Add(new CommonFileDialogFilter("PDM Task Settings", ".edmtdf"));
+            dialog.DefaultDirectory = Vault.RootFolderPath;
+
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+            {
+                var fileName = dialog.FileName;
+                if (string.IsNullOrWhiteSpace(fileName))
+                {
+                    return;
+                }
+
+                var serializedViewModel = System.IO.File.ReadAllText(fileName);
+                try
+                {
+                    ViewModel = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(serializedViewModel);
+                }
+                catch (Exception ex)
+                {
+                    Vault.MsgBox(Handle.ToInt32(), $"Failed to load task definition. {ex.Message} - {Environment.NewLine} {ex.StackTrace}");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Fires when data is loaded.
+        /// </summary>
+        public virtual void OnDataLoaded()
+        {
+        }
+
+        /// <summary>
+        /// Saves task settings to a file
+        /// </summary>
+        public void SaveSettings()
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Title = "Save task settings";
+            dialog.Filter = "PDM Task Settings (*.edmtdf)|*.edmtdf|All files (*.*)|*.*";
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                var fileName = dialog.FileName;
+                if (string.IsNullOrWhiteSpace(fileName))
+                {
+                    return;
+                }
+
+                var serializedViewModel = string.Empty;
+                try
+                {
+                    serializedViewModel = Newtonsoft.Json.JsonConvert.SerializeObject(ViewModel);
+                    System.IO.File.WriteAllText(fileName, serializedViewModel);
+                }
+                catch (Exception ex)
+                {
+                    Vault.MsgBox(Handle.ToInt32(), $"Failed to save task definition. {ex.Message} - {Environment.NewLine} {ex.StackTrace}");
+                }
+            }
+        }
+
         /// <summary>
         /// Stores Data
         /// </summary>
@@ -137,8 +202,6 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
                 logger.LogToOutput(logger.OutputLocation, $"Exception occurred while serializing settings view model. {e.Message}");
             }
 
-
-
             if (str != null)
             {
                 var taskProperties = cmd.mpoExtra as IEdmTaskProperties;
@@ -155,9 +218,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
                     var vault = cmd.mpoVault as IEdmVault5;
                     taskProperties.SetVar(SaveLoadDataToVariableId, str);
                 }
-
-
             }
         }
+
+        #endregion
     }
 }
