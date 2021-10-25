@@ -132,10 +132,13 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
                     return;
                 }
 
+                var settings = new Newtonsoft.Json.JsonSerializerSettings();
+                settings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
                 var serializedViewModel = System.IO.File.ReadAllText(fileName);
                 try
                 {
-                    ViewModel = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(serializedViewModel);
+                    ViewModel = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(serializedViewModel, settings);
+                    OnDataLoaded();
                 }
                 catch (Exception ex)
                 {
