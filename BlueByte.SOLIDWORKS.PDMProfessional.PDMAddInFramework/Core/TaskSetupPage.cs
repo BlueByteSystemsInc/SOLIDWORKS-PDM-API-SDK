@@ -148,10 +148,27 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
         }
 
         /// <summary>
-        /// Fires when data is loaded.
+        /// Fires when data is loaded. Clear all bindings from all controls by invoking <see cref="ClearDataBindings"/>
         /// </summary>
         public virtual void OnDataLoaded()
         {
+            ClearDataBindings(this);
+        }
+
+        /// <summary>
+        /// Clears data bindings all of children.
+        /// </summary>
+        /// <param name="rootControl">The root control.</param>
+        public void ClearDataBindings(Control rootControl)
+        {
+            foreach (Control control in rootControl.Controls)
+            {
+                control.DataBindings.Clear();
+                if (control.Controls != null)
+                {
+                    ClearDataBindings(control);
+                }
+            }
         }
 
         /// <summary>
