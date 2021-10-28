@@ -1,9 +1,17 @@
-# BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
- This framwork is about helping developers write custom task add-ins with confidence. 
-
-# Dependencies
-.NET 4.7 and these packages:
-- BlueByte.SOLIDWORKS.PDMProfessional.Interops - 2021.0.0
-- SimpleInjector - 4.9.2
+# .NET framwork lib for SOLIDWORKS PDM Professional
+A produtivity framework to improve the development of :
+ - SOLDIWORKS PDM add-ins
+ - SOLIDWORKS PDM task add-ins
 
  
+# Nuget
+
+
+# Sample add-in
+
+
+# Documentation
+
+
+# Support 
+ You can start a ticket here or reach out to us at [cadoverflow.com](https://cadoverflow.com) with your questions.
