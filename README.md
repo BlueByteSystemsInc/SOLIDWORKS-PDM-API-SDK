@@ -14,7 +14,7 @@ Command-line:
 
 # Sample add-in
 
-Please check in later. Folder \TestAddIn will contain a sample datacard button addin that prints the names of the selected items.
+TestAddIn folder contains a sample copy to clipboard addin.
 
 # Documentation
 
