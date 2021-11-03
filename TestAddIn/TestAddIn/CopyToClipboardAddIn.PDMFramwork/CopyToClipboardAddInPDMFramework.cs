@@ -17,6 +17,7 @@ namespace CopyToClipboardAddIn.PDMFramwork
     [Description("This is a description - PDMFramework")]
     [CompanyName("Blue Byte Systems Inc")]
     [AddInVersion(false,1)]
+    [IsTask(false)]
     [RequiredVersion(10, 0)]
     [ComVisible(true)]
     [Guid("721C78F4-362E-45EC-B313-CD0E33A87D67")]

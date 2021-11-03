@@ -17,11 +17,11 @@ namespace DataCardAddIn
             poInfo.mbsAddInName = addinName;
             poInfo.mbsCompany = "Blue Byte Systems, Inc.";
             poInfo.mlAddInVersion = 1;
-            poInfo.mbsDescription = "This add-in is a datacard one";
+            poInfo.mbsDescription = "This is a description.";
             poInfo.mlRequiredVersionMajor = 10;
             poInfo.mlRequiredVersionMinor = 0;
 
-            poCmdMgr.AddCmd(100, "Copy paths to clipboard...",(int)EdmMenuFlags.EdmMenu_ContextMenuItem, "Copy paths to clipboard...", "Copy paths to clipboard...",-1,0);
+            poCmdMgr.AddCmd(100, "Copy paths to clipboard...",(int)EdmMenuFlags.EdmMenu_OnlyInContextMenu);
 
         }
 
