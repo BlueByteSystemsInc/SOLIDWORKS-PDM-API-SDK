@@ -59,7 +59,7 @@ namespace DataCardAddIn
                     if (string.IsNullOrEmpty(stringBuilder.ToString()) == false)
                     {
                         Clipboard.SetText(stringBuilder.ToString());
-                        vault.MsgBox(poCmd.mlParentWnd, "Copied to clipboard", EdmMBoxType.EdmMbt_OKOnly, "Message");
+                        vault.MsgBox(poCmd.mlParentWnd, "Copied to clipboard!", EdmMBoxType.EdmMbt_OKOnly, "Message");
                     }
                 }
             }
