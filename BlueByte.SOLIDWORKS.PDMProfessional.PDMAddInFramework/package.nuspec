@@ -10,7 +10,7 @@
     <authors>Blue Byte Systems, Inc.</authors>
     <owners>Blue Byte Systems, Inc.</owners>
     <projectUrl>https://github.com/BlueByteSystemsInc/PDMFramework</projectUrl>
-    <repositoryUrl>https://github.com/BlueByteSystemsInc/PDMFramework</repositoryUrl>
+    <repository type="git" url="https://github.com/BlueByteSystemsInc/PDMFramework"/>
     <url>https://github.com/BlueByteSystemsInc/PDMFramework</url>
     <!--
     <licenseUrl></licenseUrl>
