@@ -4,24 +4,28 @@
     <!--*-->
     <id>BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework</id>
     <!--*-->
-    <version>2021.1.42</version>
-    <title>swPDMAddInFramework</title>
+    <version>2021.1.43</version>
+    <title>PDMAddInFramework</title>
     <!--*-->
     <authors>Blue Byte Systems, Inc.</authors>
     <owners>Blue Byte Systems, Inc.</owners>
+    <projectUrl>https://github.com/BlueByteSystemsInc/PDMFramework</projectUrl>
+    <repositoryUrl>https://github.com/BlueByteSystemsInc/PDMFramework</repositoryUrl>
+    <url>https://github.com/BlueByteSystemsInc/PDMFramework</url>
     <!--
     <licenseUrl></licenseUrl>
     <projectUrl></projectUrl>
-    <iconUrl></iconUrl>
+    
 -->
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/LICENSE.md</licenseUrl>
+    <iconUrl>https://secureservercdn.net/198.71.233.189/530.de9.myftpupload.com/wp-content/uploads/2019/03/cropped-logo-6.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--*-->
-    <description>Framework for development of PDM task add-in.</description>
+    <description>.NET framwork Library for SOLIDWORKS PDM Professional addins</description>
     <!--*-->
-    <releaseNotes>Framework for development of PDM task add-in.</releaseNotes>
+    <releaseNotes>.NET framwork Library for SOLIDWORKS PDM Professional addins</releaseNotes>
     <copyright>Copyright ©  2021</copyright>
-    <tags>
-    </tags>
+    <tags>solidworks pdm, pdm api, solidworks, addins, task addins</tags>
     <dependencies>
       <!--
       <dependency id="SampleDependency" version="1.0" />

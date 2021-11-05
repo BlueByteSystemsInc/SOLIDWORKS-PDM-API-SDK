@@ -119,6 +119,9 @@
     <None Include="packages.config" />
     <None Include="StrongKey.pfx" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo\logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
