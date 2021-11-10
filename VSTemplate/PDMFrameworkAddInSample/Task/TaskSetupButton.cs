@@ -1,6 +1,6 @@
 ﻿using EPDM.Interop.epdm;
 
-namespace PDMFrameworkAddInSample.Task
+namespace SOLIDWORKSPDMAddIn.Task
 {
     public partial class PDMFrameworkAddINSample
     {

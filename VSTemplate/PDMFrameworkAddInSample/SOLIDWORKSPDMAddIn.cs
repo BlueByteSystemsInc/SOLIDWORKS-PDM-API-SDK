@@ -7,7 +7,7 @@ using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
 using EPDM.Interop.epdm;
 using SimpleInjector;
 
-namespace PDMFrameworkAddInSample
+namespace SOLIDWORKSPDMAddIn
 {
 
     public enum Commands
@@ -16,7 +16,7 @@ namespace PDMFrameworkAddInSample
     }
     
     [Menu((int)Commands.CommandOne, "This is a menu item - PDMFramework")]
-    [Name("Sample addin - PDMFramework")]
+    [Name("Sample Addin - PDMFramework")]
     [Description("This is a description - PDMFramework")]
     [CompanyName("Blue Byte Systems Inc")]
     [AddInVersion(false, 1)]

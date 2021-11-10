@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PDMFrameworkAddInSample.Task.SetupPages
+namespace SOLIDWORKSPDMAddIn.Task.SetupPages
 {
     public class SettingsViewModel  : INotifyPropertyChanged
     {

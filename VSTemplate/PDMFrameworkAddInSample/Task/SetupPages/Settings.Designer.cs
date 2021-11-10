@@ -1,5 +1,5 @@
 ﻿
-namespace PDMFrameworkAddInSample.Task.SetupPages
+namespace SOLIDWORKSPDMAddIn.Task.SetupPages
 {
     partial class Settings
     {
