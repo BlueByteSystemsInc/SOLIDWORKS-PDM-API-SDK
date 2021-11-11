@@ -16,6 +16,10 @@ Command-line:
 
 TestAddIn folder contains a sample copy to clipboard addin.
 
+# VS Template
+
+Packaged as SOLIDWORKSPDMAddIn.zip at the root. Will be deployed in the future to VS Extension Marketplace.
+
 # Documentation
 
 Will be built with castle sand. Please also check our [YouTube channel](https://www.youtube.com/c/bluebytesystemsinc).
