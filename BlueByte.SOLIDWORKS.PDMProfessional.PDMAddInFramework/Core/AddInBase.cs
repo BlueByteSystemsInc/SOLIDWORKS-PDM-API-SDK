@@ -139,6 +139,8 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                 Logger = Container.GetInstance<ILogger>();
                 OnLoggerOutputSat(string.Empty);
                 IsInitialized = true;
+
+                InstanceGUID = Guid.NewGuid().ToString();
             }
             catch (Exception e)
             {
@@ -146,6 +148,14 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                 MessageBox.Show($"PID: {System.Diagnostics.Process.GetCurrentProcess().Id}. Something went wrong when initializing the add-in. {e.Message}", $"{this.Identity.Name} {this.Identity.Version}");
             }
         }
+
+        /// <summary>
+        /// Gets the instance unique identifier.
+        /// </summary>
+        /// <value>
+        /// The instance unique identifier.
+        /// </value>
+        public string InstanceGUID { get; private set; }
 
         /// <summary>
         /// Allows for connection string to be sat to the SQL logger via <see cref="ILogger.StartConnection(string)"/>.
