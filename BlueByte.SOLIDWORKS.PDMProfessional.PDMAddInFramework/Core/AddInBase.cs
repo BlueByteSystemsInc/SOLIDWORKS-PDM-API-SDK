@@ -360,7 +360,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns>T</returns>
-        public T GetSettings<T>()//TODO change to reflect multiple pages
+        public T GetSettings<T>()
         {
             var taskInstance = Instance; 
             if (taskInstance != null)
