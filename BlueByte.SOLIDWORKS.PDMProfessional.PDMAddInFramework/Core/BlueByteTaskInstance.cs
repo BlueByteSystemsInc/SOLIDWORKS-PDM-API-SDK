@@ -1,21 +1,25 @@
 ﻿using EPDM.Interop.epdm;
 using System;
+using System.Runtime.InteropServices;
 
 namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
 {
+    [Guid("3CE16DDE-366D-4208-978E-B55609EC3C8B")]
+    [TypeLibType(TypeLibTypeFlags.FDispatchable)]
     public class BlueByteTaskInstance : IEdmTaskInstance
     {
         #region Public Properties
 
+        [DispId(1)]
         public long ID
         { get { return this.ID; } }
-
+        [DispId(2)]
         public string InstanceGUID
         { get { return Guid.NewGuid().ToString(); } }
-
+        [DispId(3)]
         public string TaskGUID
         { get { return this.TaskGUID; } }
-
+        [DispId(12)]
         public string TaskName
         { get { return this.TaskName; } }
 
