@@ -892,6 +892,122 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         {
          
             this.Initialize();
+
+            PurgeTaskData();
+
+        }
+
+
+        /// <summary>
+        /// Purge task data.
+        /// </summary>
+        public virtual void PurgeTaskData()
+        {
+
+            var dictionary = Vault.GetDictionary($"{Identity.Name}{Identity.Version}{Properties.TaskName}{Properties.TaskGUID}", true);
+            dictionary.RemoveDictionary();
+
+        }
+
+
+
+
+        /// <summary>
+        /// Save data to be passted to TaskRun hook. Use in TaskLaunch.
+        /// </summary>
+        /// <param name="val"></param>
+        protected virtual void SaveDataForTaskRun(string val)
+        {
+            if (Instance == null)
+                throw new Exception($"{nameof(SaveDataForTaskRun)} can only be called when the hook is {EdmCmdType.EdmCmd_TaskLaunch.ToString()} or {EdmCmdType.EdmCmd_TaskRun.ToString()}.");
+
+            var dictionary = Vault.GetDictionary($"{Identity.Name}{Identity.Version}{Instance.TaskName}{Instance.TaskGUID}",true);
+
+            var startTime = DateTime.Now;
+
+
+            while(IsLocked() == false)
+            {
+                dictionary.StringSetAt("lock", "true");
+                dictionary.StringSetAt(startTime.ToLongTimeString(), val);
+                dictionary.StringSetAt("lock", "false");
+
+            }
+
+        }
+
+        /// <summary>
+        /// Get data from TaskLaunch hook.
+        /// </summary>
+        /// <returns></returns>
+        protected virtual string GetDataForTaskRun()
+        {
+            var ret = string.Empty;
+
+            if (Instance == null)
+                throw new Exception($"{nameof(SaveDataForTaskRun)} can only be called when the hook is {EdmCmdType.EdmCmd_TaskLaunch.ToString()} or {EdmCmdType.EdmCmd_TaskRun.ToString()}.");
+
+            var dictionary = Vault.GetDictionary($"{Identity.Name}{Identity.Version}{Instance.TaskName}{Instance.TaskGUID}", true);
+
+            var startTime = DateTime.Now;
+
+            dictionary.StringSetAt("lock", "true");
+
+            while (IsLocked() == true)
+            {
+                var pos = dictionary.StringGetFirstPosition();
+
+                var data = new List<Tuple<DateTime, string>>();
+
+                while(pos.IsNull == false)
+                {
+                    string key;
+                    string value;
+                    dictionary.StringGetNextAssoc(pos, out key, out value);
+                    if (string.IsNullOrWhiteSpace(key) == false && string.IsNullOrWhiteSpace(value) == false)
+                    {
+                        data.Add(new Tuple<DateTime, string>(DateTime.Parse(key), value));
+                    }
+                }
+
+
+                if (data.Count > 0)
+                {
+                    var orderedList = data.OrderBy(x => x.Item1).ToList();
+                
+                    var item = orderedList[0];
+
+                    ret = item.Item2;
+
+                    dictionary.StringRemoveAt(item.Item1.ToLongDateString());
+                }
+
+                dictionary.StringSetAt("lock", "false");
+
+
+
+            }
+
+
+            return ret;
+        }
+
+        private bool IsLocked()
+        {
+            var dictionary = Vault.GetDictionary($"{Identity.Name}{Identity.Version}{Instance.TaskName}{Instance.TaskGUID}", true);
+
+            string isLocked = string.Empty;
+            dictionary.StringGetAt("lock", out isLocked);
+
+            bool ret;
+            
+            var parseRet = bool.TryParse(isLocked, out ret);
+
+            if (parseRet == false)
+                return false;
+            else
+                return ret;
+        
         }
 
         /// <summary>
