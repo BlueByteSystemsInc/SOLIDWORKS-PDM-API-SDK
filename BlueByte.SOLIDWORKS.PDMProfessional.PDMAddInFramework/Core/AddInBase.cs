@@ -26,7 +26,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// <summary>
         /// Task instance.
         /// </summary>
-        public IEdmTaskInstance Instance { get; set; }
+        public BlueByteTaskInstance Instance { get; set; }
 
         /// <summary>
         /// Properties
@@ -828,7 +828,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         {
             
          
-            this.Instance = poCmd.mpoExtra as IEdmTaskInstance;
+            this.Instance = poCmd.mpoExtra as BlueByteTaskInstance;
             this.Initialize();
         }
 
@@ -840,7 +840,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         public virtual void OnTaskRun(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
         {
           
-            this.Instance = poCmd.mpoExtra as IEdmTaskInstance;
+            this.Instance = poCmd.mpoExtra as BlueByteTaskInstance;
             this.Initialize();
         }
 
