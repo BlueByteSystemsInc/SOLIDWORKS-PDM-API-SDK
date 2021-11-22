@@ -583,10 +583,13 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// <param name="message">Message</param>
         /// <param name="beforeCancellationAction">Cleanup action before cancellation</param>
         /// <param name="cancellationAndSuspensionLogAction">Action used to log cancellation and or suspension</param>
+        /// <param name="currentPosition">current position in the progress bar.</param>
         /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.CancellationException">
         /// </exception>
-        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
+        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction, int currentPosition = default(int))
         {
+
+
             string pauseCancellationMessage;
 
             if (Instance != null)
@@ -660,10 +663,48 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                     }
                 }
 
-                Instance.SetStatus(status, 0, message);
+                //Instance.SetStatus(status, 0, message);
+
+                if (currentPosition == default(int))
+                    CurrentPosition = currentPosition;
+
+                else
+                    CurrentPosition = currentPosition++;
+
+                Instance.SetProgressPos(CurrentPosition, message);
             }
         }
 
+
+        /// <summary>
+        /// Sets the progress range.
+        /// </summary>
+        /// <param name="message">message</param>
+        /// <exception cref="System.Exception"></exception>
+        public void SetRange(string message = null)
+        {
+            if (Range < CurrentPosition)
+                throw new Exception($"{nameof(Range)} has to be superior than {nameof(CurrentPosition)}");
+
+            Instance.SetProgressRange(Range, CurrentPosition, message);
+        }
+         
+        /// <summary>
+        /// Gets or sets the current position.
+        /// </summary>
+        /// <value>
+        /// The current position.
+        /// </value>
+        public int CurrentPosition { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets the range.
+        /// </summary>
+        /// <value>
+        /// The range.
+        /// </value>
+        public int Range { get; set; }
 
         /// <summary>
         /// Performs an action on affected data while allowing user to cancel or pause task.
