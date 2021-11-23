@@ -596,7 +596,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
             {
                 if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
                 {
-                    pauseCancellationMessage = "Task has been cancelled.";
+                    pauseCancellationMessage = "Task has been canceled.";
 
                     if (beforeCancellationAction != null)
                     {
