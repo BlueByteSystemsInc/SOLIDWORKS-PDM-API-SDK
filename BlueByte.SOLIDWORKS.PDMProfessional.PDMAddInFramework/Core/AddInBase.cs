@@ -665,28 +665,46 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 
                 //Instance.SetStatus(status, 0, message);
 
-                if (currentPosition == default(int))
-                    CurrentPosition = currentPosition;
+                //if (currentPosition == default(int))
+                //    CurrentPosition = currentPosition;
 
-                else
-                    CurrentPosition = currentPosition++;
+                //else
+                //    CurrentPosition = currentPosition++;
 
-                Instance.SetProgressPos(CurrentPosition, message);
+                //UpdateRange(CurrentPosition, message);
             }
         }
 
-
         /// <summary>
-        /// Sets the progress range.
+        /// Sets the progress range. Should be done only once at the start of the task execution
         /// </summary>
+        /// <param name="range">Initialized range</param>
+        /// <param name="currentPosition">Initial position</param>
         /// <param name="message">message</param>
         /// <exception cref="System.Exception"></exception>
-        public void SetRange(string message = null)
+        public void SetRange(int range, int currentPosition, string message = null)
         {
+            Range = range;
+            CurrentPosition = currentPosition;
             if (Range < CurrentPosition)
                 throw new Exception($"{nameof(Range)} has to be superior than {nameof(CurrentPosition)}");
 
             Instance.SetProgressRange(Range, CurrentPosition, message);
+        }
+
+        /// <summary>
+        /// Sets the progress bar position.
+        /// </summary>
+        /// <param name="currentPosition"></param>
+        /// <param name="message"></param>
+        public void UpdateRange(int currentPosition, string message = null)
+        {
+            if (Range < currentPosition)
+            {
+                throw new Exception($"{nameof(Range)} has to be superior than {nameof(CurrentPosition)}");
+            }
+
+            Instance.SetProgressPos(currentPosition, message);
         }
          
         /// <summary>
@@ -696,7 +714,6 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// The current position.
         /// </value>
         public int CurrentPosition { get; set; }
-
 
         /// <summary>
         /// Gets or sets the range.
