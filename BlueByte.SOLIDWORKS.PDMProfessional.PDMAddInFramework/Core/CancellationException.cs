@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 {
     [Serializable]
-    internal class CancellationException : Exception
+    public class CancellationException : Exception
     {
         public CancellationException()
         {
