@@ -56,6 +56,14 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         public Container Container { get; private set; }
 
         /// <summary>
+        /// Gets or sets the current position.
+        /// </summary>
+        /// <value>
+        /// The current position.
+        /// </value>
+        public int CurrentPosition { get; set; }
+
+        /// <summary>
         /// Task instance.
         /// </summary>
         public IEdmTaskInstance Instance { get; set; }
@@ -81,6 +89,14 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// Properties
         /// </summary>
         public IEdmTaskProperties Properties { get; set; }
+
+        /// <summary>
+        /// Gets or sets the range.
+        /// </summary>
+        /// <value>
+        /// The range.
+        /// </value>
+        public int Range { get; set; }
 
         /// <summary>
         /// Gets the vault object.
@@ -443,105 +459,6 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         }
 
         /// <summary>
-        /// Sets the status of the task. Supports cancellation and suspension.
-        /// </summary>
-        /// <param name="status">Status type.</param>
-        /// <param name="message">Message</param>
-        /// <param name="beforeCancellationAction">Cleanup action before cancellation</param>
-        /// <param name="cancellationAndSuspensionLogAction">Action used to log cancellation and or suspension</param>
-        /// <param name="currentPosition">current position in the progress bar.</param>
-        /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.CancellationException">
-        /// </exception>
-        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction, int currentPosition = default(int))
-        {
-
-
-            string pauseCancellationMessage;
-
-            if (Instance != null)
-            {
-                if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
-                {
-                    pauseCancellationMessage = "Task has been canceled.";
-
-                    if (beforeCancellationAction != null)
-                    {
-                        beforeCancellationAction();
-                    }
-
-                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
-                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
-                    
-                    if (cancellationAndSuspensionLogAction != null)
-                    {
-                        cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                    }
-               
-
-                    throw new CancellationException(pauseCancellationMessage);
-                }
-
-                if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_SuspensionPending)
-                {
-                    pauseCancellationMessage = "Task has been suspended.";
-                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Suspended, 0, pauseCancellationMessage);
-                    if (cancellationAndSuspensionLogAction != null)
-                    {
-                        cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                    }
-
-                    while (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_Suspended)
-                    {
-                        System.Threading.Thread.Sleep(1000);
-                    }
-
-                    if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_ResumePending)
-                    {
-                        pauseCancellationMessage = "Task has resumed execution.";
-                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Running, 0, pauseCancellationMessage);
-                        if (cancellationAndSuspensionLogAction != null)
-                        {
-                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                        }
-
-                    }
-
-                    //Check for cancellation if user cancels after pausing
-
-                    if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
-                    {
-                        pauseCancellationMessage = "Task has been cancelled.";
-
-                        if (beforeCancellationAction != null)
-                        {
-                            beforeCancellationAction();
-                        }
-
-                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
-                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
-                        if (cancellationAndSuspensionLogAction != null)
-                        {
-                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                        }
-
-
-                        throw new CancellationException(pauseCancellationMessage);
-                    }
-                }
-
-                //Instance.SetStatus(status, 0, message);
-
-                //if (currentPosition == default(int))
-                //    CurrentPosition = currentPosition;
-
-                //else
-                //    CurrentPosition = currentPosition++;
-
-                //UpdateRange(CurrentPosition, message);
-            }
-        }
-
-        /// <summary>
         /// Allows for connection string to be sat to the SQL logger via <see cref="ILogger.StartConnection(string)"/>.
         /// </summary>
         protected virtual void OnLoggerStartConnectionWithSQLServer(string connectionString)
@@ -583,38 +500,6 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         #region Public Methods
 
         /// <summary>
-        /// Sets the progress range. Should be done only once at the start of the task execution
-        /// </summary>
-        /// <param name="range">Initialized range</param>
-        /// <param name="currentPosition">Initial position</param>
-        /// <param name="message">message</param>
-        /// <exception cref="System.Exception"></exception>
-        public void SetRange(int range, int currentPosition, string message = null)
-        {
-            Range = range;
-            CurrentPosition = currentPosition;
-            if (Range < CurrentPosition)
-                throw new Exception($"{nameof(Range)} has to be superior than {nameof(CurrentPosition)}");
-
-            Instance.SetProgressRange(Range, CurrentPosition, message);
-        }
-
-        /// <summary>
-        /// Sets the progress bar position.
-        /// </summary>
-        /// <param name="currentPosition"></param>
-        /// <param name="message"></param>
-        public void UpdateRange(int currentPosition, string message = null)
-        {
-            if (Range < currentPosition)
-            {
-                throw new Exception($"{nameof(Range)} has to be superior than {nameof(CurrentPosition)}");
-            }
-
-            Instance.SetProgressPos(currentPosition, message);
-        }
-
-        /// <summary>
         /// Attaches the debugger.
         /// </summary>
         public void AttachDebugger()
@@ -632,23 +517,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                     Debugger.Launch();
             }
         }
-         
-        /// <summary>
-        /// Gets or sets the current position.
-        /// </summary>
-        /// <value>
-        /// The current position.
-        /// </value>
-        public int CurrentPosition { get; set; }
 
-        /// <summary>
-        /// Gets or sets the range.
-        /// </summary>
-        /// <value>
-        /// The range.
-        /// </value>
-        public int Range { get; set; }
-        
         /// Creates a instance of the specified page type using the container.
         /// </summary>
         /// <typeparam name="T">Page type</typeparam>
@@ -1059,6 +928,117 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         }
 
         /// <summary>
+        /// Sets the progress range. Should be done only once at the start of the task execution
+        /// </summary>
+        /// <param name="range">Initialized range</param>
+        /// <param name="currentPosition">Initial position</param>
+        /// <param name="message">message</param>
+        /// <exception cref="System.Exception"></exception>
+        public void SetRange(int range, int currentPosition, string message = null)
+        {
+            Range = range;
+            CurrentPosition = currentPosition;
+            if (Range < CurrentPosition)
+                throw new Exception($"{nameof(Range)} has to be superior than {nameof(CurrentPosition)}");
+
+            Instance.SetProgressRange(Range, CurrentPosition, message);
+        }
+
+        /// <summary>
+        /// Sets the status of the task. Supports cancellation and suspension.
+        /// </summary>
+        /// <param name="status">Status type.</param>
+        /// <param name="message">Message</param>
+        /// <param name="beforeCancellationAction">Cleanup action before cancellation</param>
+        /// <param name="cancellationAndSuspensionLogAction">Action used to log cancellation and or suspension</param>
+        /// <param name="currentPosition">current position in the progress bar.</param>
+        /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.CancellationException">
+        /// </exception>
+        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction, int currentPosition = default(int))
+        {
+            string pauseCancellationMessage;
+
+            if (Instance != null)
+            {
+                if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
+                {
+                    pauseCancellationMessage = "Task has been canceled.";
+
+                    if (beforeCancellationAction != null)
+                    {
+                        beforeCancellationAction();
+                    }
+
+                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
+                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
+
+                    if (cancellationAndSuspensionLogAction != null)
+                    {
+                        cancellationAndSuspensionLogAction(pauseCancellationMessage);
+                    }
+
+                    throw new CancellationException(pauseCancellationMessage);
+                }
+
+                if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_SuspensionPending)
+                {
+                    pauseCancellationMessage = "Task has been suspended.";
+                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Suspended, 0, pauseCancellationMessage);
+                    if (cancellationAndSuspensionLogAction != null)
+                    {
+                        cancellationAndSuspensionLogAction(pauseCancellationMessage);
+                    }
+
+                    while (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_Suspended)
+                    {
+                        System.Threading.Thread.Sleep(1000);
+                    }
+
+                    if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_ResumePending)
+                    {
+                        pauseCancellationMessage = "Task has resumed execution.";
+                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Running, 0, pauseCancellationMessage);
+                        if (cancellationAndSuspensionLogAction != null)
+                        {
+                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
+                        }
+                    }
+
+                    //Check for cancellation if user cancels after pausing
+
+                    if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
+                    {
+                        pauseCancellationMessage = "Task has been cancelled.";
+
+                        if (beforeCancellationAction != null)
+                        {
+                            beforeCancellationAction();
+                        }
+
+                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
+                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
+                        if (cancellationAndSuspensionLogAction != null)
+                        {
+                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
+                        }
+
+                        throw new CancellationException(pauseCancellationMessage);
+                    }
+                }
+
+                //Instance.SetStatus(status, 0, message);
+
+                //if (currentPosition == default(int))
+                //    CurrentPosition = currentPosition;
+
+                //else
+                //    CurrentPosition = currentPosition++;
+
+                //UpdateRange(CurrentPosition, message);
+            }
+        }
+
+        /// <summary>
         /// Sets the status of the task. Supports cancellation and suspension.
         /// </summary>
         /// <param name="status">Status type.</param>
@@ -1141,6 +1121,21 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 
                 Instance.SetStatus(status, 0, message);
             }
+        }
+
+        /// <summary>
+        /// Sets the progress bar position.
+        /// </summary>
+        /// <param name="currentPosition"></param>
+        /// <param name="message"></param>
+        public void UpdateRange(int currentPosition, string message = null)
+        {
+            if (Range < currentPosition)
+            {
+                throw new Exception($"{nameof(Range)} has to be superior than {nameof(CurrentPosition)}");
+            }
+
+            Instance.SetProgressPos(currentPosition, message);
         }
 
         #endregion
