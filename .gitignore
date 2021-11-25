@@ -26,7 +26,7 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
+[Bb]in
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
@@ -108,6 +108,9 @@ ipch/
 *.cachefile
 *.VC.db
 *.VC.VC.opendb
+
+# Strong name key file 
+*.pfx
 
 # Visual Studio profiler
 *.psess
