@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
+
 
 namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 {
+
+
+
+
+  
+
+
     internal static class Helper
     {
         internal static T GetFirstAttribute<T>(object source) where T : Attribute

@@ -1,6 +1,5 @@
 ﻿using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
 using EPDM.Interop.epdm;
-using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
@@ -119,12 +118,11 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
         /// </summary>
         public void LoadSettings()
         {
-            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
-            dialog.Title = "Browse to task settings";
-            dialog.Filters.Add(new CommonFileDialogFilter("PDM Task Settings", ".edmtdf"));
-            dialog.DefaultDirectory = Vault.RootFolderPath;
-
-            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Title = "Load task settings";
+            dialog.Filter = "Task Settings (*.edmtdf)|*.edmtdf|All files (*.*)|*.*";
+            
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
                 var fileName = dialog.FileName;
                 if (string.IsNullOrWhiteSpace(fileName))
