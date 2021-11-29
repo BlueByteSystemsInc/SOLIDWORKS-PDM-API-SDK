@@ -954,7 +954,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// <param name="currentPosition">current position in the progress bar.</param>
         /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.CancellationException">
         /// </exception>
-        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction, int currentPosition = default(int))
+        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
         {
             string pauseCancellationMessage;
 
@@ -969,7 +969,6 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                         beforeCancellationAction();
                     }
 
-                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
                     Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
 
                     if (cancellationAndSuspensionLogAction != null)
@@ -1015,7 +1014,6 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                             beforeCancellationAction();
                         }
 
-                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
                         Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
                         if (cancellationAndSuspensionLogAction != null)
                         {
@@ -1026,109 +1024,17 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                     }
                 }
 
-                //Instance.SetStatus(status, 0, message);
-
-                //if (currentPosition == default(int))
-                //    CurrentPosition = currentPosition;
-
-                //else
-                //    CurrentPosition = currentPosition++;
-
-                //UpdateRange(CurrentPosition, message);
             }
         }
 
-        /// <summary>
-        /// Sets the status of the task. Supports cancellation and suspension.
-        /// </summary>
-        /// <param name="status">Status type.</param>
-        /// <param name="message">Message</param>
-        /// <param name="beforeCancellationAction">Cleanup action before cancellation</param>
-        /// <param name="cancellationAndSuspensionLogAction">Action used to log cancellation and or suspension</param>
-        /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.CancellationException">
-        /// </exception>
-        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
-        {
-            string pauseCancellationMessage;
-
-            if (Instance != null)
-            {
-                if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
-                {
-                    pauseCancellationMessage = "Task has been cancelled.";
-
-                    if (beforeCancellationAction != null)
-                    {
-                        beforeCancellationAction();
-                    }
-
-                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
-                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
-
-                    if (cancellationAndSuspensionLogAction != null)
-                    {
-                        cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                    }
-
-                    throw new CancellationException(pauseCancellationMessage);
-                }
-
-                if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_SuspensionPending)
-                {
-                    pauseCancellationMessage = "Task has been suspended.";
-                    Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Suspended, 0, pauseCancellationMessage);
-                    if (cancellationAndSuspensionLogAction != null)
-                    {
-                        cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                    }
-
-                    while (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_Suspended)
-                    {
-                        System.Threading.Thread.Sleep(1000);
-                    }
-
-                    if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_ResumePending)
-                    {
-                        pauseCancellationMessage = "Task has resumed execution.";
-                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Running, 0, pauseCancellationMessage);
-                        if (cancellationAndSuspensionLogAction != null)
-                        {
-                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                        }
-                    }
-
-                    //Check for cancellation if user cancels after pausing
-
-                    if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
-                    {
-                        pauseCancellationMessage = "Task has been cancelled.";
-
-                        if (beforeCancellationAction != null)
-                        {
-                            beforeCancellationAction();
-                        }
-
-                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled, 0, pauseCancellationMessage);
-                        Instance.SetStatus(EdmTaskStatus.EdmTaskStat_DoneCancelled);
-                        if (cancellationAndSuspensionLogAction != null)
-                        {
-                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                        }
-
-                        throw new CancellationException(pauseCancellationMessage);
-                    }
-                }
-
-                Instance.SetStatus(status, 0, message);
-            }
-        }
+         
 
         /// <summary>
         /// Sets the progress bar position.
         /// </summary>
         /// <param name="currentPosition"></param>
         /// <param name="message"></param>
-        public void UpdateRange(int currentPosition, string message = null)
+        public void UpdateTaskMessage(int currentPosition, string message = null)
         {
             if (Range < currentPosition)
             {
