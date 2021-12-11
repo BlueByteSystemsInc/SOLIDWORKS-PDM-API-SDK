@@ -934,7 +934,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// <param name="currentPosition">Initial position</param>
         /// <param name="message">message</param>
         /// <exception cref="System.Exception"></exception>
-        public void SetRange(int range, int currentPosition, string message = null)
+        public virtual void SetRange(int range, int currentPosition, string message = null)
         {
             Range = range;
             CurrentPosition = currentPosition;
@@ -1034,7 +1034,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// </summary>
         /// <param name="currentPosition"></param>
         /// <param name="message"></param>
-        public void UpdateTaskMessage(int currentPosition, string message = null)
+        public virtual void  UpdateTaskMessage(int currentPosition, string message = null)
         {
             if (Range < currentPosition)
             {
