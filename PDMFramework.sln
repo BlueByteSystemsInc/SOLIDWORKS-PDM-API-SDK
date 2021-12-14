@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework", "BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.csproj", "{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework", "src\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.csproj", "{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueByte.SOLIDWORKS.PDMProfessional.Services", "BlueByte.SOLIDWORKS.PDMProfessional.Services\BlueByte.SOLIDWORKS.PDMProfessional.Services.csproj", "{752070DF-3632-48DD-8151-621C7078B3BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueByte.SOLIDWORKS.PDMProfessional.Services", "src\BlueByte.SOLIDWORKS.PDMProfessional.Services\BlueByte.SOLIDWORKS.PDMProfessional.Services.csproj", "{752070DF-3632-48DD-8151-621C7078B3BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
