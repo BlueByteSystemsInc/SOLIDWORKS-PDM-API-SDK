@@ -101,7 +101,7 @@
     <Compile Include="Diagnostics\LoggerType_e.cs" />
     <Compile Include="Exceptions\IdentityInfoException.cs" />
     <Compile Include="Exceptions\ITaskDetailsPageNotUserControlException.cs" />
-    <Compile Include="Exceptions\swPDMAddInFrameworkException.cs" />
+    <Compile Include="Exceptions\PDMAddInFrameworkException.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -116,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

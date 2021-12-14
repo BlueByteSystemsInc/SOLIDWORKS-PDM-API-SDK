@@ -329,7 +329,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                     case LoggerType_e.SQL:
                         Container.RegisterSingleton<ILogger, SQLLogger>();
                         break;
-                        throw new swPDMAddInFrameworkException("Logger type was not specified.", null);
+                        throw new PDMAddInFrameworkException("Logger type was not specified.", null);
                     default:
                         break;
                 }

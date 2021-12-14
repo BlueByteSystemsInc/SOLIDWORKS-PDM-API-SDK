@@ -6,7 +6,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Exceptions
     /// <summary>
     /// Fires in <see cref="AddInBase.GetAddInInfo(ref EPDM.Interop.epdm.EdmAddInInfo, EPDM.Interop.epdm.IEdmVault5, EPDM.Interop.epdm.IEdmCmdMgr5)"/> if attribute is missing.
     /// </summary>
-    public class IdentityInfoException : swPDMAddInFrameworkException
+    public class IdentityInfoException : PDMAddInFrameworkException
     {
         /// <summary>
         /// Creates a new instance of the base exception.

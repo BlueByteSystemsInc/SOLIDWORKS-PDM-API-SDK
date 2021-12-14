@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <!--*-->
+    <id>BlueByte.SOLIDWORKS.PDMProfessional.Services</id>
+    <!--*-->
+    <version>2021.0.0</version>
+    <title>BlueByte.SOLIDWORKS.PDMProfessional.Services</title>
+    <!--*-->
+    <authors>Blue Byte Systems, Inc.</authors>
+    <owners>Blue Byte Systems, Inc.</owners>
+    <!--
+    <licenseUrl></licenseUrl>
+    <projectUrl></projectUrl>
+    <iconUrl></iconUrl>
+-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--*-->
+    <description>Collection of services for developing PDM add-ins</description>
+    <!--*-->
+    <releaseNotes>Collection of services for developing PDM add-ins</releaseNotes>
+    <copyright>Copyright ©  2022</copyright>
+    <tags>
+    </tags>
+    <dependencies>
+      <!--
+      <dependency id="SampleDependency" version="1.0" />
+-->
+    </dependencies>
+  </metadata>
+</package>

@@ -9,11 +9,11 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Exceptions
     /// <summary>
     /// Base exception.
     /// </summary>
-    public class swPDMAddInFrameworkException : Exception
+    public class PDMAddInFrameworkException : Exception
     { /// <summary>
       /// Creates a new instance of the base exception.
       /// </summary>
-        public swPDMAddInFrameworkException()
+        public PDMAddInFrameworkException()
         {
         }
 
@@ -22,7 +22,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Exceptions
         /// </summary>
         /// <param name="message">Message.</param>
         /// <param name="innerException">Inner exception.</param>
-        public swPDMAddInFrameworkException(string message, Exception innerException) : base(message, innerException)
+        public PDMAddInFrameworkException(string message, Exception innerException) : base(message, innerException)
         {
         }
     }
