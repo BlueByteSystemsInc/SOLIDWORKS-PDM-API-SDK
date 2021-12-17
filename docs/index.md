@@ -9,16 +9,17 @@ BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework is available on nuget.org 
 
  ``` install-package BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework ```
 
+### Intro 
 
- 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n5gaSZPqsbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Visual Studio Templates for VS 2019
 
-Will be provided soon.
+Use SOLIDWORKSAddInSample.zip. Drop this file your Visual Studio project templates.
 
 ### Licensing
 
-Under MIT license.
+See LICENSE.md
 
 ### Support or Contact
 
