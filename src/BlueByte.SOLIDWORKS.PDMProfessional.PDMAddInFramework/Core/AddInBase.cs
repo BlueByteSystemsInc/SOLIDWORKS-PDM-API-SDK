@@ -927,6 +927,22 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
             }
         }
 
+
+        /// <summary>
+        /// Gets or sets the before cancellation action. Use this to perform any clean up action.
+        /// </summary>
+        /// <value>
+        /// The before cancellation action.
+        /// </value>
+        public Action BeforeCancellationAction { get; set; }
+        /// <summary>
+        /// Gets or sets the cancellation and suspension log action.
+        /// </summary>
+        /// <value>
+        /// The cancellation and suspension log action. Use this action log event before the task gets suspended.
+        /// </value>
+        public Action<string> CancellationAndSuspensionLogAction { get; set; }
+
         /// <summary>
         /// Sets the progress range. Should be done only once at the start of the task execution
         /// </summary>
@@ -934,6 +950,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// <param name="currentPosition">Initial position</param>
         /// <param name="message">message</param>
         /// <exception cref="System.Exception"></exception>
+        /// <remarks>This method also checks for cancellation and suspension requests made by the user.</remarks>
         public virtual void SetRange(int range, int currentPosition, string message = null)
         {
             Range = range;
@@ -942,22 +959,13 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                 throw new Exception($"{nameof(Range)} has to be superior than {nameof(CurrentPosition)}");
 
             Instance.SetProgressRange(Range, CurrentPosition, message);
+
+            CheckForCancellationOrSuspension(BeforeCancellationAction,  CancellationAndSuspensionLogAction);
         }
 
-        /// <summary>
-        /// Sets the status of the task. Supports cancellation and suspension.
-        /// </summary>
-        /// <param name="status">Status type.</param>
-        /// <param name="message">Message</param>
-        /// <param name="beforeCancellationAction">Cleanup action before cancellation</param>
-        /// <param name="cancellationAndSuspensionLogAction">Action used to log cancellation and or suspension</param>
-        /// <param name="currentPosition">current position in the progress bar.</param>
-        /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.CancellationException">
-        /// </exception>
-        public virtual void SetStatus2(EdmTaskStatus status, string message, Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
+         void CheckForCancellationOrSuspension(Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
         {
             string pauseCancellationMessage;
-
             if (Instance != null)
             {
                 if (Instance.GetStatus() == EdmTaskStatus.EdmTaskStat_CancelPending)
@@ -1026,6 +1034,8 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 
             }
         }
+
+
 
          
 
