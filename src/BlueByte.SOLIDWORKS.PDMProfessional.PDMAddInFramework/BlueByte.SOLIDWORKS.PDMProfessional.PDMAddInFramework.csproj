@@ -99,6 +99,7 @@
     </Compile>
     <Compile Include="Diagnostics\ILogger.cs" />
     <Compile Include="Diagnostics\LoggerType_e.cs" />
+    <Compile Include="Enums\PDMProfessionalVersion_e.cs" />
     <Compile Include="Exceptions\IdentityInfoException.cs" />
     <Compile Include="Exceptions\ITaskDetailsPageNotUserControlException.cs" />
     <Compile Include="Exceptions\PDMAddInFrameworkException.cs" />
