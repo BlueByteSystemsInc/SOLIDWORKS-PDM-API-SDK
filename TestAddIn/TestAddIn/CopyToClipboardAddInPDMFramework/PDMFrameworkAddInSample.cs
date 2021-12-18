@@ -1,5 +1,6 @@
 ﻿using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework;
 using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes;
+using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Enums;
 using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
 using EPDM.Interop.epdm;
 using SimpleInjector;
@@ -16,13 +17,13 @@ namespace CopyToClipboardAddInPDMFramework
         CopyToClipboardCommand = 1000
     }
 
-    [Menu((int)Commands.CopyToClipboardCommand, "Copyt to clipboard - PDMFramework")]
+    [Menu((int)Commands.CopyToClipboardCommand, "Copy to clipboard using PDMFramework")]
     [Name("CopyToClipboard - PDMFramework")]
     [Description("This is a description - PDMFramework")]
     [CompanyName("Blue Byte Systems Inc")]
     [AddInVersion(false, 1)]
     [IsTask(false)]
-    [RequiredVersion(10, 0)]
+    [RequiredVersion(Year_e.PDM2006, ServicePack_e.SP0)]
     [ComVisible(true)]
     [Guid("B6241720-A37B-4D9C-AF4D-7F6F12EA5D2B")]
     public partial class CopyToClipboardAddInPDMFramework : AddInBase
@@ -32,6 +33,13 @@ namespace CopyToClipboardAddInPDMFramework
         {
             base.OnCmd(ref poCmd, ref ppoData);
 
+            var logger = base.Logger;
+
+            logger.Init(this.Identity, Instance, string.Empty);
+
+            logger.OutputLocation = System.Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            logger.LogToOutput("Log.txt", "Logged this value.");
 
             var stringBuilder = new StringBuilder();
 

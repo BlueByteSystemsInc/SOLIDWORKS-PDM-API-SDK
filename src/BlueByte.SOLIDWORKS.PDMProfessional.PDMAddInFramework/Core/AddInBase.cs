@@ -114,12 +114,16 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         {
             try
             {
-                var thisAssembly = new FileInfo(typeof(AddInBase).Assembly.Location);
+                var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
 
                 OnLoadAdditionalAssemblies(thisAssembly.Directory);
+                
                 OnLoggerTypeChosen(LoggerType_e.File);
+
                 Initialize();
+                
                 OnUnhandledExceptions(false, null);
+                
                 if (IsInitialized == false)
                     OnRegisterAdditionalTypes(Container);
 
@@ -130,12 +134,14 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                 }
 
                 Logger = Container.GetInstance<ILogger>();
+
                 OnLoggerOutputSat(string.Empty);
+                
                 IsInitialized = true;
             }
             catch (Exception e)
             {
-                MessageBox.Show($"PID: {System.Diagnostics.Process.GetCurrentProcess().Id}. Something went wrong when initializing the add-in. {e.Message}", $"{this.Identity.Name} {this.Identity.Version}");
+                MessageBox.Show($"AddInBase: Something went wrong when initializing the add-in. {e.Message}", $"AddIn Error");
             }
         }
 
@@ -458,14 +464,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
             }
         }
 
-        /// <summary>
-        /// Allows for connection string to be sat to the SQL logger via <see cref="ILogger.StartConnection(string)"/>.
-        /// </summary>
-        protected virtual void OnLoggerStartConnectionWithSQLServer(string connectionString)
-        {
-            if (string.IsNullOrWhiteSpace(connectionString) == false)
-                Logger.SetConnectionString(connectionString);
-        }
+         
 
         /// <summary>
         /// Sets the type of the logger.
@@ -591,7 +590,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 
                 #endregion check GUID
 
-                #region check GUID
+                #region Com Visible
 
                 var comVisibleAtt = Helper.GetFirstAttribute<ComVisibleAttribute>(this);
                 if (comVisibleAtt == null)
@@ -647,8 +646,8 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                 if (addinRequiredVersionAtt == null)
                     throw new IdentityInfoException("Task class is not decorated with RequiredVersionAttribute.", null);
 
-                if (addinRequiredVersionAtt.Major == 0)
-                    throw new IdentityInfoException("Task add-in version major requirement not set.", null);
+                if (addinRequiredVersionAtt.Major < 6)
+                    throw new IdentityInfoException("Task add-in version major requirement cannot be lower than 6.", null);
 
                 poInfo.mlRequiredVersionMajor = addinRequiredVersionAtt.Major;
                 poInfo.mlRequiredVersionMinor = addinRequiredVersionAtt.Minor;
@@ -801,7 +800,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 
             GetAddInIdentity();
 
-            OnLoggerStartConnectionWithSQLServer(string.Empty);
+           
 
             var isTask = false;
             var isTaskAtt = Helper.GetFirstAttribute<IsTaskAttribute>(this);
