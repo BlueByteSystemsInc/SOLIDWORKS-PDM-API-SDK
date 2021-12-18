@@ -97,8 +97,12 @@
     <Compile Include="Core\TaskSetupPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Diagnostics\ConsoleLogger.cs" />
+    <Compile Include="Diagnostics\FileLogger.cs" />
     <Compile Include="Diagnostics\ILogger.cs" />
+    <Compile Include="Diagnostics\LoggerBase.cs" />
     <Compile Include="Diagnostics\LoggerType_e.cs" />
+    <Compile Include="Diagnostics\SQLLogger.cs" />
     <Compile Include="Enums\PDMProfessionalVersion_e.cs" />
     <Compile Include="Exceptions\IdentityInfoException.cs" />
     <Compile Include="Exceptions\ITaskDetailsPageNotUserControlException.cs" />
