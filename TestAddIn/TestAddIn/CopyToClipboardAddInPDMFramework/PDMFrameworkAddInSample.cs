@@ -33,14 +33,7 @@ namespace CopyToClipboardAddInPDMFramework
         {
             base.OnCmd(ref poCmd, ref ppoData);
 
-            var logger = base.Logger;
-
-            logger.Init(this.Identity, Instance, string.Empty);
-
-            logger.OutputLocation = System.Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-
-            logger.LogToOutput("Log.txt", "Logged this value.");
-
+           
             var stringBuilder = new StringBuilder();
 
             ForEachFile(ref ppoData, (IEdmFile5 file) => {
