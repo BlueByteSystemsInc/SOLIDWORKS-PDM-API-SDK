@@ -31,4 +31,4 @@ Will be built with castle sand. Please also check our [YouTube channel](https://
 
 # Copyright
 
-See License.MD
+See LICENSE.md
