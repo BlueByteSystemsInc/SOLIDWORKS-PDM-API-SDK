@@ -27,5 +27,6 @@
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="." d:TargetPath="SOLIDWORKSPDMAddIn.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\SOLIDWORKSPDMTaskSetupPage.zip" />
     </Assets>
 </PackageManifest>
