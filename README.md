@@ -18,7 +18,7 @@ TestAddIn folder contains a sample copy to clipboard addin.
 
 # VS Template
 
-Packaged as SOLIDWORKSPDMAddIn.zip at the root. Will be deployed in the future to VS Extension Marketplace.
+Get it from [here](https://marketplace.visualstudio.com/items?itemName=BlueByteSystemsInc.ID).
 
 # Documentation
 
