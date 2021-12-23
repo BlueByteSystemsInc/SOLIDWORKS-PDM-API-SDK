@@ -24,7 +24,7 @@ namespace SOLIDWORKSPDMAddIn
     [RequiredVersion(10, 0)]
     [ComVisible(true)]
     [Guid("721C78F4-362E-45EC-B313-CD0E33A87D67")]
-    public partial class PDMFrameworkAddInSample : AddInBase
+    public partial class AddIn : AddInBase
     {
 
         public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
