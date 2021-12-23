@@ -1,4 +1,4 @@
-# .NET framwork Library for SOLIDWORKS PDM Professional
+# .NET framework Library for SOLIDWORKS PDM Professional
 A produtivity framework to improve the development of :
  - SOLDIWORKS PDM add-ins
  - SOLIDWORKS PDM task add-ins
