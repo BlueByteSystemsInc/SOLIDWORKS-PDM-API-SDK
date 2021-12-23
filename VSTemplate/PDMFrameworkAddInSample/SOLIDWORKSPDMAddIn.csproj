@@ -38,7 +38,7 @@
     </Reference>
     <Reference Include="EPDM.Interop.epdm, Version=5.24.0.0, Culture=neutral, PublicKeyToken=0625a0c4bb5de148, processorArchitecture=MSIL">
       <HintPath>..\packages\BlueByte.SOLIDWORKS.PDMProfessional.Interops.2021.0.0\lib\EPDM.Interop.epdm.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="EPDM.Interop.EPDMResultCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0625a0c4bb5de148, processorArchitecture=MSIL">
       <HintPath>..\packages\BlueByte.SOLIDWORKS.PDMProfessional.Interops.2021.0.0\lib\EPDM.Interop.EPDMResultCode.dll</HintPath>
@@ -62,7 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SOLIDWORKSPDMAddIn.cs" />
+    <Compile Include="AddIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Task\SetupPages\Settings.cs">
       <SubType>UserControl</SubType>
