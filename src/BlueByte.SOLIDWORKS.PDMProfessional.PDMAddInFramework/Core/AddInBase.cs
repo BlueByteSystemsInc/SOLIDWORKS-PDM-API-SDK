@@ -114,6 +114,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         {
             try
             {
+                AppDomain.CurrentDomain.AssemblyResolve -= CurrentDomain_AssemblyResolve;
+                AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+
                 var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
 
                 OnLoadAdditionalAssemblies(thisAssembly.Directory);
@@ -143,6 +146,37 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
             {
                 MessageBox.Show($"AddInBase: Something went wrong when initializing the add-in. {e.Message}", $"AddIn Error");
             }
+        }
+
+        private Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            var Assembly = default(Assembly);
+            var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
+            var directory = thisAssembly.Directory;
+
+            var files = directory.GetFiles("*",SearchOption.AllDirectories);
+
+            if (files  != null)
+            {
+                var dlls = files.ToList().Where(x => x.Extension.ToLower().EndsWith("dll"));
+                if (dlls != null)
+                {
+                    foreach (var dll in dlls)
+                    {
+                        var nameWithoutExtension = dll.Name;
+                        if (args.Name.ToLower().StartsWith(nameWithoutExtension.ToLower()))
+                        {
+                            Assembly = System.Reflection.Assembly.LoadFile(dll.FullName);
+                            break;
+                        }
+                    }
+                }
+
+            }
+
+
+            return Assembly;
+
         }
 
         #endregion
