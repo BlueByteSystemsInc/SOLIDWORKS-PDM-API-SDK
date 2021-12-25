@@ -1,4 +1,4 @@
-# .NET framwork Library for SOLIDWORKS PDM Professional
+# .NET framework Library for SOLIDWORKS PDM Professional
 A produtivity framework to improve the development of :
  - SOLDIWORKS PDM add-ins
  - SOLIDWORKS PDM task add-ins
@@ -18,7 +18,7 @@ TestAddIn folder contains a sample copy to clipboard addin.
 
 # VS Template
 
-Packaged as SOLIDWORKSPDMAddIn.zip at the root. Will be deployed in the future to VS Extension Marketplace.
+Get it from [here](https://marketplace.visualstudio.com/items?itemName=BlueByteSystemsInc.ID).
 
 # Documentation
 
