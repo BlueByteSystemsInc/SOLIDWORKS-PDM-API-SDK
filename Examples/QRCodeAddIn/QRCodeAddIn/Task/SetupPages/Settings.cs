@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QRCode.Task.SetupPages
+namespace QRCodeAddIn.Task.SetupPages
 {
     public partial class Settings : TaskSetupPage<SettingsViewModel>
     {

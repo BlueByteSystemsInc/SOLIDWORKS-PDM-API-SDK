@@ -1,6 +1,6 @@
 ﻿using EPDM.Interop.epdm;
 
-namespace QRCode.Task
+namespace QRCodeAddIn.Task
 {
     public partial class AddIn
     {

@@ -1,191 +1,19 @@
-﻿using BlueByte.SOLIDWORKS.PDMProfessional.Extensions;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Enums;
-using EPDM.Interop.epdm;
-using Net.Codecrete.QrCodeGenerator;
-using SimpleInjector;
+﻿//
+// QR code generator library (.NET)
+// https://github.com/manuelbl/QrCodeGenerator
+//
+// Copyright (c) 2021 Manuel Bleichenbacher
+// Licensed under MIT License
+// https://opensource.org/licenses/MIT
+//
+
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
 
-namespace AddIn
+namespace Net.Codecrete.QrCodeGenerator
 {
-    public enum Commands
-    {
-        CommandOne = 1000
-    }
-
-    [Menu((int)Commands.CommandOne, "Generate QRCode Bitmap...")]
-    [Name("QRCode")]
-    [Description("Converts filenames and variables to QRCode")]
-    [CompanyName("Blue Byte Systems Inc")]
-    [AddInVersion(false, 1)]
-    [IsTask(false)]
-    [RequiredVersion(Year_e.PDM2020, ServicePack_e.SP0)]
-    [ComVisible(true)]
-    [Guid("44c8aefc-6c1f-4a78-a16d-3e0e891f8437")]
-    public partial class AddIn : AddInBase
-    {
-
-        public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
-        {
-            base.OnCmd(ref poCmd, ref ppoData);
-
-            var errorsList = new StringBuilder();
-
-            var windowHandle = poCmd.mlParentWnd;
-
-
-            this.ForEachFile(ref ppoData, (IEdmFile5 file) =>
-            {
-                var parentFolderID = file.GetParentFolderID();
-                var localPath = file.GetLocalPath(parentFolderID);
-                var bmpPath = System.IO.Path.ChangeExtension(localPath, ".png");
-
-                try
-                {
-
-
-                    if (file.IsPart() == false)
-                    {
-                        errorsList.Append($"{file.Name} is not a part document.");
-                        return;
-                    }
-
-
-                    var pairs = new Dictionary<string, object>();
-
-                    pairs.Add("Description", file.GetVariableValue("Description"));
-                    pairs.Add("PartNumber", file.GetVariableValue("PartNumber"));
-                    pairs.Add("Author", file.GetVariableValue("Author"));
-
-                    var variableNames = pairs.Keys.ToArray();
-                    var values = pairs.Keys.ToArray();
-
-                    var str = variableNames.Select(x => $"&{x}={values[Array.IndexOf(variableNames, x)]}");
-
-                    var QRStr = $"{file.Name}-{str}";
-
-                 
-
-
-                  
-
-                    IEdmFolder5 parentFolder;
-
-                    var bmpFile = this.Vault.TryGetFileFromPath(bmpPath, out parentFolder);
-
-                    if (bmpFile != null)
-                    {
-                        var checkoutAction = bmpFile.GetRequiredCheckOutAction();
-
-                        switch (checkoutAction)
-                        {
-                            case CheckoutAction.DoNothingFileCheckedOutByMe:
-                            case CheckoutAction.FileCheckedInCanBeCheckedOut:
-                                bmpFile.LockFile(parentFolder.ID, windowHandle, (int)EdmLockFlag.EdmLock_Simple);
-                                break;
-                            case CheckoutAction.CheckedOutBySomeoneElse:
-                                errorsList.AppendLine($"{bmpFile.Name} - Could not save bmp. {bmpFile.Name} is checked out by {bmpFile.LockedByUser.Name}");
-                                return;
-                            default:
-                                break;
-                        }
-
-
-                        GenerateQRBitmap(QRStr, bmpPath);
-
-                        bmpFile.UnlockFile(windowHandle, $"Added by {Identity.Name} {Identity.Version}", (int)EdmUnlockFlag.EdmUnlock_ForceUnlock);
-
-                    }
-                    else
-                    {
-                        GenerateQRBitmap(QRStr, bmpPath);
-
-                        // assume bmp files are not added automatically
-                        var folderPath = (new FileInfo(localPath)).Directory;
-                        var folder = Vault.TryGetFolderFromPath(folderPath.FullName);
-                        var bmpFileId = folder.AddFile(windowHandle, bmpPath, "", (int)EdmAddFlag.EdmAdd_Simple);
-                        bmpFile = Vault.GetObject(EdmObjectType.EdmObject_File, bmpFileId) as IEdmFile5;
-                        if (bmpFile != null)
-                            bmpFile.UnlockFile(windowHandle, $"Added by {Identity.Name} {Identity.Version}", (int)EdmUnlockFlag.EdmUnlock_Simple);
-                        else
-                            errorsList.AppendLine($"{System.IO.Path.GetFileName(bmpPath)} - Failed to add bmp to vault. ID {bmpFileId}");
-
-                    }
-
-
-
-
-                }
-                catch (Exception e)
-                {
-                    errorsList.AppendLine($"{System.IO.Path.GetFileName(bmpPath)} - {e.Message}");
-                }
-
-
-            });
-
-            if (string.IsNullOrWhiteSpace(errorsList.ToString()) == false)
-                Vault.MsgBox(windowHandle, errorsList.ToString(), EdmMBoxType.EdmMbt_OKOnly, $"Error(s) - {Identity.Name} V{Identity.Version}");
-            else
-                Vault.MsgBox(windowHandle, "Success!", EdmMBoxType.EdmMbt_OKOnly, $"Information - {Identity.Name} V{Identity.Version}");
-
-
-            poCmd.mlEdmRefreshFlags = (int)EdmRefreshFlag.EdmRefresh_FileList;
-
-        }
-
-        private void GenerateQRBitmap(string QRCodeStr, string targetPath)
-        {
-            var qr = QrCode.EncodeText(QRCodeStr, QrCode.Ecc.Medium);
-            qr.SaveAsPng(targetPath, 10, 3);
-             
-        }
-
-      
- 
-        protected override void OnLoggerTypeChosen(LoggerType_e defaultType)
-        {
-            base.OnLoggerTypeChosen(LoggerType_e.File);
-        }
-
-        protected override void OnRegisterAdditionalTypes(Container container)
-        {
-   
-        }
-
-        protected override void OnLoggerOutputSat(string defaultDirectory)
-        {
-        }
-        protected override void OnLoadAdditionalAssemblies(DirectoryInfo addinDirectory)
-        {
-            base.OnLoadAdditionalAssemblies(addinDirectory);
-        }
-
-        protected override void OnUnhandledExceptions(bool catchAllExceptions, Action<Exception> logAction = null)
-        {
-            this.CatchAllUnhandledException = false;
-
-            logAction = (Exception e) =>
-            {
-
-                throw new NotImplementedException();
-            };
-
-
-            base.OnUnhandledExceptions(catchAllExceptions, logAction);
-        }
-    }
-
-
     /// <summary>
     /// <c>QrCode</c> extension for creating bitmaps using <c>System.Drawing</c> classes.
     /// <para>
@@ -295,9 +123,8 @@ namespace AddIn
             // draw background
             if (background != null)
             {
-                using(SolidBrush brush = new SolidBrush(background))
-                { 
-                graphics.FillRectangle(brush, 0, 0, dim, dim);
+                using (SolidBrush brush = new SolidBrush(background)) { 
+                    graphics.FillRectangle(brush, 0, 0, dim, dim);
                 }
             }
 
@@ -322,15 +149,14 @@ namespace AddIn
         /// <param name="foreground">The foreground color.</param>
         public static byte[] ToPng(this QrCode qrCode, int scale, int border, Color foreground, Color background)
         {
-            using (Bitmap bitmap = qrCode.ToBitmap(scale, border, foreground, background))
+            using (Bitmap bitmap = qrCode.ToBitmap(scale, border, foreground, background)) 
+            { 
+            using (MemoryStream ms = new MemoryStream())
             {
-
-                using ( MemoryStream ms = new MemoryStream())
-                {
-                    bitmap.Save(ms, ImageFormat.Png);
-                    return ms.ToArray();
-
-                }
+                bitmap.Save(ms, ImageFormat.Png);
+                return ms.ToArray();
+            } 
+            
             }
         }
 
@@ -364,10 +190,8 @@ namespace AddIn
         /// <param name="foreground">The foreground color.</param>
         public static void SaveAsPng(this QrCode qrCode, string filename, int scale, int border, Color foreground, Color background)
         {
-            using (Bitmap bitmap = qrCode.ToBitmap(scale, border, foreground, background))
-            {
+            using (Bitmap bitmap = qrCode.ToBitmap(scale, border, foreground, background)) { 
                 bitmap.Save(filename, ImageFormat.Png);
-
             }
         }
 

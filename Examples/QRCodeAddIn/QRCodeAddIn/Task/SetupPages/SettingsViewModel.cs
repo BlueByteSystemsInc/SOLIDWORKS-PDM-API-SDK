@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QRCode.Task.SetupPages
+namespace QRCodeAddIn.Task.SetupPages
 {
     public class SettingsViewModel : INotifyPropertyChanged
     {

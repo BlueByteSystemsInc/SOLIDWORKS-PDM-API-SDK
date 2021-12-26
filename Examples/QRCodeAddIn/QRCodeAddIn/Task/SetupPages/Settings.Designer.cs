@@ -1,5 +1,5 @@
 ﻿
-namespace QRCode.Task.SetupPages
+namespace QRCodeAddIn.Task.SetupPages
 {
     partial class Settings
     {
