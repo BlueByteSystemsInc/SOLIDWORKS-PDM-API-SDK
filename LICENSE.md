@@ -8,7 +8,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 You must also include this following statement in your add-in description (that shows in the administration tool) and/or any UI interface where the user may inquire about the author of the program. 
 
-> This program use PDMFramework. PDMFramework is a copyrighted work of Blue Byte Systems, Inc. (R). https://bluebyte.biz
+> This program uses PDMFramework. PDMFramework is a copyrighted work of Blue Byte Systems, Inc. (R). https://bluebyte.biz
 
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
