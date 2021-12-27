@@ -1,8 +1,7 @@
 ﻿using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
-using System;
 using System.Collections.Generic;
-using System.Windows;
+using System.IO;
 
 namespace ProjectTemplateWizard
 {
@@ -29,19 +28,19 @@ namespace ProjectTemplateWizard
             WizardRunKind runKind,
             object[] customParams)
         {
-            try
-            {
-                var window = new WizardWindow();
-                window.ShowDialog();
+            var window = new WizardWindow();
 
+            if (window.ShowDialog() == true)
+            {
                 replacementsDictionary["$addinname$"] = window.AddInInfo.Name;
                 replacementsDictionary["$addindescription$"] = window.AddInInfo.Description;
                 replacementsDictionary["$addincompany$"] = window.AddInInfo.Company;
                 replacementsDictionary["$addintask$"] = window.AddInInfo.IsTask.ToString().ToLower();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.ToString());
+                Directory.Delete(replacementsDictionary["$solutiondirectory$"], true);
+                throw new WizardCancelledException();
             }
         }
 
