@@ -73,6 +73,7 @@
                 Click="OnOkButtonClick"
                 Content="CREATE"
                 FontSize="22"
-                Foreground="White"/>
+                Foreground="White"
+                IsDefault="True"/>
     </Grid>
 </Window>
