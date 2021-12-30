@@ -39,8 +39,19 @@ namespace ProjectTemplateWizard
             }
             else
             {
-                Directory.Delete(replacementsDictionary["$solutiondirectory$"], true);
-                throw new WizardCancelledException();
+                // remove project folder as its creation was cancelled
+                var destinationDirectory = replacementsDictionary["$destinationdirectory$"];
+                Directory.Delete(destinationDirectory, true);
+
+                // remove solution directory if it is empty
+                var solutionDirectory = replacementsDictionary["$solutiondirectory$"];
+                if (Directory.Exists(solutionDirectory) &&
+                    Directory.GetDirectories(solutionDirectory).Length == 0 && Directory.GetFiles(solutionDirectory).Length == 0)
+                {
+                    Directory.Delete(solutionDirectory);
+                }
+
+                throw new WizardBackoutException();
             }
         }
 
