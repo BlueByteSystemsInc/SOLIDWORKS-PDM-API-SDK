@@ -2,7 +2,7 @@
 
 namespace SOLIDWORKSPDMAddIn.Task
 {
-    public partial class PDMFrameworkAddINSample
+    public partial class AddIn
     {
 
         public void TaskSetup(ref EdmCmd cmdData, ref EdmCmdData[] ppoData)

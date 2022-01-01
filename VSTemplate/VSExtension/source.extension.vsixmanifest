@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="VSExtension.5a65c341-16a5-429f-97fd-4bf5818b788c" Version="1.2.1" Language="en-US" Publisher="Blue Byte Systems Inc." />
+        <DisplayName>SOLIDWORKS PDM Add-in Project Template</DisplayName>
+        <Description xml:space="preserve">Adds project template to Visual Studio for SOLDIWORKS PDM add-in</Description>
+        <MoreInfo>https://github.com/BlueByteSystemsInc/PDMFramework</MoreInfo>
+        <GettingStartedGuide>https://bluebytesystemsinc.github.io/PDMFramework/</GettingStartedGuide>
+        <Icon>__TemplateIcon.png</Icon>
+        <PreviewImage>__TemplateIcon.png</PreviewImage>
+        <Tags>BlueByte, SOLIDWORKS, PDM Add-in</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0,17.0)">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,18.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="." d:TargetPath="SOLIDWORKSPDMAddIn.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\SOLIDWORKSPDMTaskSetupPage.zip" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="ProjectTemplateWizard" Path="|ProjectTemplateWizard|" AssemblyName="|ProjectTemplateWizard;AssemblyName|" />
+    </Assets>
+</PackageManifest>
