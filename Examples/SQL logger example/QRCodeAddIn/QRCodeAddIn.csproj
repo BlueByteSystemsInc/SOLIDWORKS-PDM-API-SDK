@@ -4,17 +4,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E08C8CCF-A17B-42EE-985E-3BF59663DAE6}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>UnitTesting</RootNamespace>
-    <AssemblyName>UnitTesting</AssemblyName>
+    <ProjectGuid>{961244DA-B9C5-4395-9037-75E2404B8F4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QRCodeAddIn</RootNamespace>
+    <AssemblyName>QRCodeAddIn</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,9 +23,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,8 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BlueByte.SOLIDWORKS.PDMProfessional.UnitTesting, Version=2021.0.35.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BlueByte.SOLIDWORKS.PDMProfessional.UnitTesting.2021.0.35\lib\net472\BlueByte.SOLIDWORKS.PDMProfessional.UnitTesting.dll</HintPath>
+    <Reference Include="BlueByte.SOLIDWORKS.PDMProfessional.Extensions, Version=2021.0.22.0, Culture=neutral, PublicKeyToken=89f75b98047e27b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\BlueByte.SOLIDWORKS.PDMProfessional.Extensions.2021.0.22\lib\net472\BlueByte.SOLIDWORKS.PDMProfessional.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework, Version=2021.1.53.0, Culture=neutral, PublicKeyToken=9736e867ac205e21, processorArchitecture=MSIL">
+      <HintPath>..\packages\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.2021.1.53\lib\net472\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.dll</HintPath>
     </Reference>
     <Reference Include="EPDM.Interop.epdm, Version=5.24.0.0, Culture=neutral, PublicKeyToken=0625a0c4bb5de148, processorArchitecture=MSIL">
       <HintPath>..\packages\BlueByte.SOLIDWORKS.PDMProfessional.Interops.2021.0.0\lib\EPDM.Interop.epdm.dll</HintPath>
@@ -47,11 +51,16 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Standard.Licensing, Version=1.1.5.0, Culture=neutral, PublicKeyToken=9f81b18f6db6aea5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Standard.Licensing.1.1.5\lib\net45\Standard.Licensing.dll</HintPath>
+    <Reference Include="QrCodeGenerator, Version=1.6.0.0, Culture=neutral, PublicKeyToken=6aa6bd7a159d47c2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Net.Codecrete.QrCodeGenerator.2.0.1\lib\netstandard2.0\QrCodeGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector, Version=5.0.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.5.3.2\lib\net461\SimpleInjector.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,22 +69,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="AddIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRCodePngExtension.cs" />
+    <Compile Include="Task\SetupPages\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Task\SetupPages\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task\SetupPages\SettingsViewModel.cs" />
+    <Compile Include="Task\TaskLaunch.cs" />
+    <Compile Include="Task\TaskRun.cs" />
+    <Compile Include="Task\TaskSetup.cs" />
+    <Compile Include="Task\TaskSetupButton.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.csproj">
-      <Project>{60fe34ee-a3ea-4f3b-8b9d-09a29274f148}</Project>
-      <Name>BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TestAddin\TestAddin.csproj">
-      <Project>{7ae57de6-2606-47b5-bfb6-d540259bd30c}</Project>
-      <Name>TestAddin</Name>
-    </ProjectReference>
+    <Content Include="Logo\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

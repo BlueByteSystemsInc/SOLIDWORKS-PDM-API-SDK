@@ -30,6 +30,24 @@ namespace TestAddin
         {
             base.OnCmd(ref poCmd, ref ppoData);
 
+            #region connection
+            var connectionString = "Data Source=173.225.102.156;Initial Catalog=BlueByteSystemsLogDb;User ID=sa;Password=2BtE2v!t;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            #endregion
+
+            var logFolderPath = System.IO.Path.Combine(this.Vault.RootFolder.LocalPath, "Logs");
+
+        
+            var table = $"TestTable";
+
+           
+            Logger.Init(this.Identity, this.Instance, connectionString);
+
+
+            Logger.StartConnection();
+
+
+            Logger.LogToOutput(table, "Test");
+
             switch (poCmd.meCmdType)
             {
                 case EdmCmdType.EdmCmd_TaskSetup:
@@ -47,7 +65,7 @@ namespace TestAddin
 
         protected override void OnLoggerTypeChosen(LoggerType_e defaultType)
         {
-            base.OnLoggerTypeChosen(LoggerType_e.File);
+            base.OnLoggerTypeChosen(LoggerType_e.SQL);
         }
 
         protected override void OnRegisterAdditionalTypes(Container container)

@@ -86,7 +86,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.csproj">
+    <ProjectReference Include="..\..\..\src\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.csproj">
       <Project>{60fe34ee-a3ea-4f3b-8b9d-09a29274f148}</Project>
       <Name>BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework</Name>
     </ProjectReference>
