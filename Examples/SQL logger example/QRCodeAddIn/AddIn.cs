@@ -39,7 +39,7 @@ namespace QRCodeAddIn
 
 
             #region connection
-            var connectionString = "Data Source=173.225.102.156;Initial Catalog=BlueByteSystemsLogDb;User ID=sa;Password=2BtE2v!t;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            var connectionString = "Data Source=*************;Initial Catalog=***************;User ID=sa;Password=*******;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             #endregion
 
             var table = $"TestTable";
