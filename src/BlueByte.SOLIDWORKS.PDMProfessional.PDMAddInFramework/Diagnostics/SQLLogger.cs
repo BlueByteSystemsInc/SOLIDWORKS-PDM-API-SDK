@@ -102,12 +102,22 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics
 
 
             var command = new SqlCommand(sql, base.cnn);
+
             command.Parameters.Add(new SqlParameter("@TimeStamp", DateTime.Now));
-            command.Parameters.Add(new SqlParameter("@AddInName", identity.Name));
+            command.Parameters.Add(new SqlParameter("@AddInName", string.IsNullOrWhiteSpace(identity.Name) ? string.Empty : identity.Name));
             command.Parameters.Add(new SqlParameter("@AddInVersion", identity.Version));
-            command.Parameters.Add(new SqlParameter("@CompanyName", identity.CompanyName));
-            command.Parameters.Add(new SqlParameter("@TaskName", instance.TaskName));
-            command.Parameters.Add(new SqlParameter("@TaskInstanceGUID", instance.InstanceGUID));
+            command.Parameters.Add(new SqlParameter("@CompanyName", string.IsNullOrWhiteSpace(identity.CompanyName) ? string.Empty : identity.CompanyName));
+            if (instance != null)
+            {
+                command.Parameters.Add(new SqlParameter("@TaskName", instance.TaskName));
+                command.Parameters.Add(new SqlParameter("@TaskInstanceGUID", instance.InstanceGUID));
+            }
+            else
+            {
+                command.Parameters.Add(new SqlParameter("@TaskName", "N/A"));
+                command.Parameters.Add(new SqlParameter("@TaskInstanceGUID", "N/A"));
+
+            }
             command.Parameters.Add(new SqlParameter("@Message", value));
 
             command.ExecuteNonQuery();
