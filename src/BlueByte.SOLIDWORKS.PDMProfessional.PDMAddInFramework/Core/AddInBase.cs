@@ -1085,6 +1085,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
             }
 
             Instance.SetProgressPos(currentPosition, message);
+
+            // check if task needs to be cancelled and or suspended
+            CheckForCancellationOrSuspension(this.BeforeCancellationAction, this.CancellationAndSuspensionLogAction);
         }
 
         #endregion
