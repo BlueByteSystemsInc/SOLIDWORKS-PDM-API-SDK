@@ -1,9 +1,28 @@
-﻿using System;
+﻿/*
+MIT License
+
+Copyright (c) 2022 Blue Byte Systems Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+BUT NOT LIMITED TO >THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+INNO EVENT SHALL >THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF >CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+OR THE USE OR OTHER >DEALINGS IN THE SOFTWARE.*/
+
+using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework;
 using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes;
 using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
+using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Enums;
 using EPDM.Interop.epdm;
 using SimpleInjector;
 
@@ -21,7 +40,7 @@ namespace SOLIDWORKSPDMAddIn
     [CompanyName("Blue Byte Systems Inc")]
     [AddInVersion(false, 1)]
     [IsTask(false)]
-    [RequiredVersion(10, 0)]
+    [RequiredVersion(Year_e.PDM2018, ServicePack_e.SP0)]
     [ComVisible(true)]
     [Guid("721C78F4-362E-45EC-B313-CD0E33A87D67")]
     public partial class AddIn : AddInBase
