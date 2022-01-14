@@ -5,6 +5,28 @@
     /// </summary>
     public struct Identity
     {
+
+        /// <summary>
+        /// Converts to caption.
+        /// </summary>
+        public string ToCaption()
+        {
+            return $"{this.Name} V{this.Version}";
+            
+        }
+
+        /// <summary>
+        /// Converts to caption.
+        /// </summary>
+        /// <param name="specificWindowTitle">The specific window title.</param>
+        public string ToCaption(string specificWindowTitle = "")
+        {
+
+            return $"{this.Name} V{this.Version} - {specificWindowTitle}";
+
+        }
+
+
         /// <summary>
         /// Name
         /// </summary>
