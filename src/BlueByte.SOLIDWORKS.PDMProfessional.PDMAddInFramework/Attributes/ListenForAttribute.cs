@@ -3,6 +3,7 @@ using System;
 
 namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
 {
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     /// <summary>
     /// Listen for PDM events attribute.
     /// </summary>
