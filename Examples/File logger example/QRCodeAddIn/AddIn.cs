@@ -36,6 +36,12 @@ namespace QRCodeAddIn
         {
 
             base.OnCmd(ref poCmd, ref ppoData);
+            
+            // filter out other commands
+            if (poCmd.meCmdType != EdmCmdType.EdmCmd_Menu)
+                return;
+                if (poCmd.mlCmdID != (int)Commands.CommandOne)
+                return;
 
             var logFolderPath = System.IO.Path.Combine(this.Vault.RootFolder.LocalPath, "Logs");
 

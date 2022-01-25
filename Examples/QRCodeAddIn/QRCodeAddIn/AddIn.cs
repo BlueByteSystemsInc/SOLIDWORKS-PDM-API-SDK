@@ -36,6 +36,13 @@ namespace QRCodeAddIn
         {
             base.OnCmd(ref poCmd, ref ppoData);
 
+            
+            // filter out other commands
+            if (poCmd.meCmdType != EdmCmdType.EdmCmd_Menu)
+                return;
+                if (poCmd.mlCmdID != (int)Commands.CommandOne)
+                return;
+
             var errorsList = new StringBuilder();
 
             // handle of the window where the add-in is executing
