@@ -38,6 +38,14 @@ namespace QRCodeAddIn
             base.OnCmd(ref poCmd, ref ppoData);
 
 
+
+            // filter out other commands
+            if (poCmd.meCmdType != EdmCmdType.EdmCmd_Menu)
+                return;
+            if (poCmd.mlCmdID != (int)Commands.CommandOne)
+                return;
+
+
             #region connection
             var connectionString = "Data Source=*************;Initial Catalog=***************;User ID=sa;Password=*******;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             #endregion
