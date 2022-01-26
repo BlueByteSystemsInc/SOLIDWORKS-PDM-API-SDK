@@ -20,10 +20,11 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
         /// </summary>
         public new SimpleInjector.Container Container { get; set; }
 
+        string name = string.Empty;
         /// <summary>
         /// Name of the setup page.
         /// </summary>
-        public new string Name { get; set; }
+        public new string Name { get { return name; } set { name = value; base.Name = value; } }
 
         /// <summary>
         /// Saves and loads data from variable
