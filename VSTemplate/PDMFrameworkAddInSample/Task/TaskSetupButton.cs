@@ -18,7 +18,7 @@ OR THE USE OR OTHER >DEALINGS IN THE SOFTWARE.*/
 
 using EPDM.Interop.epdm;
 
-namespace SOLIDWORKSPDMAddIn.Task
+namespace SOLIDWORKSPDMAddIn
 {
     public partial class AddIn
     {
