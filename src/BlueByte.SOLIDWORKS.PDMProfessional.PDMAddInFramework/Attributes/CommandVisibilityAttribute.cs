@@ -6,6 +6,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
     /// <summary>
     /// Command visiblity attribute.
     /// </summary>
+    /// <remarks><see cref="AddInBase"/> will ignore multiple attributes with the same menu id and will only pick one.</remarks>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class CommandVisibilityAttribute : Attribute
     {
@@ -17,7 +18,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
         /// <summary>
         /// Sets or gets the permissions of the users to whom to show the command.
         /// </summary>
-        public EdmSysPerm[] OnlyShowToUsersWithThesePermissions { get; set; }
+        public EdmSysPerm OnlyShowToUsersWithThesePermissions { get; set; }
 
         /// <summary>
         /// Creates new instance of this class.
@@ -57,7 +58,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
         /// </summary>
         /// <param name="commandId">Command id.</param>
         /// <param name="onlyShowToUsersWithThesePermissions">Only show this command to users who have these permissions.</param>
-        public CommandVisibilityAttribute(int commandId, EdmSysPerm[] onlyShowToUsersWithThesePermissions)
+        public CommandVisibilityAttribute(int commandId, EdmSysPerm onlyShowToUsersWithThesePermissions)
         {
             CommandID = commandId;
             OnlyShowToUsersWithThesePermissions = onlyShowToUsersWithThesePermissions;

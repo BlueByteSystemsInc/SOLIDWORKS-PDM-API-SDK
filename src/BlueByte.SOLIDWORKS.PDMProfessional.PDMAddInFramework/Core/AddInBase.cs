@@ -792,9 +792,26 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                                         var userandgroups = commandVisibility.HideFromTheseUserOrGroupNames;
                                         if (userandgroups != null)
                                         {
+                                            var add = false;
+
                                             // only add command if usergroups does not contain username or groups users is a member of.
-                                            if ((userandgroups.Contains(userName) || userandgroups.Where(x=> groupNames.Contains(x)).Count()> 0) == false)
+                                            if ((userandgroups.Contains(userName) || userandgroups.Where(x => groupNames.Contains(x)).Count() > 0) == false)
+                                                add = true;
+
+                                            var permissions = commandVisibility.OnlyShowToUsersWithThesePermissions;
+                                            
+                                            // if there are permissions check if currently logged in user has the right permissions
+                                            if (permissions != default(EdmSysPerm))
+                                            {
+                                                var hasAllPermissions = currentlyLoggedInUser.HasSysRightEx(permissions);
+                                                if (hasAllPermissions)
+                                                    add = true;
+                                            }   
+                                            
+
+                                            if (add)
                                                 poCmdMgr.AddCmd(MenuAtt.ID, MenuAtt.MenuCaption, (int)MenuAtt.Flags, MenuAtt.StatusBarHelp, MenuAtt.Tooltip, MenuAtt.ToolButtonIndex, MenuAtt.ToolbarImageID);
+
                                         }
                                     }
                                 }
