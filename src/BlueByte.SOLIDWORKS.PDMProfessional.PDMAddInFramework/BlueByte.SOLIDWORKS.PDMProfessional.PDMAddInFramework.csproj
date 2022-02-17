@@ -85,6 +85,7 @@
     <Compile Include="Attributes\CompanyNameAttribute.cs" />
     <Compile Include="Attributes\DescriptionAttribute.cs" />
     <Compile Include="Attributes\ListenForAttribute.cs" />
+    <Compile Include="Attributes\CommandVisibilityAttribute.cs" />
     <Compile Include="Attributes\MenuAttribute.cs" />
     <Compile Include="Attributes\NameAttribute.cs" />
     <Compile Include="Attributes\AddInVersionAttribute.cs" />

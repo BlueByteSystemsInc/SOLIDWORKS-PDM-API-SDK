@@ -751,15 +751,57 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
 
                 #endregion
 
-                #region add commands
+                #region add commands (check for command visibility)
+
+
+                #region commands visibility
+                var commandsVisibilities = Helper.GetAttributes<CommandVisibilityAttribute>(this);
+                // remove duplicates
+                if (commandsVisibilities != null)
+                    commandsVisibilities = commandsVisibilities.GroupBy(x => x.CommandID).Select(y => y.First()).ToArray();
+                #endregion
+
+
 
                 var MenuAtts = Helper.GetAttributes<MenuAttribute>(this);
-
                 if (MenuAtts != null)
                     foreach (var MenuAtt in MenuAtts)
                     {
                         if (MenuAtt != null)
-                            poCmdMgr.AddCmd(MenuAtt.ID, MenuAtt.MenuCaption, (int)MenuAtt.Flags, MenuAtt.StatusBarHelp, MenuAtt.Tooltip, MenuAtt.ToolButtonIndex, MenuAtt.ToolbarImageID);
+                        {
+                            if (commandsVisibilities == null)
+                                poCmdMgr.AddCmd(MenuAtt.ID, MenuAtt.MenuCaption, (int)MenuAtt.Flags, MenuAtt.StatusBarHelp, MenuAtt.Tooltip, MenuAtt.ToolButtonIndex, MenuAtt.ToolbarImageID);
+                            
+                            else
+                            {
+                                var userMgr = this.Vault as IEdmUserMgr5;
+                                var currentlyLoggedInUser = userMgr.GetLoggedInUser() as IEdmUser8;
+                                var userName = currentlyLoggedInUser.Name;
+                                object[] groups = null;
+                                string[] groupNames = new string[] { };
+
+                                currentlyLoggedInUser.GetGroupMemberships(out groups);
+
+                                if (groups != null)
+                                   groupNames = (groups as object[]).Select(x => (x as IEdmUserGroup6).Name).ToArray();
+                                
+                                foreach (var commandVisibility in commandsVisibilities)
+                                {
+                                    if (commandVisibility.CommandID == MenuAtt.ID)
+                                    {
+                                        var userandgroups = commandVisibility.HideFromTheseUserOrGroupNames;
+                                        if (userandgroups != null)
+                                        {
+                                            // only add command if usergroups does not contain username or groups users is a member of.
+                                            if ((userandgroups.Contains(userName) || userandgroups.Where(x=> groupNames.Contains(x)).Count()> 0) == false)
+                                                poCmdMgr.AddCmd(MenuAtt.ID, MenuAtt.MenuCaption, (int)MenuAtt.Flags, MenuAtt.StatusBarHelp, MenuAtt.Tooltip, MenuAtt.ToolButtonIndex, MenuAtt.ToolbarImageID);
+                                        }
+                                    }
+                                }
+                            }
+
+                            
+                        }
                     }
 
                 #endregion

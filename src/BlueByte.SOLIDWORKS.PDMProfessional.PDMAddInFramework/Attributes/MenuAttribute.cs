@@ -3,22 +3,22 @@ using System;
 
 namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
 {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     /// <summary>
     /// Add command menu attribute.
     /// </summary>
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class MenuAttribute : Attribute
     {
- /// <summary>
- /// Creates a command menu.
- /// </summary>
- /// <param name="iD">ID of the command.</param>
- /// <param name="menuCaption">Text that will appear in the menu.</param>
- /// <param name="flags">Where the menu will appear.</param>
- /// <param name="statusBarHelp">Help message that will appear in the status bar.</param>
- /// <param name="toolTip">Help message that appear in the Windows tooltip.</param>
- /// <param name="toolButtonIndex">Index of the command button.</param>
- /// <param name="toolbarImageID">ID of the toolbar image.</param>
+     /// <summary>
+     /// Creates a command menu.
+     /// </summary>
+     /// <param name="iD">ID of the command.</param>
+     /// <param name="menuCaption">Text that will appear in the menu.</param>
+     /// <param name="flags">Where the menu will appear.</param>
+     /// <param name="statusBarHelp">Help message that will appear in the status bar.</param>
+     /// <param name="toolTip">Help message that appear in the Windows tooltip.</param>
+     /// <param name="toolButtonIndex">Index of the command button.</param>
+     /// <param name="toolbarImageID">ID of the toolbar image.</param>
         public MenuAttribute(int iD, string menuCaption, EdmMenuFlags flags = 0, string statusBarHelp = "", string toolTip = "", int toolButtonIndex = -1, int toolbarImageID = 0)
         {
             ID = iD;
@@ -30,6 +30,10 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
            
             ToolbarImageID = toolbarImageID;
         }
+ 
+
+
+         
 
         /// <summary>
         /// ID of the command.
