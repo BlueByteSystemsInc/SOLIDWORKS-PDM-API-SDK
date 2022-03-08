@@ -10,7 +10,7 @@ Install the latest version [here](https://www.nuget.org/packages/BlueByte.SOLIDW
 
 Command-line: 
 
-```Install-Package BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework```
+```Install-Package BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK```
 
 # Sample add-in
 
