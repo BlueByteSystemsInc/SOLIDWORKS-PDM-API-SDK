@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 {
 
 

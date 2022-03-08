@@ -1,11 +1,11 @@
-﻿using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
+﻿using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics;
 using EPDM.Interop.epdm;
 using System;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
 {
     /// <summary>
     /// Tasksetup page template.

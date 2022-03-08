@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
 {
     public enum LoggerType_e
     {

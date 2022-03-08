@@ -2,21 +2,21 @@
 <package>
   <metadata>
     <!--*-->
-    <id>BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework</id>
+    <id>BlueByte.SOLIDWORKS.PDMProfessional.SDK</id>
     <!--*-->
-    <version>2021.1.58</version>
-    <title>PDMAddInFramework</title>
+    <version>2021.1.59</version>
+    <title>BlueByte.SOLIDWORKS.PDMProfessional.SDK</title>
     <!--*-->
     <authors>Blue Byte Systems, Inc.</authors>
     <owners>Blue Byte Systems, Inc.</owners>
-    <projectUrl>https://github.com/BlueByteSystemsInc/PDMFramework</projectUrl>
-    <repository type="git" url="https://github.com/BlueByteSystemsInc/PDMFramework" />
+    <projectUrl>https://github.com/BlueByteSystemsInc/PDMSDK</projectUrl>
+    <repository type="git" url="https://github.com/BlueByteSystemsInc/PDMSDK" />
     <!--
     <licenseUrl></licenseUrl>
     <projectUrl></projectUrl>
     
 -->
-    <licenseUrl>https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/BlueByteSystemsInc/PDMSDK/blob/master/LICENSE.md</licenseUrl>
     <iconUrl>https://secureservercdn.net/198.71.233.189/530.de9.myftpupload.com/wp-content/uploads/2019/03/cropped-logo-6.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--*-->

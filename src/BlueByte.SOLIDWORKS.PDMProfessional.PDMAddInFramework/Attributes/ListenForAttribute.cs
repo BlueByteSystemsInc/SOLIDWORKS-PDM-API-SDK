@@ -1,7 +1,7 @@
 ﻿using EPDM.Interop.epdm;
 using System;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     /// <summary>

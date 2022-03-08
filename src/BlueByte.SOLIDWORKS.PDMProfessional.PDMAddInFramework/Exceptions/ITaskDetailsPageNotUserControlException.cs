@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Exceptions
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions
 {
     /// <summary>
     /// Fires when the supplied <see cref="Core.ITaskSetupPage"/> is not a <see cref="System.Windows.Forms.UserControl"/>.
     /// </summary>
-    public class ITaskSetupPageNotUserControlException : PDMAddInFrameworkException
+    public class ITaskSetupPageNotUserControlException : PDMSDKException
     {
 
         /// <summary>

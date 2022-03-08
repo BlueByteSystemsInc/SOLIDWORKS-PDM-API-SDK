@@ -1,6 +1,6 @@
 ﻿using EPDM.Interop.epdm;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
 {
     /// <summary>
     /// Logger.

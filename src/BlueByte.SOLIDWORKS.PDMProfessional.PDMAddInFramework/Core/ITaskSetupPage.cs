@@ -1,6 +1,6 @@
 ﻿using EPDM.Interop.epdm;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
 {
     /// <summary>
     /// Task setup page.

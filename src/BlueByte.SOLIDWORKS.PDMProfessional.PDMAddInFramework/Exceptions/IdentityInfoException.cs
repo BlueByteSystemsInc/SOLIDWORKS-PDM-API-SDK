@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Exceptions
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions
 {
     /// <summary>
     /// Fires in <see cref="AddInBase.GetAddInInfo(ref EPDM.Interop.epdm.EdmAddInInfo, EPDM.Interop.epdm.IEdmVault5, EPDM.Interop.epdm.IEdmCmdMgr5)"/> if attribute is missing.
     /// </summary>
-    public class IdentityInfoException : PDMAddInFrameworkException
+    public class IdentityInfoException : PDMSDKException
     {
         /// <summary>
         /// Creates a new instance of the base exception.

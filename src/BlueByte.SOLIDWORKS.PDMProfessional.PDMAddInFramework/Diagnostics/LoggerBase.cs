@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
 {
     /// <summary>
     /// Base class for all loggers.
@@ -33,7 +33,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics
             if (rt)
                 return type;
             else
-                throw new PDMAddInFramework.Exceptions.PDMAddInFrameworkException("Could not infer type of logger. Make sure to choose the logger type.", null);
+                throw new SDK.Exceptions.PDMSDKException("Could not infer type of logger. Make sure to choose the logger type.", null);
         }
     }
 

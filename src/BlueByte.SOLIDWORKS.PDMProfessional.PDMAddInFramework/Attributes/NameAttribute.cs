@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
 {
     public class NameAttribute : Attribute
     {

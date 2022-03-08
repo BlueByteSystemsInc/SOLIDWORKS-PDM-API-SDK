@@ -7,8 +7,8 @@
     <ProjectGuid>{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework</RootNamespace>
-    <AssemblyName>BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework</AssemblyName>
+    <RootNamespace>BlueByte.SOLIDWORKS.PDMProfessional.SDK</RootNamespace>
+    <AssemblyName>BlueByte.SOLIDWORKS.PDMProfessional.SDK</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -25,7 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RegisterForComInterop>false</RegisterForComInterop>
-    <DocumentationFile>bin\Debug\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\BlueByte.SOLIDWORKS.PDMProfessional.SDK.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,7 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\BlueByte.SOLIDWORKS.PDMProfessional.SDK.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
@@ -107,7 +107,7 @@
     <Compile Include="Enums\PDMProfessionalVersion_e.cs" />
     <Compile Include="Exceptions\IdentityInfoException.cs" />
     <Compile Include="Exceptions\ITaskDetailsPageNotUserControlException.cs" />
-    <Compile Include="Exceptions\PDMAddInFrameworkException.cs" />
+    <Compile Include="Exceptions\PDMSDKException.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

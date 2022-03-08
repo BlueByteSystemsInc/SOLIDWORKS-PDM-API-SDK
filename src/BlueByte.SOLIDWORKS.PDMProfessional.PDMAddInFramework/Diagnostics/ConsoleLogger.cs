@@ -1,7 +1,7 @@
 ﻿using EPDM.Interop.epdm;
 using System;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
 {
     internal class ConsoleLogger  : LoggerBase, ILogger
     {

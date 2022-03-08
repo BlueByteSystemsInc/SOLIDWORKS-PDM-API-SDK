@@ -1,4 +1,4 @@
-﻿namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
+﻿namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 {
     /// <summary>
     /// Add-in identity.

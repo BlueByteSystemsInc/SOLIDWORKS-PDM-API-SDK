@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Exceptions
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions
 {
     /// <summary>
     /// Base exception.
     /// </summary>
-    public class PDMAddInFrameworkException : Exception
+    public class PDMSDKException : Exception
     { /// <summary>
       /// Creates a new instance of the base exception.
       /// </summary>
-        public PDMAddInFrameworkException()
+        public PDMSDKException()
         {
         }
 
@@ -22,7 +22,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Exceptions
         /// </summary>
         /// <param name="message">Message.</param>
         /// <param name="innerException">Inner exception.</param>
-        public PDMAddInFrameworkException(string message, Exception innerException) : base(message, innerException)
+        public PDMSDKException(string message, Exception innerException) : base(message, innerException)
         {
         }
     }

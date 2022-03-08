@@ -2,7 +2,7 @@
 using System;
 using System.Data.SqlClient;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
 {
     internal class SQLLogger : LoggerBase, ILogger
     {

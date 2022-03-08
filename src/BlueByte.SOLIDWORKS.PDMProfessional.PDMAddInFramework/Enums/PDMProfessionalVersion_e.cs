@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Enums
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
 {
     /// <summary>
     /// PDM Professional year.

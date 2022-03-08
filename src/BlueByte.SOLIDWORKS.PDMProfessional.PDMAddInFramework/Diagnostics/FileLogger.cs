@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
 {
     internal class FileLogger : LoggerBase, ILogger
     {

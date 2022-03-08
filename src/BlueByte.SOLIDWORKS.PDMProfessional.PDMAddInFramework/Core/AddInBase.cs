@@ -1,7 +1,7 @@
-﻿using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Exceptions;
+﻿using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes;
+using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core;
+using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics;
+using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions;
 using EPDM.Interop.epdm;
 using SimpleInjector;
 using System;
@@ -15,7 +15,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Windows.Forms;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 {
     /// <summary>
     /// Taskbase class.
@@ -339,7 +339,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         /// <summary>
         /// Fires when the application is initialized. Register types of calling assembly.
         /// </summary>
-        private void RegisterPDMAddInFrameworkTypes()
+        private void RegisterTypes()
         {
             if (Container == null)
             {
@@ -369,7 +369,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
                     case LoggerType_e.SQL:
                         Container.RegisterSingleton<ILogger, SQLLogger>();
                         break;
-                        throw new PDMAddInFrameworkException("Logger type was not specified.", null);
+                        throw new PDMSDKException("Logger type was not specified.", null);
                     default:
                         break;
                 }
@@ -877,7 +877,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
         {
             if (IsInitialized == false)
             {
-                RegisterPDMAddInFrameworkTypes();
+                RegisterTypes();
             }
         }
 

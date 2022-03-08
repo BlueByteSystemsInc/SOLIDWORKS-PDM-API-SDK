@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
 {
     public class DescriptionAttribute : Attribute
     {
