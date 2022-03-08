@@ -1,13 +1,13 @@
 ## Welcome to BlueByte System's Productivity framework for PDM add-ins
 
-This page is a help resource on how to get started with [BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework
-](https://github.com/BlueByteSystemsInc/BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework).
+This page is a help resource on how to get started with [BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK
+](https://github.com/BlueByteSystemsInc/BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK).
 
 ### Nuget
 
-BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework is available on nuget.org via or the Package Console Manager in Visual Studio. To install the package, run the following command 
+BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK is available on nuget.org via or the Package Console Manager in Visual Studio. To install the package, run the following command 
 
- ``` install-package BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework ```
+ ``` install-package BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK ```
 
 ### Intro 
 
