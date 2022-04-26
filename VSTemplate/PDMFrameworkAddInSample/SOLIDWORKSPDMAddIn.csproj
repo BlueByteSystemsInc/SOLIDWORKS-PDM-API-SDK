@@ -60,12 +60,9 @@
     <Compile Include="Task\TaskSetupButton.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework">
-      <Version>2021.*</Version>
+    <PackageReference Include="BlueByte.SOLIDWORKS.PDMProfessional.SDK">
+      <Version>2021.1.59</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Logo\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

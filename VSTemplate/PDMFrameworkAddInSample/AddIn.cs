@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.InteropServices;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
+using BlueByte.SOLIDWORKS.PDMProfessional.SDK;
+using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes;
+using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics;
 using EPDM.Interop.epdm;
 using SimpleInjector;
 

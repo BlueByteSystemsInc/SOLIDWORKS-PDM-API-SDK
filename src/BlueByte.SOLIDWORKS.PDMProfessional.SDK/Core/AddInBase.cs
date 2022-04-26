@@ -769,7 +769,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                     {
                         if (MenuAtt != null)
                         {
-                            if (commandsVisibilities == null)
+                            if (commandsVisibilities == null || commandsVisibilities.Length == 0)
                                 poCmdMgr.AddCmd(MenuAtt.ID, MenuAtt.MenuCaption, (int)MenuAtt.Flags, MenuAtt.StatusBarHelp, MenuAtt.Tooltip, MenuAtt.ToolButtonIndex, MenuAtt.ToolbarImageID);
                             
                             else

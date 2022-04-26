@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EPDM.Interop.epdm;
 
-namespace SOLIDWORKSPDMAddIn.Task
+namespace SOLIDWORKSPDMAddIn
 {
     public partial class AddIn
     {

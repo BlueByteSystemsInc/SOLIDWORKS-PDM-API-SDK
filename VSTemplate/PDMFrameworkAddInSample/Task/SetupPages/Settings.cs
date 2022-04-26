@@ -1,4 +1,4 @@
-﻿using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Core;
+﻿using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
