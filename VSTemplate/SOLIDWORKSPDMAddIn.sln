@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSExtension", "VSExtension\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateWizard", "ProjectTemplateWizard\ProjectTemplateWizard.csproj", "{6970B041-3E69-4626-A980-B055EC9BB04A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualStudioExtension", "VisualStudioExtension\VisualStudioExtension.csproj", "{C3736DF0-CAEA-48B6-A037-4182D1D7737F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6970B041-3E69-4626-A980-B055EC9BB04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6970B041-3E69-4626-A980-B055EC9BB04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6970B041-3E69-4626-A980-B055EC9BB04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3736DF0-CAEA-48B6-A037-4182D1D7737F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3736DF0-CAEA-48B6-A037-4182D1D7737F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3736DF0-CAEA-48B6-A037-4182D1D7737F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3736DF0-CAEA-48B6-A037-4182D1D7737F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
