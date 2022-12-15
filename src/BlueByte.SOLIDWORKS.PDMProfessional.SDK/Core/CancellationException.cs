@@ -3,6 +3,8 @@ using System.Runtime.Serialization;
 
 namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 {
+
+
     [Serializable]
     public class CancellationException : Exception
     {

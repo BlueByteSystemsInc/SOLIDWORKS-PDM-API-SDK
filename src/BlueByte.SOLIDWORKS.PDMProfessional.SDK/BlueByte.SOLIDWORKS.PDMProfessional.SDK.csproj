@@ -95,6 +95,7 @@
     <Compile Include="Core\Identity.cs" />
     <Compile Include="Core\ITaskSetupPage.cs" />
     <Compile Include="Core\AddInBase.cs" />
+    <Compile Include="Core\TaskFailedException.cs" />
     <Compile Include="Core\TaskSetupPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
