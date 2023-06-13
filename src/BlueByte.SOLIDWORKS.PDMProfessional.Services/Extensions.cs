@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using Newtonsoft.Json;
+using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
@@ -6,28 +7,22 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
 {
     internal static class Extensions
     {
-        public static T Deserialize<T>(this string value)
+        public static  T Deserialize<T>(this string value, JsonSerializerSettings settings = null)
         {
-            var xmlSerializer = new XmlSerializer(typeof(T));
 
-            return (T)xmlSerializer.Deserialize(new StringReader(value));
+            return JsonConvert.DeserializeObject<T>(value, settings);
         }
 
-        public static string Serialize<T>(this T value)
+        public static string Serialize<T>(this T value, JsonSerializerSettings settings = null)
         {
             if (value == null)
                 return string.Empty;
 
-            var xmlSerializer = new XmlSerializer(typeof(T));
 
-            using (var stringWriter = new StringWriter())
-            {
-                using (var xmlWriter = XmlWriter.Create(stringWriter, new XmlWriterSettings { Indent = true }))
-                {
-                    xmlSerializer.Serialize(xmlWriter, value);
-                    return stringWriter.ToString();
-                }
-            }
+
+            return JsonConvert.SerializeObject(value, settings);
+
+ 
         }
     }
 }

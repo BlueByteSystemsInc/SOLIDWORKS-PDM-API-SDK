@@ -1,4 +1,5 @@
 ﻿using EPDM.Interop.epdm;
+using Newtonsoft.Json;
 using System;
 
 namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
@@ -10,21 +11,21 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
             return $"Credentials {user.ID}";
         }
 
-        public static void SaveItem<T>(this IEdmVault5 vault, string name, string key, T item)
+        public static void SaveItem<T>(this IEdmVault5 vault, string name, string key, T item, JsonSerializerSettings settings = null)
         {
             IEdmDictionary5 dictionary = vault.GetDictionary(name, true);
 
-            var serialized = Extensions.Serialize(item);
+            var serialized = Extensions.Serialize(item, settings);
             dictionary.StringSetAt(key, serialized);
         }
 
-        public static T GetItem<T>(this IEdmVault5 vault, string Name, string key = null)
+        public static T GetItem<T>(this IEdmVault5 vault, string Name, string key = null, JsonSerializerSettings settings = null)
         {
             IEdmDictionary5 dictionary = vault.GetDictionary(Name, true);
 
             if (dictionary.StringGetAt(key, out string value))
             {
-                return Extensions.Deserialize<T>(value);
+                return Extensions.Deserialize<T>(value, settings);
             }
             else
             {
@@ -32,9 +33,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
             }
         }
 
-        public static T GetSettings<T>(this IEdmVault5 vault)
+        public static T GetSettings<T>(this IEdmVault5 vault, JsonSerializerSettings settings = null)
         {
-                return vault.GetItem<T>(typeof(T).Name);
+                return vault.GetItem<T>(typeof(T).Name, null, settings);
         }
     }
 }

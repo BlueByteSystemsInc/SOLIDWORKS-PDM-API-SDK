@@ -1,4 +1,5 @@
 ﻿using EPDM.Interop.epdm;
+using Newtonsoft.Json;
 using System;
 
 namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
@@ -85,9 +86,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public T GetSettings<T>()
+        public T GetSettings<T>(JsonSerializerSettings options = null)
         {
-            return Vault.GetItem<T>(this.AddInName, typeof(T).Name);
+            return Vault.GetItem<T>(this.AddInName, typeof(T).Name, options);
         }
 
 
@@ -96,9 +97,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="settings">The settings.</param>
-        public void SaveSettings<T>(T settings)
+        public void SaveSettings<T>(T settings, JsonSerializerSettings options = null)
         {
-            Vault.SaveItem<T>(this.AddInName, typeof(T).Name, settings);
+            Vault.SaveItem<T>(this.AddInName, typeof(T).Name, settings, options);
         }
 
         /// <summary>
@@ -108,12 +109,12 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
         /// <param name="settings">The settings.</param>
         /// <param name="UserID">The user identifier.</param>
         /// <exception cref="System.Exception"></exception>
-        public void SaveUserSettings<T>(T settings, int UserID)
+        public void SaveUserSettings<T>(T settings, int UserID, JsonSerializerSettings options = null)
         {
             if (UserID > 0)
                 throw new Exception($"{nameof(UserID)} must be valid.");
 
-            Vault.SaveItem<T>(this.AddInName, UserID.ToString(), settings);
+            Vault.SaveItem<T>(this.AddInName, UserID.ToString(), settings, options);
         }
 
 
@@ -123,9 +124,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.Services
         /// <typeparam name="T"></typeparam>
         /// <param name="userID">The user identifier.</param>
         /// <returns></returns>
-        public T GetUserSettings<T>(int userID)
+        public T GetUserSettings<T>(int userID, JsonSerializerSettings options = null)
         {
-            return Vault.GetItem<T>(this.AddInName, userID.ToString());
+            return Vault.GetItem<T>(this.AddInName, userID.ToString(), options);
         }
 
 
