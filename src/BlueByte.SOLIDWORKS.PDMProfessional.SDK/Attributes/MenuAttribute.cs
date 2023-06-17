@@ -19,7 +19,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
      /// <param name="toolTip">Help message that appear in the Windows tooltip.</param>
      /// <param name="toolButtonIndex">Index of the command button.</param>
      /// <param name="toolbarImageID">ID of the toolbar image.</param>
-        public MenuAttribute(int iD, string menuCaption, EdmMenuFlags flags = 0, string statusBarHelp = "", string toolTip = "", int toolButtonIndex = -1, int toolbarImageID = 0)
+        public MenuAttribute(int iD, string menuCaption, int flags = 0, string statusBarHelp = "", string toolTip = "", int toolButtonIndex = -1, int toolbarImageID = 0)
         {
             ID = iD;
             MenuCaption = menuCaption;
@@ -45,9 +45,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
         public string MenuCaption { get; }
 
         /// <summary>
-        /// Where the menu will appear.
+        /// Where the menu will appear. This is a combination of <see cref="EdmMenuFlags"/>
         /// </summary>
-        public EdmMenuFlags Flags { get; }
+        public int Flags { get; }
         /// <summary>
         /// Index of the command button.
         /// </summary>

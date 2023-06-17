@@ -4,7 +4,7 @@
     <!--*-->
     <id>BlueByte.SOLIDWORKS.PDMProfessional.SDK</id>
     <!--*-->
-    <version>2021.1.61</version>
+    <version>2021.1.62</version>
     <title>BlueByte.SOLIDWORKS.PDMProfessional.SDK</title>
     <!--*-->
     <authors>Blue Byte Systems, Inc.</authors>
@@ -20,10 +20,10 @@
     <iconUrl>https://secureservercdn.net/198.71.233.189/530.de9.myftpupload.com/wp-content/uploads/2019/03/cropped-logo-6.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--*-->
-    <description>.NET framwork Library for SOLIDWORKS PDM Professional addins</description>
+    <description>.NET framwork Library for SOLIDWORKS PDM Professional add-ins</description>
     <!--*-->
-    <releaseNotes>.NET framwork Library for SOLIDWORKS PDM Professional addins</releaseNotes>
-    <copyright>Copyright ©  2021</copyright>
+    <releaseNotes>.NET framwork Library for SOLIDWORKS PDM Professional add-ins</releaseNotes>
+    <copyright>Copyright ©  2023</copyright>
     <tags>solidworks pdm, pdm api, solidworks, addins, task addins</tags>
     <dependencies>
       <!--
