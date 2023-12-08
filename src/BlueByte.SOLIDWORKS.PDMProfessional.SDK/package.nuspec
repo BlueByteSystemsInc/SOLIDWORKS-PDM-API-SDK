@@ -4,11 +4,11 @@
     <!--*-->
     <id>BlueByte.SOLIDWORKS.PDMProfessional.SDK</id>
     <!--*-->
-    <version>2021.1.62</version>
+    <version>2021.1.63</version>
     <title>BlueByte.SOLIDWORKS.PDMProfessional.SDK</title>
     <!--*-->
-    <authors>Blue Byte Systems, Inc.</authors>
-    <owners>Blue Byte Systems, Inc.</owners>
+    <authors>Blue Byte Systems Inc.</authors>
+    <owners>Blue Byte Systems Inc.</owners>
     <projectUrl>https://github.com/BlueByteSystemsInc/PDMSDK</projectUrl>
     <repository type="git" url="https://github.com/BlueByteSystemsInc/PDMSDK" />
     <!--

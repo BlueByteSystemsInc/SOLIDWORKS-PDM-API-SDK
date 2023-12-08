@@ -166,7 +166,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                         var nameWithoutExtension = dll.Name;
                         if (args.Name.ToLower().StartsWith(nameWithoutExtension.ToLower()))
                         {
-                            Assembly = System.Reflection.Assembly.LoadFile(dll.FullName);
+                            Assembly = System.Reflection.Assembly.Load(AssemblyName.GetAssemblyName(dll.FullName));
                             break;
                         }
                     }
