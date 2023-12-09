@@ -602,6 +602,41 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
             }
         }
 
+
+
+        /// <summary>
+        /// Performs an action on affected file while allowing user to cancel or pause task.
+        /// </summary>
+        /// <param name="affectedData"></param>
+        /// <param name="Action"></param>
+        /// <remarks>This ignore EdmCmdData that are not files.</remarks>
+        public void ForEachFile(ref EdmCmdData[] affectedData, Action<IEdmFile5,IEdmFolder5> Action)
+        {
+            var taskInstance = poCmd.mpoExtra as IEdmTaskInstance;
+
+
+            if (poCmd.meCmdType != EdmCmdType.EdmCmd_Menu)
+                throw new Exception($"this overload of {nameof(ForEachFile)} only works for {EdmCmdType.EdmCmd_Menu}");
+
+            foreach (var datum in affectedData)
+            {
+                IEdmFile5 file = default(IEdmFile5);
+                IEdmFolder5 folder = default(IEdmFolder5);
+                try
+                {
+                    file = Vault.GetObject(EdmObjectType.EdmObject_File, datum.mlObjectID1) as IEdmFile5;
+                    folder = Vault.GetObject(EdmObjectType.EdmObject_Folder, datum.mlObjectID2) as IEdmFolder5;
+
+                }
+                catch (Exception)
+                {
+                }
+
+                if (file != null)
+                    Action(file, folder);
+            }
+        }
+
         /// <summary>
         /// Fires when an add-in is setup.
         /// </summary>
