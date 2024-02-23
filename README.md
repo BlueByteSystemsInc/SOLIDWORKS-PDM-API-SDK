@@ -6,7 +6,7 @@ A produtivity framework to improve the development of :
  
 # Nuget
 
-Install the latest version [here](https://www.nuget.org/packages/BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework/). 
+Install the latest version [here](https://www.nuget.org/packages/BlueByte.SOLIDWORKS.PDMProfessional.SDK). 
 
 Command-line: 
 
