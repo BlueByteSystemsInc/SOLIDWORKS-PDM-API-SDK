@@ -142,28 +142,38 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                 
                 IsInitialized = true;
             }
+            catch (FileNotFoundException e)
+            {
+            }
             catch (Exception e)
             {
                 MessageBox.Show($"AddInBase: Something went wrong when initializing the add-in. {e.Message}", $"AddIn Error");
             }
         }
 
-        private Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        public virtual Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
         {
             var Assembly = default(Assembly);
             var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
             var directory = thisAssembly.Directory;
 
-            var files = directory.GetFiles("*",SearchOption.AllDirectories);
 
-            if (files  != null)
+
+
+            var nameWithoutExtension = args.Name.Split(',').First();
+
+
+            Console.WriteLine($"{FileVersionInfo.GetVersionInfo(thisAssembly.FullName).ProductName} - Failed to load {args.Name}");
+
+            var files = directory.GetFiles("*", SearchOption.TopDirectoryOnly);
+
+            if (files != null)
             {
-                var dlls = files.ToList().Where(x => x.Extension.ToLower().EndsWith("dll"));
+                var dlls = files.ToList().Where(x => x.Extension.ToLower().Contains("interop") == false && x.Extension.ToLower().EndsWith("dll"));
                 if (dlls != null)
                 {
                     foreach (var dll in dlls)
                     {
-                        var nameWithoutExtension = dll.Name;
                         if (args.Name.ToLower().StartsWith(nameWithoutExtension.ToLower()))
                         {
                             Assembly = System.Reflection.Assembly.Load(AssemblyName.GetAssemblyName(dll.FullName));
@@ -179,6 +189,8 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 
         }
 
+
+  
         #endregion
 
         #region Private Methods
@@ -339,7 +351,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         /// <summary>
         /// Fires when the application is initialized. Register types of calling assembly.
         /// </summary>
-        private void RegisterTypes()
+        protected virtual void RegisterTypes()
         {
             if (Container == null)
             {
@@ -979,6 +991,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         /// <param name="ppoData">Affected documents</param>
         public virtual void OnTaskDetails(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
         {
+            this.Instance = poCmd.mpoExtra as IEdmTaskInstance;
             this.Initialize();
         }
 
@@ -1020,6 +1033,8 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
             this.Instance = poCmd.mpoExtra as IEdmTaskInstance;
             this.Initialize();
         }
+
+      
 
         /// <summary>
         /// Fires when task is setup.
@@ -1090,7 +1105,15 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
             CheckForCancellationOrSuspension(BeforeCancellationAction,  CancellationAndSuspensionLogAction);
         }
 
-         void CheckForCancellationOrSuspension(Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
+
+        /// <summary>
+        /// Checks for cancellation or suspension.
+        /// </summary>
+        /// <param name="beforeCancellationAction">The before cancellation action.</param>
+        /// <param name="cancellationAndSuspensionLogAction">The cancellation and suspension log action.</param>
+        /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException">
+        /// </exception>
+        public virtual void CheckForCancellationOrSuspension(Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
         {
             string pauseCancellationMessage;
             if (Instance != null)
@@ -1132,10 +1155,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                     {
                         pauseCancellationMessage = "Task has resumed execution.";
                         Instance.SetStatus(EdmTaskStatus.EdmTaskStat_Running, 0, pauseCancellationMessage);
-                        if (cancellationAndSuspensionLogAction != null)
-                        {
-                            cancellationAndSuspensionLogAction(pauseCancellationMessage);
-                        }
+                        return; 
                     }
 
                     //Check for cancellation if user cancels after pausing

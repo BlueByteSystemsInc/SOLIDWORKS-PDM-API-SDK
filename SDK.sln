@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueByte.SOLIDWORKS.PDMProfessional.Services", "src\BlueByte.SOLIDWORKS.PDMProfessional.Services\BlueByte.SOLIDWORKS.PDMProfessional.Services.csproj", "{752070DF-3632-48DD-8151-621C7078B3BD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueByte.SOLIDWORKS.PDMProfessional.SDK", "src\BlueByte.SOLIDWORKS.PDMProfessional.SDK\BlueByte.SOLIDWORKS.PDMProfessional.SDK.csproj", "{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}"
 EndProject
 Global
@@ -14,12 +12,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{752070DF-3632-48DD-8151-621C7078B3BD}.Alex|Any CPU.ActiveCfg = Debug|Any CPU
-		{752070DF-3632-48DD-8151-621C7078B3BD}.Alex|Any CPU.Build.0 = Debug|Any CPU
-		{752070DF-3632-48DD-8151-621C7078B3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{752070DF-3632-48DD-8151-621C7078B3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{752070DF-3632-48DD-8151-621C7078B3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{752070DF-3632-48DD-8151-621C7078B3BD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}.Alex|Any CPU.ActiveCfg = Alex|Any CPU
 		{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}.Alex|Any CPU.Build.0 = Alex|Any CPU
 		{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
