@@ -1,0 +1,548 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  id: Year_e
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2006
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2007
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2008
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2009
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2010
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2011
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2012
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2013
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2014
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2015
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2016
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2017
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2018
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2019
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2020
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2021
+  langs:
+  - csharp
+  - vb
+  name: Year_e
+  nameWithType: Year_e
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  type: Enum
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Year_e
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 11
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional year.
+  example: []
+  syntax:
+    content: public enum Year_e
+    content.vb: Public Enum Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2006
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2006
+  id: PDM2006
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2006
+  nameWithType: Year_e.PDM2006
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2006
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2006
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 16
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2006.
+  example: []
+  syntax:
+    content: PDM2006 = 6
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2007
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2007
+  id: PDM2007
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2007
+  nameWithType: Year_e.PDM2007
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2007
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2007
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 20
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2007.
+  example: []
+  syntax:
+    content: PDM2007 = 7
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2008
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2008
+  id: PDM2008
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2008
+  nameWithType: Year_e.PDM2008
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2008
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2008
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 24
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2008.
+  example: []
+  syntax:
+    content: PDM2008 = 8
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2009
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2009
+  id: PDM2009
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2009
+  nameWithType: Year_e.PDM2009
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2009
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2009
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 28
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2009.
+  example: []
+  syntax:
+    content: PDM2009 = 9
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2010
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2010
+  id: PDM2010
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2010
+  nameWithType: Year_e.PDM2010
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2010
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2010
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 32
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2010.
+  example: []
+  syntax:
+    content: PDM2010 = 10
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2011
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2011
+  id: PDM2011
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2011
+  nameWithType: Year_e.PDM2011
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2011
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2011
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 36
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2011.
+  example: []
+  syntax:
+    content: PDM2011 = 11
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2012
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2012
+  id: PDM2012
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2012
+  nameWithType: Year_e.PDM2012
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2012
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2012
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 40
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2012.
+  example: []
+  syntax:
+    content: PDM2012 = 12
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2013
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2013
+  id: PDM2013
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2013
+  nameWithType: Year_e.PDM2013
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2013
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2013
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 44
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2013.
+  example: []
+  syntax:
+    content: PDM2013 = 13
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2014
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2014
+  id: PDM2014
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2014
+  nameWithType: Year_e.PDM2014
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2014
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2014
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 48
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2014.
+  example: []
+  syntax:
+    content: PDM2014 = 14
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2015
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2015
+  id: PDM2015
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2015
+  nameWithType: Year_e.PDM2015
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2015
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2015
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 52
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2015.
+  example: []
+  syntax:
+    content: PDM2015 = 15
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2016
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2016
+  id: PDM2016
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2016
+  nameWithType: Year_e.PDM2016
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2016
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2016
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 57
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2016.
+  example: []
+  syntax:
+    content: PDM2016 = 16
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2017
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2017
+  id: PDM2017
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2017
+  nameWithType: Year_e.PDM2017
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2017
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2017
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 61
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2017.
+  example: []
+  syntax:
+    content: PDM2017 = 17
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2018
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2018
+  id: PDM2018
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2018
+  nameWithType: Year_e.PDM2018
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2018
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2018
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 65
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2018.
+  example: []
+  syntax:
+    content: PDM2018 = 18
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2019
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2019
+  id: PDM2019
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2019
+  nameWithType: Year_e.PDM2019
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2019
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2019
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 69
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2019.
+  example: []
+  syntax:
+    content: PDM2019 = 19
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2020
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2020
+  id: PDM2020
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2020
+  nameWithType: Year_e.PDM2020
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2020
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2020
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 73
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2020.
+  example: []
+  syntax:
+    content: PDM2020 = 20
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2021
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2021
+  id: PDM2021
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2021
+  nameWithType: Year_e.PDM2021
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2021
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2021
+    path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 77
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2021.
+  example: []
+  syntax:
+    content: PDM2021 = 21
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+references:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+    name: Enums
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+    name: Enums
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html
+  name: Year_e
+  nameWithType: Year_e
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e

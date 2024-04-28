@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>VS Project Template Extension | SOLIDWORKS PDM SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="VS Project Template Extension | SOLIDWORKS PDM SDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/VSTemplate/Readme.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="SOLIDWORKS PDM SDK">
+            SOLIDWORKS PDM SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="vs-project-template-extension">VS Project Template Extension</h1>
+
+<h2 id="solution-projects">Solution projects</h2>
+<p><strong>ProjectTemplateWizard</strong> - WPF project that contains a window to display before creating a new project. Please see <a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-use-wizards-with-project-templates">here</a> and <a href="https://docs.microsoft.com/en-us/visualstudio/sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2">here</a> to get know more.</p>
+<p><strong>SOLIDWORKSPDMAddIn</strong> - sample project for add-in. Project template is based on this project.</p>
+<p><strong>VSExtension</strong> - VSIX project to package Visual Studio extension. Build the project in Release mode and publish <code>Release/VSExtension.vsix</code>.</p>
+<h2 id="vsix-manifest">VSIX Manifest</h2>
+<p>The <code>source.extension.vsixmanifest</code> in the <code>VSExtension</code> project describes VS extension.</p>
+<p><strong>Metadata</strong> tab contains such fields as Product Name, Version, Icon and so on.</p>
+<p><strong>Install Targets</strong> is set up to support both VS 2019 and VS 2022.</p>
+<p><strong>Assets</strong> specifies the following:</p>
+<ul>
+<li><code>SOLIDWORKSPDMAddIn.zip</code> project template</li>
+<li><code>SOLIDWORKSPDMTaskSetupPage.zip</code>item template</li>
+<li><code>ProjectTemplateWizard</code> assembly to show a window after the user clicks on create project</li>
+</ul>
+<h2 id="how-to-create-visual-studio-project-template">How to create Visual Studio Project Template</h2>
+<ol>
+<li>Open <code>VSTemplate/SOLIDWORKSPDMAddIn.sln</code> solution</li>
+<li>Click on <strong>Project</strong> - <strong>Export Template</strong> and generate project template file of <code>SOLIDWORKSPDMAddIn</code> project</li>
+<li>Extract the generated .zip file to a folder</li>
+<li>Replace the following values in <code>AddIn.cs</code> file:
+<ul>
+<li><code>Name</code> attribute -&gt; <code>[Name(&quot;$addinname$&quot;)]</code> to substitute a value that user specifies in project wizard</li>
+<li><code>Description</code> attribute -&gt; <code>[Description(&quot;$addindescription$&quot;)]</code></li>
+<li><code>CompanyName</code> attribute -&gt; <code>[CompanyName(&quot;$addincompany$&quot;)]</code></li>
+<li><code>IsTask</code> attribute -&gt; <code>[IsTask($addintask$)]</code></li>
+<li><code>Guid</code> attribute -&gt; <code>[Guid(&quot;$guid1$&quot;)]</code> to always generate a new GUID when new project is created</li>
+</ul>
+</li>
+<li>Modify <code>MyTemplate.vstemplate</code> file:
+<ul>
+<li>Set appropriate values in <code>TemplateData</code> section</li>
+<li>Add the next code after <code>TemplateContent</code> section, to show a UI for the user before creating a new project:
+<pre><code>&lt;WizardExtension&gt;
+    &lt;Assembly&gt;ProjectTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=77753319f51656db&lt;/Assembly&gt;
+    &lt;FullClassName&gt;ProjectTemplateWizard.ProjectWizard&lt;/FullClassName&gt;
+&lt;/WizardExtension&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Compress all the folder to archive <code>SOLIDWORKSPDMAddIn.zip</code></li>
+<li>Move the archive to the top directory of the repository</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/VSTemplate/Readme.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
