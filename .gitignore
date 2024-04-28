@@ -22,6 +22,7 @@ mono_crash.*
 [Rr]elease/
 [Rr]eleases/
 x64/
+Docfx/
 x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
