@@ -1,0 +1,17 @@
+{
+  "help/Visual-Studio-SDK-template.html": {
+    "href": "help/Visual-Studio-SDK-template.html",
+    "title": "Visual Studio SOLIDWORKS PDM SDK Template | SOLIDWORKS PDM SDK",
+    "keywords": "Visual Studio SOLIDWORKS PDM SDK Template The SDK template has the best boilerplate code written and ready for you to edit. Installing Visual Studio SOLIDWORKS PDM SDK Template Tip Always make sure you are using the latest version of the PDM SDK template. To find the latest version of the template, please check the Extensions window in your Visual Studio or follow this link. Warning Only Visual Studio Community and Professional editions up to 2019 are supported. We do not support Visual Studio 2022. To install the Visual Studio SOLIDWORKS PDM SDK Template: Go to https://marketplace.visualstudio.com/items?itemName=BlueByteSystemsInc.ID Click Download In Windows 10 and on some computers, your downloaded files must be unblocked. To do, please right-click on the downloaded file, go to Properties and then check the Unblock checkbox before clicking again on Apply and then OK. Make sure that all instances of Visual Studio 2019 are closed. Open the Visual Studio Extension Installer (VSXI) and follow the instructions."
+  },
+  "help/getting-started.html": {
+    "href": "help/getting-started.html",
+    "title": "Getting Started | SOLIDWORKS PDM SDK",
+    "keywords": "Getting Started Developing SOLIDWORKS PDM add-ins can be a dauting process and doing it efficiently is even more difficult endaveor. Following this guide is the easiest way to start writing SOLIDWORKS PDM add-ins. Requirements You will need the following requestes to start writing code: Windows 7 or newer. SOLIDWORKS PDM client 2011 with a local view. A PDM user credentials with the right permissions. See below. Visual Studio 2019. We dot not support Visual Studio 2022 yet. Elevated Windows admin privilge to run Visual Studio as an admin. Access to the command prompt to run some basic Windows commands. PDM Permissions Your PDM user have the following permissions: Be able to administer add-ins Workflow, file and folder permissions"
+  },
+  "help/index.html": {
+    "href": "help/index.html",
+    "title": "| SOLIDWORKS PDM SDK",
+    "keywords": "Welcome to BlueByte System's Productivity framework for PDM add-ins This page is a help resource on how to get started with BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK. Nuget BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK is available on nuget.org via or the Package Console Manager in Visual Studio. To install the package, run the following command install-package BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK Intro Visual Studio Templates for VS 2019 Use SOLIDWORKSAddInSample.zip. Drop this file your Visual Studio project templates. Licensing See LICENSE.md Support or Contact For support, please create an issue on this repo. For consulting work, please reach to bluebyte.biz"
+  }
+}

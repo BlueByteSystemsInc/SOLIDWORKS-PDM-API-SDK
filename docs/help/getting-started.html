@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>.NET framework Library for SOLIDWORKS PDM Professional | SOLIDWORKS PDM SDK </title>
+      <title>Getting Started | SOLIDWORKS PDM SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=".NET framework Library for SOLIDWORKS PDM Professional | SOLIDWORKS PDM SDK ">
+      <meta name="title" content="Getting Started | SOLIDWORKS PDM SDK ">
       
       
-      <link rel="icon" href="favicon.ico">
-      <link rel="stylesheet" href="public/docfx.min.css">
-      <link rel="stylesheet" href="public/main.css">
-      <meta name="docfx:navrel" content="toc.html">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
       <meta name="docfx:tocrel" content="toc.html">
       
-      <meta name="docfx:rel" content="">
+      <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/README.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/help/getting-started.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./public/docfx.min.js"></script>
+      <script type="module" src="./../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="index.html">
-            <img id="logo" class="svg" src="logo.svg" alt="SOLIDWORKS PDM SDK">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="SOLIDWORKS PDM SDK">
             SOLIDWORKS PDM SDK
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,45 +63,53 @@
     </header>
 
     <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
 
       <div class="content">
         <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
 
           <nav id="breadcrumb"></nav>
         </div>
 
         <article data-uid="">
-<h1 id="net-framework-library-for-solidworks-pdm-professional">.NET framework Library for SOLIDWORKS PDM Professional</h1>
+<h1 id="getting-started">Getting Started</h1>
 
-<p>A produtivity framework to improve the development of :</p>
+<p>Developing SOLIDWORKS PDM add-ins can be a dauting process and doing it efficiently is even more difficult endaveor.</p>
+<p>Following this guide is the easiest way to start writing SOLIDWORKS PDM add-ins.</p>
+<h1 id="requirements">Requirements</h1>
+<p>You will need the following requestes to start writing code:</p>
 <ul>
-<li>SOLIDWORKS PDM add-ins</li>
-<li>SOLIDWORKS PDM task add-ins</li>
+<li>Windows 7 or newer.</li>
+<li>SOLIDWORKS PDM client 2011 with a local view.</li>
+<li>A PDM user credentials with the right permissions. See below.</li>
+<li>Visual Studio 2019. We dot not support Visual Studio 2022 yet.</li>
+<li>Elevated Windows admin privilge to run Visual Studio as an admin.</li>
+<li>Access to the command prompt to run some basic Windows commands.</li>
 </ul>
-<h1 id="nuget">Nuget</h1>
-<p>Install the latest version <a href="https://www.nuget.org/packages/BlueByte.SOLIDWORKS.PDMProfessional.SDK">here</a>.</p>
-<p>Command-line:</p>
-<p><code>Install-Package BlueByte.SOLIDWORKS.PDMProfessional.PDMSDK</code></p>
-<h1 id="sample-add-in">Sample add-in</h1>
-<p>TestAddIn folder contains a sample copy to clipboard addin.</p>
-<h1 id="vs-template">VS Template</h1>
-<p>Get it from <a href="https://marketplace.visualstudio.com/items?itemName=BlueByteSystemsInc.ID">here</a>.</p>
-<h1 id="documentation">Documentation</h1>
-<p>Will be built with castle sand. Please also check our <a href="https://www.youtube.com/c/bluebytesystemsinc">YouTube channel</a>.</p>
-<h1 id="examples">Examples</h1>
-<p>Check the Examples folder:</p>
+<h1 id="pdm-permissions">PDM Permissions</h1>
+<p>Your PDM user have the following permissions:</p>
 <ul>
-<li>QRCode add-in</li>
+<li>Be able to administer add-ins</li>
+<li>Workflow, file and folder permissions</li>
 </ul>
-<h1 id="support">Support</h1>
-<p>You can start a ticket on this repo. Best way to get an answer  is to ask a question at <a href="https://www.cadoverflow.com">cadoverflow.com</a> under the PDMFramework group.</p>
-<h1 id="copyright">Copyright</h1>
-<p>See LICENSE.md</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/README.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/help/getting-started.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

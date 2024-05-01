@@ -1,0 +1,62 @@
+{
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/OpenSource/PDMSDK",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "help/Visual-Studio-SDK-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "help/Visual-Studio-SDK-template.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "help/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "help/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "help/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "help/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "help/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "help/toc.html"
+        },
+        ".json": {
+          "relative_path": "help/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

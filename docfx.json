@@ -16,10 +16,10 @@
     "content": [
       {
         "files": [
-          "**/*.{md,yml}"
+          "help/*.{md,yml}"
         ],
         "exclude": [
-          "_site/**"
+          "docs/**"
         ]
       }
     ],
@@ -30,7 +30,7 @@
         ]
       }
     ],
-    "output": "_site",
+    "output": "docs",
     "template": [
       "default",
       "modern"
