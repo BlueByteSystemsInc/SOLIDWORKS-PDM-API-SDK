@@ -1,5 +1,5 @@
 {
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/OpenSource/PDMSDK",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/OpenSource/PDMSDK/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -11,44 +11,380 @@
       }
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "help/Visual-Studio-SDK-template.md",
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.yml",
       "output": {
         ".html": {
-          "relative_path": "help/Visual-Studio-SDK-template.html"
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html"
         }
       },
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "help/getting-started.md",
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.AddInVersionAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "help/getting-started.html"
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.AddInVersionAttribute.html"
         }
       },
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "help/index.md",
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CommandVisibilityAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "help/index.html"
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CommandVisibilityAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CompanyNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CompanyNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.DescriptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.DescriptionAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.IsTaskAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.IsTaskAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.ListenForAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.ListenForAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.NameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.NameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.RequiredVersionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.RequiredVersionAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.TaskFlagsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.TaskFlagsAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.ITaskSetupPageNotUserControlException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.ITaskSetupPageNotUserControlException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.IdentityInfoException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.IdentityInfoException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.PDMSDKException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.PDMSDKException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.TaskFailedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.TaskFailedException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html"
         }
       },
       "version": ""
     },
     {
       "type": "Toc",
-      "source_relative_path": "help/toc.yml",
+      "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "help/toc.html"
+          "relative_path": "api/toc.html"
         },
         ".json": {
-          "relative_path": "help/toc.json"
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Visual-Studio-SDK-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Visual-Studio-SDK-template.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/fav.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fav.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
