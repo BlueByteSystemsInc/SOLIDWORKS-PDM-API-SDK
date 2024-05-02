@@ -408,10 +408,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/addinwizard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addinwizard.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/fav.png",
       "output": {
         "resource": {
           "relative_path": "images/fav.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/newproject.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/newproject.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmsdktemplate.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmsdktemplate.png"
         }
       },
       "version": ""
