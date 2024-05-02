@@ -447,6 +447,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/project_files_created.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/project_files_created.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
