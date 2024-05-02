@@ -335,6 +335,46 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/addinbase_structure.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/addinbase_structure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/adding_logic_oncmd.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/adding_logic_oncmd.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/creating_new_project.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/creating_new_project.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/debugging_with_sdk.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/debugging_with_sdk.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
       "output": {
         ".html": {
@@ -352,6 +392,16 @@
         },
         ".json": {
           "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/updating_nuget_packages.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/updating_nuget_packages.html"
         }
       },
       "version": ""
