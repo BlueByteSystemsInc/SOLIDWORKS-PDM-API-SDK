@@ -457,6 +457,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/update_nuget_package.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/update_nuget_package.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
