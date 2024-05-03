@@ -355,6 +355,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/building_project.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/building_project.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/creating_new_project.md",
       "output": {
         ".html": {
