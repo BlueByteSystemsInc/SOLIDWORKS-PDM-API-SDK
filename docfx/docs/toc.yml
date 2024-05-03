@@ -1,0 +1,44 @@
+- name: Getting Started
+  href: getting-started.md
+- name: Visual Studio SDK template
+  href: Visual-Studio-SDK-template.md
+- name: Creating A New Add-in Project
+  href: creating_new_project.md
+- name: Updating Nuget Packages
+  href: updating_nuget_packages.md
+- name: Building Project (Visual Studio)
+  href: building_project.md
+- name: PDMSDK base class (AddInBase)
+  href: addinbase_structure.md
+- name: Implementing OnCmd
+  href: adding_logic_oncmd.md
+- name: Debugging with PDMSDK
+  href: debugging_with_sdk.md
+- name: Task Add-ins 
+  href: taskadd-ins.md
+  items:
+  - name: Flags (and attribute) 
+    href: flags.md
+  - name: Hooks
+    href: hooks.md
+    items:
+    - name: TaskLaunch (and Run)
+      href: TaskLaunchRun.md
+    - name: TaskSetup 
+      href: TaskSetup.md
+      items: 
+      - name: How to add a EdmTaskSetupPage
+        href: EdmTaskSetupPage.md
+      - name: Loading saved user input
+        href: loaddata.md
+      - name: Add controls and binding to View Model
+        href: binding.md
+    - name: TaskSetupButton
+      href: TaskSetupButton.md
+      items:
+      - name: How to save the user input
+        href: saveData.md
+      - name: How to add context menu
+        href: contextmenu.md
+      
+

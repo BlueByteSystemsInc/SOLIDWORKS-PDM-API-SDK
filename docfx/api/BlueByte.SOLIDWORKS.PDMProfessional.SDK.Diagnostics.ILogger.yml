@@ -1,0 +1,497 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  id: ILogger
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection
+  langs:
+  - csharp
+  - vb
+  name: ILogger
+  nameWithType: ILogger
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  type: Interface
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ILogger
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+    startLine: 7
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Logger.
+  example: []
+  syntax:
+    content: public interface ILogger
+    content.vb: Public Interface ILogger
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection
+  id: StartConnection
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  langs:
+  - csharp
+  - vb
+  name: StartConnection()
+  nameWithType: ILogger.StartConnection()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: StartConnection
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+    startLine: 13
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Starts a connection with the SQL server. Call this method after you call <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity%2cEPDM.Interop.epdm.IEdmTaskInstance%2cSystem.String)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: void StartConnection()
+    content.vb: Sub StartConnection()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection
+  id: EndConnection
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  langs:
+  - csharp
+  - vb
+  name: EndConnection()
+  nameWithType: ILogger.EndConnection()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: EndConnection
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+    startLine: 18
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Ends the connection with the SQLServer
+  example: []
+  syntax:
+    content: void EndConnection()
+    content.vb: Sub EndConnection()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+  id: GetLoggerType
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  langs:
+  - csharp
+  - vb
+  name: GetLoggerType()
+  nameWithType: ILogger.GetLoggerType()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetLoggerType
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+    startLine: 24
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Returns the type of the logger.
+  example: []
+  syntax:
+    content: LoggerType_e GetLoggerType()
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+      description: ''
+    content.vb: Function GetLoggerType() As LoggerType_e
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)
+  id: LogToOutput(System.String,System.String)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  langs:
+  - csharp
+  - vb
+  name: LogToOutput(string, string)
+  nameWithType: ILogger.LogToOutput(string, string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: LogToOutput
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+    startLine: 32
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Logs value to output.
+  example: []
+  syntax:
+    content: void LogToOutput(string target, string value)
+    parameters:
+    - id: target
+      type: System.String
+      description: Text file path. This is the name of the table when <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType" data-throw-if-not-resolved="false"></xref> returns <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL" data-throw-if-not-resolved="false"></xref>
+    - id: value
+      type: System.String
+      description: New value.
+    content.vb: Sub LogToOutput(target As String, value As String)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput*
+  nameWithType.vb: ILogger.LogToOutput(String, String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(String, String)
+  name.vb: LogToOutput(String, String)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
+  id: OutputLocation
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  langs:
+  - csharp
+  - vb
+  name: OutputLocation
+  nameWithType: ILogger.OutputLocation
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OutputLocation
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+    startLine: 38
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Ouput location. Relative path does not work.
+  example: []
+  syntax:
+    content: string OutputLocation { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property OutputLocation As String
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
+  id: Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Init(Identity, IEdmTaskInstance, string)
+  nameWithType: ILogger.Init(Identity, IEdmTaskInstance, string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity, EPDM.Interop.epdm.IEdmTaskInstance, string)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Init
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
+    startLine: 47
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Initialize the logger.
+  example: []
+  syntax:
+    content: void Init(Identity identity, IEdmTaskInstance instance, string connectionString)
+    parameters:
+    - id: identity
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+      description: The identity struct.
+    - id: instance
+      type: EPDM.Interop.epdm.IEdmTaskInstance
+      description: Task instance.
+    - id: connectionString
+      type: System.String
+      description: The connection string.
+    content.vb: Sub Init(identity As Identity, instance As IEdmTaskInstance, connectionString As String)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init*
+  nameWithType.vb: ILogger.Init(Identity, IEdmTaskInstance, String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity, EPDM.Interop.epdm.IEdmTaskInstance, String)
+  name.vb: Init(Identity, IEdmTaskInstance, String)
+references:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+    name: Diagnostics
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+    name: Diagnostics
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
+  isExternal: true
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_Init_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_EPDM_Interop_epdm_IEdmTaskInstance_System_String_
+  name: Init(Identity, IEdmTaskInstance, string)
+  nameWithType: ILogger.Init(Identity, IEdmTaskInstance, string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity, EPDM.Interop.epdm.IEdmTaskInstance, string)
+  nameWithType.vb: ILogger.Init(Identity, IEdmTaskInstance, String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity, EPDM.Interop.epdm.IEdmTaskInstance, String)
+  name.vb: Init(Identity, IEdmTaskInstance, String)
+  spec.csharp:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
+    name: Init
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_Init_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_EPDM_Interop_epdm_IEdmTaskInstance_System_String_
+  - name: (
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+    name: Identity
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmTaskInstance
+    name: IEdmTaskInstance
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
+    name: Init
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_Init_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_EPDM_Interop_epdm_IEdmTaskInstance_System_String_
+  - name: (
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+    name: Identity
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmTaskInstance
+    name: IEdmTaskInstance
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_StartConnection
+  name: StartConnection
+  nameWithType: ILogger.StartConnection
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_EndConnection
+  name: EndConnection
+  nameWithType: ILogger.EndConnection
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_GetLoggerType
+  name: GetLoggerType
+  nameWithType: ILogger.GetLoggerType
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html
+  name: LoggerType_e
+  nameWithType: LoggerType_e
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_GetLoggerType
+  name: GetLoggerType()
+  nameWithType: ILogger.GetLoggerType()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType()
+  spec.csharp:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+    name: GetLoggerType
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_GetLoggerType
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
+    name: GetLoggerType
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_GetLoggerType
+  - name: (
+  - name: )
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_LoggerType_e_SQL
+  name: SQL
+  nameWithType: LoggerType_e.SQL
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_System_String_System_String_
+  name: LogToOutput
+  nameWithType: ILogger.LogToOutput
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_OutputLocation
+  name: OutputLocation
+  nameWithType: ILogger.OutputLocation
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_Init_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_EPDM_Interop_epdm_IEdmTaskInstance_System_String_
+  name: Init
+  nameWithType: ILogger.Init
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html
+  name: Identity
+  nameWithType: Identity
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+- uid: EPDM.Interop.epdm.IEdmTaskInstance
+  commentId: T:EPDM.Interop.epdm.IEdmTaskInstance
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: IEdmTaskInstance
+  nameWithType: IEdmTaskInstance
+  fullName: EPDM.Interop.epdm.IEdmTaskInstance
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+- uid: EPDM.Interop.epdm
+  commentId: N:EPDM.Interop.epdm
+  isExternal: true
+  name: EPDM.Interop.epdm
+  nameWithType: EPDM.Interop.epdm
+  fullName: EPDM.Interop.epdm
+  spec.csharp:
+  - uid: EPDM
+    name: EPDM
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop
+    name: Interop
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop.epdm
+    name: epdm
+    isExternal: true
+  spec.vb:
+  - uid: EPDM
+    name: EPDM
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop
+    name: Interop
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop.epdm
+    name: epdm
+    isExternal: true

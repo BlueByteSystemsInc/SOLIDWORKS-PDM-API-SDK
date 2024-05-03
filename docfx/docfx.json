@@ -1,0 +1,46 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "C:\\Users\\jlili\\source\\repos\\BlueByteSystemsInc\\OpenSource\\PDMSDK\\src\\BlueByte.SOLIDWORKS.PDMProfessional.SDK",
+          "files": [
+            "BlueByte.SOLIDWORKS.PDMProfessional.SDK.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "SOLIDWORKS PDM SDK",
+      "_appTitle": "SOLIDWORKS PDM SDK",
+      "_appLogoPath": "images/fav.png",
+      "_enableSearch": true,
+      "pdf": false
+    }
+  }
+}
