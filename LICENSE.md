@@ -1,5 +1,6 @@
-You are granted an MIT license unless you meet one of the following criteria:
+You are granted an MIT license unless you meet one of the following criteria (please contact author for licensing):
 
+- You are SOLIDWORKS Corp, its parent company, and/or one of its subsidiaries, sub-contractors and/or its representative entities;
 - You are a SOLIDWORKS reseller or a SOLIDWORKS partner;
 - You are a company that commercializes a product that integrates with SOLIDWORKS or SOLIDWORKS PDM and will benefit from using the SOLIDWORKS PDM SDK. 
 - You are using the framework to develop a for-profit commercial product.
