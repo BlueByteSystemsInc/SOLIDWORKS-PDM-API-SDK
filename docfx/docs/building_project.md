@@ -1,29 +1,38 @@
-To fully utilize the latest features and bug fixes of the SDK, please make sure you are using the latest version of the BlueByte.PDMProfessional.SDK nuget package.
+>[!WARNING]
+> If you are viewing this page directly, we highly recommend you go back to the previous pages in this guide and review any missed steps. 
+
+# Building the project
+
+- Locate the add-in project in the *Solution Explorer* and select it.
+- By default, the Debug configuration will be selected. This information will be useful later in locating the output files.
+- Right-click on the project and click *Properties*.
+- Go the *Build* tab (for csproj ie: C# users)
+- Check *Register for COM interop*
+- Right-click on the project in the solution explorer and click *Build*
+- If the project has built successfully, Visual Studio will print Build succeeded in the lower left side of the window.
+
+
+<img src="../images/build_succeeded.png"/>
+
+<Enter>
+
+> [!NOTE]
+> If you are a VB.NET user, the *Register for com interop* checkbox will be in the *Compile* tab.  
+
+# Output files
+
+- Navigate to the bin/debug folder found in the project's folder. 
+- To locate the project folder, right-click on the project in the *Solution Explorer* and click *Open Folder in File Explorer*.
+- The bin/debug will contain the: 
+    - the dll of the add-in. 
+    - the dlls of PDMSDK.
+    - Other dependencies you may have installed.
+
+<img src="../images/outputfiles.png" />
+ 
+<Enter>
 
 >[!NOTE]
-> BlueByte.PDMProfessional.SDK targets .NET framework 4.7.2. For more information, check out the nuget package [page](https://www.nuget.org/packages/BlueByte.SOLIDWORKS.PDMProfessional.SDK).
+> We did not list the dll names of PDMSDK, because they are subject to change. We're working on reducing the number of dependencies. The most important dll that you will always have is called BlueByte.SOLIDWORKS.PDM.Professional.SDK.
 
-The latest version of the nuget is:  [![NuGet version (BlueByte.SOLIDWORKS.PDMProfessional.SDK)](https://img.shields.io/nuget/v/BlueByte.SOLIDWORKS.PDMProfessional.SDK.svg?style=flat-square)](https://www.nuget.org/packages/BlueByte.SOLIDWORKS.PDMProfessional.SDK)
 
-# Using the Package Manager Console
-In Visual Studio:
-- Press Ctrl + Q. This is going to highlight the search box at the top of the window.
-- Type Nuget Package Manager Console and pick the first search result.
-- A new window will appear. Allow a couple of seconds for the package manager to initialize.
-- Type in the following command (and press enter):
-
-```Update-Package BlueByte.SOLIDWORKS.PDMProfessional.SDK```
-
-- The command above will install the package in the active project. If you have multiple projects and you need to specify the one that needs to update the SDK nuget pacakge, use the ```-project``` argument to specify the project name. Example: ```Update-Package BlueByte.SOLIDWORKS.PDMProfessional.SDK -project MyAddInProject```
-
-- The Package Manager Console will report back that package has been installed successfully. 
-
-# Using the Package Manager
-In Visual Studio, 
-- Locate the add-in's project in the *Solution Explorer*
-- Right-click on the project and click *Manage Nuget Packages...*
-- The Package Manager window will open. Locate and select the BlueByte.SOLIDWORKS.PDMProfessional.SDK nuget package in the installed tab. 
-- Depending on the version of the SDK template, you may be to update the package if there is a new version. If an update is available, select the nuget package. 
-- The properties of the package will update on the right-side of the window and you are able to pick the latest available version from the version dropdown. 
-
-<img src="../images/update_nuget_package.png"/>
