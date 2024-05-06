@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>AddInBase Structure | SOLIDWORKS PDM SDK </title>
+      <title>AddInBase structure | SOLIDWORKS PDM SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="AddInBase Structure | SOLIDWORKS PDM SDK ">
+      <meta name="title" content="AddInBase structure | SOLIDWORKS PDM SDK ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -85,11 +85,11 @@
         </div>
 
         <article data-uid="">
-<h1 id="addinbase-structure">AddInBase Structure</h1>
+<h1 id="addinbase-structure">AddInBase structure</h1>
 
 <div class="NOTE">
 <h5>Note</h5>
-<p>For the complete API reference of the AddInBase class, please refer to this <a href="https://bluebytesystemsinc.github.io/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html">page</a></p>
+<p>For the complete API reference of the AddInBase class, please refer to this <a href="https://bluebytesystemsinc.github.io/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html">page</a>.</p>
 </div>
 <p>AddInBase is the <strong>only</strong> class that has to be implemented in order to create a working PDM add-in.</p>
 <p>PDM add-ins can be broken down into two different types:</p>
@@ -114,7 +114,7 @@
 <h5>Tip</h5>
 <p>SOLIDWORKS Corp defines tasks as feature in the administration tool that lets you configure, run, and monitor tasks that you perform frequently on SOLIDWORKS PDM files.. For more information, please visit this <a href="https://help.solidworks.com/2021/english/EnterprisePDM/Admin/c_Print_Plot_Convert.htm">page</a>.</p>
 </div>
-<h1 id="setting-up-an-add-in">Setting up an Add-In</h1>
+<h1 id="definition-attributes">Definition attributes</h1>
 <p>To configure an add-in and specify its functionality, attributes are used to decorate the class that implements AddInBase.</p>
 <p>The following attributes define what is shown in the Administration UI Properties of the add-in:</p>
 <ul>
@@ -145,11 +145,60 @@
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>In visual Studio, you can generate a new guid by going to Tools -&gt; Create GUID.</p>
+<p>In Visual Studio, you can generate a new guid by going to Tools -&gt; Create GUID.</p>
+</div>
+<h1 id="common-members">Common members</h1>
+<p>Look up the help page for these members using the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html">documentation</a> link above.</p>
+<table>
+<thead>
+<tr>
+<th>Property/Method</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Logger">Logger</a></td>
+<td>Returns a pointer to the ILogger interface.</td>
+</tr>
+<tr>
+<td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Properties">Properties</a></td>
+<td>Returns the <a href="https://help.solidworks.com/2020/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.IEdmTaskProperties.html">IEdmProperties</a> object. Be aware that this is only available for EdmTaskSetupButton and EdmTaskSetup hooks. Otherwise, this property will turn null.</td>
+</tr>
+<tr>
+<td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Instance">Instance</a></td>
+<td>Returns the <a href="https://help.solidworks.com/2020/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.IEdmTaskInstance.html">IEdmTaskInstance</a> object. Be aware thst this is only available for EdmTaskLaunch, Run and Details hooks. Otherwise, this property will return null.</td>
+</tr>
+<tr>
+<td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Identity">Identity</a></td>
+<td>This structure captures the values used in the definition attributes. Use the method ToCaption() to return the name of the add-in and version together without having to use string concatenation. This particularly useful for setting the title of a form.</td>
+</tr>
+<tr>
+<td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Container">Container</a></td>
+<td>This dependency injection containerwill resolve any types that you may register in the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_RegisterAdditionalTypes">RegisterAdditionalTypes</a> method.</td>
+</tr>
+<tr>
+<td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_ForEach">ForEach</a></td>
+<td>Provides a mechanism to apply a lambda expression to the affected items on the OnCmd. Be aware that this is only valid for file (IEdmFile5). Other items affected by the command that are not files will be ignored.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>AddInBase contains properties and methods that sare pecific to task add-ins and are covered in further details in the next sections.</p>
 </div>
 <h1 id="example">Example</h1>
-<details>
-<summary>Example Add-In Class</summary>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+
 <pre><code>namespace MyPdmAddIn
 {
     [Name(&quot;Sample PDM Add-In&quot;)]
@@ -175,7 +224,14 @@
     }
 }
 </code></pre>
-</details>
+</section>
+<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code>To be provided. 
+// if you see this, please contribute to our repo but providing a translation of C# to VB.NET
+</code></pre>
+</section>
+</div>
 
 </article>
 

@@ -1,7 +1,7 @@
-# AddInBase Structure
+# AddInBase structure
 
 >[!NOTE]
-> For the complete API reference of the AddInBase class, please refer to this [page](https://bluebytesystemsinc.github.io/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html)
+> For the complete API reference of the AddInBase class, please refer to this [page](https://bluebytesystemsinc.github.io/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html).
 
 AddInBase is the **only** class that has to be implemented in order to create a working PDM add-in. 
 
@@ -26,7 +26,7 @@ While add-ins follow the simple client-server model, task add-ins are slightly m
 >[!TIP]
 > SOLIDWORKS Corp defines tasks as feature in the administration tool that lets you configure, run, and monitor tasks that you perform frequently on SOLIDWORKS PDM files.. For more information, please visit this [page](https://help.solidworks.com/2021/english/EnterprisePDM/Admin/c_Print_Plot_Convert.htm).
 
-# Setting up an Add-In
+#  Definition attributes
 
 To configure an add-in and specify its functionality, attributes are used to decorate the class that implements AddInBase.
 
@@ -57,13 +57,26 @@ Required Windows attributes:
 - `[Guid("")]` A unique ID generated that is specific to your project. 
 
 >[!Note]
->In visual Studio, you can generate a new guid by going to Tools -> Create GUID.
+>In Visual Studio, you can generate a new guid by going to Tools -> Create GUID.
 
+# Common members
+
+Look up the help page for these members using the [documentation](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html) link above.
+
+| Property/Method      | Purpose |
+| ----------- | ----------- |
+| [Logger](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Logger)      | Returns a pointer to the ILogger interface.  |
+| [Properties](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Properties)  | Returns the [IEdmProperties](https://help.solidworks.com/2020/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmTaskProperties.html) object. Be aware that this is only available for EdmTaskSetupButton and EdmTaskSetup hooks. Otherwise, this property will turn null.        |
+|[Instance](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Instance)| Returns the [IEdmTaskInstance](https://help.solidworks.com/2020/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmTaskInstance.html) object. Be aware thst this is only available for EdmTaskLaunch, Run and Details hooks. Otherwise, this property will return null.|
+|[Identity](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Identity)| This structure captures the values used in the definition attributes. Use the method ToCaption() to return the name of the add-in and version together without having to use string concatenation. This particularly useful for setting the title of a form.|
+|[Container](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Container)| This dependency injection containerwill resolve any types that you may register in the [RegisterAdditionalTypes](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_RegisterAdditionalTypes) method.|
+|[ForEach](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_ForEach)| Provides a mechanism to apply a lambda expression to the affected items on the OnCmd. Be aware that this is only valid for file (IEdmFile5). Other items affected by the command that are not files will be ignored.
+
+>[!NOTE]
+> AddInBase contains properties and methods that sare pecific to task add-ins and are covered in further details in the next sections.
 # Example
 
-<details>
-<summary>Example Add-In Class</summary>
-
+# [C Sharp](#tab/cs)
 ```
 namespace MyPdmAddIn
 {
@@ -90,5 +103,10 @@ namespace MyPdmAddIn
     }
 }
 ```
+# [VB](#tab/VB)
+```
+To be provided. 
+// if you see this, please contribute to our repo but providing a translation of C# to VB.NET
+```
+---
 
-</details>
