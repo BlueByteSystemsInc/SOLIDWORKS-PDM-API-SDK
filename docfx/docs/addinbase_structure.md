@@ -1,6 +1,15 @@
 # AddInBase Structure
 
-This is the only class that has to be implemented in order to create a working PDM add-in. PDM add-ins can be broken down into two different types:
+>[!NOTE]
+> For the complete API reference of the AddInBase class, please refer to this [page](https://bluebytesystemsinc.github.io/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html)
+
+AddInBase is the **only** class that has to be implemented in order to create a working PDM add-in. 
+
+PDM add-ins can be broken down into two different types:
+
+- Standard add-in
+
+  - Can hook into various PDM events such as check-in/check-out, state changes, adding/deleting files, etc...
 
 - Task add-in
 
@@ -9,9 +18,13 @@ This is the only class that has to be implemented in order to create a working P
   - Can be scheduled to run at a specific time
   - Can be set to execute as part of a document workflow
 
-- Standard (non-task) add-in
+While add-ins follow the simple client-server model, task add-ins are slightly more complex. A PDM workload can distributed to several task machines. The overall archiecture can be described by the following diagram: 
 
-  - Can hook into various PDM events such as check-in/check-out, state changes, adding/deleting files, etc.
+<img src="https://help.solidworks.com/2021/english/EnterprisePDM/Admin/ems1450377335497.image"/>
+
+
+>[!TIP]
+> SOLIDWORKS Corp defines tasks as feature in the administration tool that lets you configure, run, and monitor tasks that you perform frequently on SOLIDWORKS PDM files.. For more information, please visit this [page](https://help.solidworks.com/2021/english/EnterprisePDM/Admin/c_Print_Plot_Convert.htm).
 
 # Setting up an Add-In
 
@@ -30,17 +43,21 @@ Task add-in specific attributes:
 
 - `[IsTask(true)]` This defines whether the add-in is a task add in (true) or not (false).
 - `[TaskFlags(EdmTaskFlag flag)]` These agruments indicate how the add-in can be incorporated into PDM.
-  > [!Note]
-  > The framework automatically hooks into all task events when `[IsTask()]` is set to `true`, no need to use the `[ListenFor(EdmCmdType event)]` attribute].
 
-Non-task add-in attributes:
+> [!Note]
+> The framework automatically hooks into all task events when `[IsTask()]` is set to `true`, no need to use the `[ListenFor(EdmCmdType event)]` attribute].
+
+Standard add-in attributes:
 
 - `[ListenFor(EdmCmdType event)]` tells the add-in which PDM event to hook into. Each time a hooked event is triggered within PDM, it will call OnCmd().
 
-Required attributes:
+Required Windows attributes:
 
 - `[ComVisible(true)]` This allows PDM to see the add-in.
-- `[Guid("")]` A unique ID generated that is specific to your project. In visual studio, select Tools -> Create GUID.
+- `[Guid("")]` A unique ID generated that is specific to your project. 
+
+>[!Note]
+>In visual Studio, you can generate a new guid by going to Tools -> Create GUID.
 
 # Example
 

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | SOLIDWORKS PDM SDK </title>
+      <title>AddInBase Structure | SOLIDWORKS PDM SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | SOLIDWORKS PDM SDK ">
+      <meta name="title" content="AddInBase Structure | SOLIDWORKS PDM SDK ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -85,7 +85,97 @@
         </div>
 
         <article data-uid="">
+<h1 id="addinbase-structure">AddInBase Structure</h1>
 
+<div class="NOTE">
+<h5>Note</h5>
+<p>For the complete API reference of the AddInBase class, please refer to this <a href="https://bluebytesystemsinc.github.io/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html">page</a></p>
+</div>
+<p>AddInBase is the <strong>only</strong> class that has to be implemented in order to create a working PDM add-in.</p>
+<p>PDM add-ins can be broken down into two different types:</p>
+<ul>
+<li><p>Standard add-in</p>
+<ul>
+<li>Can hook into various PDM events such as check-in/check-out, state changes, adding/deleting files, etc...</li>
+</ul>
+</li>
+<li><p>Task add-in</p>
+<ul>
+<li>Can be run as current or another specified user</li>
+<li>Can be run on current PC or another specified PC</li>
+<li>Can be scheduled to run at a specific time</li>
+<li>Can be set to execute as part of a document workflow</li>
+</ul>
+</li>
+</ul>
+<p>While add-ins follow the simple client-server model, task add-ins are slightly more complex. A PDM workload can distributed to several task machines. The overall archiecture can be described by the following diagram:</p>
+<img src="https://help.solidworks.com/2021/english/EnterprisePDM/Admin/ems1450377335497.image">
+<div class="TIP">
+<h5>Tip</h5>
+<p>SOLIDWORKS Corp defines tasks as feature in the administration tool that lets you configure, run, and monitor tasks that you perform frequently on SOLIDWORKS PDM files.. For more information, please visit this <a href="https://help.solidworks.com/2021/english/EnterprisePDM/Admin/c_Print_Plot_Convert.htm">page</a>.</p>
+</div>
+<h1 id="setting-up-an-add-in">Setting up an Add-In</h1>
+<p>To configure an add-in and specify its functionality, attributes are used to decorate the class that implements AddInBase.</p>
+<p>The following attributes define what is shown in the Administration UI Properties of the add-in:</p>
+<ul>
+<li><code>[Name(&quot;Sample PDM Add-In&quot;)]</code></li>
+<li><code>[CompanyName(&quot;My Company Name&quot;)]</code></li>
+<li><code>[AddInVersion(false, 1)]</code></li>
+<li><code>[RequiredVersion(29, 0)]</code></li>
+<li><code>[Description(&quot;This is the description of what this add-in will do.&quot;)]</code>
+<img src="../images/Sample%20Add-In%20Administration%20Properties.png"></li>
+</ul>
+<p>Task add-in specific attributes:</p>
+<ul>
+<li><code>[IsTask(true)]</code> This defines whether the add-in is a task add in (true) or not (false).</li>
+<li><code>[TaskFlags(EdmTaskFlag flag)]</code> These agruments indicate how the add-in can be incorporated into PDM.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The framework automatically hooks into all task events when <code>[IsTask()]</code> is set to <code>true</code>, no need to use the <code>[ListenFor(EdmCmdType event)]</code> attribute].</p>
+</div>
+<p>Standard add-in attributes:</p>
+<ul>
+<li><code>[ListenFor(EdmCmdType event)]</code> tells the add-in which PDM event to hook into. Each time a hooked event is triggered within PDM, it will call OnCmd().</li>
+</ul>
+<p>Required Windows attributes:</p>
+<ul>
+<li><code>[ComVisible(true)]</code> This allows PDM to see the add-in.</li>
+<li><code>[Guid(&quot;&quot;)]</code> A unique ID generated that is specific to your project.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In visual Studio, you can generate a new guid by going to Tools -&gt; Create GUID.</p>
+</div>
+<h1 id="example">Example</h1>
+<details>
+<summary>Example Add-In Class</summary>
+<pre><code>namespace MyPdmAddIn
+{
+    [Name(&quot;Sample PDM Add-In&quot;)]
+    [CompanyName(&quot;My Company Name&quot;)]
+    [AddInVersion(false, 1)]
+    [RequiredVersion(29, 0)]
+    [Description(&quot;This is the description of what this add-in will do.&quot;)]
+
+    [IsTask(true)]
+    [TaskFlags((int)EdmTaskFlag.EdmTask_SupportsChangeState + (int)EdmTaskFlag.EdmTask_SupportsDetails + (int)EdmTaskFlag.EdmTask_SupportsInitExec + (int)EdmTaskFlag.EdmTask_SupportsScheduling)]
+
+
+    [ComVisible(true)]
+    [Guid(&quot;0DF94D2F-9FCE-40E2-85E9-CCD5B9DE0DC6&quot;)]
+    public class AddIn : AddInBase
+    {
+        public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+        {
+            base.OnCmd(ref poCmd, ref ppoData);
+
+            // Add your add-in code here
+        }
+    }
+}
+</code></pre>
+</details>
 
 </article>
 

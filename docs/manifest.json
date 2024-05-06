@@ -418,6 +418,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/Sample Add-In Administration Properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Sample Add-In Administration Properties.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/addinwizard.png",
       "output": {
         "resource": {
