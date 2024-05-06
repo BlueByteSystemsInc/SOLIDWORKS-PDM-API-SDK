@@ -159,27 +159,27 @@
 <tbody>
 <tr>
 <td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Logger">Logger</a></td>
-<td>Returns a pointer to the ILogger interface.</td>
+<td>Returns the ILogger interface.</td>
 </tr>
 <tr>
 <td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Properties">Properties</a></td>
-<td>Returns the <a href="https://help.solidworks.com/2020/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.IEdmTaskProperties.html">IEdmProperties</a> object. Be aware that this is only available for EdmTaskSetupButton and EdmTaskSetup hooks. Otherwise, this property will turn null.</td>
+<td>Returns the <a href="https://help.solidworks.com/2020/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.IEdmTaskProperties.html">IEdmProperties</a> object. Be aware that this is only available for EdmTaskSetupButton and EdmTaskSetup hooks. Otherwise, this property will turn null or nothing.</td>
 </tr>
 <tr>
 <td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Instance">Instance</a></td>
-<td>Returns the <a href="https://help.solidworks.com/2020/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.IEdmTaskInstance.html">IEdmTaskInstance</a> object. Be aware thst this is only available for EdmTaskLaunch, Run and Details hooks. Otherwise, this property will return null.</td>
+<td>Returns the <a href="https://help.solidworks.com/2020/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.IEdmTaskInstance.html">IEdmTaskInstance</a> object. Be aware that this is only available for EdmTaskLaunch, Run and Details hooks. Otherwise, this property will return null or nothing.</td>
 </tr>
 <tr>
 <td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Identity">Identity</a></td>
-<td>This structure captures the values used in the definition attributes. Use the method ToCaption() to return the name of the add-in and version together without having to use string concatenation. This particularly useful for setting the title of a form.</td>
+<td>This structure captures the values used in the definition attributes. Use the method ToCaption() to return the name of the add-in and its version without using string concatenation. This particularly useful for setting the title of a form.</td>
 </tr>
 <tr>
 <td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Container">Container</a></td>
-<td>This dependency injection containerwill resolve any types that you may register in the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_RegisterAdditionalTypes">RegisterAdditionalTypes</a> method.</td>
+<td>This dependency injection container will resolve any types that registered in the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_RegisterAdditionalTypes">RegisterAdditionalTypes</a> method.</td>
 </tr>
 <tr>
 <td><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_ForEach">ForEach</a></td>
-<td>Provides a mechanism to apply a lambda expression to the affected items on the OnCmd. Be aware that this is only valid for file (IEdmFile5). Other items affected by the command that are not files will be ignored.</td>
+<td>Provides a mechanism to apply a lambda expression to the affected items. Be aware that this is only valid for files (IEdmFile5). Other items affected by the command that are not files will be ignored.</td>
 </tr>
 </tbody>
 </table>
