@@ -3,7 +3,7 @@
 >[!NOTE]
 > For the complete API reference of the AddInBase class, please refer to this [page](https://bluebytesystemsinc.github.io/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html).
 
-AddInBase is the **only** class that has to be implemented in order to create a working PDM add-in. 
+In the SOLIDWORKS PDM API, your add-in's class must implement the [IEdmAddIn5](https://help.solidworks.com/2023/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmAddIn5.html) interface. In PDMSDK, AddInBase is the **only** class that has to be inherited in order to create a working PDM add-in. This abstract class does implement the [IEdmAddIn5](https://help.solidworks.com/2023/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmAddIn5.html) interface and packs a lot of useful functionlities.  
 
 PDM add-ins can be broken down into two different types:
 

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | SOLIDWORKS PDM SDK </title>
+      <title>Implementing OnCmd | SOLIDWORKS PDM SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | SOLIDWORKS PDM SDK ">
+      <meta name="title" content="Implementing OnCmd | SOLIDWORKS PDM SDK ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -85,7 +85,108 @@
         </div>
 
         <article data-uid="">
+<h1 id="implementing-oncmd">Implementing OnCmd</h1>
 
+<div class="TIP">
+<h5>Tip</h5>
+<p>You <strong>do not</strong> need to be provide an implementation or override the GetAddInInfo method. PDMSDK takes care of setting the add-in information through the definition attributes discussed previously.</p>
+</div>
+<p>The OnCmd gets called by PDM whenever a menu command or a hooked event is triggered. There are two arguments passed into this method:</p>
+<ol>
+<li><p><code>EdmCmd poCmd</code></p>
+<p>This object contains information about the event that triggered this call as well as attributes for the vault and vault view that triggered the event.</p>
+</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>For complete information about <code>EdmCmd</code>, refer to this <a href="https://help.solidworks.com/2023/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.EdmCmd.html">page</a></p>
+</div>
+<ol start="2">
+<li><p><code>EdmCmdData[] ppoData</code></p>
+<p>This object contains data about every object (file, folder, etc.) that this command will potentially affect.</p>
+<p>Common attributes that are passed through the <code>EdmCmdData</code> structure are:</p>
+<ul>
+<li>File path</li>
+<li>Id of affected file</li>
+<li>Id of affected folder, or parent folder of file</li>
+<li>Additional command specific information may be passed into this structure.</li>
+</ul>
+</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>For complete information about <code>EdmCmdData</code> structure for all command types, refer to this <a href="https://help.solidworks.com/2023/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.EdmCmdData.html">page</a></p>
+</div>
+<h1 id="working-with-edmcmddata">Working with EdmCmdData</h1>
+<p>A common structure for to utilize <code>OnCmd</code> and its data will be to perform actions based on the command type using a switch statement. The command type is retrieved from <code>poCmd.meCmdType</code></p>
+<p>A separate switch case can be added for each command type in order to keep the logic separate.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To perform actions on a specific command type, that command must first be hooked using the <code>[AddListener()]</code> attribute. See this help <a href="addinbase_structure.html">page</a> for more information.</p>
+</div>
+<pre><code>public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+{
+    base.OnCmd(ref poCmd, ref ppoData);
+
+    switch(poCmd.meCmdType)
+    {
+        case EdmCmdType.EdmCmd_PreUnlock:
+            foreach(var ppoDatum in ppoData)
+            {
+                // Do something to each file before it is checked-in
+            }
+            break;
+    }
+}
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To access the vault object, utilize <code>this.Vault</code>. If the vault object needs to implement additional features from a specific vault interface, it can be cast in this manner.</p>
+<p><code>var edmVault21 = this.Vault as IEdmVault21</code></p>
+</div>
+<h1 id="accessing-files-and-folders">Accessing Files and Folders</h1>
+<p>Files and folders can be accessed by utilizing the IDs passed into the <code>ppoData[]</code> structure. The example below obtains the file object from the vault and can perform actions or checks on it prior to it being checked in.</p>
+<pre><code>case EdmCmdType.EdmCmd_PreUnlock:
+    foreach (var ppoDatum in ppoData)
+    {
+        var filePath = ppoDatum.mbsStrData1;
+        var fileId = ppoDatum.mlObjectID1;
+        var folderId = ppoDatum.mlObjectID2;
+
+        var edmFile = Vault.TryGetFileFromPath(filePath, out var edmFolder);
+
+        // Do something with the file in question
+    }
+    break;
+</code></pre>
+<h1 id="canceling-actions">Canceling Actions</h1>
+<p>If the OnCmd function needs to abort the current action, such as check-in or state change, the <code>poCmd.mbCancel</code> flag can be set by the user. Once the add-in finishes with the OnCmd method, it will allow or cancel the current action based on the value of this command.</p>
+<p>Example to cancel check-in:</p>
+<pre><code>case EdmCmdType.EdmCmd_PreUnlock:
+    foreach (var ppoDatum in ppoData)
+    {
+        var filePath = ppoDatum.mbsStrData1;
+        var fileId = ppoDatum.mlObjectID1;
+        var folderId = ppoDatum.mlObjectID2;
+
+        var edmFile = Vault.TryGetFileFromPath(filePath, out var edmFolder);
+
+        if (edmFile.CurrentRevision == &quot;&quot;) // if the revision is not blank, cancel the check-in
+        {
+            poCmd.mbCancel = Convert.ToInt16(true); // Sets to integer value of 1
+            break;
+        }
+    }
+    break;
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This cancellation applies to all files in the current command. It is not possible to allow some files to proceed while halting the action on others.</p>
+</div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Tasks support suspenstion and cancellation during the EdmTaskRun hook. PDMSDK provides a specific way to suspend and cancel tasks. Consult the task section for more information.</p>
+</div>
 
 </article>
 
@@ -107,7 +208,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with maple syrup 🍁.</span>
         </div>
       </div>
     </footer>

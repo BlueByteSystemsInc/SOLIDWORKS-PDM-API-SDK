@@ -1,13 +1,18 @@
+
 # Implementing OnCmd
 
-This method gets called by PDM whenever a menu command or a hooked event is triggered. There are two arguments passed into this method.
+> [!TIP] 
+> You **do not** need to be provide an implementation or override the GetAddInInfo method. PDMSDK takes care of setting the add-in information through the definition attributes discussed previously.
+
+The OnCmd gets called by PDM whenever a menu command or a hooked event is triggered. There are two arguments passed into this method:
+
 
 1. `EdmCmd poCmd`
 
    This object contains information about the event that triggered this call as well as attributes for the vault and vault view that triggered the event.
 
-   > [!TIP]
-   > For complete information about `EdmCmd`, refer to this [page](https://help.solidworks.com/2023/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.EdmCmd.html)
+> [!TIP]
+> For complete information about `EdmCmd`, refer to this [page](https://help.solidworks.com/2023/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.EdmCmd.html)
 
 2. `EdmCmdData[] ppoData`
 
@@ -19,8 +24,9 @@ This method gets called by PDM whenever a menu command or a hooked event is trig
    - Id of affected file
    - Id of affected folder, or parent folder of file
    - Additional command specific information may be passed into this structure.
-     > [!TIP]
-     > For complete information about `EdmCmdData` structure for all command types, refer to this [page](https://help.solidworks.com/2023/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.EdmCmdData.html)
+
+> [!TIP]
+> For complete information about `EdmCmdData` structure for all command types, refer to this [page](https://help.solidworks.com/2023/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.EdmCmdData.html)
 
 # Working with EdmCmdData
 
@@ -98,4 +104,9 @@ case EdmCmdType.EdmCmd_PreUnlock:
 ```
 
 > [!NOTE]
-> This cancellation applies to all files in the current command. It is not possible to allow some files to proceed while halting the action on others.
+> This cancellation applies to all files in the current command. It is not possible to allow some files to proceed while halting the action on others. 
+
+> [!IMPORTANT]
+> Tasks support suspenstion and cancellation during the EdmTaskRun hook. PDMSDK provides a specific way to suspend and cancel tasks. Consult the task section for more information.
+
+
