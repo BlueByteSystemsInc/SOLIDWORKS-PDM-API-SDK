@@ -72,7 +72,7 @@ case EdmCmdType.EdmCmd_PreUnlock:
     break;
 ```
 
-# Validating Files and Canceling Actions
+# Canceling Actions
 
 If the OnCmd function needs to abort the current action, such as check-in or state change, the `poCmd.mbCancel` flag can be set by the user. Once the add-in finishes with the OnCmd method, it will allow or cancel the current action based on the value of this command.
 
@@ -88,9 +88,9 @@ case EdmCmdType.EdmCmd_PreUnlock:
 
         var edmFile = Vault.TryGetFileFromPath(filePath, out var edmFolder);
 
-        if (edmFile.CurrentRevision != "A") // if the revision is not "A", cancel the check-in
+        if (edmFile.CurrentRevision == "") // if the revision is not blank, cancel the check-in
         {
-            poCmd.mbCancel = Convert.ToInt16(true);
+            poCmd.mbCancel = Convert.ToInt16(true); // Sets to integer value of 1
             break;
         }
     }
