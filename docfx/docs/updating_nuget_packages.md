@@ -1,7 +1,7 @@
 To fully utilize the latest features and bug fixes of the SDK, please make sure you are using the latest version of the BlueByte.PDMProfessional.SDK nuget package.
 
 >[!NOTE]
-> BlueByte.PDMProfessional.SDK targets .NET framework 4.7.2. For more information, check out the nuget package [page](https://www.nuget.org/packages/BlueByte.SOLIDWORKS.PDMProfessional.SDK).
+> BlueByte.PDMProfessional.SDK targets .NET framework 4.6.1. For more information, check out the nuget package [page](https://www.nuget.org/packages/BlueByte.SOLIDWORKS.PDMProfessional.SDK).
 
 The latest version of the nuget is:  [![NuGet version (BlueByte.SOLIDWORKS.PDMProfessional.SDK)](https://img.shields.io/nuget/v/BlueByte.SOLIDWORKS.PDMProfessional.SDK.svg?style=flat-square)](https://www.nuget.org/packages/BlueByte.SOLIDWORKS.PDMProfessional.SDK)
 
