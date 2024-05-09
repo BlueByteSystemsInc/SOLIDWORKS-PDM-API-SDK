@@ -3,9 +3,9 @@
 namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
 {
     /// <summary>
-    /// Task setup page.
+    /// task page page.
     /// </summary>
-    public interface ITaskSetupPage
+    public interface ITaskPage
     {
         #region Public Properties
 
@@ -26,7 +26,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
         /// <summary>
         /// Loads data from the task.
         /// </summary>
-        /// <param name="cmd">EdmCmd specific to the <see cref="EdmCmdType.EdmCmd_TaskSetup"/> hook.</param>
+        /// <param name="cmd">EdmCmd specific to the <see cref="EdmCmdType.EdmCmd_TaskSetup"/> or <see cref="EdmCmdType.EdmCmd_TaskDetails"/>hook.</param>
         /// <param name="identity">Use because IEdmTaskInstance guid returns empty guid.</param>
         void LoadData(ref EdmCmd cmd);
 
