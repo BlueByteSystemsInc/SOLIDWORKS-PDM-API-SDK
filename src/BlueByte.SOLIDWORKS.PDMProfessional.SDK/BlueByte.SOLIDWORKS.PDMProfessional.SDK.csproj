@@ -94,10 +94,10 @@
     <Compile Include="Attributes\TaskFlagsAttribute.cs" />
     <Compile Include="Core\CancellationException.cs" />
     <Compile Include="Core\Identity.cs" />
-    <Compile Include="Core\ITaskSetupPage.cs" />
+    <Compile Include="Core\ITaskPage.cs" />
     <Compile Include="Core\AddInBase.cs" />
     <Compile Include="Core\TaskFailedException.cs" />
-    <Compile Include="Core\TaskSetupPage.cs">
+    <Compile Include="Core\TaskPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Diagnostics\ConsoleLogger.cs" />

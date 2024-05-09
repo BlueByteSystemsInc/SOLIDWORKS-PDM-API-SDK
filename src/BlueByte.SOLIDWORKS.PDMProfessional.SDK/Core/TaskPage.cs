@@ -8,10 +8,10 @@ using System.Windows.Forms;
 namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
 {
     /// <summary>
-    /// Tasksetup page template.
+    /// Task page. Use this to add a UI component (Usercontrol) to <see cref="EdmCmdType.EdmCmd_TaskSetup"/> and <see cref="EdmCmdType.EdmCmd_TaskDetails"/>
     /// </summary>
     /// <typeparam name="T">ViewModel</typeparam>
-    public class TaskSetupPage<T> : UserControl, ITaskSetupPage where T : INotifyPropertyChanged
+    public class TaskPage<T> : UserControl, ITaskPage where T : INotifyPropertyChanged
     {
         #region Public Properties
 
@@ -51,9 +51,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
         #region Public Constructors
 
         /// <summary>
-        /// Creates a new instance of the task page setup.
+        /// Creates a new instance of the task page.
         /// </summary>
-        public TaskSetupPage() : base()
+        public TaskPage() : base()
         {
         }
 
@@ -70,7 +70,15 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
             if (Container == null)
                 throw new Exception("Please set the container property.");
 
-            var taskProperties = cmd.mpoExtra as IEdmTaskProperties;
+
+
+            IEdmTaskProperties taskProperties = cmd.mpoExtra as IEdmTaskProperties;
+            IEdmTaskInstance taskInstance = cmd.mpoExtra as IEdmTaskInstance;
+
+            if (taskProperties == null)
+                taskInstance = cmd.mpoExtra as IEdmTaskInstance;
+
+            
 
             this.Vault = cmd.mpoVault as IEdmVault5;
 
@@ -78,13 +86,20 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
 
             if (SaveLoadDataToVariable == false)
             {
-                data = taskProperties.GetValEx($"{taskProperties.AddInName}{taskProperties.TaskName}{typeof(T).Name}");
+                if (taskProperties == null)
+                    data = taskInstance.GetValEx($"{taskInstance.InstanceGUID}{taskInstance.TaskName}{typeof(T).Name}");
+                else
+                    data = taskProperties.GetValEx($"{taskProperties.AddInName}{taskProperties.TaskName}{typeof(T).Name}");
             }
             else
             if (SaveLoadDataToVariable == true)
             {
                 var vault = cmd.mpoVault as IEdmVault5;
-                data = taskProperties.GetVar(SaveLoadDataToVariableId);
+
+                if (taskProperties == null)
+                    data = taskInstance.GetVar(SaveLoadDataToVariableId);
+                  else
+                    data = taskProperties.GetVar(SaveLoadDataToVariableId);
             }
 
             if (data != null)
@@ -223,19 +238,34 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
 
             if (str != null)
             {
-                var taskProperties = cmd.mpoExtra as IEdmTaskProperties;
+                IEdmTaskProperties taskProperties = cmd.mpoExtra as IEdmTaskProperties;
+                IEdmTaskInstance taskInstance = cmd.mpoExtra as IEdmTaskInstance;
+
+                if (taskProperties == null)
+                    taskInstance = cmd.mpoExtra as IEdmTaskInstance;
+
                 var regex = new Regex(@"\\+");
                 if (regex.IsMatch(str))
                 {
                     str = regex.Replace(str, @"\\");
                 }
                 if (SaveLoadDataToVariable == false)
-                    taskProperties.SetValEx($"{taskProperties.AddInName}{taskProperties.TaskName}{typeof(T).Name}", str);
+                {
+                    if (taskProperties == null)
+                        taskInstance.SetValEx($"{taskInstance.TaskGUID}{taskInstance.TaskName}{typeof(T).Name}", str);
+                    else
+                        taskProperties.SetValEx($"{taskProperties.AddInName}{taskProperties.TaskName}{typeof(T).Name}", str);
 
+                }
                 if (SaveLoadDataToVariable == true)
                 {
                     var vault = cmd.mpoVault as IEdmVault5;
-                    taskProperties.SetVar(SaveLoadDataToVariableId, str);
+                     
+                            if (taskProperties == null)
+                                taskInstance.SetVar(SaveLoadDataToVariableId, str);
+                    else
+                                taskProperties.SetVar(SaveLoadDataToVariableId, str);
+ 
                 }
             }
         }

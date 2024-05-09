@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions
 {
     /// <summary>
-    /// Fires when the supplied <see cref="Core.ITaskSetupPage"/> is not a <see cref="System.Windows.Forms.UserControl"/>.
+    /// Fires when the supplied <see cref="Core.ITaskPage"/> is not a <see cref="System.Windows.Forms.UserControl"/>.
     /// </summary>
     public class ITaskSetupPageNotUserControlException : PDMSDKException
     {

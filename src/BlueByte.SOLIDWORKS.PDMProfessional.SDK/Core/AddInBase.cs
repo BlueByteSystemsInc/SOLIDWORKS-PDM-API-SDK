@@ -25,7 +25,8 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         #region Private Fields
 
         private EdmCmd poCmd;
-        private List<ITaskSetupPage> taskSetupPages = new List<ITaskSetupPage>();
+        private List<ITaskPage> taskSetupPages = new List<ITaskPage>();
+        private ITaskPage taskdetailPage = default(ITaskPage);
 
         #endregion
 
@@ -83,7 +84,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         /// </summary>
         public LoggerType_e LoggerType { get; set; }
 
-        public ITaskSetupPage[] Pages { get; set; }
+        public ITaskPage[] Pages { get; set; }
 
         /// <summary>
         /// Properties
@@ -429,12 +430,12 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         }
 
         /// <summary>
-        /// Add setup page to task. Use <seealso cref="CreatePageInstance{T}"/> to create instance of a page that implements <see cref="ITaskSetupPage"/>.
+        /// Add setup page to task. Use <seealso cref="CreatePageInstance{T}"/> to create instance of a page that implements <see cref="ITaskPage"/>.
         /// </summary>
         /// <param name="taskSetupPage"></param>
-        protected void AddTaskSetupPage(ITaskSetupPage taskSetupPage)
+        protected void AddTaskSetupPage(ITaskPage taskSetupPage)
         {
-            var l = new List<ITaskSetupPage>();
+            var l = new List<ITaskPage>();
             l.Add(taskSetupPage);
             AddTaskSetupPages(l.ToArray());
         }
@@ -442,8 +443,8 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         /// <summary>
         /// Add setup pages to task.
         /// </summary>
-        /// <param name="taskSetupPages">Array of <see cref="ITaskSetupPage"/></param>
-        protected void AddTaskSetupPages(ITaskSetupPage[] taskSetupPages)
+        /// <param name="taskSetupPages">Array of <see cref="ITaskPage"/></param>
+        protected void AddTaskSetupPages(ITaskPage[] taskSetupPages)
         {
             Application.EnableVisualStyles();
 
@@ -486,6 +487,51 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
             taskProperties.SetSetupPages(ar);
 
             Pages = taskSetupPages.ToArray();
+        }
+
+
+        /// <summary>
+        /// Adds the detail task page.
+        /// </summary>
+        /// <param name="taskDetailPage">The task detail page. Please set the container property before calling this method.</param>
+        protected void AddDetailTaskPage(ITaskPage taskDetailPage)
+        {
+            Application.EnableVisualStyles();
+
+            if (taskDetailPage == null)
+                throw new NullReferenceException("taskDetailPage");
+
+           
+            IEdmTaskInstance taskInstance = poCmd.mpoExtra as IEdmTaskInstance;
+            if (taskInstance != null)
+            {
+                
+                    var uc = taskDetailPage as UserControl;
+
+                    if (uc == null)
+                        throw new Exceptions.ITaskSetupPageNotUserControlException($"The supplied ITaskSetupPage is not a user control.", new Exception($"ITaskSetupPage name = ${taskDetailPage.Name}"));
+
+                    if (taskDetailPage.Container == null)
+                        throw new Exception("Please set the Container property.");
+
+                  uc.CreateControl();
+                  
+                  taskDetailPage.LoadData(ref poCmd);
+                   
+                   poCmd.mpoExtra = taskDetailPage;
+                   poCmd.mlParentWnd = uc.Handle.ToInt32();
+                   poCmd.mbsComment = taskDetailPage.Name;
+
+
+                   
+
+
+                this.taskdetailPage = taskDetailPage;
+
+
+            }
+
+           
         }
 
         /// <summary>
@@ -568,7 +614,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         /// <typeparam name="T">Page type</typeparam>
         /// <param name="Page">page type</param>
         /// <returns>An instance of ITaskSetupPage</returns>
-        public ITaskSetupPage CreatePageInstance<T>() where T : UserControl, ITaskSetupPage
+        public ITaskPage CreatePageInstance<T>() where T : UserControl, ITaskPage
         {
             return Container.GetInstance<T>() as T;
         }
@@ -886,7 +932,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         }
 
         /// <summary>
-        /// Deserialize the view model of the <see cref="TaskSetupPage{T}"/>. Use this method in the <see cref="EdmCmdType.EdmCmd_TaskRun"/> and <see cref="EdmCmdType.EdmCmd_TaskLaunch"/> to get the settings.
+        /// Deserialize the view model of the <see cref="TaskPage{T}"/>. Use this method in the <see cref="EdmCmdType.EdmCmd_TaskRun"/> and <see cref="EdmCmdType.EdmCmd_TaskLaunch"/> to get the settings.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns>T</returns>
@@ -991,8 +1037,20 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         /// <param name="ppoData">Affected documents</param>
         public virtual void OnTaskDetails(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
         {
+            
+
             this.Instance = poCmd.mpoExtra as IEdmTaskInstance;
+
             this.Initialize();
+            OnTaskDialogWindowCreated(poCmd.mpoExtra as IEdmTaskInstance);
+
+        }
+
+        /// <summary>
+        /// Fires when the task dialog window is created. This occurs when you create a new task or edit an existing one.
+        /// </summary>
+        public virtual void OnTaskDialogWindowCreated(IEdmTaskInstance instance)
+        {
         }
 
         /// <summary>
@@ -1054,7 +1112,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         }
 
         /// <summary>
-        /// Fires when user clicks OK button in the task setup.
+        /// Fires when user clicks OK button in the task page.
         /// </summary>
         /// <param name="poCmd">Command</param>
         /// <param name="ppoData">Affected documents</param>
