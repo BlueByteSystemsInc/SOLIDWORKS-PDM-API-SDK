@@ -110,3 +110,51 @@ case EdmCmdType.EdmCmd_PreUnlock:
 > Tasks support suspenstion and cancellation during the EdmTaskRun hook. PDMSDK provides a specific way to suspend and cancel tasks. Consult the task section for more information.
 
 
+# Exception handling
+
+We highly recommend that you wrap your OnCmd implementation in a try catch block. Please catch the following exceptions when working with PDMSDK in this order:
+
+- [TaskFailedException](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.TaskFailedException.html#constructors): Thrown when a task fails.
+- [CancellationException](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_CancellationException__ctor): Thrown when a task is canceled by the user.
+- COMException: Thrown when PDM (or another third-party application such as SOLIDWORKS ) throws an exception.
+- Exception: To catch any .NET exception.
+
+
+```
+public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+{
+    base.OnCmd(ref poCmd, ref ppoData);
+
+    try 
+    {
+        
+     switch(poCmd.meCmdType)
+     {
+        case EdmCmdType.EdmCmd_PreUnlock:
+            foreach(var ppoDatum in ppoData)
+            {
+                // Do something to each file before it is checked-in
+            }
+            break;
+     }
+
+    }
+    catch(TaskFailedException e)
+    {
+        
+    }
+    catch(CancellationException e)
+    {
+
+    }
+    catch(COMException e)
+    {
+
+    }
+    catch(Exception e)
+    {
+
+    }
+    
+}
+```

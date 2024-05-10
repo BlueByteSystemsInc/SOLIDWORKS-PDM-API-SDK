@@ -24,7 +24,7 @@ items:
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions
-  summary: Fires when the supplied <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage" data-throw-if-not-resolved="false"></xref> is not a <xref href="System.Windows.Forms.UserControl" data-throw-if-not-resolved="false"></xref>.
+  summary: Fires when the supplied <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage" data-throw-if-not-resolved="false"></xref> is not a <xref href="System.Windows.Forms.UserControl" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: 'public class ITaskSetupPageNotUserControlException : PDMSDKException, ISerializable, _Exception'
@@ -94,13 +94,13 @@ items:
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.ITaskSetupPageNotUserControlException.New(String, System.Exception)
   name.vb: New(String, Exception)
 references:
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html
-  name: ITaskSetupPage
-  nameWithType: ITaskSetupPage
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  name: ITaskPage
+  nameWithType: ITaskPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
 - uid: System.Windows.Forms.UserControl
   commentId: T:System.Windows.Forms.UserControl
   parent: System.Windows.Forms

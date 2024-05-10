@@ -7,8 +7,9 @@ items:
   children:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.#ctor
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu(System.String,System.String)
-  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage)
-  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[])
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash
@@ -37,6 +38,7 @@ items:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes(SimpleInjector.Container)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
@@ -104,7 +106,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Identity
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -133,7 +135,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: BeforeYouCrash
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -164,7 +166,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CatchAllUnhandledException
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -195,7 +197,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Container
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -226,7 +228,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CurrentPosition
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 63
+    startLine: 64
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -258,7 +260,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Instance
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -289,7 +291,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: IsInitialized
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 73
+    startLine: 74
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -320,7 +322,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Logger
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -351,7 +353,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: LoggerType
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 83
+    startLine: 84
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -382,16 +384,16 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Pages
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 85
+    startLine: 86
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
   syntax:
-    content: public ITaskSetupPage[] Pages { get; set; }
+    content: public ITaskPage[] Pages { get; set; }
     parameters: []
     return:
-      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[]
-    content.vb: Public Property Pages As ITaskSetupPage()
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[]
+    content.vb: Public Property Pages As ITaskPage()
   overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages*
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties
   commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties
@@ -411,7 +413,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Properties
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 90
+    startLine: 91
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -442,7 +444,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Range
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 98
+    startLine: 99
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -474,7 +476,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Vault
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 103
+    startLine: 104
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -505,7 +507,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: .ctor
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 112
+    startLine: 113
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -536,7 +538,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CurrentDomain_AssemblyResolve
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 153
+    startLine: 154
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -572,7 +574,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: RegisterTypes
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 353
+    startLine: 354
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -600,7 +602,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AddContextMenu
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 399
+    startLine: 400
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -620,16 +622,16 @@ items:
   nameWithType.vb: AddInBase.AddContextMenu(String, String)
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu(String, String)
   name.vb: AddContextMenu(String, String)
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage)
-  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage)
-  id: AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  id: AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
   langs:
   - csharp
   - vb
-  name: AddTaskSetupPage(ITaskSetupPage)
-  nameWithType: AddInBase.AddTaskSetupPage(ITaskSetupPage)
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage)
+  name: AddTaskSetupPage(ITaskPage)
+  nameWithType: AddInBase.AddTaskSetupPage(ITaskPage)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
   type: Method
   source:
     remote:
@@ -638,30 +640,30 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AddTaskSetupPage
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 434
+    startLine: 435
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
-  summary: Add setup page to task. Use <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance%60%601" data-throw-if-not-resolved="false"></xref> to create instance of a page that implements <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage" data-throw-if-not-resolved="false"></xref>.
+  summary: Add setup page to task. Use <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance%60%601" data-throw-if-not-resolved="false"></xref> to create instance of a page that implements <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected void AddTaskSetupPage(ITaskSetupPage taskSetupPage)
+    content: protected void AddTaskSetupPage(ITaskPage taskSetupPage)
     parameters:
     - id: taskSetupPage
-      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
       description: ''
-    content.vb: Protected Sub AddTaskSetupPage(taskSetupPage As ITaskSetupPage)
+    content.vb: Protected Sub AddTaskSetupPage(taskSetupPage As ITaskPage)
   overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage*
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[])
-  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[])
-  id: AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[])
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  id: AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
   langs:
   - csharp
   - vb
-  name: AddTaskSetupPages(ITaskSetupPage[])
-  nameWithType: AddInBase.AddTaskSetupPages(ITaskSetupPage[])
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[])
+  name: AddTaskSetupPages(ITaskPage[])
+  nameWithType: AddInBase.AddTaskSetupPages(ITaskPage[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
   type: Method
   source:
     remote:
@@ -670,23 +672,55 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AddTaskSetupPages
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 445
+    startLine: 446
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
   summary: Add setup pages to task.
   example: []
   syntax:
-    content: protected void AddTaskSetupPages(ITaskSetupPage[] taskSetupPages)
+    content: protected void AddTaskSetupPages(ITaskPage[] taskSetupPages)
     parameters:
     - id: taskSetupPages
-      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[]
-      description: Array of <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage" data-throw-if-not-resolved="false"></xref>
-    content.vb: Protected Sub AddTaskSetupPages(taskSetupPages As ITaskSetupPage())
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[]
+      description: Array of <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Sub AddTaskSetupPages(taskSetupPages As ITaskPage())
   overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages*
-  nameWithType.vb: AddInBase.AddTaskSetupPages(ITaskSetupPage())
-  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage())
-  name.vb: AddTaskSetupPages(ITaskSetupPage())
+  nameWithType.vb: AddInBase.AddTaskSetupPages(ITaskPage())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage())
+  name.vb: AddTaskSetupPages(ITaskPage())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  id: AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: AddDetailTaskPage(ITaskPage)
+  nameWithType: AddInBase.AddDetailTaskPage(ITaskPage)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AddDetailTaskPage
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 496
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Adds the detail task page.
+  example: []
+  syntax:
+    content: protected void AddDetailTaskPage(ITaskPage taskDetailPage)
+    parameters:
+    - id: taskDetailPage
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+      description: The task detail page. Please set the container property before calling this method.
+    content.vb: Protected Sub AddDetailTaskPage(taskDetailPage As ITaskPage)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage*
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
   commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
   id: OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
@@ -705,7 +739,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnLoadAdditionalAssemblies
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 494
+    startLine: 540
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -737,7 +771,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnLoggerOutputSat
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 502
+    startLine: 548
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -772,7 +806,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnLoggerTypeChosen
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 518
+    startLine: 564
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -804,7 +838,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnRegisterAdditionalTypes
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 527
+    startLine: 573
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -836,7 +870,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnUnhandledExceptions
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 536
+    startLine: 582
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -874,7 +908,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AttachDebugger
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 549
+    startLine: 595
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -902,17 +936,17 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CreatePageInstance
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 570
+    startLine: 616
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
   syntax:
-    content: 'public ITaskSetupPage CreatePageInstance<T>() where T : UserControl, ITaskSetupPage'
+    content: 'public ITaskPage CreatePageInstance<T>() where T : UserControl, ITaskPage'
     typeParameters:
     - id: T
     return:
-      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-    content.vb: Public Function CreatePageInstance(Of T As {UserControl, ITaskSetupPage})() As ITaskSetupPage
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+    content.vb: Public Function CreatePageInstance(Of T As {UserControl, ITaskPage})() As ITaskPage
   overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance*
   nameWithType.vb: AddInBase.CreatePageInstance(Of T)()
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance(Of T)()
@@ -935,7 +969,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ForEachDatum
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 580
+    startLine: 626
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -973,7 +1007,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ForEachFile
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 596
+    startLine: 642
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1012,7 +1046,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ForEachFile
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 624
+    startLine: 670
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1051,7 +1085,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: GetAddInInfo
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 657
+    startLine: 703
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1094,7 +1128,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: GetContainer
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 882
+    startLine: 928
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1125,11 +1159,11 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: GetSettings
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 892
+    startLine: 938
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
-  summary: Deserialize the view model of the <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage%601" data-throw-if-not-resolved="false"></xref>. Use this method in the <xref href="EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskRun" data-throw-if-not-resolved="false"></xref> and <xref href="EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskLaunch" data-throw-if-not-resolved="false"></xref> to get the settings.
+  summary: Deserialize the view model of the <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage%601" data-throw-if-not-resolved="false"></xref>. Use this method in the <xref href="EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskRun" data-throw-if-not-resolved="false"></xref> and <xref href="EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskLaunch" data-throw-if-not-resolved="false"></xref> to get the settings.
   example: []
   syntax:
     content: public T GetSettings<T>()
@@ -1162,7 +1196,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Initialize
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 922
+    startLine: 968
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1190,7 +1224,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnCmd
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 935
+    startLine: 981
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1230,7 +1264,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskDetails
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 991
+    startLine: 1037
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1250,6 +1284,37 @@ items:
   nameWithType.vb: AddInBase.OnTaskDetails(EdmCmd, EdmCmdData())
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
   name.vb: OnTaskDetails(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  id: OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskDialogWindowCreated(IEdmTaskInstance)
+  nameWithType: AddInBase.OnTaskDialogWindowCreated(IEdmTaskInstance)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskDialogWindowCreated
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1051
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when the task dialog window is created. This occurs when you create a new task or edit an existing one.
+  example: []
+  syntax:
+    content: public virtual void OnTaskDialogWindowCreated(IEdmTaskInstance instance)
+    parameters:
+    - id: instance
+      type: EPDM.Interop.epdm.IEdmTaskInstance
+    content.vb: Public Overridable Sub OnTaskDialogWindowCreated(instance As IEdmTaskInstance)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated*
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
   commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
   id: OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
@@ -1268,7 +1333,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskDialogWindowCreated
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1000
+    startLine: 1058
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1299,7 +1364,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskLaunch
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1009
+    startLine: 1067
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1337,7 +1402,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskLaunchButton
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1020
+    startLine: 1078
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1375,7 +1440,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskRun
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1030
+    startLine: 1088
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1413,7 +1478,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskSetup
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1043
+    startLine: 1101
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1451,11 +1516,11 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskSetupButton
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1060
+    startLine: 1118
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
-  summary: Fires when user clicks OK button in the task setup.
+  summary: Fires when user clicks OK button in the task page.
   example: []
   syntax:
     content: public virtual void OnTaskSetupButton(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
@@ -1489,7 +1554,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: BeforeCancellationAction
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1078
+    startLine: 1136
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1521,7 +1586,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CancellationAndSuspensionLogAction
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1085
+    startLine: 1143
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1553,7 +1618,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: SetRange
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1095
+    startLine: 1153
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1599,7 +1664,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CheckForCancellationOrSuspension
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1115
+    startLine: 1173
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1641,7 +1706,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: UpdateTaskMessage
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1193
+    startLine: 1251
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -2200,25 +2265,25 @@ references:
   name: Pages
   nameWithType: AddInBase.Pages
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[]
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[]
   isExternal: true
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html
-  name: ITaskSetupPage[]
-  nameWithType: ITaskSetupPage[]
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[]
-  nameWithType.vb: ITaskSetupPage()
-  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage()
-  name.vb: ITaskSetupPage()
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  name: ITaskPage[]
+  nameWithType: ITaskPage[]
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[]
+  nameWithType.vb: ITaskPage()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage()
+  name.vb: ITaskPage()
   spec.csharp:
-  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-    name: ITaskSetupPage
-    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+    name: ITaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-    name: ITaskSetupPage
-    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+    name: ITaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
   - name: (
   - name: )
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties*
@@ -2363,16 +2428,16 @@ references:
   - name: )
   - name: (
   - name: )
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html
-  name: ITaskSetupPage
-  nameWithType: ITaskSetupPage
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  name: ITaskPage
+  nameWithType: ITaskPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage*
   commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskSetupPage_
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_
   name: AddTaskSetupPage
   nameWithType: AddInBase.AddTaskSetupPage
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage
@@ -2424,10 +2489,16 @@ references:
     href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.html
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages*
   commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskSetupPage___
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage___
   name: AddTaskSetupPages
   nameWithType: AddInBase.AddTaskSetupPages
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddDetailTaskPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_
+  name: AddDetailTaskPage
+  nameWithType: AddInBase.AddDetailTaskPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies*
   commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies
   href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnLoadAdditionalAssemblies_System_IO_DirectoryInfo_
@@ -2756,26 +2827,26 @@ references:
   name: GetContainer
   nameWithType: AddInBase.GetContainer
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html
-  name: TaskSetupPage<T>
-  nameWithType: TaskSetupPage<T>
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage<T>
-  nameWithType.vb: TaskSetupPage(Of T)
-  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage(Of T)
-  name.vb: TaskSetupPage(Of T)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  name: TaskPage<T>
+  nameWithType: TaskPage<T>
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>
+  nameWithType.vb: TaskPage(Of T)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T)
+  name.vb: TaskPage(Of T)
   spec.csharp:
-  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-    name: TaskSetupPage
-    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-    name: TaskSetupPage
-    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
   - name: (
   - name: Of
   - name: " "
@@ -2882,7 +2953,7 @@ references:
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated*
   commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskDialogWindowCreated_EPDM_Interop_epdm_IEdmTaskProperties_
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskDialogWindowCreated_EPDM_Interop_epdm_IEdmTaskInstance_
   name: OnTaskDialogWindowCreated
   nameWithType: AddInBase.OnTaskDialogWindowCreated
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated

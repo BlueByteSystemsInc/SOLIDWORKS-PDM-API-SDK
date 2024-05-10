@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class TaskSetupPage&lt;T&gt; | SOLIDWORKS PDM SDK </title>
+      <title>Class TaskPage&lt;T&gt; | SOLIDWORKS PDM SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class TaskSetupPage&lt;T&gt; | SOLIDWORKS PDM SDK ">
+      <meta name="title" content="Class TaskPage&lt;T&gt; | SOLIDWORKS PDM SDK ">
       
-      <meta name="description" content="Tasksetup page template.">
+      <meta name="description" content="Task page. Use this to add a UI component (Usercontrol) to  and">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/new/master/apiSpec/new?filename=BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1.md&amp;value=---%0Auid%3A%20BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/new/master/apiSpec/new?filename=BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1.md&amp;value=---%0Auid%3A%20BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1">
+        <article data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1">
 
 
 
-  <h1 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1" class="text-break">
-Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1" class="text-break">
+Class TaskPage&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   <dl><dt>Assembly</dt><dd>BlueByte.SOLIDWORKS.PDMProfessional.SDK.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Tasksetup page template.</p>
+  <div class="markdown summary"><p>Task page. Use this to add a UI component (Usercontrol) to <span class="xref">EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskSetup</span> and <span class="xref">EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskDetails</span></p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TaskSetupPage&lt;T&gt; : UserControl, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IComponent, IDisposable, IContainerControl, ITaskSetupPage where T : INotifyPropertyChanged</code></pre>
+    <pre><code class="lang-csharp hljs">public class TaskPage&lt;T&gt; : UserControl, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IComponent, IDisposable, IContainerControl, ITaskPage where T : INotifyPropertyChanged</code></pre>
   </div>
 
 
@@ -124,7 +124,7 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.scrollablecontrol">ScrollableControl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.containercontrol">ContainerControl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.usercontrol">UserControl</a></div>
-      <div><span class="xref">TaskSetupPage&lt;T&gt;</span></div>
+      <div><span class="xref">TaskPage&lt;T&gt;</span></div>
     </dd>
   </dl>
 
@@ -138,7 +138,7 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.icomponent">IComponent</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.icontainercontrol">IContainerControl</a></div>
-      <div><a class="xref" href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html">ITaskSetupPage</a></div>
+      <div><a class="xref" href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html">ITaskPage</a></div>
     </dd>
   </dl>
 
@@ -1387,19 +1387,19 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 </h2>
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1__ctor_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.#ctor*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1__ctor_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.#ctor*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1__ctor" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.#ctor">
-  TaskSetupPage()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1__ctor" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.#ctor">
+  TaskPage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new instance of the task page setup.</p>
+  <div class="markdown level1 summary"><p>Creates a new instance of the task page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TaskSetupPage()</code></pre>
+    <pre><code class="lang-csharp hljs">public TaskPage()</code></pre>
   </div>
 
 
@@ -1418,11 +1418,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 </h2>
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_Container_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.Container*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Container_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Container*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_Container" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.Container">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Container" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Container">
   Container
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Container</p>
@@ -1450,11 +1450,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_Name_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.Name*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Name_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Name*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_Name" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.Name">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Name" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Name of the setup page.</p>
@@ -1482,11 +1482,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_SaveLoadDataToVariable_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.SaveLoadDataToVariable*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveLoadDataToVariable_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariable*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_SaveLoadDataToVariable" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.SaveLoadDataToVariable">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveLoadDataToVariable" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariable">
   SaveLoadDataToVariable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Saves and loads data from variable</p>
@@ -1514,11 +1514,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_SaveLoadDataToVariableId_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.SaveLoadDataToVariableId*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveLoadDataToVariableId_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariableId*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_SaveLoadDataToVariableId" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.SaveLoadDataToVariableId">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveLoadDataToVariableId" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariableId">
   SaveLoadDataToVariableId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Id of the variable to save and load data from.</p>
@@ -1546,11 +1546,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_Vault_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.Vault*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Vault_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Vault*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_Vault" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.Vault">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Vault" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Vault">
   Vault
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the vault object.</p>
@@ -1578,11 +1578,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_ViewModel_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.ViewModel*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ViewModel_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ViewModel*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_ViewModel" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.ViewModel">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ViewModel" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ViewModel">
   ViewModel
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>ViewModel</p>
@@ -1614,11 +1614,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 </h2>
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_ClearDataBindings_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.ClearDataBindings*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ClearDataBindings_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ClearDataBindings*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_ClearDataBindings_System_Windows_Forms_Control_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.ClearDataBindings(System.Windows.Forms.Control)">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ClearDataBindings_System_Windows_Forms_Control_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ClearDataBindings(System.Windows.Forms.Control)">
   ClearDataBindings(Control)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L176"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears data bindings all of children.</p>
@@ -1647,11 +1647,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_LoadData_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.LoadData*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_LoadData_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadData*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_LoadData_EPDM_Interop_epdm_EdmCmd__" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.LoadData(EPDM.Interop.epdm.EdmCmd@)">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_LoadData_EPDM_Interop_epdm_EdmCmd__" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadData(EPDM.Interop.epdm.EdmCmd@)">
   LoadData(ref EdmCmd)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Load data.</p>
@@ -1680,11 +1680,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_LoadSettings_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.LoadSettings*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_LoadSettings_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadSettings*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_LoadSettings" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.LoadSettings">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_LoadSettings" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadSettings">
   LoadSettings()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads task settings from a file</p>
@@ -1707,14 +1707,14 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_OnDataLoaded_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.OnDataLoaded*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_OnDataLoaded_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.OnDataLoaded*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_OnDataLoaded" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.OnDataLoaded">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_OnDataLoaded" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.OnDataLoaded">
   OnDataLoaded()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Fires when data is loaded. Clear all bindings from all controls by invoking <a class="xref" href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_ClearDataBindings_System_Windows_Forms_Control_">ClearDataBindings(Control)</a></p>
+  <div class="markdown level1 summary"><p>Fires when data is loaded. Clear all bindings from all controls by invoking <a class="xref" href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ClearDataBindings_System_Windows_Forms_Control_">ClearDataBindings(Control)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1734,11 +1734,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_SaveSettings_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.SaveSettings*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveSettings_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveSettings*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_SaveSettings" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.SaveSettings">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveSettings" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveSettings">
   SaveSettings()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Saves task settings to a file</p>
@@ -1761,11 +1761,11 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_StoreData_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.StoreData*"></a>
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_StoreData_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.StoreData*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskSetupPage_1_StoreData_EPDM_Interop_epdm_EdmCmd__" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1.StoreData(EPDM.Interop.epdm.EdmCmd@)">
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_StoreData_EPDM_Interop_epdm_EdmCmd__" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.StoreData(EPDM.Interop.epdm.EdmCmd@)">
   StoreData(ref EdmCmd)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stores Data</p>
@@ -1797,7 +1797,7 @@ Class TaskSetupPage&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskSetupPage.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/TaskPage.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

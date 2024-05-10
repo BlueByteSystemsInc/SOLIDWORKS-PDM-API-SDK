@@ -48,12 +48,25 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu
   nameWithType: AddInBase.AddContextMenu
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage)
-  name: AddTaskSetupPage(ITaskSetupPage)
-  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskSetupPage_
-  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage)
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage)
-  nameWithType: AddInBase.AddTaskSetupPage(ITaskSetupPage)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  name: AddDetailTaskPage(ITaskPage)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddDetailTaskPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  nameWithType: AddInBase.AddDetailTaskPage(ITaskPage)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage*
+  name: AddDetailTaskPage
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddDetailTaskPage_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage
+  nameWithType: AddInBase.AddDetailTaskPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  name: AddTaskSetupPage(ITaskPage)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  nameWithType: AddInBase.AddTaskSetupPage(ITaskPage)
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage*
   name: AddTaskSetupPage
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPage_
@@ -61,15 +74,15 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage
   nameWithType: AddInBase.AddTaskSetupPage
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[])
-  name: AddTaskSetupPages(ITaskSetupPage[])
-  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskSetupPage___
-  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[])
-  name.vb: AddTaskSetupPages(ITaskSetupPage())
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage[])
-  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage())
-  nameWithType: AddInBase.AddTaskSetupPages(ITaskSetupPage[])
-  nameWithType.vb: AddInBase.AddTaskSetupPages(ITaskSetupPage())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  name: AddTaskSetupPages(ITaskPage[])
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage___
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  name.vb: AddTaskSetupPages(ITaskPage())
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage())
+  nameWithType: AddInBase.AddTaskSetupPages(ITaskPage[])
+  nameWithType.vb: AddInBase.AddTaskSetupPages(ITaskPage())
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages*
   name: AddTaskSetupPages
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_
@@ -460,6 +473,12 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails
   nameWithType: AddInBase.OnTaskDetails
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  name: OnTaskDialogWindowCreated(IEdmTaskInstance)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskDialogWindowCreated_EPDM_Interop_epdm_IEdmTaskInstance_
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  nameWithType: AddInBase.OnTaskDialogWindowCreated(IEdmTaskInstance)
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
   name: OnTaskDialogWindowCreated(IEdmTaskProperties)
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskDialogWindowCreated_EPDM_Interop_epdm_IEdmTaskProperties_
@@ -1276,6 +1295,96 @@ references:
   commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
   nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  name: ITaskPage
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  nameWithType: ITaskPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Container
+  name: Container
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_Container
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Container
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Container
+  nameWithType: ITaskPage.Container
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Container*
+  name: Container
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_Container_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Container
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Container
+  nameWithType: ITaskPage.Container
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadData(EPDM.Interop.epdm.EdmCmd@)
+  name: LoadData(ref EdmCmd)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_LoadData_EPDM_Interop_epdm_EdmCmd__
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadData(EPDM.Interop.epdm.EdmCmd@)
+  name.vb: LoadData(EdmCmd)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadData(ref EPDM.Interop.epdm.EdmCmd)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadData(EPDM.Interop.epdm.EdmCmd)
+  nameWithType: ITaskPage.LoadData(ref EdmCmd)
+  nameWithType.vb: ITaskPage.LoadData(EdmCmd)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadData*
+  name: LoadData
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_LoadData_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadData
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadData
+  nameWithType: ITaskPage.LoadData
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadSettings
+  name: LoadSettings()
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_LoadSettings
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadSettings
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadSettings()
+  nameWithType: ITaskPage.LoadSettings()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadSettings*
+  name: LoadSettings
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_LoadSettings_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadSettings
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.LoadSettings
+  nameWithType: ITaskPage.LoadSettings
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Name
+  name: Name
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_Name
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Name
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Name
+  nameWithType: ITaskPage.Name
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Name*
+  name: Name
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_Name_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Name
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.Name
+  nameWithType: ITaskPage.Name
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.SaveSettings
+  name: SaveSettings()
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_SaveSettings
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.SaveSettings
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.SaveSettings()
+  nameWithType: ITaskPage.SaveSettings()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.SaveSettings*
+  name: SaveSettings
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_SaveSettings_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.SaveSettings
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.SaveSettings
+  nameWithType: ITaskPage.SaveSettings
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.StoreData(EPDM.Interop.epdm.EdmCmd@)
+  name: StoreData(ref EdmCmd)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_StoreData_EPDM_Interop_epdm_EdmCmd__
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.StoreData(EPDM.Interop.epdm.EdmCmd@)
+  name.vb: StoreData(EdmCmd)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.StoreData(ref EPDM.Interop.epdm.EdmCmd)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.StoreData(EPDM.Interop.epdm.EdmCmd)
+  nameWithType: ITaskPage.StoreData(ref EdmCmd)
+  nameWithType.vb: ITaskPage.StoreData(EdmCmd)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.StoreData*
+  name: StoreData
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_StoreData_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.StoreData
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.StoreData
+  nameWithType: ITaskPage.StoreData
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
   name: ITaskSetupPage
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html
@@ -1366,6 +1475,240 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.StoreData
   nameWithType: ITaskSetupPage.StoreData
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  name: TaskPage<T>
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  name.vb: TaskPage(Of T)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T)
+  nameWithType: TaskPage<T>
+  nameWithType.vb: TaskPage(Of T)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.#ctor
+  name: TaskPage()
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1__ctor
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.#ctor
+  name.vb: New()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.TaskPage()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).New()
+  nameWithType: TaskPage<T>.TaskPage()
+  nameWithType.vb: TaskPage(Of T).New()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.#ctor*
+  name: TaskPage
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1__ctor_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.TaskPage
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).New
+  nameWithType: TaskPage<T>.TaskPage
+  nameWithType.vb: TaskPage(Of T).New
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ClearDataBindings(System.Windows.Forms.Control)
+  name: ClearDataBindings(Control)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ClearDataBindings_System_Windows_Forms_Control_
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ClearDataBindings(System.Windows.Forms.Control)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.ClearDataBindings(System.Windows.Forms.Control)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).ClearDataBindings(System.Windows.Forms.Control)
+  nameWithType: TaskPage<T>.ClearDataBindings(Control)
+  nameWithType.vb: TaskPage(Of T).ClearDataBindings(Control)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ClearDataBindings*
+  name: ClearDataBindings
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ClearDataBindings_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ClearDataBindings
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.ClearDataBindings
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).ClearDataBindings
+  nameWithType: TaskPage<T>.ClearDataBindings
+  nameWithType.vb: TaskPage(Of T).ClearDataBindings
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Container
+  name: Container
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Container
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Container
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.Container
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).Container
+  nameWithType: TaskPage<T>.Container
+  nameWithType.vb: TaskPage(Of T).Container
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Container*
+  name: Container
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Container_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Container
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.Container
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).Container
+  nameWithType: TaskPage<T>.Container
+  nameWithType.vb: TaskPage(Of T).Container
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadData(EPDM.Interop.epdm.EdmCmd@)
+  name: LoadData(ref EdmCmd)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_LoadData_EPDM_Interop_epdm_EdmCmd__
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadData(EPDM.Interop.epdm.EdmCmd@)
+  name.vb: LoadData(EdmCmd)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.LoadData(ref EPDM.Interop.epdm.EdmCmd)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).LoadData(EPDM.Interop.epdm.EdmCmd)
+  nameWithType: TaskPage<T>.LoadData(ref EdmCmd)
+  nameWithType.vb: TaskPage(Of T).LoadData(EdmCmd)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadData*
+  name: LoadData
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_LoadData_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadData
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.LoadData
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).LoadData
+  nameWithType: TaskPage<T>.LoadData
+  nameWithType.vb: TaskPage(Of T).LoadData
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadSettings
+  name: LoadSettings()
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_LoadSettings
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadSettings
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.LoadSettings()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).LoadSettings()
+  nameWithType: TaskPage<T>.LoadSettings()
+  nameWithType.vb: TaskPage(Of T).LoadSettings()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadSettings*
+  name: LoadSettings
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_LoadSettings_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.LoadSettings
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.LoadSettings
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).LoadSettings
+  nameWithType: TaskPage<T>.LoadSettings
+  nameWithType.vb: TaskPage(Of T).LoadSettings
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Name
+  name: Name
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Name
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Name
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.Name
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).Name
+  nameWithType: TaskPage<T>.Name
+  nameWithType.vb: TaskPage(Of T).Name
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Name*
+  name: Name
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Name_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Name
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.Name
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).Name
+  nameWithType: TaskPage<T>.Name
+  nameWithType.vb: TaskPage(Of T).Name
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.OnDataLoaded
+  name: OnDataLoaded()
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_OnDataLoaded
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.OnDataLoaded
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.OnDataLoaded()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).OnDataLoaded()
+  nameWithType: TaskPage<T>.OnDataLoaded()
+  nameWithType.vb: TaskPage(Of T).OnDataLoaded()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.OnDataLoaded*
+  name: OnDataLoaded
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_OnDataLoaded_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.OnDataLoaded
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.OnDataLoaded
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).OnDataLoaded
+  nameWithType: TaskPage<T>.OnDataLoaded
+  nameWithType.vb: TaskPage(Of T).OnDataLoaded
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariable
+  name: SaveLoadDataToVariable
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveLoadDataToVariable
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariable
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.SaveLoadDataToVariable
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).SaveLoadDataToVariable
+  nameWithType: TaskPage<T>.SaveLoadDataToVariable
+  nameWithType.vb: TaskPage(Of T).SaveLoadDataToVariable
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariable*
+  name: SaveLoadDataToVariable
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveLoadDataToVariable_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariable
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.SaveLoadDataToVariable
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).SaveLoadDataToVariable
+  nameWithType: TaskPage<T>.SaveLoadDataToVariable
+  nameWithType.vb: TaskPage(Of T).SaveLoadDataToVariable
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariableId
+  name: SaveLoadDataToVariableId
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveLoadDataToVariableId
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariableId
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.SaveLoadDataToVariableId
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).SaveLoadDataToVariableId
+  nameWithType: TaskPage<T>.SaveLoadDataToVariableId
+  nameWithType.vb: TaskPage(Of T).SaveLoadDataToVariableId
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariableId*
+  name: SaveLoadDataToVariableId
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveLoadDataToVariableId_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveLoadDataToVariableId
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.SaveLoadDataToVariableId
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).SaveLoadDataToVariableId
+  nameWithType: TaskPage<T>.SaveLoadDataToVariableId
+  nameWithType.vb: TaskPage(Of T).SaveLoadDataToVariableId
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveSettings
+  name: SaveSettings()
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveSettings
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveSettings
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.SaveSettings()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).SaveSettings()
+  nameWithType: TaskPage<T>.SaveSettings()
+  nameWithType.vb: TaskPage(Of T).SaveSettings()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveSettings*
+  name: SaveSettings
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_SaveSettings_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.SaveSettings
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.SaveSettings
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).SaveSettings
+  nameWithType: TaskPage<T>.SaveSettings
+  nameWithType.vb: TaskPage(Of T).SaveSettings
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.StoreData(EPDM.Interop.epdm.EdmCmd@)
+  name: StoreData(ref EdmCmd)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_StoreData_EPDM_Interop_epdm_EdmCmd__
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.StoreData(EPDM.Interop.epdm.EdmCmd@)
+  name.vb: StoreData(EdmCmd)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.StoreData(ref EPDM.Interop.epdm.EdmCmd)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).StoreData(EPDM.Interop.epdm.EdmCmd)
+  nameWithType: TaskPage<T>.StoreData(ref EdmCmd)
+  nameWithType.vb: TaskPage(Of T).StoreData(EdmCmd)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.StoreData*
+  name: StoreData
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_StoreData_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.StoreData
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.StoreData
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).StoreData
+  nameWithType: TaskPage<T>.StoreData
+  nameWithType.vb: TaskPage(Of T).StoreData
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Vault
+  name: Vault
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Vault
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Vault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.Vault
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).Vault
+  nameWithType: TaskPage<T>.Vault
+  nameWithType.vb: TaskPage(Of T).Vault
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Vault*
+  name: Vault
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Vault_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.Vault
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.Vault
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).Vault
+  nameWithType: TaskPage<T>.Vault
+  nameWithType.vb: TaskPage(Of T).Vault
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ViewModel
+  name: ViewModel
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ViewModel
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ViewModel
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.ViewModel
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).ViewModel
+  nameWithType: TaskPage<T>.ViewModel
+  nameWithType.vb: TaskPage(Of T).ViewModel
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ViewModel*
+  name: ViewModel
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_ViewModel_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1.ViewModel
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>.ViewModel
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T).ViewModel
+  nameWithType: TaskPage<T>.ViewModel
+  nameWithType.vb: TaskPage(Of T).ViewModel
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
   name: TaskSetupPage<T>
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html

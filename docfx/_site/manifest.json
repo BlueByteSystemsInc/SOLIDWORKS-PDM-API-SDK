@@ -142,10 +142,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.yml",
       "output": {
         ".html": {
           "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html"
         }
       },
       "version": ""
@@ -422,6 +442,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/updating_nuget_packages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/DebugAddIn.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/DebugAddIn.png"
         }
       },
       "version": ""

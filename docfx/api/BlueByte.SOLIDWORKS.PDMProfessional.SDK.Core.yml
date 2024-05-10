@@ -4,8 +4,8 @@ items:
   commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
   id: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
   children:
-  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
   langs:
   - csharp
   - vb
@@ -16,33 +16,33 @@ items:
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
 references:
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html
-  name: ITaskSetupPage
-  nameWithType: ITaskSetupPage
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html
-  name: TaskSetupPage<T>
-  nameWithType: TaskSetupPage<T>
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage<T>
-  nameWithType.vb: TaskSetupPage(Of T)
-  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage(Of T)
-  name.vb: TaskSetupPage(Of T)
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  name: ITaskPage
+  nameWithType: ITaskPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  name: TaskPage<T>
+  nameWithType: TaskPage<T>
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>
+  nameWithType.vb: TaskPage(Of T)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T)
+  name.vb: TaskPage(Of T)
   spec.csharp:
-  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-    name: TaskSetupPage
-    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-    name: TaskSetupPage
-    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
   - name: (
   - name: Of
   - name: " "

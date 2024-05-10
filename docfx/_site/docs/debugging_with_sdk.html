@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | SOLIDWORKS PDM SDK </title>
+      <title>Debugging Add-ins | SOLIDWORKS PDM SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | SOLIDWORKS PDM SDK ">
+      <meta name="title" content="Debugging Add-ins | SOLIDWORKS PDM SDK ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -85,7 +85,42 @@
         </div>
 
         <article data-uid="">
+<h1 id="debugging-add-ins">Debugging Add-ins</h1>
 
+<p>Add-ins are stored in the file vault and are downloaded to and COM-registered on the client computer when they are needed. This presents a problem when developing a new add-in that you want to debug, because the add-in is re-registered in a folder that is different than the compiler’s output folder. Testing an add-in in a production vault can also be a problem, because it affects all users of the vault.</p>
+<p>SOLIDWORKS PDM Professional provides a menu command that solves these two problems, Debug Add-ins.</p>
+<img src="../images/DebugAddIn.png">
+<p>When an add-in is installed as a debug add-in, it is registered only on your machine. No other users are affected by it. The add-in is also loaded from the location where it is registered.</p>
+<p>To debug an add-in using File Explorer:</p>
+<ul>
+<li>Open the Windows Task Manager.</li>
+<li>Kill the explorer.exe/edmserver.exe process.</li>
+<li>Right-click the project name in the Solution Explorer of Visual Studio and click Properties.</li>
+<li>Click the Debug tab.</li>
+<li>Click Start external program and type the File Explorer executable's path. For example:
+C:\windows\notepad.exe</li>
+<li>Click Debug &gt; Start Debugging.</li>
+</ul>
+<h1 id="limitations">Limitations</h1>
+<p>Using notepad.exe as an external program has limitations:</p>
+<ul>
+<li>Open file dialog has no support for multi-select for files or folders</li>
+<li>Numerous steps required to be performed each time new debug session is started (i.e. click Open menu, navigate to vault, change filter).</li>
+<li>You <strong>cannot</strong> use Debug Add-ins to debug task add-ins.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>We highly recommend you use our Console Debugger Tool for SOLIDWORKS PDM Professional add-ins. You can download the binaires from our release page in this <a href="https://github.com/AmenJlili/Console-debugger-tool-for-SOLIDWORKS-PDM-Professional-addins/releases">repo</a>.</p>
+</div>
+<h1 id="pdmsdks-attachdebugger">PDMSDK's AttachDebugger</h1>
+<p>PDMSDK provides you with a built-in method in the base class called AttachDebugger that triggers the Visual Studio debugger to launch a window and asks which Visual Studio instance to use.</p>
+<p>All you need to do is:</p>
+<ul>
+<li>Call AttachDebugger in your OnCmd method</li>
+<li>Load the add-in either by adding it through <em>New Add-in...</em> or <em>Debug Add-ins</em></li>
+<li>Trigger the add-in to execute by invoking of the hook you are watching or invoking a command.</li>
+<li>The add-in will prompt the debug dialog. Click OK to start debugging...</li>
+</ul>
 
 </article>
 
@@ -107,7 +142,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with maple syrup 🍁.</span>
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁.</span>
         </div>
       </div>
     </footer>

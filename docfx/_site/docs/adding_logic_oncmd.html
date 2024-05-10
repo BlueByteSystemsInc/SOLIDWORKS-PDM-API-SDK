@@ -187,6 +187,51 @@
 <h5>Important</h5>
 <p>Tasks support suspenstion and cancellation during the EdmTaskRun hook. PDMSDK provides a specific way to suspend and cancel tasks. Consult the task section for more information.</p>
 </div>
+<h1 id="exception-handling">Exception handling</h1>
+<p>We highly recommend that you wrap your OnCmd implementation in a try catch block. Please catch the following exceptions when working with PDMSDK in this order:</p>
+<ul>
+<li><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.TaskFailedException.html#constructors">TaskFailedException</a>: Thrown when a task fails.</li>
+<li><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_CancellationException__ctor">CancellationException</a>: Thrown when a task is canceled by the user.</li>
+<li>COMException: Thrown when PDM (or another third-party application such as SOLIDWORKS ) throws an exception.</li>
+<li>Exception: To catch any .NET exception.</li>
+</ul>
+<pre><code>public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+{
+    base.OnCmd(ref poCmd, ref ppoData);
+
+    try 
+    {
+        
+     switch(poCmd.meCmdType)
+     {
+        case EdmCmdType.EdmCmd_PreUnlock:
+            foreach(var ppoDatum in ppoData)
+            {
+                // Do something to each file before it is checked-in
+            }
+            break;
+     }
+
+    }
+    catch(TaskFailedException e)
+    {
+        
+    }
+    catch(CancellationException e)
+    {
+
+    }
+    catch(COMException e)
+    {
+
+    }
+    catch(Exception e)
+    {
+
+    }
+    
+}
+</code></pre>
 
 </article>
 
@@ -208,7 +253,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with maple syrup 🍁.</span>
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁.</span>
         </div>
       </div>
     </footer>

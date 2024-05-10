@@ -37,10 +37,10 @@ items:
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
   name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
   items:
-  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage
-    name: ITaskSetupPage
-  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage`1
-    name: TaskSetupPage<T>
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+    name: ITaskPage
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage<T>
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
   name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
   items:
