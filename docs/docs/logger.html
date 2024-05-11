@@ -90,7 +90,7 @@
 <p>PDMSDK has a logger property that implements the ILogger interface called <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Logger">Logger</a>. It allows for logging capabilites in your add-in.</p>
 <p>There are three built-in types of logger:</p>
 <ul>
-<li>File logger: This logs output to a text file. This logger require any initialization. You must define the output location.</li>
+<li>File logger: This logs output to a text file. You must define the output location.</li>
 <li>SQL logger: This logs output to a table in a database. This logger requires a connection string and a table name.</li>
 <li>Console logger: If your add-in dll is called from a console application, you can use this logger to print output directly to the console. This logger does not require any initialization and is very useful in unit and integration tests.</li>
 </ul>
@@ -129,10 +129,16 @@
 <h5>Note</h5>
 <p>You can implement your own logger by implementing the ILogger interface and register it using the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Container">Container</a> in the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_RegisterAdditionalTypes">RegisterAdditionalTypes</a> method. In this case, you can ignore the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnLoggerTypeChosen">OnLoggerTypeChosen</a> method.</p>
 </div>
+<h1 id="file-logger">File Logger</h1>
+<p>To use the file logger:</p>
+<ul>
+<li>Set the output location via the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_OutputLocation">OutputLocation</a> property.</li>
+<li>Call <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput">LogToOutput</a> to log to output. Your target must be the name of your log file with its extension.</li>
+</ul>
 <h1 id="sql-logger">SQL logger</h1>
 <p>With the SQL logger, you must:</p>
 <ul>
-<li>Call the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_Init_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_EPDM_Interop_epdm_IEdmTaskInstance_System_String_">Initialize</a> method in the implementation of the OnCmd method.</li>
+<li>Call the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_Init_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_EPDM_Interop_epdm_IEdmTaskInstance_System_String_">Init</a> method in the implementation of the OnCmd method.</li>
 <li>Call <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_StartConnection">StartConnection</a> to start your connection with your SQL server.</li>
 <li>Call <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput">LogToOutput</a> to log to output with target being the name of the table in your SQL table.</li>
 <li>Call <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_EndConnection">EndConnection</a> to end your connection with your SQL server.</li>
