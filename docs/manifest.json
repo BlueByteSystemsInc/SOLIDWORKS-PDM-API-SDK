@@ -424,6 +424,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/taskadd-ins.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/taskadd-ins.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "docs/toc.yml",
       "output": {

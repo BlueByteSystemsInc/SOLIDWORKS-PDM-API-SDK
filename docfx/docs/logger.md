@@ -9,7 +9,7 @@ There are three built-in types of logger:
 - Console logger: If your add-in dll is called from a console application, you can use this logger to print output directly to the console. This logger does not require any initialization and is very useful in unit and integration tests. 
 
 >[!IMPORTANT]
-> When working with the TaskDetails hook, some developers  prefer to save the output of their logs in the task instance object. To access the log, the user needs to be have the proper task permissions. We highly recommend you use the [Logger](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Logger) instead.
+> When working with the TaskDetails hook, some developers prefer to save the output of their logs in the task instance object. To access the log, the user needs to be have the proper task permissions. We highly recommend you use the [Logger](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Logger) and save your logs to the vault file system instead.
 
 
 # Configuration

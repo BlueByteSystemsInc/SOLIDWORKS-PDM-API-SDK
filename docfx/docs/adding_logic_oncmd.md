@@ -107,7 +107,7 @@ case EdmCmdType.EdmCmd_PreUnlock:
 > This cancellation applies to all files in the current command. It is not possible to allow some files to proceed while halting the action on others. 
 
 > [!IMPORTANT]
-> Tasks support suspenstion and cancellation during the EdmTaskRun hook. PDMSDK provides a specific way to suspend and cancel tasks. Consult the task section for more information.
+> Tasks support suspension and cancellation during the EdmTaskRun hook. PDMSDK provides a specific way to suspend and cancel tasks. Consult the task section for more information.
 
 
 # Exception handling

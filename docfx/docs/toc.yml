@@ -42,5 +42,7 @@
         href: saveData.md
       - name: How to add context menu
         href: contextmenu.md
+    - name: TaskDetails 
+      href: TaskDetails.md
       
 
