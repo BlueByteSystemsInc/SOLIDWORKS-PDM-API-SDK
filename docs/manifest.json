@@ -405,6 +405,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/flags.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/flags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
       "output": {
         ".html": {
@@ -492,6 +502,16 @@
       "output": {
         "resource": {
           "relative_path": "images/build_succeeded.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/details.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/details.png"
         }
       },
       "version": ""
