@@ -1,4 +1,4 @@
-# Task features
+# Task flags
 
 A task can be: 
 - Executed from a workflow transition as an action or a change command.
