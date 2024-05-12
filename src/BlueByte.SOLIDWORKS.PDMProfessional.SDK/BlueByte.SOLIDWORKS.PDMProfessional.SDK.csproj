@@ -107,6 +107,7 @@
     <Compile Include="Diagnostics\LoggerType_e.cs" />
     <Compile Include="Diagnostics\SQLLogger.cs" />
     <Compile Include="Enums\PDMProfessionalVersion_e.cs" />
+    <Compile Include="Enums\PDMSDKEdmMenuFlags.cs" />
     <Compile Include="Exceptions\IdentityInfoException.cs" />
     <Compile Include="Exceptions\ITaskDetailsPageNotUserControlException.cs" />
     <Compile Include="Exceptions\PDMSDKException.cs" />

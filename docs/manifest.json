@@ -345,6 +345,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/TaskRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/TaskRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/TaskSetup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/TaskSetup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/Visual-Studio-SDK-template.md",
       "output": {
         ".html": {

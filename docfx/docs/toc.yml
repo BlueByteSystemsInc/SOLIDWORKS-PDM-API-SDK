@@ -19,13 +19,11 @@
 - name: Task Add-ins 
   href: taskadd-ins.md
   items:
-  - name: Flags (and attribute) 
+  - name: Flags
     href: flags.md
   - name: Hooks
     href: hooks.md
     items:
-    - name: TaskLaunch (and Run)
-      href: TaskLaunchRun.md
     - name: TaskSetup 
       href: TaskSetup.md
       items: 
@@ -36,6 +34,10 @@
       - name: Add controls and binding to View Model
         href: binding.md
     - name: TaskSetupButton
+    - name: TaskLaunch 
+      href: TaskLaunch.md
+    - name: TaskRun 
+      href: TaskRun.md
       href: TaskSetupButton.md
       items:
       - name: How to save the user input
