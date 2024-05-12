@@ -53,6 +53,8 @@ items:
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
   name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
   items:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
+    name: PDMSDKEdmMenuFlags
   - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
     name: ServicePack_e
   - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e

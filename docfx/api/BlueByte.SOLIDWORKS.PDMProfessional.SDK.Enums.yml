@@ -4,6 +4,7 @@ items:
   commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
   id: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
   children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
   langs:
@@ -30,6 +31,13 @@ references:
   name: ServicePack_e
   nameWithType: ServicePack_e
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags.html
+  name: PDMSDKEdmMenuFlags
+  nameWithType: PDMSDKEdmMenuFlags
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
   commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
   href: BlueByte.html

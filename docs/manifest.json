@@ -232,6 +232,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.yml",
       "output": {
         ".html": {
