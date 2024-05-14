@@ -5,7 +5,9 @@ items:
   id: MenuAttribute
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
   children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Int32,System.Int32)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Flags
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.ID
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.MenuCaption
@@ -125,9 +127,9 @@ items:
   summary: Creates a command menu.
   example: []
   syntax:
-    content: public MenuAttribute(int iD, string menuCaption, int flags = 0, string statusBarHelp = "", string toolTip = "", int toolButtonIndex = -1, int toolbarImageID = 0)
+    content: public MenuAttribute(int ID, string menuCaption, int flags = 0, string statusBarHelp = "", string toolTip = "", int toolButtonIndex = -1, int toolbarImageID = 0)
     parameters:
-    - id: iD
+    - id: ID
       type: System.Int32
       description: ID of the command.
     - id: menuCaption
@@ -148,11 +150,88 @@ items:
     - id: toolbarImageID
       type: System.Int32
       description: ID of the toolbar image.
-    content.vb: Public Sub New(iD As Integer, menuCaption As String, flags As Integer = 0, statusBarHelp As String = "", toolTip As String = "", toolButtonIndex As Integer = -1, toolbarImageID As Integer = 0)
+    content.vb: Public Sub New(ID As Integer, menuCaption As String, flags As Integer = 0, statusBarHelp As String = "", toolTip As String = "", toolButtonIndex As Integer = -1, toolbarImageID As Integer = 0)
   overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor*
   nameWithType.vb: MenuAttribute.New(Integer, String, Integer, String, String, Integer, Integer)
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.New(Integer, String, Integer, String, String, Integer, Integer)
   name.vb: New(Integer, String, Integer, String, String, Integer, Integer)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String,System.Int32,System.String)'
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute
+  langs:
+  - csharp
+  - vb
+  name: MenuAttribute(int, string, int, string)
+  nameWithType: MenuAttribute.MenuAttribute(int, string, int, string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.MenuAttribute(int, string, int, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: .ctor
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
+    startLine: 39
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
+  summary: Creates a command menu.
+  example: []
+  syntax:
+    content: public MenuAttribute(int ID, string menuCaption, int flags = 0, string callback = "")
+    parameters:
+    - id: ID
+      type: System.Int32
+      description: ID of the command.
+    - id: menuCaption
+      type: System.String
+      description: Text that will appear in the menu.
+    - id: flags
+      type: System.Int32
+      description: Where the menu will appear.
+    - id: callback
+      type: System.String
+      description: Callback
+    content.vb: Public Sub New(ID As Integer, menuCaption As String, flags As Integer = 0, callback As String = "")
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor*
+  nameWithType.vb: MenuAttribute.New(Integer, String, Integer, String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.New(Integer, String, Integer, String)
+  name.vb: New(Integer, String, Integer, String)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  id: Callback
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute
+  langs:
+  - csharp
+  - vb
+  name: Callback
+  nameWithType: MenuAttribute.Callback
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Callback
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
+    startLine: 59
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
+  summary: Gets or sets the callback.
+  remarks: This is not implemented yet.
+  example: []
+  syntax:
+    content: public string Callback { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The callback.
+    content.vb: Public Property Callback As String
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback*
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.ID
   commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.ID
   id: ID
@@ -171,7 +250,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ID
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
-    startLine: 40
+    startLine: 65
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
@@ -202,7 +281,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: MenuCaption
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
-    startLine: 44
+    startLine: 69
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
@@ -233,7 +312,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Flags
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
-    startLine: 49
+    startLine: 74
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
@@ -264,7 +343,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ToolButtonIndex
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
-    startLine: 53
+    startLine: 78
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
@@ -295,7 +374,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ToolbarImageID
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
-    startLine: 57
+    startLine: 82
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
@@ -326,7 +405,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: StatusBarHelp
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
-    startLine: 61
+    startLine: 86
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
@@ -357,7 +436,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Tooltip
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs
-    startLine: 65
+    startLine: 90
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes
@@ -2287,6 +2366,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Callback
+  name: Callback
+  nameWithType: MenuAttribute.Callback
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.ID*
   commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.ID
   href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_ID

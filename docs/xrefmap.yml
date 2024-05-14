@@ -991,6 +991,15 @@ references:
   commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute
   nameWithType: MenuAttribute
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String)
+  name: MenuAttribute(int, string, int, string)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute__ctor_System_Int32_System_String_System_Int32_System_String_
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String)
+  name.vb: New(Integer, String, Integer, String)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.MenuAttribute(int, string, int, string)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.New(Integer, String, Integer, String)
+  nameWithType: MenuAttribute.MenuAttribute(int, string, int, string)
+  nameWithType.vb: MenuAttribute.New(Integer, String, Integer, String)
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Int32,System.Int32)
   name: MenuAttribute(int, string, int, string, string, int, int)
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute__ctor_System_Int32_System_String_System_Int32_System_String_System_String_System_Int32_System_Int32_
@@ -1010,6 +1019,19 @@ references:
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.New
   nameWithType: MenuAttribute.MenuAttribute
   nameWithType.vb: MenuAttribute.New
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  name: Callback
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Callback
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  nameWithType: MenuAttribute.Callback
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback*
+  name: Callback
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Callback_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback
+  nameWithType: MenuAttribute.Callback
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Flags
   name: Flags
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Flags

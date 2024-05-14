@@ -10,6 +10,8 @@
   href: building_project.md
 - name: PDMSDK base class (AddInBase)
   href: addinbase_structure.md
+- name: Commands 
+  href: commands.md
 - name: PDMSDK's logger
   href: logger.md
 - name: Implementing OnCmd

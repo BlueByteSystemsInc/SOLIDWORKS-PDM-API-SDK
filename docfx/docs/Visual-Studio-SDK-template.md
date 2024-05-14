@@ -8,8 +8,8 @@ The SDK template has the best boilerplate code written and ready for you to edit
 > Always make sure you are using the latest version of the PDM SDK template. To find the latest version of the template, please check the Extensions window in your Visual Studio or follow this [link](https://marketplace.visualstudio.com/items?itemName=BlueByteSystemsInc.ID).
 
 
-> [!WARNING]
-> Only Visual Studio Community and Professional editions up to 2019 are supported. We do not support Visual Studio 2022.
+> [!TIP]
+> All Visual Studio editions up to 2022 are supported.
 
 To install the Visual Studio SOLIDWORKS PDM SDK Template:
 

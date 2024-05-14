@@ -84,6 +84,7 @@ If the OnCmd function needs to abort the current action, such as check-in or sta
 
 Example to cancel check-in:
 
+# [C Sharp](#tab/cs)
 ```
 case EdmCmdType.EdmCmd_PreUnlock:
     foreach (var ppoDatum in ppoData)
@@ -102,6 +103,24 @@ case EdmCmdType.EdmCmd_PreUnlock:
     }
     break;
 ```
+# [VB](#tab/VB)
+```
+Case EdmCmdType.EdmCmd_PreUnlock
+    For Each ppoDatum In ppoData
+        Dim filePath = ppoDatum.mbsStrData1
+        Dim fileId = ppoDatum.mlObjectID1
+        Dim folderId = ppoDatum.mlObjectID2
+
+        Dim edmFile = Vault.TryGetFileFromPath(filePath, edmFolder)
+
+        If edmFile.CurrentRevision = "" Then ' if the revision is not blank, cancel the check-in
+            poCmd.mbCancel = Convert.ToInt16(True) ' Sets to integer value of 1
+            Exit For
+        End If
+    Next
+    Exit Select
+```
+---
 
 > [!NOTE]
 > This cancellation applies to all files in the current command. It is not possible to allow some files to proceed while halting the action on others. 
@@ -119,7 +138,7 @@ We highly recommend that you wrap your OnCmd implementation in a try catch block
 - COMException: Thrown when PDM (or another third-party application such as SOLIDWORKS ) throws an exception.
 - Exception: To catch any .NET exception.
 
-
+# [C Sharp](#tab/cs)
 ```
 public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
 {
@@ -158,3 +177,28 @@ public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
     
 }
 ```
+# [VB](#tab/VB)
+```
+Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData As EdmCmdData())
+    MyBase.OnCmd(poCmd, ppoData)
+
+    Try
+        Select Case poCmd.meCmdType
+            Case EdmCmdType.EdmCmd_PreUnlock
+                For Each ppoDatum In ppoData
+                    ' Do something to each file before it is checked-in
+                Next
+        End Select
+
+    Catch e As TaskFailedException
+
+    Catch e As CancellationException
+
+    Catch e As COMException
+
+    Catch e As Exception
+
+    End Try
+End Sub
+```
+---

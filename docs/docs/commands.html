@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Definition | SOLIDWORKS PDM SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Definition | SOLIDWORKS PDM SDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/docfx/docs/commands.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/fav.png" alt="SOLIDWORKS PDM SDK">
+            SOLIDWORKS PDM SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="definition">Definition</h1>
+
+<p>Commands in SOLIDWORKS PDM can be triggered from the toolbar menus, buttons, or the right-click menu. Conventionally, you add commands using the command manager <a href="https://help.solidworks.com/2018/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.IEdmCmdMgr5.html">IEdmCmdMgr5</a> in the GetAddInfo implementation.</p>
+<h1 id="commands-in-pdmsdk">Commands in PDMSDK</h1>
+<p>Since PDMSDK hides the GetAddInInfo implementation, we use the  <a href="../api/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html">MenuAttribute</a> to add commands capbilitites to your add-in.</p>
+<p>To add a command as part of the right-click menu:</p>
+<ul>
+<li>Start by defining an Enum for your commands. For example</li>
+</ul>
+<pre><code>// this piece of code defines two commands. Make sure your commands values are unique.
+ public enum Commands_e
+ {
+   Settings = 15615,
+   ProcessFile = 475
+ }
+</code></pre>
+<ul>
+<li>Decorate your add-in class with the <a href="../api/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html">MenuAttribute</a>. Example:</li>
+</ul>
+<pre><code>[Menu((int)Commands_e.ProcessFile, &quot;MyPDMAddIn\\Process File(s)&quot;, 35, &quot;&quot;,&quot;&quot;,-1,0)]
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use <code>\\</code> in the command caption to create sub menus. See the example above.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Please make you read the MenuAttribute constructors paramrters. The flags parameter defines the visibility of the command. The flags are a sum of the <a href="https://help.solidworks.com/2014/english/api/epdmapi/epdm.interop.epdm%7Eepdm.interop.epdm.edmmenuflags.html">EdmMenuFlags</a> enum.</p>
+</div>
+<p>For the flags:</p>
+<ul>
+<li>Use 35 if you want to show the command in the RMB for files with support for single and multi-selection.</li>
+<li>Use 43 if you want to show the command in the RMB for files with support for single selection only.</li>
+<li>You can cast the value of EdmMenuFlags into an integer as a flag. For example (int)EdmMenuFlags.EdmMenu_Administration will add the menu to the right-click menu of the add-in the administration tool.</li>
+</ul>
+<h1 id="oncmd-implementation">OnCmd Implementation</h1>
+<p>Commands trigger the OnCmd method. Make sure to approprietly check for the invoked command ID with poCmd.meCmdID  and the command type with poCmd.meCmdType (In this case, it will EdmCmdType.EdmCmdMenu).</p>
+<h1 id="command-visibility">Command Visibility</h1>
+<p>With PDMSDK, you restrict commands to be visible to specific users, groups or users with specific permissions.</p>
+<p>You can do that via the <a href="../api/SOLIDWORKS-PDM-API-SDK/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CommandVisibilityAttribute.html">CommandVisibilityAttribute</a> attribute. Decorate your add-in class with the CommandVisibility attribute. The example below shows the settings command only the users with edit addins permission.</p>
+<pre><code> [CommandVisibility((int)Commands_e.Settings, EdmSysPerm.EdmSysPerm_EditAddins)]
+ 
+</code></pre>
+<h1 id="code-sample">Code sample</h1>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+
+<pre><code> public enum Commands_e
+ {
+   Settings = 15615,
+   ProcessFile = 475
+ }
+
+    [Name(&quot;MyAddIn&quot;)]
+    [Description(&quot;MyAddIn Description&quot;)]
+    [CompanyName(&quot;Blue Byte Systems Inc.&quot;)]
+    [ListenFor(EdmCmdType.EdmCmd_Menu)]
+    [Menu((int)Commands_e.ProcessFile, &quot;MyAddIn\\ProcessFile&quot;, 35, &quot;&quot;,&quot;&quot;,-1,0)]
+    [Menu((int)Commands_e.Settings, &quot;Settings&quot;, (int)EdmMenuFlags.EdmMenu_Administration, &quot;&quot;,&quot;&quot;,-1,0)]
+    [CommandVisibility((int)Commands_e.Settings, EdmSysPerm.EdmSysPerm_EditAddins)]
+    [AddInVersion(false, 1)]
+    [IsTask(false)]
+    [RequiredVersion(10, 0)]
+    [ComVisible(true)]
+    [Guid(&quot;2968ACED-D471-4704-AC44-68B28549F8295&quot;)]
+    public partial class AddIn : AddInBase
+    {
+        public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+        {
+            base.OnCmd(ref poCmd, ref ppoData);
+
+            try 
+            {
+                
+            switch(poCmd.meCmdType)
+            {
+                case EdmCmdType.EdmCmd_Menu:
+
+                if (poCmd.mlCmdID == (int)Commands_e.ProcessFile)
+                {
+                     foreach(var ppoDatum in ppoData)
+                    {
+                        // Do something to each file before it is checked-in
+                    }
+
+                    return;
+                }
+
+                if (poCmd.mlCmdID == (int)Commands_e.Settings)
+                {
+                     foreach(var ppoDatum in ppoData)
+                    {
+                        // show settings
+                    }
+                }
+
+                   
+               break;
+            }
+
+            }
+            catch(TaskFailedException e)
+            {
+                
+            }
+            catch(CancellationException e)
+            {
+
+            }
+            catch(COMException e)
+            {
+
+            }
+            catch(Exception e)
+            {
+
+            }
+            
+        }
+    }
+
+</code></pre>
+</section>
+<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code>Public Enum Commands_e
+    Settings = 15615
+    ProcessFile = 475
+End Enum
+
+&lt;Name(&quot;MyAddIn&quot;)&gt;
+&lt;Description(&quot;MyAddIn Description&quot;)&gt;
+&lt;CompanyName(&quot;Blue Byte Systems Inc.&quot;)&gt;
+&lt;ListenFor(EdmCmdType.EdmCmd_Menu)&gt;
+&lt;Menu(CType(Commands_e.ProcessFile, Integer), &quot;MyAddIn\ProcessFile&quot;, 35, &quot;&quot;, &quot;&quot;, -1, 0)&gt;
+&lt;Menu(CType(Commands_e.Settings, Integer), &quot;Settings&quot;, CType(EdmMenuFlags.EdmMenu_Administration, Integer), &quot;&quot;, &quot;&quot;, -1, 0)&gt;
+&lt;CommandVisibility(CType(Commands_e.Settings, Integer), EdmSysPerm.EdmSysPerm_EditAddins)&gt;
+&lt;AddInVersion(False, 1)&gt;
+&lt;IsTask(False)&gt;
+&lt;RequiredVersion(10, 0)&gt;
+&lt;ComVisible(True)&gt;
+&lt;Guid(&quot;2968ACED-D471-4704-AC44-68B28549F8295&quot;)&gt;
+Public Partial Class AddIn
+    Inherits AddInBase
+
+    Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData As EdmCmdData())
+        MyBase.OnCmd(poCmd, ppoData)
+
+        Try
+            Select Case poCmd.meCmdType
+                Case EdmCmdType.EdmCmd_Menu
+                    If poCmd.mlCmdID = CInt(Commands_e.ProcessFile) Then
+                        For Each ppoDatum In ppoData
+                            ' Do something to each file before it is checked-in
+                        Next
+                        Return
+                    End If
+
+                    If poCmd.mlCmdID = CInt(Commands_e.Settings) Then
+                        For Each ppoDatum In ppoData
+                            ' Show settings
+                        Next
+                    End If
+            End Select
+
+        Catch e As TaskFailedException
+
+        Catch e As CancellationException
+
+        Catch e As COMException
+
+        Catch e As Exception
+
+        End Try
+    End Sub
+End Class
+</code></pre>
+</section>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/docfx/docs/commands.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

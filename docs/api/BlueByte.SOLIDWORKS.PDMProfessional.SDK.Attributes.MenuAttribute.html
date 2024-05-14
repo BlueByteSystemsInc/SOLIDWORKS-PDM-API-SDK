@@ -268,6 +268,48 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
 
   <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute__ctor_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor*"></a>
 
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute__ctor_System_Int32_System_String_System_Int32_System_String_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String)">
+  MenuAttribute(int, string, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a command menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuAttribute(int ID, string menuCaption, int flags = 0, string callback = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>ID of the command.</p>
+</dd>
+    <dt><code>menuCaption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text that will appear in the menu.</p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Where the menu will appear.</p>
+</dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Callback</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute__ctor_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor*"></a>
+
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute__ctor_System_Int32_System_String_System_Int32_System_String_System_String_System_Int32_System_Int32_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Int32,System.Int32)">
   MenuAttribute(int, string, int, string, string, int, int)
   <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L22"><i class="bi bi-code-slash"></i></a>
@@ -278,12 +320,12 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MenuAttribute(int iD, string menuCaption, int flags = 0, string statusBarHelp = &quot;&quot;, string toolTip = &quot;&quot;, int toolButtonIndex = -1, int toolbarImageID = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public MenuAttribute(int ID, string menuCaption, int flags = 0, string statusBarHelp = &quot;&quot;, string toolTip = &quot;&quot;, int toolButtonIndex = -1, int toolbarImageID = 0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>iD</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>ID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p>ID of the command.</p>
 </dd>
     <dt><code>menuCaption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
@@ -321,11 +363,47 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
 </h2>
 
 
+  <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Callback_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback*"></a>
+
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Callback" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Callback">
+  Callback
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Callback { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The callback.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Callback_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is not implemented yet.</p>
+</div>
+
+
+
+
   <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Flags_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Flags*"></a>
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Flags" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Flags">
   Flags
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Where the menu will appear. This is a combination of <span class="xref">EPDM.Interop.epdm.EdmMenuFlags</span></p>
@@ -357,7 +435,7 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_ID" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.ID">
   ID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>ID of the command.</p>
@@ -389,7 +467,7 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_MenuCaption" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.MenuCaption">
   MenuCaption
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Text that will appear in the menu.</p>
@@ -421,7 +499,7 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_StatusBarHelp" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.StatusBarHelp">
   StatusBarHelp
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Help message that will appear in the status bar.</p>
@@ -453,7 +531,7 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_ToolButtonIndex" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.ToolButtonIndex">
   ToolButtonIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Index of the command button.</p>
@@ -485,7 +563,7 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_ToolbarImageID" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.ToolbarImageID">
   ToolbarImageID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>ID of the toolbar image.</p>
@@ -517,7 +595,7 @@ public class MenuAttribute : Attribute, _Attribute</code></pre>
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Attributes_MenuAttribute_Tooltip" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.Tooltip">
   Tooltip
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Attributes/MenuAttribute.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Help message that appear in the Windows tooltip</p>
