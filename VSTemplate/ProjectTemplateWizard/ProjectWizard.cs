@@ -34,7 +34,7 @@ namespace ProjectTemplateWizard
             {
                 replacementsDictionary["$addinname$"] = window.AddInInfo.Name;
                 replacementsDictionary["$addindescription$"] = window.AddInInfo.Description;
-                replacementsDictionary["$addincompany$"] = window.AddInInfo.Company;
+                replacementsDictionary["$addincompanyname$"] = window.AddInInfo.Company;
                 replacementsDictionary["$addintask$"] = window.AddInInfo.IsTask.ToString().ToLower();
             }
             else

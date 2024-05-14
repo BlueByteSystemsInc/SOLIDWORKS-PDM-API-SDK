@@ -9,9 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SOLIDWORKSPDMAddIn.Task.SetupPages
+namespace $safeprojectname$.Task.SetupPages
 {
-    public partial class Settings : TaskPage<SettingsViewModel>
+    public partial class Settings : TaskSetupPage<SettingsViewModel>
     {
         public Settings()
         {

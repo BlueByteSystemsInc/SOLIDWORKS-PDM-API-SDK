@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="VSExtension.5a65c341-16a5-429f-97fd-4bf5818b788c" Version="1.6" Language="en-US" Publisher="Blue Byte Systems Inc." />
+        <Identity Id="VSExtension.5a65c341-16a5-429f-97fd-4bf5818b788c" Version="1.7" Language="en-US" Publisher="Blue Byte Systems Inc." />
         <DisplayName>PDM SDK</DisplayName>
-        <Description>Adds project template to Visual Studio for SOLIDWORKS PDM addin</Description>
+        <Description xml:space="preserve">Adds PDMSDK add-in project templates to develop SOLIDWORKS PDM Professional Add-ins</Description>
         <MoreInfo>https://github.com/BlueByteSystemsInc/PDMSDK/</MoreInfo>
         <License>MITLicense.txt</License>
-        <GettingStartedGuide>https://bluebytesystemsinc.github.io/PDMSDK/</GettingStartedGuide>
+        <GettingStartedGuide>https://bluebytesystemsinc.github.io/SOLIDWORKS-PDM-API-SDK/docs/getting-started.html</GettingStartedGuide>
         <Icon>__TemplateIcon.png</Icon>
         <PreviewImage>__TemplateIcon.png</PreviewImage>
-        <Tags>Blue Byte Systems Inc, SOLIDWORKS, PDM Add-in</Tags>
+        <Tags>Blue Byte Systems Inc, SOLIDWORKS, PDM Add-in, SOLIDWORKS API, SOLIDWORKS PDM</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Version="[14.0,17.0)" Id="Microsoft.VisualStudio.Community">
             <ProductArchitecture>x86</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[18.0,18.0)" Id="Microsoft.VisualStudio.Community">
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Community">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[14.0,17.0)" Id="Microsoft.VisualStudio.Pro">
+        <InstallationTarget Version="[14.0,17.0)"  Id="Microsoft.VisualStudio.Pro">
             <ProductArchitecture>x86</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[18.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+        <InstallationTarget Version="[17.0,18.0)"  Id="Microsoft.VisualStudio.Pro">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[14.0,17.0)" Id="Microsoft.VisualStudio.Enterprise">
+        <InstallationTarget Version="[14.0,17.0)"  Id="Microsoft.VisualStudio.Enterprise">
             <ProductArchitecture>x86</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[18.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
     </Installation>

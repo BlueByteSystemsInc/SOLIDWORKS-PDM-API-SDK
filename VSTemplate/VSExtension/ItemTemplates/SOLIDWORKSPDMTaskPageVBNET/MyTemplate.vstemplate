@@ -1,0 +1,18 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>TaskPage.vb</DefaultName>
+    <Name>PDM SDK Task Page (VBNET)</Name>
+    <Description>TaskPage</Description>
+    <ProjectType>VisualBasic</ProjectType>
+    <ProjectSubType>SOLIDWORKS PDM Professional</ProjectSubType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__TemplateIcon.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$fileinputname$.vb" ReplaceParameters="true" OpenInEditor="true">TaskPage.vb</ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.Designer.vb" ReplaceParameters="true">TaskPage.Designer.vb</ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$ViewModel.vb" ReplaceParameters="true" OpenInEditor="true">TaskPageViewModel.vb</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

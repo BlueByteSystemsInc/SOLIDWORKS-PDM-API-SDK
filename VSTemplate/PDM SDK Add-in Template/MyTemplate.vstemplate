@@ -1,0 +1,40 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>PDM SDK Add-In Template</Name>
+    <Description>A C# project template for creating SOLIDWORKS PDM Professional add-ins and task add-ins</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>PDM SDK Add-In Template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="SOLIDWORKSPDMAddIn.csproj" File="SOLIDWORKSPDMAddIn.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="AddIn.cs">AddIn.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Task" TargetFolderName="Task">
+        <Folder Name="SetupPages" TargetFolderName="SetupPages">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Settings.cs">Settings.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SettingsViewModel.cs">SettingsViewModel.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TaskLaunch.cs">TaskLaunch.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TaskRun.cs">TaskRun.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TaskSetup.cs">TaskSetup.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TaskSetupButton.cs">TaskSetupButton.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+<WizardExtension>
+    <Assembly>ProjectTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a774584475abd58</Assembly>
+    <FullClassName>ProjectTemplateWizard.ProjectWizard</FullClassName>
+</WizardExtension>
+</VSTemplate>

@@ -1,0 +1,40 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>PDM SDK Add-in Template (VB)</Name>
+    <Description>A Visual Basic project template for creating SOLIDWORKS PDM Professional add-ins and task add-ins</Description>
+    <ProjectType>VisualBasic</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>PDM SDK Add-in Template VBNET</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="SOLIDWORKSPDMAddInVBNET.vbproj" File="SOLIDWORKSPDMAddInVBNET.vbproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="AddIn.vb">AddIn.vb</ProjectItem>
+      <Folder Name="My Project" TargetFolderName="My Project">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Application.myapp">Application.myapp</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Application.Designer.vb">Application.Designer.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.vb">Resources.Designer.vb</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Task" TargetFolderName="Task">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TaskLaunch.vb">TaskLaunch.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TaskRun.vb">TaskRun.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TaskSetup.vb">TaskSetup.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TaskSetupButton.vb">TaskSetupButton.vb</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+<WizardExtension>
+    <Assembly>ProjectTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a774584475abd58</Assembly>
+    <FullClassName>ProjectTemplateWizard.ProjectWizard</FullClassName>
+</WizardExtension>
+</VSTemplate>

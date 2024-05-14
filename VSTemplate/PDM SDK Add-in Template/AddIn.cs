@@ -8,7 +8,7 @@ using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums;
 using EPDM.Interop.epdm;
 using SimpleInjector;
 
-namespace SOLIDWORKSPDMAddIn
+namespace $safeprojectname$
 {
 
     public enum Commands
@@ -18,14 +18,14 @@ namespace SOLIDWORKSPDMAddIn
     
     [Menu((int)Commands.CommandOne, "Click Me!", 43)]
     [ListenFor(EdmCmdType.EdmCmd_Menu)]
-    [Name("Sample Addin")]
-    [Description("This is a description")]
-    [CompanyName("Blue Byte Systems Inc")]
+    [Name("$addinname$")]
+    [Description("$addindescription$")]
+    [CompanyName("$addincompanyname$")]
     [AddInVersion(false, 1)]
-    [IsTask(false)]
+    [IsTask($addintask$)]
     [RequiredVersion(Year_e.PDM2014, ServicePack_e.SP0)]
     [ComVisible(true)]
-    [Guid("721C78F4-362E-45EC-B313-CD0E33A87D67")]
+    [Guid("$guid1$")]
     public partial class AddIn : AddInBase
     {
 
@@ -37,6 +37,10 @@ namespace SOLIDWORKSPDMAddIn
 
             try
             {
+
+                if (poCmd.mlCmdID != (int)Commands.CommandOne)
+                    return;
+
                 ForEachFile(ref ppoData, (IEdmFile5 file) => {
 
                     base.Vault.MsgBox(handle, $"You clicked on {file.Name}", EdmMBoxType.EdmMbt_OKOnly, Identity.ToCaption());
