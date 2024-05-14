@@ -600,9 +600,12 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
             {
                 var information = new StringBuilder();
                 information.AppendLine();
-                information.AppendLine($"Process name = { process.ProcessName}");
-                information.AppendLine($"Command Id   = { process.Id}");
-                information.AppendLine($"Command type = { poCmd.meCmdType.ToString()}");
+                information.AppendLine($"Host    Name = { process.ProcessName}");
+                information.AppendLine($"Host    Id   = { process.Id}");
+                information.AppendLine($"Command Type = { poCmd.meCmdType.ToString()}");
+                information.AppendLine($"Command Id   = { poCmd.mlCmdID.ToString()}");
+                information.AppendLine($"Parent Handle= { poCmd.mlParentWnd}");
+                information.AppendLine($"Comments     = { poCmd.mbsComment}");
 
                 if (MessageBox.Show($"Attach Debugger? {information.ToString()}", $"{Identity.Name} - {Identity.Version}", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     Debugger.Launch();
@@ -882,30 +885,31 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                                 {
                                     if (commandVisibility.CommandID == MenuAtt.ID)
                                     {
+                                        var add = false;
                                         var userandgroups = commandVisibility.HideFromTheseUserOrGroupNames;
                                         if (userandgroups != null)
                                         {
-                                            var add = false;
+                                         
 
                                             // only add command if usergroups does not contain username or groups users is a member of.
                                             if ((userandgroups.Contains(userName) || userandgroups.Where(x => groupNames.Contains(x)).Count() > 0) == false)
                                                 add = true;
-
-                                            var permissions = commandVisibility.OnlyShowToUsersWithThesePermissions;
-                                            
-                                            // if there are permissions check if currently logged in user has the right permissions
-                                            if (permissions != default(EdmSysPerm))
-                                            {
-                                                var hasAllPermissions = currentlyLoggedInUser.HasSysRightEx(permissions);
-                                                if (hasAllPermissions)
-                                                    add = true;
-                                            }   
-                                            
-
-                                            if (add)
-                                                poCmdMgr.AddCmd(MenuAtt.ID, MenuAtt.MenuCaption, (int)MenuAtt.Flags, MenuAtt.StatusBarHelp, MenuAtt.Tooltip, MenuAtt.ToolButtonIndex, MenuAtt.ToolbarImageID);
-
                                         }
+
+                                        var permissions = commandVisibility.OnlyShowToUsersWithThesePermissions;
+
+                                        // if there are permissions check if currently logged in user has the right permissions
+                                        if (permissions != default(EdmSysPerm))
+                                        {
+                                            var hasAllPermissions = currentlyLoggedInUser.HasSysRightEx(permissions);
+                                            if (hasAllPermissions)
+                                                add = true;
+                                        }
+
+
+                                        if (add)
+                                            poCmdMgr.AddCmd(MenuAtt.ID, MenuAtt.MenuCaption, (int)MenuAtt.Flags, MenuAtt.StatusBarHelp, MenuAtt.Tooltip, MenuAtt.ToolButtonIndex, MenuAtt.ToolbarImageID);
+
                                     }
                                 }
                             }
@@ -1023,12 +1027,13 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                     case EdmCmdType.EdmCmd_TaskLaunchButton:
                         OnTaskLaunchButton(ref poCmd, ref ppoData);
                         break;
-
                     default:
                         break;
                 }
             }
         }
+
+         
 
         /// <summary>
         ///  Fires when task details are initialized
