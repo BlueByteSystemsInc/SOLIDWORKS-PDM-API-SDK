@@ -405,6 +405,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/binding.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/binding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/building_project.md",
       "output": {
         ".html": {
