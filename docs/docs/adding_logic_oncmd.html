@@ -124,6 +124,17 @@
 <h5>Note</h5>
 <p>To perform actions on a specific command type, that command must first be hooked using the <code>[AddListener()]</code> attribute. See this help <a href="addinbase_structure.html">page</a> for more information.</p>
 </div>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+
 <pre><code>public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
 {
     base.OnCmd(ref poCmd, ref ppoData);
@@ -139,6 +150,23 @@
     }
 }
 </code></pre>
+</section>
+<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code>Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+    MyBase.OnCmd(poCmd, ppoData)
+
+    Select Case poCmd.meCmdType
+        Case EdmCmdType.EdmCmd_PreUnlock
+            For Each ppoDatum In ppoData
+                ' Do something to each file before it is checked-in
+            Next
+    End Select
+End Sub
+</code></pre>
+</section>
+</div>
+
 <div class="TIP">
 <h5>Tip</h5>
 <p>To access the vault object, utilize <code>this.Vault</code>. If the vault object needs to implement additional features from a specific vault interface, it can be cast in this manner.</p>
@@ -146,6 +174,17 @@
 </div>
 <h1 id="accessing-files-and-folders">Accessing Files and Folders</h1>
 <p>Files and folders can be accessed by utilizing the IDs passed into the <code>ppoData[]</code> structure. The example below obtains the file object from the vault and can perform actions or checks on it prior to it being checked in.</p>
+<div class="tabGroup" id="tabgroup_2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_2_cs" role="tab" aria-controls="tabpanel_2_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_2_VB" role="tab" aria-controls="tabpanel_2_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_2_cs" role="tabpanel" data-tab="cs">
+
 <pre><code>case EdmCmdType.EdmCmd_PreUnlock:
     foreach (var ppoDatum in ppoData)
     {
@@ -159,19 +198,36 @@
     }
     break;
 </code></pre>
+</section>
+<section id="tabpanel_2_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code>Case EdmCmdType.EdmCmd_PreUnlock
+    For Each ppoDatum In ppoData
+        Dim filePath = ppoDatum.mbsStrData1
+        Dim fileId = ppoDatum.mlObjectID1
+        Dim folderId = ppoDatum.mlObjectID2
+
+        Dim edmFolder As EdmFolder
+        Dim edmFile = Vault.TryGetFileFromPath(filePath, edmFolder)
+
+        ' Do something with the file in question
+    Next
+</code></pre>
+</section>
+</div>
 <h1 id="canceling-actions">Canceling Actions</h1>
 <p>If the OnCmd function needs to abort the current action, such as check-in or state change, the <code>poCmd.mbCancel</code> flag can be set by the user. Once the add-in finishes with the OnCmd method, it will allow or cancel the current action based on the value of this command.</p>
 <p>Example to cancel check-in:</p>
-<div class="tabGroup" id="tabgroup_1">
+<div class="tabGroup" id="tabgroup_3">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+<a href="#tabpanel_3_cs" role="tab" aria-controls="tabpanel_3_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+<a href="#tabpanel_3_VB" role="tab" aria-controls="tabpanel_3_VB" data-tab="VB" tabindex="-1">VB</a>
 </li>
 </ul>
-<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+<section id="tabpanel_3_cs" role="tabpanel" data-tab="cs">
 
 <pre><code>case EdmCmdType.EdmCmd_PreUnlock:
     foreach (var ppoDatum in ppoData)
@@ -191,7 +247,7 @@
     break;
 </code></pre>
 </section>
-<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_3_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
 
 <pre><code>Case EdmCmdType.EdmCmd_PreUnlock
     For Each ppoDatum In ppoData
@@ -227,16 +283,16 @@
 <li>COMException: Thrown when PDM (or another third-party application such as SOLIDWORKS ) throws an exception.</li>
 <li>Exception: To catch any .NET exception.</li>
 </ul>
-<div class="tabGroup" id="tabgroup_2">
+<div class="tabGroup" id="tabgroup_4">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_2_cs" role="tab" aria-controls="tabpanel_2_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+<a href="#tabpanel_4_cs" role="tab" aria-controls="tabpanel_4_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_2_VB" role="tab" aria-controls="tabpanel_2_VB" data-tab="VB" tabindex="-1">VB</a>
+<a href="#tabpanel_4_VB" role="tab" aria-controls="tabpanel_4_VB" data-tab="VB" tabindex="-1">VB</a>
 </li>
 </ul>
-<section id="tabpanel_2_cs" role="tabpanel" data-tab="cs">
+<section id="tabpanel_4_cs" role="tabpanel" data-tab="cs">
 
 <pre><code>public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
 {
@@ -276,7 +332,7 @@
 }
 </code></pre>
 </section>
-<section id="tabpanel_2_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_4_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
 
 <pre><code>Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData As EdmCmdData())
     MyBase.OnCmd(poCmd, ppoData)

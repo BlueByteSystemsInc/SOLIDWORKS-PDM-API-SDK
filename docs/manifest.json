@@ -538,6 +538,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/addnewitem.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addnewitem.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/build_succeeded.png",
       "output": {
         "resource": {
@@ -558,10 +568,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/edmtaskpagesolutionexplorer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/edmtaskpagesolutionexplorer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/fav.png",
       "output": {
         "resource": {
           "relative_path": "images/fav.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/newitemwindow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/newitemwindow.png"
         }
       },
       "version": ""

@@ -89,7 +89,7 @@
 
 <p>The task setup hook gets triggered when you select the add-in from the dropdown in the task dialog or you edit an add-in's task.</p>
 <p>The task setup hook allows you to load and save data into the task. It also gives the ability to add custom tabs to the task setup dialog. This tabs are WinForms UserControls.</p>
-<h1 id="adding-a-edmtaskpage">Adding a EdmTaskPage</h1>
+<h1 id="creating-an-edmtaskpage">Creating an EdmTaskPage</h1>
 <div class="TIP">
 <h5>Tip</h5>
 <p>If your task does not have any settings, you can completely ignore the EdmTaskSetup hook. There is no need to store data in the task.</p>
@@ -111,18 +111,179 @@
 <p>To add an EdmTaskSetup:</p>
 <ul>
 <li>Right-click on the <em>Project</em> in the <em>Solution Explorer</em> and click Add <em>New Item...</em></li>
-<li>Look for EdmTaskSetupPage or EdmTaskPage and click Add.</li>
-<li>By default, two items are added: The EdmTaskPage and the data object which is called EdmTaskPageViewModel.</li>
-<li>An EdmTaskPage is a UserControl. You can use the Visual Studio Toolbox to add and remove WinForms controls to and from it.</li>
+</ul>
+<img src="../images/addnewitem.png">
+<ul>
+<li>Look for EdmTaskPage, give it a new and click <em>Add</em>.</li>
+</ul>
+<img src="../images/newitemwindow.png">
+<ul>
+<li>By default, two items are added: The EdmTaskPage and the data object which is called EdmTaskPageViewModel. In the example below, the page is called <code>Messaging</code>.</li>
+</ul>
+<img src="../images/edmtaskpagesolutionexplorer.png">
+<ul>
+<li>An EdmTaskPage is a WinForms UserControl. You can use the Visual Studio Toolbox to add and remove WinForms controls to and from it.</li>
 <li>Requirement: In the OnDataLoaded method in the EdmTasksPage, you can bind your the data object properties to the controls in the EdmTaskPage.</li>
 </ul>
-<h1 id="oncmd">OnCmd</h1>
+<h1 id="adding-a-new-task-page">Adding a new task page</h1>
 <p>In the OnCmd implementation:</p>
 <ul>
 <li>Create instances of your task pages.</li>
-<li>Set the Container property in the EdmTaskSetup to that of the AddInBase. We're passing the Container from the AddInBase to the EdmTaskPage.</li>
-<li>Call the method AddTaskSetupPages and supply it with an array of your task pages.</li>
+<li>Set the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Container">Container</a> property in the EdmTaskPage to that of the AddInBase. We're passing the Container from the AddInBase to the EdmTaskPage.</li>
+<li>Call the method <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage___">AddTaskSetupPages</a>  and supply it with an array of your task pages.</li>
 </ul>
+<h1 id="saving-task-pages-data">Saving task page's data</h1>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>You must reuse the same instance from the TaskSetup hook.</p>
+</div>
+<ul>
+<li>Call the method StoreData in your EdmTaskPage.</li>
+<li>You may also call AddContextMenu to add a right-click that triggers the task launch from File Explorer if the task flags allow that.</li>
+</ul>
+<p>See the complete code example below.</p>
+<h1 id="example">Example</h1>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+
+<pre><code>Pages.Messaging taskSetupMessagingTab = default(Pages.Messaging);
+       
+        public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+        {
+            base.OnCmd(ref poCmd, ref ppoData);
+
+            int handle = poCmd.mlParentWnd;
+
+            try
+            {
+                switch (poCmd.meCmdType)
+                {
+                    
+                    case EdmCmdType.EdmCmd_TaskSetup:
+                        {
+                            taskSetupMessagingTab = new Pages.Messaging();
+                            taskSetupMessagingTab.Container = base.Container;
+                            AddTaskSetupPage(taskSetupMessagingTab);
+                            // or if you have multiple pages
+                            // AddTaskSetupPages(new BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[] {  taskSetupMessagingTab});
+
+                        }
+                        break;
+                    case EdmCmdType.EdmCmd_TaskSetupButton:
+                        {
+                            // add a context menu 
+                            AddContextMenu($&quot;Tasks\\{Properties.TaskName} [V{Identity.Version}]&quot;, Identity.Description);
+                            
+                            // save the data of the tab
+                            taskSetupMessagingTab.StoreData(ref poCmd);
+
+                        }
+                        break;
+                    case EdmCmdType.EdmCmd_TaskDetails:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskRun:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskLaunch:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskLaunchButton:
+                    default:
+                        break;
+                }
+            }
+            catch (CancellationException e)
+            {
+
+                throw;
+            }
+            catch (TaskFailedException e)
+            {
+
+                throw;
+            }
+            // this is a PDM exception
+            catch (COMException e)
+            {
+
+                throw;
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+
+        }
+</code></pre>
+</section>
+<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code> Private taskSetupMessagingTab As Pages.Messaging = Nothing
+
+    Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+        MyBase.OnCmd(poCmd, ppoData)
+
+        Dim handle As Integer = poCmd.mlParentWnd
+
+        Try
+            Select Case poCmd.meCmdType
+                Case EdmCmdType.EdmCmd_TaskSetup
+                    taskSetupMessagingTab = New Pages.Messaging()
+                    taskSetupMessagingTab.Container = MyBase.Container
+                    AddTaskSetupPage(taskSetupMessagingTab)
+                    ' Or if you have multiple pages
+                    ' AddTaskSetupPages(New BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage() {taskSetupMessagingTab})
+
+                Case EdmCmdType.EdmCmd_TaskSetupButton
+                    ' Add a context menu
+                    AddContextMenu($&quot;Tasks\{Properties.TaskName} [V{Identity.Version}]&quot;, Identity.Description)
+
+                    ' Save the data of the tab
+                    taskSetupMessagingTab.StoreData(poCmd)
+
+                Case EdmCmdType.EdmCmd_TaskDetails
+                    ' Implement task details logic here
+
+                Case EdmCmdType.EdmCmd_TaskRun
+                    ' Implement task run logic here
+
+                Case EdmCmdType.EdmCmd_TaskLaunch
+                    ' Implement task launch logic here
+
+                Case EdmCmdType.EdmCmd_TaskLaunchButton
+                    ' Implement task launch button logic here
+
+                Case Else
+                    ' Default case logic
+
+            End Select
+
+        Catch e As CancellationException
+            Throw
+
+        Catch e As TaskFailedException
+            Throw
+
+        ' This is a PDM exception
+        Catch e As COMException
+            Throw
+
+        Catch e As Exception
+            Throw
+
+        End Try
+
+    End Sub
+</code></pre>
+</section>
+</div>
 <h1 id="debugging">Debugging</h1>
 <div class="IMPORTANT">
 <h5>Important</h5>

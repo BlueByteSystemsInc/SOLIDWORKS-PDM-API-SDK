@@ -97,6 +97,17 @@
 <img src="../images/details.png">
 <p>All of these features are controlled by the <a href="https://help.solidworks.com/2021/english/api/epdmapi/EPDM.Interop.epdm%7EEPDM.Interop.epdm.EdmTaskFlag.html">EdmTaskFlag</a> enum.</p>
 <p>With PDMSDK, you can use the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.TaskFlagsAttribute.html">TaskFlags</a> attribute to configure your add-in like below:</p>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+
 <pre><code>    [TaskFlags((int)EdmTaskFlag.EdmTask_SupportsChangeState + (int)EdmTaskFlag.EdmTask_SupportsDetails + (int)EdmTaskFlag.EdmTask_SupportsInitExec +(int)EdmTaskFlag.EdmTask_SupportsScheduling)]
     
     [IsTask(true)]
@@ -110,6 +121,25 @@
         {}
     }
 </code></pre>
+</section>
+<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code>Imports System.Runtime.InteropServices
+
+&lt;TaskFlags(CInt(EdmTaskFlag.EdmTask_SupportsChangeState) + CInt(EdmTaskFlag.EdmTask_SupportsDetails) + CInt(EdmTaskFlag.EdmTask_SupportsInitExec) + CInt(EdmTaskFlag.EdmTask_SupportsScheduling))&gt;
+&lt;IsTask(True)&gt;
+&lt;RequiredVersion(10, 0)&gt;
+&lt;ComVisible(True)&gt;
+&lt;Guid(&quot;00000-00-4745-97F6-2029AFB70716&quot;)&gt;
+Public Partial Class AddIn
+    Inherits AddInBase
+
+    Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+    End Sub
+End Class
+</code></pre>
+</section>
+</div>
 
 </article>
 

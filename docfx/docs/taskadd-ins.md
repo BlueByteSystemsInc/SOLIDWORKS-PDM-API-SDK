@@ -62,7 +62,7 @@ The class that implements the [AddInBase](../api/BlueByte.SOLIDWORKS.PDMProfessi
 > This attribute is already defined for you if you have used the [PDM SDK Template](https://marketplace.visualstudio.com/items?itemName=BlueByteSystemsInc.ID) to create your add-in project. 
 
 
-
+# [C Sharp](#tab/cs)
 ```
     [IsTask(true)]
     [RequiredVersion(10, 0)]
@@ -75,6 +75,22 @@ The class that implements the [AddInBase](../api/BlueByte.SOLIDWORKS.PDMProfessi
         {}
     }
 ```
+# [VB](#tab/VB)
+```
+Imports System.Runtime.InteropServices
+<IsTask(True)>
+<RequiredVersion(10, 0)>
+<ComVisible(True)>
+<Guid("00000-00-4745-97F6-2029AFB70716")>
+Public Partial Class AddIn
+    Inherits AddInBase
+
+    Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+        ' Implement the method logic here
+    End Sub
+End Class
+```
+---
 
 
 >[!WARNING]

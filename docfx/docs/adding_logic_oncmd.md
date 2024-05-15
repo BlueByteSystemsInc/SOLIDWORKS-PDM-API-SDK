@@ -37,6 +37,7 @@ A separate switch case can be added for each command type in order to keep the l
 > [!NOTE]
 > To perform actions on a specific command type, that command must first be hooked using the `[AddListener()]` attribute. See this help [page](./addinbase_structure.md) for more information.
 
+# [C Sharp](#tab/cs)
 ```
 public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
 {
@@ -53,6 +54,20 @@ public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
     }
 }
 ```
+# [VB](#tab/VB)
+```
+Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+    MyBase.OnCmd(poCmd, ppoData)
+
+    Select Case poCmd.meCmdType
+        Case EdmCmdType.EdmCmd_PreUnlock
+            For Each ppoDatum In ppoData
+                ' Do something to each file before it is checked-in
+            Next
+    End Select
+End Sub
+```
+---
 
 > [!TIP]
 > To access the vault object, utilize `this.Vault`. If the vault object needs to implement additional features from a specific vault interface, it can be cast in this manner.
@@ -63,6 +78,7 @@ public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
 
 Files and folders can be accessed by utilizing the IDs passed into the `ppoData[]` structure. The example below obtains the file object from the vault and can perform actions or checks on it prior to it being checked in.
 
+# [C Sharp](#tab/cs)
 ```
 case EdmCmdType.EdmCmd_PreUnlock:
     foreach (var ppoDatum in ppoData)
@@ -77,6 +93,21 @@ case EdmCmdType.EdmCmd_PreUnlock:
     }
     break;
 ```
+# [VB](#tab/VB)
+```
+Case EdmCmdType.EdmCmd_PreUnlock
+    For Each ppoDatum In ppoData
+        Dim filePath = ppoDatum.mbsStrData1
+        Dim fileId = ppoDatum.mlObjectID1
+        Dim folderId = ppoDatum.mlObjectID2
+
+        Dim edmFolder As EdmFolder
+        Dim edmFile = Vault.TryGetFileFromPath(filePath, edmFolder)
+
+        ' Do something with the file in question
+    Next
+```
+---
 
 # Canceling Actions
 

@@ -4,7 +4,7 @@ The task setup hook gets triggered when you select the add-in from the dropdown 
 
 The task setup hook allows you to load and save data into the task. It also gives the ability to add custom tabs to the task setup dialog. This tabs are WinForms UserControls.
 
-# Adding a EdmTaskPage
+# Creating an EdmTaskPage
 
 >[!TIP]
 > If your task does not have any settings, you can completely ignore the EdmTaskSetup hook. There is no need to store data in the task.
@@ -26,19 +26,176 @@ You need to be aware of two types:
 
 
 To add an EdmTaskSetup:
+
 - Right-click on the *Project* in the *Solution Explorer* and click Add *New Item...*
-- Look for EdmTaskSetupPage or EdmTaskPage and click Add.
-- By default, two items are added: The EdmTaskPage and the data object which is called EdmTaskPageViewModel.
-- An EdmTaskPage is a UserControl. You can use the Visual Studio Toolbox to add and remove WinForms controls to and from it.
+
+<img src="../images/addnewitem.png"/>
+
+- Look for EdmTaskPage, give it a new and click *Add*. 
+
+<img src="../images/newitemwindow.png"/>
+
+- By default, two items are added: The EdmTaskPage and the data object which is called EdmTaskPageViewModel. In the example below, the page is called `Messaging`.
+
+<img src="../images/edmtaskpagesolutionexplorer.png"/>
+
+- An EdmTaskPage is a WinForms UserControl. You can use the Visual Studio Toolbox to add and remove WinForms controls to and from it.
 - Requirement: In the OnDataLoaded method in the EdmTasksPage, you can bind your the data object properties to the controls in the EdmTaskPage.
 
-# OnCmd
+# Adding a new task page
 
 In the OnCmd implementation:
 
 - Create instances of your task pages.
-- Set the Container property in the EdmTaskSetup to that of the AddInBase. We're passing the Container from the AddInBase to the EdmTaskPage. 
-- Call the method AddTaskSetupPages and supply it with an array of your task pages.
+- Set the [Container](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Container) property in the EdmTaskPage to that of the AddInBase. We're passing the Container from the AddInBase to the EdmTaskPage. 
+- Call the method [AddTaskSetupPages](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage___)  and supply it with an array of your task pages.
+
+
+
+# Saving task page's data
+
+>[!WARNING]
+> You must reuse the same instance from the TaskSetup hook.
+
+- Call the method StoreData in your EdmTaskPage.
+- You may also call AddContextMenu to add a right-click that triggers the task launch from File Explorer if the task flags allow that.
+
+
+See the complete code example below.
+
+# Example
+
+
+# [C Sharp](#tab/cs)
+```
+Pages.Messaging taskSetupMessagingTab = default(Pages.Messaging);
+       
+        public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+        {
+            base.OnCmd(ref poCmd, ref ppoData);
+
+            int handle = poCmd.mlParentWnd;
+
+            try
+            {
+                switch (poCmd.meCmdType)
+                {
+                    
+                    case EdmCmdType.EdmCmd_TaskSetup:
+                        {
+                            taskSetupMessagingTab = new Pages.Messaging();
+                            taskSetupMessagingTab.Container = base.Container;
+                            AddTaskSetupPage(taskSetupMessagingTab);
+                            // or if you have multiple pages
+                            // AddTaskSetupPages(new BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[] {  taskSetupMessagingTab});
+
+                        }
+                        break;
+                    case EdmCmdType.EdmCmd_TaskSetupButton:
+                        {
+                            // add a context menu 
+                            AddContextMenu($"Tasks\\{Properties.TaskName} [V{Identity.Version}]", Identity.Description);
+                            
+                            // save the data of the tab
+                            taskSetupMessagingTab.StoreData(ref poCmd);
+
+                        }
+                        break;
+                    case EdmCmdType.EdmCmd_TaskDetails:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskRun:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskLaunch:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskLaunchButton:
+                    default:
+                        break;
+                }
+            }
+            catch (CancellationException e)
+            {
+
+                throw;
+            }
+            catch (TaskFailedException e)
+            {
+
+                throw;
+            }
+            // this is a PDM exception
+            catch (COMException e)
+            {
+
+                throw;
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+
+        }
+```
+# [VB](#tab/VB)
+```
+ Private taskSetupMessagingTab As Pages.Messaging = Nothing
+
+    Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+        MyBase.OnCmd(poCmd, ppoData)
+
+        Dim handle As Integer = poCmd.mlParentWnd
+
+        Try
+            Select Case poCmd.meCmdType
+                Case EdmCmdType.EdmCmd_TaskSetup
+                    taskSetupMessagingTab = New Pages.Messaging()
+                    taskSetupMessagingTab.Container = MyBase.Container
+                    AddTaskSetupPage(taskSetupMessagingTab)
+                    ' Or if you have multiple pages
+                    ' AddTaskSetupPages(New BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage() {taskSetupMessagingTab})
+
+                Case EdmCmdType.EdmCmd_TaskSetupButton
+                    ' Add a context menu
+                    AddContextMenu($"Tasks\{Properties.TaskName} [V{Identity.Version}]", Identity.Description)
+
+                    ' Save the data of the tab
+                    taskSetupMessagingTab.StoreData(poCmd)
+
+                Case EdmCmdType.EdmCmd_TaskDetails
+                    ' Implement task details logic here
+
+                Case EdmCmdType.EdmCmd_TaskRun
+                    ' Implement task run logic here
+
+                Case EdmCmdType.EdmCmd_TaskLaunch
+                    ' Implement task launch logic here
+
+                Case EdmCmdType.EdmCmd_TaskLaunchButton
+                    ' Implement task launch button logic here
+
+                Case Else
+                    ' Default case logic
+
+            End Select
+
+        Catch e As CancellationException
+            Throw
+
+        Catch e As TaskFailedException
+            Throw
+
+        ' This is a PDM exception
+        Catch e As COMException
+            Throw
+
+        Catch e As Exception
+            Throw
+
+        End Try
+
+    End Sub
+```
+---
 
 # Debugging 
 

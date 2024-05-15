@@ -141,6 +141,17 @@ End Sub
 <h5>Note</h5>
 <p>This attribute is already defined for you if you have used the <a href="https://marketplace.visualstudio.com/items?itemName=BlueByteSystemsInc.ID">PDM SDK Template</a> to create your add-in project.</p>
 </div>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+
 <pre><code>    [IsTask(true)]
     [RequiredVersion(10, 0)]
     [ComVisible(true)]
@@ -152,6 +163,25 @@ End Sub
         {}
     }
 </code></pre>
+</section>
+<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code>Imports System.Runtime.InteropServices
+&lt;IsTask(True)&gt;
+&lt;RequiredVersion(10, 0)&gt;
+&lt;ComVisible(True)&gt;
+&lt;Guid(&quot;00000-00-4745-97F6-2029AFB70716&quot;)&gt;
+Public Partial Class AddIn
+    Inherits AddInBase
+
+    Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+        ' Implement the method logic here
+    End Sub
+End Class
+</code></pre>
+</section>
+</div>
+
 <div class="WARNING">
 <h5>Warning</h5>
 <p>Do not delete this attribute otherwise you will get an error dialog box when you add the add-in files in the vault. This attribute <strong>is required</strong>.</p>
