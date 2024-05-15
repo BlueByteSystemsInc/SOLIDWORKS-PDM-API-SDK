@@ -39,8 +39,6 @@
       href: TaskLaunch.md
     - name: TaskRun 
       href: TaskRun.md
-    - name: TaskSetupButton
-      href: TaskSetupButton.md
     - name: TaskDetails 
       href: TaskDetails.md
       

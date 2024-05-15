@@ -16,6 +16,6 @@ To install the Visual Studio SOLIDWORKS PDM SDK Template:
 - Go to https://marketplace.visualstudio.com/items?itemName=BlueByteSystemsInc.ID
 - Click Download
 - In Windows 10 and on some computers, your downloaded files must be unblocked. To do, please right-click on the downloaded file, go to Properties and then check the Unblock checkbox before clicking again on Apply and then OK.
-- Make sure that all instances of Visual Studio 2019 are closed.
+- Make sure that all instances of Visual Studio are closed.
 - Open the Visual Studio Extension Installer (VSXI) and follow the instructions.
 
