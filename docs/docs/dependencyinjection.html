@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Definition | SOLIDWORKS PDM SDK </title>
+      <title>Dependency Injection | SOLIDWORKS PDM SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Definition | SOLIDWORKS PDM SDK ">
+      <meta name="title" content="Dependency Injection | SOLIDWORKS PDM SDK ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/docfx/docs/TaskRun.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/docfx/docs/dependencyinjection.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,35 +85,14 @@
         </div>
 
         <article data-uid="">
-<h1 id="definition">Definition</h1>
+<h1 id="dependency-injection">Dependency Injection</h1>
 
-<p>The task run hook gets triggered when your task gets transfered from the launch machine to the run. A task can be launched by one computer and executed (ran) on another one. It is very common for the executing computer to be the PDM server.</p>
-<p>Almost all of your task implementation in the OnCmd method will be handled by the TaskRun hook.</p>
-<h1 id="iedmtaskinstance-object">IEdmTaskInstance object</h1>
-<p>You may need, depending on your OnCmd implementation, to access the task instance.</p>
-<p>In PDMSDK, use <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Instance">Instance</a> to get access to the IEdmTaskInstance object. This property returns a value in TaskLaunch, Run and, Details.</p>
-<h1 id="updating-the-progressbar">Updating the progressbar</h1>
-<p>To update the progress bar in the tasklist use these two methods.</p>
+<p>PDMSDK provides some support for dependency injection (DI). The Container property in the AddInBase allows to resolve your types into instances.</p>
+<p>We use <a href="https://simpleinjector.org/">Simple Injector</a>.</p>
+<h1 id="type-registration">Type registration</h1>
 <ul>
-<li><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_SetRange_System_Int32_System_Int32_System_String_">SetRange</a></li>
-<li><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_UpdateTaskMessage_System_Int32_System_String_">UpdateTaskMessage</a></li>
+<li>Override the method <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnRegisterAdditionalTypes_SimpleInjector_Container_">OnRegisterAdditionalTypes</a>. Example:</li>
 </ul>
-<div class="WARNING">
-<h5>Warning</h5>
-<p><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_UpdateTaskMessage_System_Int32_System_String_">UpdateTaskMessage</a> will throw an exception if the provided position is out of bounds of the specified range.</p>
-</div>
-<h1 id="cancellation-and-suspension">Cancellation and suspension</h1>
-<p>Whenever you want to give your implementation a chance to consider if the user has requested a suspension or a cancellation call <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_UpdateTaskMessage_System_Int32_System_String_">UpdateTaskMessage</a>.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>In case of a cancellation, <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_UpdateTaskMessage_System_Int32_System_String_">UpdateTaskMessage</a> will throw a CancellationException that you need to handle.</p>
-</div>
-<div class="NOTE">
-<h5>Note</h5>
-<p><a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_UpdateTaskMessage_System_Int32_System_String_">UpdateTaskMessage</a> handles cancellation, suspension and update the progressbar and the message in the tasklist.</p>
-</div>
-<h1 id="getting-saved-data">Getting saved data</h1>
-<p>To get access to the data you have saved in the task setup, call the method <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_GetSettings__1">GetSettings<t></t></a> where T is the view model type. Example:</p>
 <div class="tabGroup" id="tabgroup_1">
 <ul role="tablist">
 <li role="presentation">
@@ -125,12 +104,48 @@
 </ul>
 <section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
 
-<pre><code>var messagingViewModel = base.GetSettings&lt;MessagingViewModel&gt;();
+<pre><code>protected override void OnRegisterAdditionalTypes(Container container)
+        {
+            base.OnRegisterAdditionalTypes(container);
+            container.Register&lt;ISOLIDWORKSInstanceManager, SOLIDWORKSInstanceManager&gt;();
+            container.RegisterSingleton&lt;IEvaluationService, EvaluationService&gt;();
+            container.RegisterSingleton &lt;ISettingsManager,SettingsManager&gt;();
+        }
 </code></pre>
 </section>
 <section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
 
-<pre><code>Dim messagingViewModel As MessagingViewModel = MyBase.GetSettings(Of MessagingViewModel)()
+<pre><code>Protected Overrides Sub OnRegisterAdditionalTypes(container As Container)
+    MyBase.OnRegisterAdditionalTypes(container)
+    container.Register(Of ISOLIDWORKSInstanceManager, SOLIDWORKSInstanceManager)()
+    container.RegisterSingleton(Of IEvaluationService, EvaluationService)()
+    container.RegisterSingleton(Of ISettingsManager, SettingsManager)()
+End Sub
+</code></pre>
+</section>
+</div>
+
+<ul>
+<li>You can call the Container property anywhere else in your AddInBase implementation and resolve a registered type to get an instance. Example:</li>
+</ul>
+<div class="tabGroup" id="tabgroup_2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_2_cs" role="tab" aria-controls="tabpanel_2_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_2_VB" role="tab" aria-controls="tabpanel_2_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_2_cs" role="tabpanel" data-tab="cs">
+
+<pre><code>var settingsManager = Container.GetInstance&lt;ISettingsManager&gt;();
+</code></pre>
+</section>
+<section id="tabpanel_2_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code>Dim settingsManager As ISettingsManager = Container.GetInstance(Of ISettingsManager)()
+
 </code></pre>
 </section>
 </div>
@@ -138,7 +153,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/docfx/docs/TaskRun.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/docfx/docs/dependencyinjection.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

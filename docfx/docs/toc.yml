@@ -16,6 +16,8 @@
   href: commands.md
 - name: PDMSDK's logger
   href: logger.md
+- name: Dependency Injection (DI)
+  href: dependencyinjection.md
 - name: Debugging with PDMSDK
   href: debugging_with_sdk.md
 - name: Task Add-ins 

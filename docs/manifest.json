@@ -475,6 +475,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/dependencyinjection.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/dependencyinjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/flags.md",
       "output": {
         ".html": {
