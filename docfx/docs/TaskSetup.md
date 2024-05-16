@@ -75,8 +75,6 @@ Pages.Messaging taskSetupMessagingTab = default(Pages.Messaging);
         {
             base.OnCmd(ref poCmd, ref ppoData);
 
-            int handle = poCmd.mlParentWnd;
-
             try
             {
                 switch (poCmd.meCmdType)
@@ -142,9 +140,8 @@ Pages.Messaging taskSetupMessagingTab = default(Pages.Messaging);
  Private taskSetupMessagingTab As Pages.Messaging = Nothing
 
     Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+    
         MyBase.OnCmd(poCmd, ppoData)
-
-        Dim handle As Integer = poCmd.mlParentWnd
 
         Try
             Select Case poCmd.meCmdType
