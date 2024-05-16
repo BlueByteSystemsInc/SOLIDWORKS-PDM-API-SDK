@@ -1,56 +1,8 @@
 # Definition
 
-The task setup hook gets triggered when you select the add-in from the dropdown in the task dialog or you edit an add-in's task.
+The task setup button hook gets triggered when you click on the OK or Cancel button in the following window.
 
-The task setup hook allows you to load and save data into the task. It also gives the ability to add custom tabs to the task setup dialog. This tabs are WinForms UserControls.
-
-# Creating an EdmTaskPage
-
->[!TIP]
-> If your task does not have any settings, you can completely ignore the EdmTaskSetup hook. There is no need to store data in the task.
-
-Consult the [Task Sample](https://help.solidworks.com/2017/english/api/epdmapi/TaskSample.htm) from the SOLIDWORKS PDM Professional API help to see the default implementation of this hook. 
-
-We highly recommend you use PDMSDK's because it saves a lot of time.
-
-You can add one of many custom tabs. In PDMSDK terminogly, we call them task page. A task page is presented by the type EdmTaskPage.
-
-You need to be aware of two types: 
-
-- EdmTaskPage: It is a generic wrapper around the WinForms UserControl with built-in support for saving and loading data in the task. The data is serialized and deserialized. The data object must be a serialized class. the EdmTaskPage takes care of creating or loading an instance of your data class as well as saving into the task. Your data object is property called ViewModel in the EdmTaskPage.
-
-- ITaskPage: An interface that the EdmTaskPage implements. 
-
->[!TIP]
-> We highly recommend you use the PDMSDK Visual Studio Template because it comes ready with a boilerplate EdmTaskPage item to be added to your project.
-
-
-To add an EdmTaskSetup:
-
-- Right-click on the *Project* in the *Solution Explorer* and click Add *New Item...*
-
-<img src="../images/addnewitem.png"/>
-
-- Look for EdmTaskPage, give it a new and click *Add*. 
-
-<img src="../images/newitemwindow.png"/>
-
-- By default, two items are added: The EdmTaskPage and the data object which is called EdmTaskPageViewModel. In the example below, the page is called `Messaging`.
-
-<img src="../images/edmtaskpagesolutionexplorer.png"/>
-
-- An EdmTaskPage is a WinForms UserControl. You can use the Visual Studio Toolbox to add and remove WinForms controls to and from it.
-- Requirement: In the OnDataLoaded method in the EdmTasksPage, you can bind your the data object properties to the controls in the EdmTaskPage.
-
-# Adding a new task page
-
-In the OnCmd implementation:
-
-- Create instances of your task pages.
-- Set the [Container](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Container) property in the EdmTaskPage to that of the AddInBase. We're passing the Container from the AddInBase to the EdmTaskPage.
-- Set the Name property of the EdmTaskPage. You can also do this in the constructor.
-- Call the method [AddTaskSetupPages](../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage___)  and supply it with an array of your task pages.
-
+The task setup hook allows you to save data into the task. It also gives the ability add context menu if your task defines that in task flags. 
 
 
 # Saving task page's data
@@ -59,7 +11,7 @@ In the OnCmd implementation:
 > You must reuse the same instance from the TaskSetup hook.
 
 - Call the method StoreData in your EdmTaskPage.
-- You may also call AddContextMenu to add a right-click that triggers the task launch from File Explorer if the task flags allow that.
+- You may also call AddContextMenu to add a right-click that triggers the task launch from File Explorer.
 
 
 See the complete code example below.

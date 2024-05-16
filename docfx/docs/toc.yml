@@ -35,6 +35,7 @@
       - name: Add controls and binding to View Model
         href: binding.md
     - name: TaskSetupButton
+      href: TaskSetupButton.md
     - name: TaskLaunch 
       href: TaskLaunch.md
     - name: TaskRun 
