@@ -4,6 +4,14 @@ The task setup hook gets triggered when you select the add-in from the dropdown 
 
 The task setup hook allows you to load and save data into the task. It also gives the ability to add custom tabs to the task setup dialog. This tabs are WinForms UserControls.
 
+# IEdmTasKProperties object
+
+You may need, depending on your OnCmd implementation, to access the task properties. 
+
+In PDMSDK, use base.Properties to get access to the IEdmTaskProperties property. This property returns null or nothing in hooks other than EdmTaskSetup and EdmTaskSetupButton.
+
+
+
 # Creating an EdmTaskPage
 
 >[!TIP]
@@ -140,7 +148,7 @@ Pages.Messaging taskSetupMessagingTab = default(Pages.Messaging);
  Private taskSetupMessagingTab As Pages.Messaging = Nothing
 
     Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
-    
+
         MyBase.OnCmd(poCmd, ppoData)
 
         Try
