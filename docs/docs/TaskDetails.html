@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | SOLIDWORKS PDM SDK </title>
+      <title>Definition | SOLIDWORKS PDM SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | SOLIDWORKS PDM SDK ">
+      <meta name="title" content="Definition | SOLIDWORKS PDM SDK ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -85,7 +85,195 @@
         </div>
 
         <article data-uid="">
+<h1 id="definition">Definition</h1>
 
+<p>The task details hook gets triggered when you right-click on the task in the tasklist and click <em>Details...</em></p>
+<h1 id="iedmtaskinstance-object">IEdmTaskInstance object</h1>
+<p>You may need, depending on your OnCmd implementation, to access the task instance.</p>
+<p>In PDMSDK, use base.Instance to get access to the IEdmTaskInstance object.</p>
+<h1 id="creating-an-edmtaskpage">Creating an EdmTaskPage</h1>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If your task does not have any data to show after the completion of the task such as logs, you can completely ignore the EdmTaskDetails hook.</p>
+</div>
+<p>Consult the <a href="https://help.solidworks.com/2017/english/api/epdmapi/TaskSample.htm">Task Sample</a> from the SOLIDWORKS PDM Professional API help to see the default implementation of this hook.</p>
+<p>We highly recommend you use PDMSDK's because it saves a lot of time.</p>
+<p>You can add one of many custom tabs. In PDMSDK terminology, we call them task page. A task page is presented by the type EdmTaskPage.</p>
+<p>You need to be aware of two types:</p>
+<ul>
+<li><p>EdmTaskPage: It is a generic wrapper around the WinForms UserControl with built-in support for saving and loading data in the task. The data is serialized and deserialized. The data object must be a serialized class. the EdmTaskPage takes care of creating or loading an instance of your data class as well as saving into the task. Your data object is property called ViewModel in the EdmTaskPage.</p>
+</li>
+<li><p>ITaskPage: An interface that the EdmTaskPage implements.</p>
+</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>We highly recommend you use the PDMSDK Visual Studio Template because it comes ready with a boilerplate EdmTaskPage item to be added to your project.</p>
+</div>
+<p>To add an EdmTaskdetails:</p>
+<ul>
+<li>Right-click on the <em>Project</em> in the <em>Solution Explorer</em> and click Add <em>New Item...</em></li>
+</ul>
+<img src="../images/addnewitem.png">
+<ul>
+<li>Look for EdmTaskPage, give it a new and click <em>Add</em>.</li>
+</ul>
+<img src="../images/newitemwindow.png">
+<ul>
+<li>By default, two items are added: The EdmTaskPage and the data object which is called EdmTaskPageViewModel. In the example below, the page is called <code>Messaging</code>.</li>
+</ul>
+<img src="../images/edmtaskpagesolutionexplorer.png">
+<ul>
+<li>An EdmTaskPage is a WinForms UserControl. You can use the Visual Studio Toolbox to add and remove WinForms controls to and from it.</li>
+<li>Requirement: In the OnDataLoaded method in the EdmTaskPage, you can bind your the data object properties to the controls in the EdmTaskPage.</li>
+</ul>
+<h1 id="adding-a-new-task-page">Adding a new task page</h1>
+<p>In the OnCmd implementation:</p>
+<ul>
+<li>Create instances of your task pages.</li>
+<li>Set the <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_TaskPage_1_Container">Container</a> property in the EdmTaskPage to that of the AddInBase. We're passing the Container from the AddInBase to the EdmTaskPage.</li>
+<li>Set the Name property of the EdmTaskPage. You can also do this in the constructor.</li>
+<li>Call the method <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskDetailsPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage___">AddTaskDetailsPage</a>  and supply it with your page.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>We do not support adding multipages to the details window.</p>
+</div>
+<h1 id="example">Example</h1>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+
+<pre><code>Pages.Messaging taskdetailsMessagingTab = default(Pages.Messaging);
+       
+        public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+        {
+            base.OnCmd(ref poCmd, ref ppoData);
+
+            try
+            {
+                switch (poCmd.meCmdType)
+                {
+                    
+                    case EdmCmdType.EdmCmd_TaskDetails:
+                        {
+                            taskdetailsMessagingTab = new Pages.Messaging();
+                            taskdetailsMessagingTab.Container = base.Container;
+                            taskdetailsMessagingTab.Name = &quot;Messaging&quot;;
+                            AddTaskDetailsPage(taskdetailsMessagingTab);
+                        }
+                        break;
+                    case EdmCmdType.EdmCmd_TaskDetails:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskRun:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskLaunch:
+                        break;
+                    case EdmCmdType.EdmCmd_TaskLaunchButton:
+                    default:
+                        break;
+                }
+            }
+            catch (CancellationException e)
+            {
+
+                throw;
+            }
+            catch (TaskFailedException e)
+            {
+
+                throw;
+            }
+            // this is a PDM exception
+            catch (COMException e)
+            {
+
+                throw;
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+
+        }
+</code></pre>
+</section>
+<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code> Private taskdetailsMessagingTab As Pages.Messaging = Nothing
+
+    Public Overrides Sub OnCmd(ByRef poCmd As EdmCmd, ByRef ppoData() As EdmCmdData)
+
+        MyBase.OnCmd(poCmd, ppoData)
+
+        Try
+            Select Case poCmd.meCmdType
+                Case EdmCmdType.EdmCmd_Taskdetails
+                    taskdetailsMessagingTab = New Pages.Messaging()
+                    taskdetailsMessagingTab.Container = MyBase.Container
+                    taskdetailsMessagingTab.Name = &quot;Messaging&quot;
+                    AddTaskdetailsPage(taskdetailsMessagingTab)
+
+                Case EdmCmdType.EdmCmd_TaskRun
+                    ' Implement task run logic here
+
+                Case EdmCmdType.EdmCmd_TaskLaunch
+                    ' Implement task launch logic here
+
+                Case EdmCmdType.EdmCmd_TaskLaunchButton
+                    ' Implement task launch button logic here
+
+                Case Else
+                    ' Default case logic
+
+            End Select
+
+        Catch e As CancellationException
+            Throw
+
+        Catch e As TaskFailedException
+            Throw
+
+        ' This is a PDM exception
+        Catch e As COMException
+            Throw
+
+        Catch e As Exception
+            Throw
+
+        End Try
+
+    End Sub
+</code></pre>
+</section>
+</div>
+<h1 id="debugging">Debugging</h1>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You cannot debug task details pages with <em>Debug Add-ins...</em></p>
+</div>
+<ul>
+<li>Make sure you have a fresh connection to PDM. Generally speaking, this is done by killing Conisioadmin.exe, edmserver.exe and explorer.exe and then restarting explorer.exe. This process can be done from the Windows task manager.</li>
+<li>Call AttachDebugger in your OnCmd.</li>
+<li>Compile code.</li>
+<li>Add the project files to your vault from the administration tool. Right-click on <em>Add-ins</em> and click <em>New Add-in...</em></li>
+<li>Accept all dialogs.</li>
+<li>Right-click on <em>Tasks</em> and click <em>New...</em></li>
+<li>Choose the add-in that you just added from the dropdown.</li>
+<li>AttachDebugger will be called immediately and you can attach Visual Studio to start debugging through your code.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can use the directives #if DEBUG #endif to conditionally compile the AttachDebugger in the debug configuration. This will ignore it in the Release configuration which you can use in production. Be aware that release configurations do not automatically generate pdb files so your stack traces will not print in your error or logs.</p>
+</div>
 
 </article>
 

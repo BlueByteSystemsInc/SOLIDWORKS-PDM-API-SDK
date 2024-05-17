@@ -4,7 +4,7 @@ The task setup hook gets triggered when you select the add-in from the dropdown 
 
 The task setup hook allows you to load and save data into the task. It also gives the ability to add custom tabs to the task setup dialog. This tabs are WinForms UserControls.
 
-# IEdmTasKProperties object
+# IEdmTaskProperties object
 
 You may need, depending on your OnCmd implementation, to access the task properties. 
 
@@ -21,7 +21,7 @@ Consult the [Task Sample](https://help.solidworks.com/2017/english/api/epdmapi/T
 
 We highly recommend you use PDMSDK's because it saves a lot of time.
 
-You can add one of many custom tabs. In PDMSDK terminogly, we call them task page. A task page is presented by the type EdmTaskPage.
+You can add one of many custom tabs. In PDMSDK terminology, we call them task page. A task page is presented by the type EdmTaskPage.
 
 You need to be aware of two types: 
 
@@ -48,7 +48,7 @@ To add an EdmTaskSetup:
 <img src="../images/edmtaskpagesolutionexplorer.png"/>
 
 - An EdmTaskPage is a WinForms UserControl. You can use the Visual Studio Toolbox to add and remove WinForms controls to and from it.
-- Requirement: In the OnDataLoaded method in the EdmTasksPage, you can bind your the data object properties to the controls in the EdmTaskPage.
+- Requirement: In the OnDataLoaded method in the EdmTaskPage, you can bind your the data object properties to the controls in the EdmTaskPage.
 
 # Adding a new task page
 
@@ -91,6 +91,7 @@ Pages.Messaging taskSetupMessagingTab = default(Pages.Messaging);
                     case EdmCmdType.EdmCmd_TaskSetup:
                         {
                             taskSetupMessagingTab = new Pages.Messaging();
+                            taskSetupMessagingTab.Name = "Messaging";
                             taskSetupMessagingTab.Container = base.Container;
                             AddTaskSetupPage(taskSetupMessagingTab);
                             // or if you have multiple pages
@@ -155,6 +156,7 @@ Pages.Messaging taskSetupMessagingTab = default(Pages.Messaging);
             Select Case poCmd.meCmdType
                 Case EdmCmdType.EdmCmd_TaskSetup
                     taskSetupMessagingTab = New Pages.Messaging()
+                    taskSetupMessagingTab.Name = "Messaging"
                     taskSetupMessagingTab.Container = MyBase.Container
                     AddTaskSetupPage(taskSetupMessagingTab)
                     ' Or if you have multiple pages
