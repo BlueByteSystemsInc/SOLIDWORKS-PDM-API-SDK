@@ -365,6 +365,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/TaskLaunch.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/TaskLaunch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/TaskRun.md",
       "output": {
         ".html": {

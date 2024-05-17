@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Definition | SOLIDWORKS PDM SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Definition | SOLIDWORKS PDM SDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/docfx/docs/TaskLaunch.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/fav.png" alt="SOLIDWORKS PDM SDK">
+            SOLIDWORKS PDM SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="definition">Definition</h1>
+
+<p>The task launch hook gets triggered when your task by launched. A task can be launched by one computer and executed (ran) on another one. It is very common for the executing computer to be the PDM server.</p>
+<p>Almost all of your task implementation in the OnCmd method will be handled by the TaskRun hook.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use TaskLaunch to show any necessary UI to get the user input.</p>
+</div>
+<h1 id="iedmtaskinstance-object">IEdmTaskInstance object</h1>
+<p>You may need, depending on your OnCmd implementation, to access the task instance.</p>
+<p>In PDMSDK, use <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Instance">Instance</a> to get access to the IEdmTaskInstance object. This property returns a value in TaskLaunch, launch and, Details.</p>
+<h1 id="cancellation-and-suspension">Cancellation and suspension</h1>
+<p>You cannot suspend a task during its launch.</p>
+<p>You are able to cancel the task by means setting the mpoCancel field on the EdmCmd parameter just like you would do with any hook.</p>
+<h1 id="transfering-data-from-task-launch-to-task-run">Transfering data from task launch to task run</h1>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>It is critical to understand that your add-in will invoked by two different processes one during TaskLaunch and one during TaskRun. Every process will have its own ID.</p>
+</div>
+<p>When a task a launched, it is launched with TaskLauncher.exe and when it is run, it runs in the TaskExecuter.exe process. You can find out more about these processes by using the AttachDebugger method.</p>
+<p>This leaves data transfer  from TaskLaunch to TaskRun only possible via the GetVarEx and SetVarEx methods part of the IEdmTaskInstance interface.</p>
+<h1 id="getting-saved-data">Getting saved data</h1>
+<p>To get access to the data you have saved in the task setup, call the method <a href="../api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_GetSettings__1">GetSettings<t></t></a> where T is the view model type. Example:</p>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_cs" role="tab" aria-controls="tabpanel_1_cs" data-tab="cs" tabindex="0" aria-selected="true">C Sharp</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_VB" role="tab" aria-controls="tabpanel_1_VB" data-tab="VB" tabindex="-1">VB</a>
+</li>
+</ul>
+<section id="tabpanel_1_cs" role="tabpanel" data-tab="cs">
+
+<pre><code>var messagingViewModel = base.GetSettings&lt;MessagingViewModel&gt;();
+</code></pre>
+</section>
+<section id="tabpanel_1_VB" role="tabpanel" data-tab="VB" aria-hidden="true" hidden="hidden">
+
+<pre><code>Dim messagingViewModel As MessagingViewModel = MyBase.GetSettings(Of MessagingViewModel)()
+</code></pre>
+</section>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/docfx/docs/TaskLaunch.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
