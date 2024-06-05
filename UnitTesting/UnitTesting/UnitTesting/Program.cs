@@ -10,6 +10,7 @@ namespace UnitTesting
 {
     class Program
     {
+        [STAThreadAttribute]
         public static void Main()
         {
             string licenseKey = System.IO.File.ReadAllText(@"P:\Blue Byte Systems, Inc\PDMFrameworkUnitTesting\BlueByteSystemsInc_licensKey.XML");
@@ -22,7 +23,7 @@ namespace UnitTesting
     }
 
     [TestVault("BlueByte")]
-    public class AddInTestClass : TestableAddInBase<TestAddin.PDMFrameworkAddInSample>
+    public class AddInTestClass : TestableAddInBase<TestAddin.TestAddIn>
     {
         public AddInTestClass(string licenseKey) : base(licenseKey)
         {
@@ -30,10 +31,10 @@ namespace UnitTesting
         }
 
         [PDMTestMethod]
-        public void TestTaskSetup()
+        public void TestLogger()
         {
             EPDM.Interop.epdm.EdmCmdData[] ppData = null;
-            EPDM.Interop.epdm.EdmCmd poCmd = default;
+            EPDM.Interop.epdm.EdmCmd poCmd = MockEdmCmd.EdmCmd_Menu.Mock(5);
             this.AddInObject.OnCmd(ref poCmd, ref ppData);
         }
     }

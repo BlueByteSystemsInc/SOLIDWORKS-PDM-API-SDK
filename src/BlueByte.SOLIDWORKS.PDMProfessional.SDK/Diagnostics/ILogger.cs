@@ -30,9 +30,11 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
         /// </summary>
         /// <param name="target">Text file path. This is the name of the table when <see cref="GetLoggerType()"/> returns <see cref="LoggerType_e.SQL"/></param>
         /// <param name="value">New value.</param>
-        void LogToOutput(string target, string value);
-      
+        void LogToOutput(string target, object value);
+
+ 
         
+
         /// <summary>
         /// Ouput location. Relative path does not work.
         /// </summary>

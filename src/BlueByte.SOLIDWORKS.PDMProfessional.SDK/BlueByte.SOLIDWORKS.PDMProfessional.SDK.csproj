@@ -74,6 +74,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -100,6 +101,7 @@
     <Compile Include="Core\TaskPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Diagnostics\PDMLogger.cs" />
     <Compile Include="Diagnostics\ConsoleLogger.cs" />
     <Compile Include="Diagnostics\FileLogger.cs" />
     <Compile Include="Diagnostics\ILogger.cs" />
@@ -118,9 +120,6 @@
     <None Include="package.nuspec" />
     <None Include="packages.config" />
     <None Include="PDMFramework.snk" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Logo\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

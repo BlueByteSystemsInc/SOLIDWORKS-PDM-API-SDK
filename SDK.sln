@@ -7,13 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueByte.SOLIDWORKS.PDMProf
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Alex|Any CPU = Alex|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}.Alex|Any CPU.ActiveCfg = Alex|Any CPU
-		{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}.Alex|Any CPU.Build.0 = Alex|Any CPU
 		{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60FE34EE-A3EA-4F3B-8B9D-09A29274F148}.Release|Any CPU.ActiveCfg = Release|Any CPU

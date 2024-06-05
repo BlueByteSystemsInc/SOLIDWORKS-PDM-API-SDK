@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Diagnostics;
-using System.Runtime.InteropServices;
-using System.Runtime.InteropServices.ComTypes;
 
 
 namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -12,7 +9,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 
 
 
-  
+
 
 
     internal static class Helper

@@ -19,7 +19,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
 
         }
 
-        public void LogToOutput(string fileName, string value)
+        public void LogToOutput(string fileName, object value)
         {
             Console.WriteLine(value);
         }

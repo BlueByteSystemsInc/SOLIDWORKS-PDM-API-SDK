@@ -1,4 +1,6 @@
-﻿namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
+﻿using EPDM.Interop.epdm;
+
+namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 {
     /// <summary>
     /// Add-in identity.
@@ -56,5 +58,15 @@
         /// Required minor.
         /// </summary>
         public int RequiredMinorVersion;
+
+
+
+        /// <summary>
+        /// Gets or sets the vault.
+        /// </summary>
+        /// <value>
+        /// The vault.
+        /// </value>
+        public IEdmVault5 Vault { get; set; }
     }
 }

@@ -139,6 +139,12 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 
                 Logger = Container.GetInstance<ILogger>();
 
+                if (LoggerType == LoggerType_e.PDM)
+                {
+                    var concreteLogger = Logger as PDMLogger;
+                    concreteLogger.LogType = this.LogType;
+                }
+
                 OnLoggerOutputSat(string.Empty);
                 
                 IsInitialized = true;
@@ -191,11 +197,36 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         }
 
 
-  
+
         #endregion
 
         #region Private Methods
 
+
+        /// <summary>
+        /// Gets the add in identity. This can only be called after setting <see cref="Vault"/>
+        /// </summary>
+        /// <exception cref="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.IdentityInfoException">
+        /// Task class is not decorated with NameAttribute. - null
+        /// or
+        /// Task add-in has an empty name. - null
+        /// or
+        /// Task class is not decorated with DescriptionAttribute. - null
+        /// or
+        /// Task add-in has an empty description. - null
+        /// or
+        /// Task class is not decorated with CompanyNameAttribute. - null
+        /// or
+        /// Task add-in has an empty company name. - null
+        /// or
+        /// Task class is not decorated with RequiredVersionAttribute. - null
+        /// or
+        /// Task add-in version major requirement not set. - null
+        /// or
+        /// Task class is not decorated with AddInVersionAttribute. - null
+        /// or
+        /// Task add-in has an incorrect version. Value ={addinVersionAtt.Version} - null
+        /// </exception>
         private void GetAddInIdentity()
         {
             #region set add-in name
@@ -272,6 +303,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                 Identity.Version = addinVersionAtt.Version;
             Identity.RequiredMajorVersion = addinRequiredVersionAtt.Major;
             Identity.RequiredMinorVersion = addinRequiredVersionAtt.Minor;
+            Identity.Vault = this.Vault;
         }
 
         private void LogExceptionBeforeCrash(ILogger logger, Exception e)
@@ -349,11 +381,32 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
             LogExceptionBeforeCrash(Logger, e.ExceptionObject as Exception);
         }
 
+        
+
+        /// <summary>
+        /// Gets or sets the type of the log.
+        /// </summary>
+        /// <value>
+        /// The type of the log.
+        /// </value>
+        public Type LogType { get; set; }
+
+        /// <summary>
+        /// Called when [PDM logger initialized].
+        /// </summary>
+        protected virtual void OnPDMLoggerInitialized()
+        {
+            throw new NotImplementedException("You must override this method and set LogType with the object presenting the line the log table.");
+        }
+
         /// <summary>
         /// Fires when the application is initialized. Register types of calling assembly.
         /// </summary>
         protected virtual void RegisterTypes()
         {
+            if (LoggerType == LoggerType_e.PDM)
+               OnPDMLoggerInitialized();
+
             if (Container == null)
             {
                 Container = new Container();
@@ -378,7 +431,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                     case LoggerType_e.File:
                         Container.RegisterSingleton<ILogger, FileLogger>();
                         break;
-
+                    case LoggerType_e.PDM:
+                        Container.RegisterSingleton<ILogger, PDMLogger>();
+                        break;
                     case LoggerType_e.SQL:
                         Container.RegisterSingleton<ILogger, SQLLogger>();
                         break;
@@ -822,6 +877,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                 Identity.Version = poInfo.mlAddInVersion;
                 Identity.RequiredMajorVersion = poInfo.mlRequiredVersionMajor;
                 Identity.RequiredMinorVersion = poInfo.mlRequiredVersionMinor;
+                Identity.Vault = this.Vault;
 
                 if (isTask)
                 {
@@ -1031,6 +1087,10 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                         break;
                 }
             }
+
+
+
+            Logger.Init(this.Identity, this.Instance, string.Empty);
         }
 
          

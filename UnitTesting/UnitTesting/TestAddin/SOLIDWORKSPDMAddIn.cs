@@ -1,6 +1,6 @@
-﻿using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Attributes;
-using BlueByte.SOLIDWORKS.PDMProfessional.PDMAddInFramework.Diagnostics;
+﻿using BlueByte.SOLIDWORKS.PDMProfessional.SDK;
+using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes;
+using BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics;
 using EPDM.Interop.epdm;
 using SimpleInjector;
 using System;
@@ -9,13 +9,19 @@ using System.Runtime.InteropServices;
 
 namespace TestAddin
 {
+
+    public class Log
+    {
+        public string FileName { get; set; }
+        public string Text { get; set; }
+    }
+
     public enum Commands
     {
         CommandOne = 1000
     }
 
-    [Menu((int)Commands.CommandOne, "This is a menu item - PDMFramework")]
-    [Name("Sample Addin - PDMFramework")]
+     [Name("Sample Addin - PDMFramework")]
     [Description("This is a description - PDMFramework")]
     [CompanyName("Blue Byte Systems Inc")]
     [AddInVersion(false, 1)]
@@ -23,49 +29,46 @@ namespace TestAddin
     [RequiredVersion(10, 0)]
     [ComVisible(true)]
     [Guid("721C78F4-362E-45EC-B313-CD0E33A87D67")]
-    public partial class PDMFrameworkAddInSample : AddInBase
+    public partial class TestAddIn : AddInBase
     {
 
         public override void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
         {
             base.OnCmd(ref poCmd, ref ppoData);
 
-            #region connection
-            var connectionString = "Data Source=173.225.102.156;Initial Catalog=BlueByteSystemsLogDb;User ID=sa;Password=2BtE2v!t;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            #endregion
 
-            var logFolderPath = System.IO.Path.Combine(this.Vault.RootFolder.LocalPath, "Logs");
+            Logger.Init(this.Identity, null, null);
 
-        
-            var table = $"TestTable";
+            var pdmLogger = Logger as IPDMLogger;
 
-           
-            Logger.Init(this.Identity, this.Instance, connectionString);
+            pdmLogger.Dispose();
 
-
-            Logger.StartConnection();
-
-
-            Logger.LogToOutput(table, "Test");
-
-            switch (poCmd.meCmdType)
+            for (int i = 0; i < 10000; i++)
             {
-                case EdmCmdType.EdmCmd_TaskSetup:
-                    break;
-                case EdmCmdType.EdmCmd_TaskRun:
-                    break;
-                case EdmCmdType.EdmCmd_TaskLaunch:
-                    break;
-                
-                default:
-                    break;
+                var logA = new Log();
+                logA.FileName = i.ToString();
+                logA.Text = $"Text {i}: ﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽";
+                Logger.LogToOutput("Entry", logA);
+
             }
+
+
+
+            pdmLogger.CommitToVault("Entry");
+
+
+            BlueByte.SOLIDWORKS.PDMProfessional.Services.Views.PDMLogView.New(null, this.Identity.ToCaption(), pdmLogger);
+
         }
 
+        protected override void OnPDMLoggerInitialized()
+        {
+            this.LogType = typeof(Log);
+        }
 
         protected override void OnLoggerTypeChosen(LoggerType_e defaultType)
         {
-            base.OnLoggerTypeChosen(LoggerType_e.SQL);
+            base.OnLoggerTypeChosen(LoggerType_e.PDM);
         }
 
         protected override void OnRegisterAdditionalTypes(Container container)

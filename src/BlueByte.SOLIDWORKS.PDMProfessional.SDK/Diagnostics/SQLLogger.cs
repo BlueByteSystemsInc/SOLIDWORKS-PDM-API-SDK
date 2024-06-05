@@ -94,7 +94,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
 
       
 
-        public void LogToOutput(string target, string value)
+        public void LogToOutput(string target, object value)
         {
             Verify();
             var sql = $"INSERT into {target}(TimeStamp,AddInName,AddInVersion,CompanyName,TaskName,TaskInstanceGUID,Message) VALUES (@TimeStamp,@AddInName,@AddInVersion,@CompanyName,@TaskName,@TaskInstanceGUID,@Message)";
