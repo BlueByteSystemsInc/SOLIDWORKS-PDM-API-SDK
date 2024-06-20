@@ -30,6 +30,11 @@
         ]
       }
     ],
+    "sitemap": {
+      "baseUrl": "https://docs.bluebyte.biz",
+      "priority": 0.5,
+      "changefreq": "daily"
+    },
     "output": "../docs",
     "template": [
       "default",

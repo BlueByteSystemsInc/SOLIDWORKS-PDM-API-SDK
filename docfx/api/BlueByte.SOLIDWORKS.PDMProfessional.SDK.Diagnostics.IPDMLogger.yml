@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  id: IPDMLogger
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+  langs:
+  - csharp
+  - vb
+  name: IPDMLogger
+  nameWithType: IPDMLogger
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  type: Interface
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/PDMLogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: IPDMLogger
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/PDMLogger.cs
+    startLine: 11
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: ''
+  example: []
+  syntax:
+    content: 'public interface IPDMLogger : IDisposable'
+    content.vb: Public Interface IPDMLogger Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+  id: GetAllLogsFromVault
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  langs:
+  - csharp
+  - vb
+  name: GetAllLogsFromVault()
+  nameWithType: IPDMLogger.GetAllLogsFromVault()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/PDMLogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetAllLogsFromVault
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/PDMLogger.cs
+    startLine: 17
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Gets the logs from vault.
+  example: []
+  syntax:
+    content: List<Tuple<string, object[]>> GetAllLogsFromVault()
+    return:
+      type: System.Collections.Generic.List{System.Tuple{System.String,System.Object[]}}
+      description: ''
+    content.vb: Function GetAllLogsFromVault() As List(Of Tuple(Of String, Object()))
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(System.String)
+  id: CommitToVault(System.String)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  langs:
+  - csharp
+  - vb
+  name: CommitToVault(string)
+  nameWithType: IPDMLogger.CommitToVault(string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(string)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/PDMLogger.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: CommitToVault
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/PDMLogger.cs
+    startLine: 24
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  summary: Commits log entry to vault.
+  example: []
+  syntax:
+    content: void CommitToVault(string logEntryOrTarget)
+    parameters:
+    - id: logEntryOrTarget
+      type: System.String
+      description: The log entry or target.
+    content.vb: Sub CommitToVault(logEntryOrTarget As String)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault*
+  nameWithType.vb: IPDMLogger.CommitToVault(String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(String)
+  name.vb: CommitToVault(String)
+references:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+    name: Diagnostics
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+    name: Diagnostics
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_IPDMLogger_GetAllLogsFromVault
+  name: GetAllLogsFromVault
+  nameWithType: IPDMLogger.GetAllLogsFromVault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+- uid: System.Collections.Generic.List{System.Tuple{System.String,System.Object[]}}
+  commentId: T:System.Collections.Generic.List{System.Tuple{System.String,System.Object[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Tuple<string, object[]>>
+  nameWithType: List<Tuple<string, object[]>>
+  fullName: System.Collections.Generic.List<System.Tuple<string, object[]>>
+  nameWithType.vb: List(Of Tuple(Of String, Object()))
+  fullName.vb: System.Collections.Generic.List(Of System.Tuple(Of String, Object()))
+  name.vb: List(Of Tuple(Of String, Object()))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_IPDMLogger_CommitToVault_System_String_
+  name: CommitToVault
+  nameWithType: IPDMLogger.CommitToVault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

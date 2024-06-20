@@ -360,6 +360,19 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized
   nameWithType: AddInBase.IsInitialized
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  name: LogType
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_LogType
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  nameWithType: AddInBase.LogType
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType*
+  name: LogType
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_LogType_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  nameWithType: AddInBase.LogType
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger
   name: Logger
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Logger
@@ -444,6 +457,19 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen
   nameWithType: AddInBase.OnLoggerTypeChosen
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  name: OnPDMLoggerInitialized()
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnPDMLoggerInitialized
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized()
+  nameWithType: AddInBase.OnPDMLoggerInitialized()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized*
+  name: OnPDMLoggerInitialized
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnPDMLoggerInitialized_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  nameWithType: AddInBase.OnPDMLoggerInitialized
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes(SimpleInjector.Container)
   name: OnRegisterAdditionalTypes(Container)
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnRegisterAdditionalTypes_SimpleInjector_Container_
@@ -2019,15 +2045,15 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init
   nameWithType: ILogger.Init
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)
-  name: LogToOutput(string, string)
-  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_System_String_System_String_
-  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)
-  name.vb: LogToOutput(String, String)
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(string, string)
-  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(String, String)
-  nameWithType: ILogger.LogToOutput(string, string)
-  nameWithType.vb: ILogger.LogToOutput(String, String)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.Object)
+  name: LogToOutput(string, object)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_System_String_System_Object_
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.Object)
+  name.vb: LogToOutput(String, Object)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(string, object)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(String, Object)
+  nameWithType: ILogger.LogToOutput(string, object)
+  nameWithType.vb: ILogger.LogToOutput(String, Object)
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput*
   name: LogToOutput
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_
@@ -2061,6 +2087,41 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection
   nameWithType: ILogger.StartConnection
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  name: IPDMLogger
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  nameWithType: IPDMLogger
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(System.String)
+  name: CommitToVault(string)
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_IPDMLogger_CommitToVault_System_String_
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(System.String)
+  name.vb: CommitToVault(String)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(string)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault(String)
+  nameWithType: IPDMLogger.CommitToVault(string)
+  nameWithType.vb: IPDMLogger.CommitToVault(String)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault*
+  name: CommitToVault
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_IPDMLogger_CommitToVault_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.CommitToVault
+  nameWithType: IPDMLogger.CommitToVault
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+  name: GetAllLogsFromVault()
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_IPDMLogger_GetAllLogsFromVault
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault()
+  nameWithType: IPDMLogger.GetAllLogsFromVault()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault*
+  name: GetAllLogsFromVault
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_IPDMLogger_GetAllLogsFromVault_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.GetAllLogsFromVault
+  nameWithType: IPDMLogger.GetAllLogsFromVault
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerBase
   name: LoggerBase
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerBase.html
@@ -2098,6 +2159,12 @@ references:
   commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.File
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.File
   nameWithType: LoggerType_e.File
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
+  name: PDM
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_LoggerType_e_PDM
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
+  nameWithType: LoggerType_e.PDM
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL
   name: SQL
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_LoggerType_e_SQL
@@ -2537,6 +2604,19 @@ references:
   isSpec: "True"
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.ToCaption
   nameWithType: Identity.ToCaption
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  name: Vault
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_Vault
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  nameWithType: Identity.Vault
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault*
+  name: Vault
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_Vault_
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  isSpec: "True"
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  nameWithType: Identity.Vault
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Version
   name: Version
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_Version

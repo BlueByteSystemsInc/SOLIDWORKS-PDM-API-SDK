@@ -1,4 +1,9 @@
 {
+  "sitemap": {
+    "baseUrl": "https://docs.bluebyte.biz/",
+    "changefreq": "daily",
+    "priority": 0.5
+  },
   "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/OpenSource/PDMSDK/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -196,6 +201,16 @@
       "output": {
         ".html": {
           "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html"
         }
       },
       "version": ""

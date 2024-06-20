@@ -2172,6 +2172,7 @@ references:
   - uid: System.Drawing.SizeF
     name: SizeF
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.sizef
   - name: ','
   - name: " "
   - uid: System.Windows.Forms.BoundsSpecified
@@ -2188,6 +2189,7 @@ references:
   - uid: System.Drawing.SizeF
     name: SizeF
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.sizef
   - name: ','
   - name: " "
   - uid: System.Windows.Forms.BoundsSpecified
@@ -2602,6 +2604,7 @@ references:
   - uid: System.Drawing.Size
     name: Size
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.size
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.GetPreferredSize(System.Drawing.Size)
@@ -2612,6 +2615,7 @@ references:
   - uid: System.Drawing.Size
     name: Size
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.size
   - name: )
 - uid: System.Windows.Forms.Control.AccessibilityNotifyClients(System.Windows.Forms.AccessibleEvents,System.Int32)
   commentId: M:System.Windows.Forms.Control.AccessibilityNotifyClients(System.Windows.Forms.AccessibleEvents,System.Int32)
@@ -3079,11 +3083,13 @@ references:
   - uid: System.Drawing.Bitmap
     name: Bitmap
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
   - name: ','
   - name: " "
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.DrawToBitmap(System.Drawing.Bitmap,System.Drawing.Rectangle)
@@ -3094,11 +3100,13 @@ references:
   - uid: System.Drawing.Bitmap
     name: Bitmap
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
   - name: ','
   - name: " "
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
 - uid: System.Windows.Forms.Control.EndInvoke(System.IAsyncResult)
   commentId: M:System.Windows.Forms.Control.EndInvoke(System.IAsyncResult)
@@ -3363,6 +3371,7 @@ references:
   - uid: System.Drawing.Point
     name: Point
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.point
   - name: ','
   - name: " "
   - uid: System.Windows.Forms.GetChildAtPointSkip
@@ -3379,6 +3388,7 @@ references:
   - uid: System.Drawing.Point
     name: Point
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.point
   - name: ','
   - name: " "
   - uid: System.Windows.Forms.GetChildAtPointSkip
@@ -3403,6 +3413,7 @@ references:
   - uid: System.Drawing.Point
     name: Point
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.point
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.GetChildAtPoint(System.Drawing.Point)
@@ -3413,6 +3424,7 @@ references:
   - uid: System.Drawing.Point
     name: Point
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.point
   - name: )
 - uid: System.Windows.Forms.Control.GetContainerControl
   commentId: M:System.Windows.Forms.Control.GetContainerControl
@@ -3453,11 +3465,13 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: ','
   - name: " "
   - uid: System.Drawing.SizeF
     name: SizeF
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.sizef
   - name: ','
   - name: " "
   - uid: System.Windows.Forms.BoundsSpecified
@@ -3474,11 +3488,13 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: ','
   - name: " "
   - uid: System.Drawing.SizeF
     name: SizeF
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.sizef
   - name: ','
   - name: " "
   - uid: System.Windows.Forms.BoundsSpecified
@@ -3622,6 +3638,7 @@ references:
   - uid: System.Drawing.Region
     name: Region
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.region
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.Invalidate(System.Drawing.Region)
@@ -3632,6 +3649,7 @@ references:
   - uid: System.Drawing.Region
     name: Region
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.region
   - name: )
 - uid: System.Windows.Forms.Control.Invalidate(System.Drawing.Region,System.Boolean)
   commentId: M:System.Windows.Forms.Control.Invalidate(System.Drawing.Region,System.Boolean)
@@ -3653,6 +3671,7 @@ references:
   - uid: System.Drawing.Region
     name: Region
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.region
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -3669,6 +3688,7 @@ references:
   - uid: System.Drawing.Region
     name: Region
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.region
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -3748,6 +3768,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.Invalidate(System.Drawing.Rectangle)
@@ -3758,6 +3779,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
 - uid: System.Windows.Forms.Control.Invalidate(System.Drawing.Rectangle,System.Boolean)
   commentId: M:System.Windows.Forms.Control.Invalidate(System.Drawing.Rectangle,System.Boolean)
@@ -3779,6 +3801,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -3795,6 +3818,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -4124,6 +4148,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.NotifyInvalidate(System.Drawing.Rectangle)
@@ -4134,6 +4159,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
 - uid: System.Windows.Forms.Control.InvokeOnClick(System.Windows.Forms.Control,System.EventArgs)
   commentId: M:System.Windows.Forms.Control.InvokeOnClick(System.Windows.Forms.Control,System.EventArgs)
@@ -6385,6 +6411,7 @@ references:
   - uid: System.Drawing.Point
     name: Point
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.point
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.PointToClient(System.Drawing.Point)
@@ -6395,6 +6422,7 @@ references:
   - uid: System.Drawing.Point
     name: Point
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.point
   - name: )
 - uid: System.Windows.Forms.Control.PointToScreen(System.Drawing.Point)
   commentId: M:System.Windows.Forms.Control.PointToScreen(System.Drawing.Point)
@@ -6413,6 +6441,7 @@ references:
   - uid: System.Drawing.Point
     name: Point
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.point
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.PointToScreen(System.Drawing.Point)
@@ -6423,6 +6452,7 @@ references:
   - uid: System.Drawing.Point
     name: Point
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.point
   - name: )
 - uid: System.Windows.Forms.Control.PreProcessMessage(System.Windows.Forms.Message@)
   commentId: M:System.Windows.Forms.Control.PreProcessMessage(System.Windows.Forms.Message@)
@@ -6728,6 +6758,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.RectangleToClient(System.Drawing.Rectangle)
@@ -6738,6 +6769,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
 - uid: System.Windows.Forms.Control.RectangleToScreen(System.Drawing.Rectangle)
   commentId: M:System.Windows.Forms.Control.RectangleToScreen(System.Drawing.Rectangle)
@@ -6756,6 +6788,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.RectangleToScreen(System.Drawing.Rectangle)
@@ -6766,6 +6799,7 @@ references:
   - uid: System.Drawing.Rectangle
     name: Rectangle
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
   - name: )
 - uid: System.Windows.Forms.Control.ReflectMessage(System.IntPtr,System.Windows.Forms.Message@)
   commentId: M:System.Windows.Forms.Control.ReflectMessage(System.IntPtr,System.Windows.Forms.Message@)
@@ -6952,6 +6986,7 @@ references:
   - uid: System.Drawing.SizeF
     name: SizeF
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.sizef
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.Scale(System.Drawing.SizeF)
@@ -6962,6 +6997,7 @@ references:
   - uid: System.Drawing.SizeF
     name: SizeF
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.sizef
   - name: )
 - uid: System.Windows.Forms.Control.Select
   commentId: M:System.Windows.Forms.Control.Select
@@ -7381,6 +7417,7 @@ references:
   - uid: System.Drawing.Size
     name: Size
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.size
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.SizeFromClientSize(System.Drawing.Size)
@@ -7391,6 +7428,7 @@ references:
   - uid: System.Drawing.Size
     name: Size
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.size
   - name: )
 - uid: System.Windows.Forms.Control.SetStyle(System.Windows.Forms.ControlStyles,System.Boolean)
   commentId: M:System.Windows.Forms.Control.SetStyle(System.Windows.Forms.ControlStyles,System.Boolean)
@@ -7580,6 +7618,7 @@ references:
   - uid: System.Drawing.ContentAlignment
     name: ContentAlignment
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.contentalignment
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.RtlTranslateAlignment(System.Drawing.ContentAlignment)
@@ -7590,6 +7629,7 @@ references:
   - uid: System.Drawing.ContentAlignment
     name: ContentAlignment
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.contentalignment
   - name: )
 - uid: System.Windows.Forms.Control.RtlTranslateHorizontal(System.Windows.Forms.HorizontalAlignment)
   commentId: M:System.Windows.Forms.Control.RtlTranslateHorizontal(System.Windows.Forms.HorizontalAlignment)
@@ -7668,6 +7708,7 @@ references:
   - uid: System.Drawing.ContentAlignment
     name: ContentAlignment
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.contentalignment
   - name: )
   spec.vb:
   - uid: System.Windows.Forms.Control.RtlTranslateContent(System.Drawing.ContentAlignment)
@@ -7678,6 +7719,7 @@ references:
   - uid: System.Drawing.ContentAlignment
     name: ContentAlignment
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.contentalignment
   - name: )
 - uid: System.Windows.Forms.Control.Show
   commentId: M:System.Windows.Forms.Control.Show

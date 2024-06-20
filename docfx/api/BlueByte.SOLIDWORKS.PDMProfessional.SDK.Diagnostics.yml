@@ -5,6 +5,7 @@ items:
   id: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
   children:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerBase
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
   langs:
@@ -17,6 +18,12 @@ items:
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
 references:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html
+  name: IPDMLogger
+  nameWithType: IPDMLogger
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
   commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics

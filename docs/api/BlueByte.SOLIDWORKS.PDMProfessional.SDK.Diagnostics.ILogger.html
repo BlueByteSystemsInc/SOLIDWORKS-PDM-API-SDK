@@ -125,7 +125,7 @@ Interface ILogger  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_OutputLocation" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation">
   OutputLocation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Ouput location. Relative path does not work.</p>
@@ -220,7 +220,7 @@ Interface ILogger  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_Init_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_EPDM_Interop_epdm_IEdmTaskInstance_System_String_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)">
   Init(Identity, IEdmTaskInstance, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initialize the logger.</p>
@@ -257,8 +257,8 @@ Interface ILogger  <a class="header-action link-secondary" title="View source" h
 
   <a id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput*"></a>
 
-  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_System_String_System_String_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)">
-  LogToOutput(string, string)
+  <h3 id="BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_System_String_System_Object_" data-uid="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.Object)">
+  LogToOutput(string, object)
   <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -267,7 +267,7 @@ Interface ILogger  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void LogToOutput(string target, string value)</code></pre>
+    <pre><code class="lang-csharp hljs">void LogToOutput(string target, object value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -275,7 +275,7 @@ Interface ILogger  <a class="header-action link-secondary" title="View source" h
     <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Text file path. This is the name of the table when <a class="xref" href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_GetLoggerType">GetLoggerType()</a> returns <a class="xref" href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_LoggerType_e_SQL">SQL</a></p>
 </dd>
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
     <dd><p>New value.</p>
 </dd>
   </dl>

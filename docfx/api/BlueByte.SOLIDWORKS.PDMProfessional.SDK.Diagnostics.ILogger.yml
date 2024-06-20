@@ -8,7 +8,7 @@ items:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.EndConnection
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.Init(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity,EPDM.Interop.epdm.IEdmTaskInstance,System.String)
-  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.Object)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.StartConnection
   langs:
@@ -121,16 +121,16 @@ items:
       description: ''
     content.vb: Function GetLoggerType() As LoggerType_e
   overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType*
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)
-  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.String)
-  id: LogToOutput(System.String,System.String)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.Object)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(System.String,System.Object)
+  id: LogToOutput(System.String,System.Object)
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
   langs:
   - csharp
   - vb
-  name: LogToOutput(string, string)
-  nameWithType: ILogger.LogToOutput(string, string)
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(string, string)
+  name: LogToOutput(string, object)
+  nameWithType: ILogger.LogToOutput(string, object)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(string, object)
   type: Method
   source:
     remote:
@@ -146,19 +146,19 @@ items:
   summary: Logs value to output.
   example: []
   syntax:
-    content: void LogToOutput(string target, string value)
+    content: void LogToOutput(string target, object value)
     parameters:
     - id: target
       type: System.String
       description: Text file path. This is the name of the table when <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.GetLoggerType" data-throw-if-not-resolved="false"></xref> returns <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL" data-throw-if-not-resolved="false"></xref>
     - id: value
-      type: System.String
+      type: System.Object
       description: New value.
-    content.vb: Sub LogToOutput(target As String, value As String)
+    content.vb: Sub LogToOutput(target As String, value As Object)
   overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput*
-  nameWithType.vb: ILogger.LogToOutput(String, String)
-  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(String, String)
-  name.vb: LogToOutput(String, String)
+  nameWithType.vb: ILogger.LogToOutput(String, Object)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput(String, Object)
+  name.vb: LogToOutput(String, Object)
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
   commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.OutputLocation
   id: OutputLocation
@@ -177,7 +177,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OutputLocation
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
-    startLine: 38
+    startLine: 40
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
@@ -208,7 +208,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Init
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/ILogger.cs
-    startLine: 47
+    startLine: 49
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
@@ -379,7 +379,7 @@ references:
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput*
   commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput
-  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_System_String_System_String_
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_ILogger_LogToOutput_System_String_System_Object_
   name: LogToOutput
   nameWithType: ILogger.LogToOutput
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.LogToOutput
@@ -394,6 +394,17 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
 - uid: System
   commentId: N:System
   isExternal: true

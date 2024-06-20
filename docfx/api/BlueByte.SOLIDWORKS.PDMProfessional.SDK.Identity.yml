@@ -12,6 +12,7 @@ items:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.RequiredMinorVersion
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.ToCaption
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.ToCaption(System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Version
   langs:
   - csharp
@@ -27,7 +28,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Identity
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 5
+    startLine: 7
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -61,7 +62,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ToCaption
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -91,7 +92,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ToCaption
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -128,7 +129,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Name
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 32
+    startLine: 34
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -157,7 +158,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Description
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 37
+    startLine: 39
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -186,7 +187,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CompanyName
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 42
+    startLine: 44
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -215,7 +216,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Version
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 47
+    startLine: 49
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -244,7 +245,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: RequiredMajorVersion
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 52
+    startLine: 54
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -273,7 +274,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: RequiredMinorVersion
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
-    startLine: 57
+    startLine: 59
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -284,6 +285,38 @@ items:
     return:
       type: System.Int32
     content.vb: Public RequiredMinorVersion As Integer
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  id: Vault
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+  langs:
+  - csharp
+  - vb
+  name: Vault
+  nameWithType: Identity.Vault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Vault
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/Identity.cs
+    startLine: 69
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets or sets the vault.
+  example: []
+  syntax:
+    content: public IEdmVault5 Vault { get; set; }
+    parameters: []
+    return:
+      type: EPDM.Interop.epdm.IEdmVault5
+      description: The vault.
+    content.vb: Public Property Vault As IEdmVault5
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault*
 references:
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
   commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -568,3 +601,46 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Identity_Vault
+  name: Vault
+  nameWithType: Identity.Vault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.Vault
+- uid: EPDM.Interop.epdm.IEdmVault5
+  commentId: T:EPDM.Interop.epdm.IEdmVault5
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: IEdmVault5
+  nameWithType: IEdmVault5
+  fullName: EPDM.Interop.epdm.IEdmVault5
+- uid: EPDM.Interop.epdm
+  commentId: N:EPDM.Interop.epdm
+  isExternal: true
+  name: EPDM.Interop.epdm
+  nameWithType: EPDM.Interop.epdm
+  fullName: EPDM.Interop.epdm
+  spec.csharp:
+  - uid: EPDM
+    name: EPDM
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop
+    name: Interop
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop.epdm
+    name: epdm
+    isExternal: true
+  spec.vb:
+  - uid: EPDM
+    name: EPDM
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop
+    name: Interop
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop.epdm
+    name: epdm
+    isExternal: true

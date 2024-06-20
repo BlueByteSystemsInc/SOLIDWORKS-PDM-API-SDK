@@ -30,12 +30,14 @@ items:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat(System.String)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes(SimpleInjector.Container)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
@@ -538,7 +540,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CurrentDomain_AssemblyResolve
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 154
+    startLine: 160
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -556,6 +558,66 @@ items:
   nameWithType.vb: AddInBase.CurrentDomain_AssemblyResolve(Object, ResolveEventArgs)
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentDomain_AssemblyResolve(Object, System.ResolveEventArgs)
   name.vb: CurrentDomain_AssemblyResolve(Object, ResolveEventArgs)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  id: LogType
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: LogType
+  nameWithType: AddInBase.LogType
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: LogType
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 391
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets or sets the type of the log.
+  example: []
+  syntax:
+    content: public Type LogType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+      description: The type of the log.
+    content.vb: Public Property LogType As Type
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  id: OnPDMLoggerInitialized
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnPDMLoggerInitialized()
+  nameWithType: AddInBase.OnPDMLoggerInitialized()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnPDMLoggerInitialized
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 396
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Called when [PDM logger initialized].
+  example: []
+  syntax:
+    content: protected virtual void OnPDMLoggerInitialized()
+    content.vb: Protected Overridable Sub OnPDMLoggerInitialized()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized*
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes
   commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes
   id: RegisterTypes
@@ -574,7 +636,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: RegisterTypes
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 354
+    startLine: 404
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -602,7 +664,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AddContextMenu
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 400
+    startLine: 455
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -640,7 +702,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AddTaskSetupPage
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 435
+    startLine: 490
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -672,7 +734,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AddTaskSetupPages
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 446
+    startLine: 501
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -707,7 +769,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AddDetailTaskPage
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 496
+    startLine: 551
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -739,7 +801,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnLoadAdditionalAssemblies
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 540
+    startLine: 595
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -771,7 +833,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnLoggerOutputSat
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 548
+    startLine: 603
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -806,7 +868,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnLoggerTypeChosen
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 564
+    startLine: 619
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -838,7 +900,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnRegisterAdditionalTypes
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 573
+    startLine: 628
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -870,7 +932,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnUnhandledExceptions
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 582
+    startLine: 637
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -908,7 +970,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: AttachDebugger
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 595
+    startLine: 650
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -936,7 +998,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CreatePageInstance
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 619
+    startLine: 674
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -969,7 +1031,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ForEachDatum
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 629
+    startLine: 684
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1007,7 +1069,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ForEachFile
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 645
+    startLine: 700
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1046,7 +1108,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: ForEachFile
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 673
+    startLine: 728
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1085,7 +1147,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: GetAddInInfo
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 706
+    startLine: 761
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1128,7 +1190,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: GetContainer
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 932
+    startLine: 988
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1159,7 +1221,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: GetSettings
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 942
+    startLine: 998
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1196,7 +1258,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Initialize
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 972
+    startLine: 1028
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1224,7 +1286,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnCmd
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 985
+    startLine: 1041
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1264,7 +1326,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskDetails
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1042
+    startLine: 1102
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1302,7 +1364,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskDialogWindowCreated
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1056
+    startLine: 1116
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1333,7 +1395,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskDialogWindowCreated
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1063
+    startLine: 1123
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1364,7 +1426,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskLaunch
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1072
+    startLine: 1132
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1402,7 +1464,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskLaunchButton
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1083
+    startLine: 1143
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1440,7 +1502,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskRun
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1093
+    startLine: 1153
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1478,7 +1540,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskSetup
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1106
+    startLine: 1166
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1516,7 +1578,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: OnTaskSetupButton
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1123
+    startLine: 1183
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1554,7 +1616,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: BeforeCancellationAction
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1141
+    startLine: 1201
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1586,7 +1648,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CancellationAndSuspensionLogAction
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1148
+    startLine: 1208
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1618,7 +1680,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: SetRange
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1158
+    startLine: 1218
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1664,7 +1726,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: CheckForCancellationOrSuspension
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1178
+    startLine: 1238
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -1706,7 +1768,7 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: UpdateTaskMessage
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
-    startLine: 1256
+    startLine: 1316
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
@@ -2376,6 +2438,26 @@ references:
     name: Reflection
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_LogType
+  name: LogType
+  nameWithType: AddInBase.LogType
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnPDMLoggerInitialized
+  name: OnPDMLoggerInitialized
+  nameWithType: AddInBase.OnPDMLoggerInitialized
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes*
   commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes
   href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_RegisterTypes

@@ -7,6 +7,7 @@ items:
   children:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.Console
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.File
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL
   langs:
   - csharp
@@ -29,6 +30,32 @@ items:
   syntax:
     content: public enum LoggerType_e
     content.vb: Public Enum LoggerType_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
+  id: PDM
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+  langs:
+  - csharp
+  - vb
+  name: PDM
+  nameWithType: LoggerType_e.PDM
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/LoggerType_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/LoggerType_e.cs
+    startLine: 10
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  syntax:
+    content: PDM = 0
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.Console
   commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.Console
   id: Console
@@ -47,12 +74,12 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: Console
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/LoggerType_e.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
   syntax:
-    content: Console = 0
+    content: Console = 1
     return:
       type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.File
@@ -73,12 +100,12 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: File
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/LoggerType_e.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
   syntax:
-    content: File = 1
+    content: File = 2
     return:
       type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.SQL
@@ -99,12 +126,12 @@ items:
       repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
     id: SQL
     path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Diagnostics/LoggerType_e.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK
   namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
   syntax:
-    content: SQL = 2
+    content: SQL = 3
     return:
       type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
 references:
