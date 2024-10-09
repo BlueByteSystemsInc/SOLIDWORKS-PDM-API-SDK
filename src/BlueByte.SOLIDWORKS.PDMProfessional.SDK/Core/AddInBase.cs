@@ -108,6 +108,9 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 
         #region Public Constructors
 
+        private readonly Xarial.XToolkit.Helpers.AssemblyResolver m_AssmResolver;
+
+
         /// <summary>
         /// Create a new instance of the addIn base class.
         /// </summary>
@@ -115,10 +118,20 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         {
             try
             {
-                AppDomain.CurrentDomain.AssemblyResolve -= CurrentDomain_AssemblyResolve;
-                AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+                 
 
-                var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
+
+            System.Globalization.CultureInfo.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+
+
+
+            m_AssmResolver = new Xarial.XToolkit.Helpers.AssemblyResolver(AppDomain.CurrentDomain, "PDMProfessionalSDK");
+            m_AssmResolver.RegisterAssemblyReferenceResolver(
+                new Xarial.XToolkit.Reflection.LocalFolderReferencesResolver(System.IO.Path.GetDirectoryName(typeof(AddInBase).Assembly.Location),
+                Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture | Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken | Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version,
+                "PDMProfessionalSDK"));
+ 
+           var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
 
                 OnLoadAdditionalAssemblies(thisAssembly.Directory);
                 
@@ -157,45 +170,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
                 MessageBox.Show($"AddInBase: Something went wrong when initializing the add-in. {e.Message}", $"AddIn Error");
             }
         }
-
-        public virtual Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
-        {
-            var Assembly = default(Assembly);
-            var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
-            var directory = thisAssembly.Directory;
-
-
-
-
-            var nameWithoutExtension = args.Name.Split(',').First();
-
-
-            Console.WriteLine($"{FileVersionInfo.GetVersionInfo(thisAssembly.FullName).ProductName} - Failed to load {args.Name}");
-
-            var files = directory.GetFiles("*", SearchOption.TopDirectoryOnly);
-
-            if (files != null)
-            {
-                var dlls = files.ToList().Where(x => x.Extension.ToLower().Contains("interop") == false && x.Extension.ToLower().EndsWith("dll"));
-                if (dlls != null)
-                {
-                    foreach (var dll in dlls)
-                    {
-                        if (args.Name.ToLower().StartsWith(nameWithoutExtension.ToLower()))
-                        {
-                            Assembly = System.Reflection.Assembly.Load(AssemblyName.GetAssemblyName(dll.FullName));
-                            break;
-                        }
-                    }
-                }
-
-            }
-
-
-            return Assembly;
-
-        }
-
+ 
 
 
         #endregion

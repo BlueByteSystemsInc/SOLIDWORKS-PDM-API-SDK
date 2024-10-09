@@ -84,6 +84,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyResolution\FileFilter.cs" />
+    <Compile Include="AssemblyResolution\FileSystemUtils.cs" />
+    <Compile Include="AssemblyResolution\Reflection\AppConfigBindingRedirectReferenceResolver.cs" />
+    <Compile Include="AssemblyResolution\Reflection\AppDomainExtension.cs" />
+    <Compile Include="AssemblyResolution\Reflection\AssemblyExtension.cs" />
+    <Compile Include="AssemblyResolution\Reflection\AssemblyNameReferenceResolver.cs" />
+    <Compile Include="AssemblyResolution\Reflection\AssemblyReferenceResolver.cs" />
+    <Compile Include="AssemblyResolution\Reflection\EnumExtension.cs" />
+    <Compile Include="AssemblyResolution\Reflection\Lambda.cs" />
+    <Compile Include="AssemblyResolution\Reflection\LocalFolderReferencesResolver.cs" />
+    <Compile Include="AssemblyResolution\Reflection\ResourceHelper.cs" />
+    <Compile Include="AssemblyResolution\Reflection\TypeExtension.cs" />
+    <Compile Include="AssemblyResolution\TextUtils.cs" />
     <Compile Include="Attributes\CompanyNameAttribute.cs" />
     <Compile Include="Attributes\DescriptionAttribute.cs" />
     <Compile Include="Attributes\ListenForAttribute.cs" />
@@ -114,6 +127,7 @@
     <Compile Include="Exceptions\ITaskDetailsPageNotUserControlException.cs" />
     <Compile Include="Exceptions\PDMSDKException.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="Helpers\AssemblyResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
