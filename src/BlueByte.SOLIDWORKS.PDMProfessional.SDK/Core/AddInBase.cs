@@ -108,6 +108,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 
         #region Public Constructors
 
+
         private readonly Xarial.XToolkit.Helpers.AssemblyResolver m_AssmResolver;
 
 
@@ -118,20 +119,20 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
         {
             try
             {
-                 
 
-
-            System.Globalization.CultureInfo.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+                System.Globalization.CultureInfo.CurrentCulture = new System.Globalization.CultureInfo("en-US");
 
 
 
-            m_AssmResolver = new Xarial.XToolkit.Helpers.AssemblyResolver(AppDomain.CurrentDomain, "PDMProfessionalSDK");
-            m_AssmResolver.RegisterAssemblyReferenceResolver(
-                new Xarial.XToolkit.Reflection.LocalFolderReferencesResolver(System.IO.Path.GetDirectoryName(typeof(AddInBase).Assembly.Location),
-                Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture | Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken | Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version,
-                "PDMProfessionalSDK"));
- 
-           var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
+                m_AssmResolver = new Xarial.XToolkit.Helpers.AssemblyResolver(AppDomain.CurrentDomain, "PDMProfessionalSDK");
+                m_AssmResolver.RegisterAssemblyReferenceResolver(
+                    new Xarial.XToolkit.Reflection.LocalFolderReferencesResolver(System.IO.Path.GetDirectoryName(typeof(AddInBase).Assembly.Location),
+                    Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture | Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken | Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version,
+                    "PDMProfessionalSDK"));
+
+
+
+                var thisAssembly = new FileInfo(this.GetType().Assembly.Location);
 
                 OnLoadAdditionalAssemblies(thisAssembly.Directory);
                 
