@@ -200,22 +200,6 @@ references:
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance(Of T)()
   nameWithType: AddInBase.CreatePageInstance<T>()
   nameWithType.vb: AddInBase.CreatePageInstance(Of T)()
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentDomain_AssemblyResolve(System.Object,System.ResolveEventArgs)
-  name: CurrentDomain_AssemblyResolve(object, ResolveEventArgs)
-  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CurrentDomain_AssemblyResolve_System_Object_System_ResolveEventArgs_
-  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentDomain_AssemblyResolve(System.Object,System.ResolveEventArgs)
-  name.vb: CurrentDomain_AssemblyResolve(Object, ResolveEventArgs)
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentDomain_AssemblyResolve(object, System.ResolveEventArgs)
-  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentDomain_AssemblyResolve(Object, System.ResolveEventArgs)
-  nameWithType: AddInBase.CurrentDomain_AssemblyResolve(object, ResolveEventArgs)
-  nameWithType.vb: AddInBase.CurrentDomain_AssemblyResolve(Object, ResolveEventArgs)
-- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentDomain_AssemblyResolve*
-  name: CurrentDomain_AssemblyResolve
-  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CurrentDomain_AssemblyResolve_
-  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentDomain_AssemblyResolve
-  isSpec: "True"
-  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentDomain_AssemblyResolve
-  nameWithType: AddInBase.CurrentDomain_AssemblyResolve
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition
   name: CurrentPosition
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CurrentPosition
@@ -2447,6 +2431,30 @@ references:
   commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2021
   fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2021
   nameWithType: Year_e.PDM2021
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2022
+  name: PDM2022
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Enums_Year_e_PDM2022
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2022
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2022
+  nameWithType: Year_e.PDM2022
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2023
+  name: PDM2023
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Enums_Year_e_PDM2023
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2023
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2023
+  nameWithType: Year_e.PDM2023
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2024
+  name: PDM2024
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Enums_Year_e_PDM2024
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2024
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2024
+  nameWithType: Year_e.PDM2024
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2025
+  name: PDM2025
+  href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_Enums_Year_e_PDM2025
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2025
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2025
+  nameWithType: Year_e.PDM2025
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions
   name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions
   href: api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.html
@@ -2675,3 +2683,1209 @@ references:
   fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.TaskFailedException.New
   nameWithType: TaskFailedException.TaskFailedException
   nameWithType.vb: TaskFailedException.New
+- uid: Xarial.XToolkit
+  name: Xarial.XToolkit
+  href: api/Xarial.XToolkit.html
+  commentId: N:Xarial.XToolkit
+  fullName: Xarial.XToolkit
+  nameWithType: Xarial.XToolkit
+- uid: Xarial.XToolkit.FileFilter
+  name: FileFilter
+  href: api/Xarial.XToolkit.FileFilter.html
+  commentId: T:Xarial.XToolkit.FileFilter
+  fullName: Xarial.XToolkit.FileFilter
+  nameWithType: FileFilter
+- uid: Xarial.XToolkit.FileFilter.#ctor(System.String,System.String[])
+  name: FileFilter(string, params string[])
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter__ctor_System_String_System_String___
+  commentId: M:Xarial.XToolkit.FileFilter.#ctor(System.String,System.String[])
+  name.vb: New(String, ParamArray String())
+  fullName: Xarial.XToolkit.FileFilter.FileFilter(string, params string[])
+  fullName.vb: Xarial.XToolkit.FileFilter.New(String, ParamArray String())
+  nameWithType: FileFilter.FileFilter(string, params string[])
+  nameWithType.vb: FileFilter.New(String, ParamArray String())
+- uid: Xarial.XToolkit.FileFilter.#ctor*
+  name: FileFilter
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter__ctor_
+  commentId: Overload:Xarial.XToolkit.FileFilter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xarial.XToolkit.FileFilter.FileFilter
+  fullName.vb: Xarial.XToolkit.FileFilter.New
+  nameWithType: FileFilter.FileFilter
+  nameWithType.vb: FileFilter.New
+- uid: Xarial.XToolkit.FileFilter.AllFiles
+  name: AllFiles
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_AllFiles
+  commentId: P:Xarial.XToolkit.FileFilter.AllFiles
+  fullName: Xarial.XToolkit.FileFilter.AllFiles
+  nameWithType: FileFilter.AllFiles
+- uid: Xarial.XToolkit.FileFilter.AllFiles*
+  name: AllFiles
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_AllFiles_
+  commentId: Overload:Xarial.XToolkit.FileFilter.AllFiles
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileFilter.AllFiles
+  nameWithType: FileFilter.AllFiles
+- uid: Xarial.XToolkit.FileFilter.BuildFilterString(Xarial.XToolkit.FileFilter[])
+  name: BuildFilterString(params FileFilter[])
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_BuildFilterString_Xarial_XToolkit_FileFilter___
+  commentId: M:Xarial.XToolkit.FileFilter.BuildFilterString(Xarial.XToolkit.FileFilter[])
+  name.vb: BuildFilterString(ParamArray FileFilter())
+  fullName: Xarial.XToolkit.FileFilter.BuildFilterString(params Xarial.XToolkit.FileFilter[])
+  fullName.vb: Xarial.XToolkit.FileFilter.BuildFilterString(ParamArray Xarial.XToolkit.FileFilter())
+  nameWithType: FileFilter.BuildFilterString(params FileFilter[])
+  nameWithType.vb: FileFilter.BuildFilterString(ParamArray FileFilter())
+- uid: Xarial.XToolkit.FileFilter.BuildFilterString*
+  name: BuildFilterString
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_BuildFilterString_
+  commentId: Overload:Xarial.XToolkit.FileFilter.BuildFilterString
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileFilter.BuildFilterString
+  nameWithType: FileFilter.BuildFilterString
+- uid: Xarial.XToolkit.FileFilter.Create(System.String,System.String[])
+  name: Create(string, params string[])
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_Create_System_String_System_String___
+  commentId: M:Xarial.XToolkit.FileFilter.Create(System.String,System.String[])
+  name.vb: Create(String, ParamArray String())
+  fullName: Xarial.XToolkit.FileFilter.Create(string, params string[])
+  fullName.vb: Xarial.XToolkit.FileFilter.Create(String, ParamArray String())
+  nameWithType: FileFilter.Create(string, params string[])
+  nameWithType.vb: FileFilter.Create(String, ParamArray String())
+- uid: Xarial.XToolkit.FileFilter.Create*
+  name: Create
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_Create_
+  commentId: Overload:Xarial.XToolkit.FileFilter.Create
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileFilter.Create
+  nameWithType: FileFilter.Create
+- uid: Xarial.XToolkit.FileFilter.Extensions
+  name: Extensions
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_Extensions
+  commentId: P:Xarial.XToolkit.FileFilter.Extensions
+  fullName: Xarial.XToolkit.FileFilter.Extensions
+  nameWithType: FileFilter.Extensions
+- uid: Xarial.XToolkit.FileFilter.Extensions*
+  name: Extensions
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_Extensions_
+  commentId: Overload:Xarial.XToolkit.FileFilter.Extensions
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileFilter.Extensions
+  nameWithType: FileFilter.Extensions
+- uid: Xarial.XToolkit.FileFilter.ImageFiles
+  name: ImageFiles
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_ImageFiles
+  commentId: P:Xarial.XToolkit.FileFilter.ImageFiles
+  fullName: Xarial.XToolkit.FileFilter.ImageFiles
+  nameWithType: FileFilter.ImageFiles
+- uid: Xarial.XToolkit.FileFilter.ImageFiles*
+  name: ImageFiles
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_ImageFiles_
+  commentId: Overload:Xarial.XToolkit.FileFilter.ImageFiles
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileFilter.ImageFiles
+  nameWithType: FileFilter.ImageFiles
+- uid: Xarial.XToolkit.FileFilter.Name
+  name: Name
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_Name
+  commentId: P:Xarial.XToolkit.FileFilter.Name
+  fullName: Xarial.XToolkit.FileFilter.Name
+  nameWithType: FileFilter.Name
+- uid: Xarial.XToolkit.FileFilter.Name*
+  name: Name
+  href: api/Xarial.XToolkit.FileFilter.html#Xarial_XToolkit_FileFilter_Name_
+  commentId: Overload:Xarial.XToolkit.FileFilter.Name
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileFilter.Name
+  nameWithType: FileFilter.Name
+- uid: Xarial.XToolkit.FileSystemUtils
+  name: FileSystemUtils
+  href: api/Xarial.XToolkit.FileSystemUtils.html
+  commentId: T:Xarial.XToolkit.FileSystemUtils
+  fullName: Xarial.XToolkit.FileSystemUtils
+  nameWithType: FileSystemUtils
+- uid: Xarial.XToolkit.FileSystemUtils.BrowseFileInExplorer(System.String)
+  name: BrowseFileInExplorer(string)
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_BrowseFileInExplorer_System_String_
+  commentId: M:Xarial.XToolkit.FileSystemUtils.BrowseFileInExplorer(System.String)
+  name.vb: BrowseFileInExplorer(String)
+  fullName: Xarial.XToolkit.FileSystemUtils.BrowseFileInExplorer(string)
+  fullName.vb: Xarial.XToolkit.FileSystemUtils.BrowseFileInExplorer(String)
+  nameWithType: FileSystemUtils.BrowseFileInExplorer(string)
+  nameWithType.vb: FileSystemUtils.BrowseFileInExplorer(String)
+- uid: Xarial.XToolkit.FileSystemUtils.BrowseFileInExplorer*
+  name: BrowseFileInExplorer
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_BrowseFileInExplorer_
+  commentId: Overload:Xarial.XToolkit.FileSystemUtils.BrowseFileInExplorer
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileSystemUtils.BrowseFileInExplorer
+  nameWithType: FileSystemUtils.BrowseFileInExplorer
+- uid: Xarial.XToolkit.FileSystemUtils.BrowseFolderInExplorer(System.String)
+  name: BrowseFolderInExplorer(string)
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_BrowseFolderInExplorer_System_String_
+  commentId: M:Xarial.XToolkit.FileSystemUtils.BrowseFolderInExplorer(System.String)
+  name.vb: BrowseFolderInExplorer(String)
+  fullName: Xarial.XToolkit.FileSystemUtils.BrowseFolderInExplorer(string)
+  fullName.vb: Xarial.XToolkit.FileSystemUtils.BrowseFolderInExplorer(String)
+  nameWithType: FileSystemUtils.BrowseFolderInExplorer(string)
+  nameWithType.vb: FileSystemUtils.BrowseFolderInExplorer(String)
+- uid: Xarial.XToolkit.FileSystemUtils.BrowseFolderInExplorer*
+  name: BrowseFolderInExplorer
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_BrowseFolderInExplorer_
+  commentId: Overload:Xarial.XToolkit.FileSystemUtils.BrowseFolderInExplorer
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileSystemUtils.BrowseFolderInExplorer
+  nameWithType: FileSystemUtils.BrowseFolderInExplorer
+- uid: Xarial.XToolkit.FileSystemUtils.CombinePaths(System.String,System.String[])
+  name: CombinePaths(string, params string[])
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_CombinePaths_System_String_System_String___
+  commentId: M:Xarial.XToolkit.FileSystemUtils.CombinePaths(System.String,System.String[])
+  name.vb: CombinePaths(String, ParamArray String())
+  fullName: Xarial.XToolkit.FileSystemUtils.CombinePaths(string, params string[])
+  fullName.vb: Xarial.XToolkit.FileSystemUtils.CombinePaths(String, ParamArray String())
+  nameWithType: FileSystemUtils.CombinePaths(string, params string[])
+  nameWithType.vb: FileSystemUtils.CombinePaths(String, ParamArray String())
+- uid: Xarial.XToolkit.FileSystemUtils.CombinePaths*
+  name: CombinePaths
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_CombinePaths_
+  commentId: Overload:Xarial.XToolkit.FileSystemUtils.CombinePaths
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileSystemUtils.CombinePaths
+  nameWithType: FileSystemUtils.CombinePaths
+- uid: Xarial.XToolkit.FileSystemUtils.GetRelativePath(System.String,System.String)
+  name: GetRelativePath(string, string)
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_GetRelativePath_System_String_System_String_
+  commentId: M:Xarial.XToolkit.FileSystemUtils.GetRelativePath(System.String,System.String)
+  name.vb: GetRelativePath(String, String)
+  fullName: Xarial.XToolkit.FileSystemUtils.GetRelativePath(string, string)
+  fullName.vb: Xarial.XToolkit.FileSystemUtils.GetRelativePath(String, String)
+  nameWithType: FileSystemUtils.GetRelativePath(string, string)
+  nameWithType.vb: FileSystemUtils.GetRelativePath(String, String)
+- uid: Xarial.XToolkit.FileSystemUtils.GetRelativePath*
+  name: GetRelativePath
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_GetRelativePath_
+  commentId: Overload:Xarial.XToolkit.FileSystemUtils.GetRelativePath
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileSystemUtils.GetRelativePath
+  nameWithType: FileSystemUtils.GetRelativePath
+- uid: Xarial.XToolkit.FileSystemUtils.GetTopFolders(System.Collections.Generic.IEnumerable{System.String})
+  name: GetTopFolders(IEnumerable<string>)
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_GetTopFolders_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Xarial.XToolkit.FileSystemUtils.GetTopFolders(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: GetTopFolders(IEnumerable(Of String))
+  fullName: Xarial.XToolkit.FileSystemUtils.GetTopFolders(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: Xarial.XToolkit.FileSystemUtils.GetTopFolders(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: FileSystemUtils.GetTopFolders(IEnumerable<string>)
+  nameWithType.vb: FileSystemUtils.GetTopFolders(IEnumerable(Of String))
+- uid: Xarial.XToolkit.FileSystemUtils.GetTopFolders*
+  name: GetTopFolders
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_GetTopFolders_
+  commentId: Overload:Xarial.XToolkit.FileSystemUtils.GetTopFolders
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileSystemUtils.GetTopFolders
+  nameWithType: FileSystemUtils.GetTopFolders
+- uid: Xarial.XToolkit.FileSystemUtils.IsInDirectory(System.String,System.String)
+  name: IsInDirectory(string, string)
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_IsInDirectory_System_String_System_String_
+  commentId: M:Xarial.XToolkit.FileSystemUtils.IsInDirectory(System.String,System.String)
+  name.vb: IsInDirectory(String, String)
+  fullName: Xarial.XToolkit.FileSystemUtils.IsInDirectory(string, string)
+  fullName.vb: Xarial.XToolkit.FileSystemUtils.IsInDirectory(String, String)
+  nameWithType: FileSystemUtils.IsInDirectory(string, string)
+  nameWithType.vb: FileSystemUtils.IsInDirectory(String, String)
+- uid: Xarial.XToolkit.FileSystemUtils.IsInDirectory*
+  name: IsInDirectory
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_IsInDirectory_
+  commentId: Overload:Xarial.XToolkit.FileSystemUtils.IsInDirectory
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileSystemUtils.IsInDirectory
+  nameWithType: FileSystemUtils.IsInDirectory
+- uid: Xarial.XToolkit.FileSystemUtils.ReplaceIllegalRelativePathCharacters(System.String,System.Func{System.Char,System.Char})
+  name: ReplaceIllegalRelativePathCharacters(string, Func<char, char>)
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_ReplaceIllegalRelativePathCharacters_System_String_System_Func_System_Char_System_Char__
+  commentId: M:Xarial.XToolkit.FileSystemUtils.ReplaceIllegalRelativePathCharacters(System.String,System.Func{System.Char,System.Char})
+  name.vb: ReplaceIllegalRelativePathCharacters(String, Func(Of Char, Char))
+  fullName: Xarial.XToolkit.FileSystemUtils.ReplaceIllegalRelativePathCharacters(string, System.Func<char, char>)
+  fullName.vb: Xarial.XToolkit.FileSystemUtils.ReplaceIllegalRelativePathCharacters(String, System.Func(Of Char, Char))
+  nameWithType: FileSystemUtils.ReplaceIllegalRelativePathCharacters(string, Func<char, char>)
+  nameWithType.vb: FileSystemUtils.ReplaceIllegalRelativePathCharacters(String, Func(Of Char, Char))
+- uid: Xarial.XToolkit.FileSystemUtils.ReplaceIllegalRelativePathCharacters*
+  name: ReplaceIllegalRelativePathCharacters
+  href: api/Xarial.XToolkit.FileSystemUtils.html#Xarial_XToolkit_FileSystemUtils_ReplaceIllegalRelativePathCharacters_
+  commentId: Overload:Xarial.XToolkit.FileSystemUtils.ReplaceIllegalRelativePathCharacters
+  isSpec: "True"
+  fullName: Xarial.XToolkit.FileSystemUtils.ReplaceIllegalRelativePathCharacters
+  nameWithType: FileSystemUtils.ReplaceIllegalRelativePathCharacters
+- uid: Xarial.XToolkit.Helpers
+  name: Xarial.XToolkit.Helpers
+  href: api/Xarial.XToolkit.Helpers.html
+  commentId: N:Xarial.XToolkit.Helpers
+  fullName: Xarial.XToolkit.Helpers
+  nameWithType: Xarial.XToolkit.Helpers
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver
+  name: AssemblyResolver
+  href: api/Xarial.XToolkit.Helpers.AssemblyResolver.html
+  commentId: T:Xarial.XToolkit.Helpers.AssemblyResolver
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver
+  nameWithType: AssemblyResolver
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver.#ctor(System.AppDomain)
+  name: AssemblyResolver(AppDomain)
+  href: api/Xarial.XToolkit.Helpers.AssemblyResolver.html#Xarial_XToolkit_Helpers_AssemblyResolver__ctor_System_AppDomain_
+  commentId: M:Xarial.XToolkit.Helpers.AssemblyResolver.#ctor(System.AppDomain)
+  name.vb: New(AppDomain)
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver.AssemblyResolver(System.AppDomain)
+  fullName.vb: Xarial.XToolkit.Helpers.AssemblyResolver.New(System.AppDomain)
+  nameWithType: AssemblyResolver.AssemblyResolver(AppDomain)
+  nameWithType.vb: AssemblyResolver.New(AppDomain)
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver.#ctor(System.AppDomain,System.String)
+  name: AssemblyResolver(AppDomain, string)
+  href: api/Xarial.XToolkit.Helpers.AssemblyResolver.html#Xarial_XToolkit_Helpers_AssemblyResolver__ctor_System_AppDomain_System_String_
+  commentId: M:Xarial.XToolkit.Helpers.AssemblyResolver.#ctor(System.AppDomain,System.String)
+  name.vb: New(AppDomain, String)
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver.AssemblyResolver(System.AppDomain, string)
+  fullName.vb: Xarial.XToolkit.Helpers.AssemblyResolver.New(System.AppDomain, String)
+  nameWithType: AssemblyResolver.AssemblyResolver(AppDomain, string)
+  nameWithType.vb: AssemblyResolver.New(AppDomain, String)
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver.#ctor*
+  name: AssemblyResolver
+  href: api/Xarial.XToolkit.Helpers.AssemblyResolver.html#Xarial_XToolkit_Helpers_AssemblyResolver__ctor_
+  commentId: Overload:Xarial.XToolkit.Helpers.AssemblyResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver.AssemblyResolver
+  fullName.vb: Xarial.XToolkit.Helpers.AssemblyResolver.New
+  nameWithType: AssemblyResolver.AssemblyResolver
+  nameWithType.vb: AssemblyResolver.New
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver.Dispose
+  name: Dispose()
+  href: api/Xarial.XToolkit.Helpers.AssemblyResolver.html#Xarial_XToolkit_Helpers_AssemblyResolver_Dispose
+  commentId: M:Xarial.XToolkit.Helpers.AssemblyResolver.Dispose
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver.Dispose()
+  nameWithType: AssemblyResolver.Dispose()
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver.Dispose*
+  name: Dispose
+  href: api/Xarial.XToolkit.Helpers.AssemblyResolver.html#Xarial_XToolkit_Helpers_AssemblyResolver_Dispose_
+  commentId: Overload:Xarial.XToolkit.Helpers.AssemblyResolver.Dispose
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver.Dispose
+  nameWithType: AssemblyResolver.Dispose
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver.RegisterAssemblyReferenceResolver(Xarial.XToolkit.Helpers.IReferenceResolver)
+  name: RegisterAssemblyReferenceResolver(IReferenceResolver)
+  href: api/Xarial.XToolkit.Helpers.AssemblyResolver.html#Xarial_XToolkit_Helpers_AssemblyResolver_RegisterAssemblyReferenceResolver_Xarial_XToolkit_Helpers_IReferenceResolver_
+  commentId: M:Xarial.XToolkit.Helpers.AssemblyResolver.RegisterAssemblyReferenceResolver(Xarial.XToolkit.Helpers.IReferenceResolver)
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver.RegisterAssemblyReferenceResolver(Xarial.XToolkit.Helpers.IReferenceResolver)
+  nameWithType: AssemblyResolver.RegisterAssemblyReferenceResolver(IReferenceResolver)
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver.RegisterAssemblyReferenceResolver*
+  name: RegisterAssemblyReferenceResolver
+  href: api/Xarial.XToolkit.Helpers.AssemblyResolver.html#Xarial_XToolkit_Helpers_AssemblyResolver_RegisterAssemblyReferenceResolver_
+  commentId: Overload:Xarial.XToolkit.Helpers.AssemblyResolver.RegisterAssemblyReferenceResolver
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver.RegisterAssemblyReferenceResolver
+  nameWithType: AssemblyResolver.RegisterAssemblyReferenceResolver
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver
+  name: IReferenceResolver
+  href: api/Xarial.XToolkit.Helpers.IReferenceResolver.html
+  commentId: T:Xarial.XToolkit.Helpers.IReferenceResolver
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver
+  nameWithType: IReferenceResolver
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver.Name
+  name: Name
+  href: api/Xarial.XToolkit.Helpers.IReferenceResolver.html#Xarial_XToolkit_Helpers_IReferenceResolver_Name
+  commentId: P:Xarial.XToolkit.Helpers.IReferenceResolver.Name
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver.Name
+  nameWithType: IReferenceResolver.Name
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver.Name*
+  name: Name
+  href: api/Xarial.XToolkit.Helpers.IReferenceResolver.html#Xarial_XToolkit_Helpers_IReferenceResolver_Name_
+  commentId: Overload:Xarial.XToolkit.Helpers.IReferenceResolver.Name
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver.Name
+  nameWithType: IReferenceResolver.Name
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  name: Resolve(AppDomain, AssemblyName, Assembly)
+  href: api/Xarial.XToolkit.Helpers.IReferenceResolver.html#Xarial_XToolkit_Helpers_IReferenceResolver_Resolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_
+  commentId: M:Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain, System.Reflection.AssemblyName, System.Reflection.Assembly)
+  nameWithType: IReferenceResolver.Resolve(AppDomain, AssemblyName, Assembly)
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver.Resolve*
+  name: Resolve
+  href: api/Xarial.XToolkit.Helpers.IReferenceResolver.html#Xarial_XToolkit_Helpers_IReferenceResolver_Resolve_
+  commentId: Overload:Xarial.XToolkit.Helpers.IReferenceResolver.Resolve
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver.Resolve
+  nameWithType: IReferenceResolver.Resolve
+- uid: Xarial.XToolkit.Reflection
+  name: Xarial.XToolkit.Reflection
+  href: api/Xarial.XToolkit.Reflection.html
+  commentId: N:Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+  name: AppConfigBindingRedirectReferenceResolver
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html
+  commentId: T:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+  nameWithType: AppConfigBindingRedirectReferenceResolver
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.#ctor
+  name: AppConfigBindingRedirectReferenceResolver()
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver__ctor
+  commentId: M:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.#ctor
+  name.vb: New()
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.AppConfigBindingRedirectReferenceResolver()
+  fullName.vb: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.New()
+  nameWithType: AppConfigBindingRedirectReferenceResolver.AppConfigBindingRedirectReferenceResolver()
+  nameWithType.vb: AppConfigBindingRedirectReferenceResolver.New()
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.#ctor(System.String,System.String[])
+  name: AppConfigBindingRedirectReferenceResolver(string, string[])
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver__ctor_System_String_System_String___
+  commentId: M:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.#ctor(System.String,System.String[])
+  name.vb: New(String, String())
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.AppConfigBindingRedirectReferenceResolver(string, string[])
+  fullName.vb: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.New(String, String())
+  nameWithType: AppConfigBindingRedirectReferenceResolver.AppConfigBindingRedirectReferenceResolver(string, string[])
+  nameWithType.vb: AppConfigBindingRedirectReferenceResolver.New(String, String())
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.#ctor*
+  name: AppConfigBindingRedirectReferenceResolver
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver__ctor_
+  commentId: Overload:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.AppConfigBindingRedirectReferenceResolver
+  fullName.vb: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.New
+  nameWithType: AppConfigBindingRedirectReferenceResolver.AppConfigBindingRedirectReferenceResolver
+  nameWithType.vb: AppConfigBindingRedirectReferenceResolver.New
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetAppConfigs(System.Reflection.Assembly)
+  name: GetAppConfigs(Assembly)
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver_GetAppConfigs_System_Reflection_Assembly_
+  commentId: M:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetAppConfigs(System.Reflection.Assembly)
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetAppConfigs(System.Reflection.Assembly)
+  nameWithType: AppConfigBindingRedirectReferenceResolver.GetAppConfigs(Assembly)
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetAppConfigs*
+  name: GetAppConfigs
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver_GetAppConfigs_
+  commentId: Overload:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetAppConfigs
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetAppConfigs
+  nameWithType: AppConfigBindingRedirectReferenceResolver.GetAppConfigs
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  name: GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver_GetReplacementAssemblyName_System_Reflection_AssemblyName_System_Reflection_Assembly_System_String__System_Boolean__
+  commentId: M:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  name.vb: GetReplacementAssemblyName(AssemblyName, Assembly, String, Boolean)
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName, System.Reflection.Assembly, out string, out bool)
+  fullName.vb: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName, System.Reflection.Assembly, String, Boolean)
+  nameWithType: AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  nameWithType.vb: AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName(AssemblyName, Assembly, String, Boolean)
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName*
+  name: GetReplacementAssemblyName
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver_GetReplacementAssemblyName_
+  commentId: Overload:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName
+  nameWithType: AppConfigBindingRedirectReferenceResolver.GetReplacementAssemblyName
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetRequestingAssemblies(System.Reflection.Assembly)
+  name: GetRequestingAssemblies(Assembly)
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver_GetRequestingAssemblies_System_Reflection_Assembly_
+  commentId: M:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetRequestingAssemblies(System.Reflection.Assembly)
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetRequestingAssemblies(System.Reflection.Assembly)
+  nameWithType: AppConfigBindingRedirectReferenceResolver.GetRequestingAssemblies(Assembly)
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetRequestingAssemblies*
+  name: GetRequestingAssemblies
+  href: api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html#Xarial_XToolkit_Reflection_AppConfigBindingRedirectReferenceResolver_GetRequestingAssemblies_
+  commentId: Overload:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetRequestingAssemblies
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.GetRequestingAssemblies
+  nameWithType: AppConfigBindingRedirectReferenceResolver.GetRequestingAssemblies
+- uid: Xarial.XToolkit.Reflection.AppDomainExtension
+  name: AppDomainExtension
+  href: api/Xarial.XToolkit.Reflection.AppDomainExtension.html
+  commentId: T:Xarial.XToolkit.Reflection.AppDomainExtension
+  fullName: Xarial.XToolkit.Reflection.AppDomainExtension
+  nameWithType: AppDomainExtension
+- uid: Xarial.XToolkit.Reflection.AppDomainExtension.RegisterGlobalAssemblyReferenceResolver(System.AppDomain,Xarial.XToolkit.Helpers.IReferenceResolver)
+  name: RegisterGlobalAssemblyReferenceResolver(AppDomain, IReferenceResolver)
+  href: api/Xarial.XToolkit.Reflection.AppDomainExtension.html#Xarial_XToolkit_Reflection_AppDomainExtension_RegisterGlobalAssemblyReferenceResolver_System_AppDomain_Xarial_XToolkit_Helpers_IReferenceResolver_
+  commentId: M:Xarial.XToolkit.Reflection.AppDomainExtension.RegisterGlobalAssemblyReferenceResolver(System.AppDomain,Xarial.XToolkit.Helpers.IReferenceResolver)
+  fullName: Xarial.XToolkit.Reflection.AppDomainExtension.RegisterGlobalAssemblyReferenceResolver(System.AppDomain, Xarial.XToolkit.Helpers.IReferenceResolver)
+  nameWithType: AppDomainExtension.RegisterGlobalAssemblyReferenceResolver(AppDomain, IReferenceResolver)
+- uid: Xarial.XToolkit.Reflection.AppDomainExtension.RegisterGlobalAssemblyReferenceResolver*
+  name: RegisterGlobalAssemblyReferenceResolver
+  href: api/Xarial.XToolkit.Reflection.AppDomainExtension.html#Xarial_XToolkit_Reflection_AppDomainExtension_RegisterGlobalAssemblyReferenceResolver_
+  commentId: Overload:Xarial.XToolkit.Reflection.AppDomainExtension.RegisterGlobalAssemblyReferenceResolver
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AppDomainExtension.RegisterGlobalAssemblyReferenceResolver
+  nameWithType: AppDomainExtension.RegisterGlobalAssemblyReferenceResolver
+- uid: Xarial.XToolkit.Reflection.AssemblyExtension
+  name: AssemblyExtension
+  href: api/Xarial.XToolkit.Reflection.AssemblyExtension.html
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyExtension
+  fullName: Xarial.XToolkit.Reflection.AssemblyExtension
+  nameWithType: AssemblyExtension
+- uid: Xarial.XToolkit.Reflection.AssemblyExtension.TryGetAttribute*
+  name: TryGetAttribute
+  href: api/Xarial.XToolkit.Reflection.AssemblyExtension.html#Xarial_XToolkit_Reflection_AssemblyExtension_TryGetAttribute_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyExtension.TryGetAttribute
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyExtension.TryGetAttribute
+  nameWithType: AssemblyExtension.TryGetAttribute
+- uid: Xarial.XToolkit.Reflection.AssemblyExtension.TryGetAttribute``1(System.Reflection.Assembly,``0@)
+  name: TryGetAttribute<TAtt>(Assembly, out TAtt)
+  href: api/Xarial.XToolkit.Reflection.AssemblyExtension.html#Xarial_XToolkit_Reflection_AssemblyExtension_TryGetAttribute__1_System_Reflection_Assembly___0__
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyExtension.TryGetAttribute``1(System.Reflection.Assembly,``0@)
+  name.vb: TryGetAttribute(Of TAtt)(Assembly, TAtt)
+  fullName: Xarial.XToolkit.Reflection.AssemblyExtension.TryGetAttribute<TAtt>(System.Reflection.Assembly, out TAtt)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyExtension.TryGetAttribute(Of TAtt)(System.Reflection.Assembly, TAtt)
+  nameWithType: AssemblyExtension.TryGetAttribute<TAtt>(Assembly, out TAtt)
+  nameWithType.vb: AssemblyExtension.TryGetAttribute(Of TAtt)(Assembly, TAtt)
+- uid: Xarial.XToolkit.Reflection.AssemblyExtension.WithAttribute*
+  name: WithAttribute
+  href: api/Xarial.XToolkit.Reflection.AssemblyExtension.html#Xarial_XToolkit_Reflection_AssemblyExtension_WithAttribute_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyExtension.WithAttribute
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyExtension.WithAttribute
+  nameWithType: AssemblyExtension.WithAttribute
+- uid: Xarial.XToolkit.Reflection.AssemblyExtension.WithAttribute``1(System.Reflection.Assembly,System.Action{``0})
+  name: WithAttribute<TAtt>(Assembly, Action<TAtt>)
+  href: api/Xarial.XToolkit.Reflection.AssemblyExtension.html#Xarial_XToolkit_Reflection_AssemblyExtension_WithAttribute__1_System_Reflection_Assembly_System_Action___0__
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyExtension.WithAttribute``1(System.Reflection.Assembly,System.Action{``0})
+  name.vb: WithAttribute(Of TAtt)(Assembly, Action(Of TAtt))
+  fullName: Xarial.XToolkit.Reflection.AssemblyExtension.WithAttribute<TAtt>(System.Reflection.Assembly, System.Action<TAtt>)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyExtension.WithAttribute(Of TAtt)(System.Reflection.Assembly, System.Action(Of TAtt))
+  nameWithType: AssemblyExtension.WithAttribute<TAtt>(Assembly, Action<TAtt>)
+  nameWithType.vb: AssemblyExtension.WithAttribute(Of TAtt)(Assembly, Action(Of TAtt))
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  name: AssemblyMatchFilter_e
+  href: api/Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.html
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  nameWithType: AssemblyMatchFilter_e
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture
+  name: Culture
+  href: api/Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.html#Xarial_XToolkit_Reflection_AssemblyMatchFilter_e_Culture
+  commentId: F:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture
+  nameWithType: AssemblyMatchFilter_e.Culture
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken
+  name: PublicKeyToken
+  href: api/Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.html#Xarial_XToolkit_Reflection_AssemblyMatchFilter_e_PublicKeyToken
+  commentId: F:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken
+  nameWithType: AssemblyMatchFilter_e.PublicKeyToken
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version
+  name: Version
+  href: api/Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.html#Xarial_XToolkit_Reflection_AssemblyMatchFilter_e_Version
+  commentId: F:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version
+  nameWithType: AssemblyMatchFilter_e.Version
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  name: AssemblyNameReferenceResolver
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  nameWithType: AssemblyNameReferenceResolver
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor(System.String,System.String[])
+  name: AssemblyNameReferenceResolver(string, string[])
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver__ctor_System_String_System_String___
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor(System.String,System.String[])
+  name.vb: New(String, String())
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyNameReferenceResolver(string, string[])
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.New(String, String())
+  nameWithType: AssemblyNameReferenceResolver.AssemblyNameReferenceResolver(string, string[])
+  nameWithType.vb: AssemblyNameReferenceResolver.New(String, String())
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor*
+  name: AssemblyNameReferenceResolver
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver__ctor_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyNameReferenceResolver
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.New
+  nameWithType: AssemblyNameReferenceResolver.AssemblyNameReferenceResolver
+  nameWithType.vb: AssemblyNameReferenceResolver.New
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  name: AssemblyNameReferenceResolver.AssemblyInfo
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  nameWithType: AssemblyNameReferenceResolver.AssemblyInfo
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.FilePath
+  name: FilePath
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo_FilePath
+  commentId: P:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.FilePath
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.FilePath
+  nameWithType: AssemblyNameReferenceResolver.AssemblyInfo.FilePath
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.FilePath*
+  name: FilePath
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo_FilePath_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.FilePath
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.FilePath
+  nameWithType: AssemblyNameReferenceResolver.AssemblyInfo.FilePath
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.Name
+  name: Name
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo_Name
+  commentId: P:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.Name
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.Name
+  nameWithType: AssemblyNameReferenceResolver.AssemblyInfo.Name
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.Name*
+  name: Name
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo_Name_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.Name
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.Name
+  nameWithType: AssemblyNameReferenceResolver.AssemblyInfo.Name
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture(System.Reflection.AssemblyName)
+  name: GetCulture(AssemblyName)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetCulture_System_Reflection_AssemblyName_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture(System.Reflection.AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture(System.Reflection.AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.GetCulture(AssemblyName)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture*
+  name: GetCulture
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetCulture_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture
+  nameWithType: AssemblyNameReferenceResolver.GetCulture
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken(System.Reflection.AssemblyName)
+  name: GetPublicKeyToken(AssemblyName)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetPublicKeyToken_System_Reflection_AssemblyName_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken(System.Reflection.AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken(System.Reflection.AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.GetPublicKeyToken(AssemblyName)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken*
+  name: GetPublicKeyToken
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetPublicKeyToken_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken
+  nameWithType: AssemblyNameReferenceResolver.GetPublicKeyToken
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  name: GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetReplacementAssemblyName_System_Reflection_AssemblyName_System_Reflection_Assembly_System_String__System_Boolean__
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  name.vb: GetReplacementAssemblyName(AssemblyName, Assembly, String, Boolean)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName, System.Reflection.Assembly, out string, out bool)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName, System.Reflection.Assembly, String, Boolean)
+  nameWithType: AssemblyNameReferenceResolver.GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  nameWithType.vb: AssemblyNameReferenceResolver.GetReplacementAssemblyName(AssemblyName, Assembly, String, Boolean)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName*
+  name: GetReplacementAssemblyName
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetReplacementAssemblyName_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName
+  nameWithType: AssemblyNameReferenceResolver.GetReplacementAssemblyName
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  name: LoadAssembly(AssemblyInfo)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_LoadAssembly_Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  nameWithType: AssemblyNameReferenceResolver.LoadAssembly(AssemblyNameReferenceResolver.AssemblyInfo)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly*
+  name: LoadAssembly
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_LoadAssembly_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly
+  nameWithType: AssemblyNameReferenceResolver.LoadAssembly
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)
+  name: Match(AssemblyName, AssemblyName)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Match_System_Reflection_AssemblyName_System_Reflection_AssemblyName_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match(System.Reflection.AssemblyName, System.Reflection.AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.Match(AssemblyName, AssemblyName)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match*
+  name: Match
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Match_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match
+  nameWithType: AssemblyNameReferenceResolver.Match
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  name: Name
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Name
+  commentId: P:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  nameWithType: AssemblyNameReferenceResolver.Name
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name*
+  name: Name
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Name_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  nameWithType: AssemblyNameReferenceResolver.Name
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(System.String,System.Reflection.AssemblyName)
+  name: ProvideProbeAssemblyFilePaths(string, AssemblyName)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ProvideProbeAssemblyFilePaths_System_String_System_Reflection_AssemblyName_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(System.String,System.Reflection.AssemblyName)
+  name.vb: ProvideProbeAssemblyFilePaths(String, AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(string, System.Reflection.AssemblyName)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(String, System.Reflection.AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(string, AssemblyName)
+  nameWithType.vb: AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(String, AssemblyName)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths*
+  name: ProvideProbeAssemblyFilePaths
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ProvideProbeAssemblyFilePaths_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths
+  nameWithType: AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  name: Resolve(AppDomain, AssemblyName, Assembly)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Resolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve(System.AppDomain, System.Reflection.AssemblyName, System.Reflection.Assembly)
+  nameWithType: AssemblyNameReferenceResolver.Resolve(AppDomain, AssemblyName, Assembly)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve*
+  name: Resolve
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Resolve_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve
+  nameWithType: AssemblyNameReferenceResolver.Resolve
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo},System.Reflection.AssemblyName)
+  name: ResolveAmbiguity(IReadOnlyList<AssemblyInfo>, AssemblyName)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ResolveAmbiguity_System_Collections_Generic_IReadOnlyList_Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo__System_Reflection_AssemblyName_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo},System.Reflection.AssemblyName)
+  name.vb: ResolveAmbiguity(IReadOnlyList(Of AssemblyInfo), AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList<Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo>, System.Reflection.AssemblyName)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList(Of Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo), System.Reflection.AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.ResolveAmbiguity(IReadOnlyList<AssemblyNameReferenceResolver.AssemblyInfo>, AssemblyName)
+  nameWithType.vb: AssemblyNameReferenceResolver.ResolveAmbiguity(IReadOnlyList(Of AssemblyNameReferenceResolver.AssemblyInfo), AssemblyName)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity*
+  name: ResolveAmbiguity
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ResolveAmbiguity_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity
+  nameWithType: AssemblyNameReferenceResolver.ResolveAmbiguity
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  name: ShouldResolve(AppDomain, AssemblyName, Assembly)
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ShouldResolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve(System.AppDomain, System.Reflection.AssemblyName, System.Reflection.Assembly)
+  nameWithType: AssemblyNameReferenceResolver.ShouldResolve(AppDomain, AssemblyName, Assembly)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve*
+  name: ShouldResolve
+  href: api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ShouldResolve_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve
+  nameWithType: AssemblyNameReferenceResolver.ShouldResolve
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  name: AssemblyReferenceResolver
+  href: api/Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  nameWithType: AssemblyReferenceResolver
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor(System.AppDomain,System.String,System.String)
+  name: AssemblyReferenceResolver(AppDomain, string, string)
+  href: api/Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyReferenceResolver__ctor_System_AppDomain_System_String_System_String_
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor(System.AppDomain,System.String,System.String)
+  name.vb: New(AppDomain, String, String)
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.AssemblyReferenceResolver(System.AppDomain, string, string)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.New(System.AppDomain, String, String)
+  nameWithType: AssemblyReferenceResolver.AssemblyReferenceResolver(AppDomain, string, string)
+  nameWithType.vb: AssemblyReferenceResolver.New(AppDomain, String, String)
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor*
+  name: AssemblyReferenceResolver
+  href: api/Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyReferenceResolver__ctor_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.AssemblyReferenceResolver
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.New
+  nameWithType: AssemblyReferenceResolver.AssemblyReferenceResolver
+  nameWithType.vb: AssemblyReferenceResolver.New
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+  name: Dispose()
+  href: api/Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyReferenceResolver_Dispose
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose()
+  nameWithType: AssemblyReferenceResolver.Dispose()
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose*
+  name: Dispose
+  href: api/Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyReferenceResolver_Dispose_
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+  nameWithType: AssemblyReferenceResolver.Dispose
+- uid: Xarial.XToolkit.Reflection.EnumExtension
+  name: EnumExtension
+  href: api/Xarial.XToolkit.Reflection.EnumExtension.html
+  commentId: T:Xarial.XToolkit.Reflection.EnumExtension
+  fullName: Xarial.XToolkit.Reflection.EnumExtension
+  nameWithType: EnumExtension
+- uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute*
+  name: TryGetAttribute
+  href: api/Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute_
+  commentId: Overload:Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute
+  nameWithType: EnumExtension.TryGetAttribute
+- uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  name: TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  href: api/Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  commentId: M:Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  name.vb: TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  fullName: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute<TAtt>(System.Enum, System.Action<TAtt>)
+  fullName.vb: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute(Of TAtt)(System.Enum, System.Action(Of TAtt))
+  nameWithType: EnumExtension.TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  nameWithType.vb: EnumExtension.TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+- uid: Xarial.XToolkit.Reflection.Lambda
+  name: Lambda
+  href: api/Xarial.XToolkit.Reflection.Lambda.html
+  commentId: T:Xarial.XToolkit.Reflection.Lambda
+  fullName: Xarial.XToolkit.Reflection.Lambda
+  nameWithType: Lambda
+- uid: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression{System.Action},System.Type[])
+  name: InvokeGenericMethod(Expression<Action>, params Type[])
+  href: api/Xarial.XToolkit.Reflection.Lambda.html#Xarial_XToolkit_Reflection_Lambda_InvokeGenericMethod_System_Linq_Expressions_Expression_System_Action__System_Type___
+  commentId: M:Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression{System.Action},System.Type[])
+  name.vb: InvokeGenericMethod(Expression(Of Action), ParamArray Type())
+  fullName: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression<System.Action>, params System.Type[])
+  fullName.vb: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression(Of System.Action), ParamArray System.Type())
+  nameWithType: Lambda.InvokeGenericMethod(Expression<Action>, params Type[])
+  nameWithType.vb: Lambda.InvokeGenericMethod(Expression(Of Action), ParamArray Type())
+- uid: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod*
+  name: InvokeGenericMethod
+  href: api/Xarial.XToolkit.Reflection.Lambda.html#Xarial_XToolkit_Reflection_Lambda_InvokeGenericMethod_
+  commentId: Overload:Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod
+  nameWithType: Lambda.InvokeGenericMethod
+- uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+  name: LocalFolderReferencesResolver
+  href: api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html
+  commentId: T:Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+  fullName: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+  nameWithType: LocalFolderReferencesResolver
+- uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.#ctor(System.String,Xarial.XToolkit.Reflection.AssemblyMatchFilter_e,System.String,System.String[],System.String[])
+  name: LocalFolderReferencesResolver(string, AssemblyMatchFilter_e, string, string[], string[])
+  href: api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html#Xarial_XToolkit_Reflection_LocalFolderReferencesResolver__ctor_System_String_Xarial_XToolkit_Reflection_AssemblyMatchFilter_e_System_String_System_String___System_String___
+  commentId: M:Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.#ctor(System.String,Xarial.XToolkit.Reflection.AssemblyMatchFilter_e,System.String,System.String[],System.String[])
+  name.vb: New(String, AssemblyMatchFilter_e, String, String(), String())
+  fullName: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.LocalFolderReferencesResolver(string, Xarial.XToolkit.Reflection.AssemblyMatchFilter_e, string, string[], string[])
+  fullName.vb: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.New(String, Xarial.XToolkit.Reflection.AssemblyMatchFilter_e, String, String(), String())
+  nameWithType: LocalFolderReferencesResolver.LocalFolderReferencesResolver(string, AssemblyMatchFilter_e, string, string[], string[])
+  nameWithType.vb: LocalFolderReferencesResolver.New(String, AssemblyMatchFilter_e, String, String(), String())
+- uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.#ctor*
+  name: LocalFolderReferencesResolver
+  href: api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html#Xarial_XToolkit_Reflection_LocalFolderReferencesResolver__ctor_
+  commentId: Overload:Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.LocalFolderReferencesResolver
+  fullName.vb: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.New
+  nameWithType: LocalFolderReferencesResolver.LocalFolderReferencesResolver
+  nameWithType.vb: LocalFolderReferencesResolver.New
+- uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  name: GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  href: api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html#Xarial_XToolkit_Reflection_LocalFolderReferencesResolver_GetReplacementAssemblyName_System_Reflection_AssemblyName_System_Reflection_Assembly_System_String__System_Boolean__
+  commentId: M:Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  name.vb: GetReplacementAssemblyName(AssemblyName, Assembly, String, Boolean)
+  fullName: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName, System.Reflection.Assembly, out string, out bool)
+  fullName.vb: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName, System.Reflection.Assembly, String, Boolean)
+  nameWithType: LocalFolderReferencesResolver.GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  nameWithType.vb: LocalFolderReferencesResolver.GetReplacementAssemblyName(AssemblyName, Assembly, String, Boolean)
+- uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.GetReplacementAssemblyName*
+  name: GetReplacementAssemblyName
+  href: api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html#Xarial_XToolkit_Reflection_LocalFolderReferencesResolver_GetReplacementAssemblyName_
+  commentId: Overload:Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.GetReplacementAssemblyName
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.GetReplacementAssemblyName
+  nameWithType: LocalFolderReferencesResolver.GetReplacementAssemblyName
+- uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)
+  name: Match(AssemblyName, AssemblyName)
+  href: api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html#Xarial_XToolkit_Reflection_LocalFolderReferencesResolver_Match_System_Reflection_AssemblyName_System_Reflection_AssemblyName_
+  commentId: M:Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.Match(System.Reflection.AssemblyName, System.Reflection.AssemblyName)
+  nameWithType: LocalFolderReferencesResolver.Match(AssemblyName, AssemblyName)
+- uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.Match*
+  name: Match
+  href: api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html#Xarial_XToolkit_Reflection_LocalFolderReferencesResolver_Match_
+  commentId: Overload:Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.Match
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.Match
+  nameWithType: LocalFolderReferencesResolver.Match
+- uid: Xarial.XToolkit.Reflection.ResourceHelper
+  name: ResourceHelper
+  href: api/Xarial.XToolkit.Reflection.ResourceHelper.html
+  commentId: T:Xarial.XToolkit.Reflection.ResourceHelper
+  fullName: Xarial.XToolkit.Reflection.ResourceHelper
+  nameWithType: ResourceHelper
+- uid: Xarial.XToolkit.Reflection.ResourceHelper.GetResource*
+  name: GetResource
+  href: api/Xarial.XToolkit.Reflection.ResourceHelper.html#Xarial_XToolkit_Reflection_ResourceHelper_GetResource_
+  commentId: Overload:Xarial.XToolkit.Reflection.ResourceHelper.GetResource
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.ResourceHelper.GetResource
+  nameWithType: ResourceHelper.GetResource
+- uid: Xarial.XToolkit.Reflection.ResourceHelper.GetResource``1(System.Type,System.String)
+  name: GetResource<T>(Type, string)
+  href: api/Xarial.XToolkit.Reflection.ResourceHelper.html#Xarial_XToolkit_Reflection_ResourceHelper_GetResource__1_System_Type_System_String_
+  commentId: M:Xarial.XToolkit.Reflection.ResourceHelper.GetResource``1(System.Type,System.String)
+  name.vb: GetResource(Of T)(Type, String)
+  fullName: Xarial.XToolkit.Reflection.ResourceHelper.GetResource<T>(System.Type, string)
+  fullName.vb: Xarial.XToolkit.Reflection.ResourceHelper.GetResource(Of T)(System.Type, String)
+  nameWithType: ResourceHelper.GetResource<T>(Type, string)
+  nameWithType.vb: ResourceHelper.GetResource(Of T)(Type, String)
+- uid: Xarial.XToolkit.Reflection.ResourceHelper.GetValue(System.Object,System.Type,System.String[])
+  name: GetValue(object, Type, string[])
+  href: api/Xarial.XToolkit.Reflection.ResourceHelper.html#Xarial_XToolkit_Reflection_ResourceHelper_GetValue_System_Object_System_Type_System_String___
+  commentId: M:Xarial.XToolkit.Reflection.ResourceHelper.GetValue(System.Object,System.Type,System.String[])
+  name.vb: GetValue(Object, Type, String())
+  fullName: Xarial.XToolkit.Reflection.ResourceHelper.GetValue(object, System.Type, string[])
+  fullName.vb: Xarial.XToolkit.Reflection.ResourceHelper.GetValue(Object, System.Type, String())
+  nameWithType: ResourceHelper.GetValue(object, Type, string[])
+  nameWithType.vb: ResourceHelper.GetValue(Object, Type, String())
+- uid: Xarial.XToolkit.Reflection.ResourceHelper.GetValue*
+  name: GetValue
+  href: api/Xarial.XToolkit.Reflection.ResourceHelper.html#Xarial_XToolkit_Reflection_ResourceHelper_GetValue_
+  commentId: Overload:Xarial.XToolkit.Reflection.ResourceHelper.GetValue
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.ResourceHelper.GetValue
+  nameWithType: ResourceHelper.GetValue
+- uid: Xarial.XToolkit.Reflection.TypeExtension
+  name: TypeExtension
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html
+  commentId: T:Xarial.XToolkit.Reflection.TypeExtension
+  fullName: Xarial.XToolkit.Reflection.TypeExtension
+  nameWithType: TypeExtension
+- uid: Xarial.XToolkit.Reflection.TypeExtension.FindMethod(System.Type,System.String,System.Reflection.BindingFlags)
+  name: FindMethod(Type, string, BindingFlags)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_FindMethod_System_Type_System_String_System_Reflection_BindingFlags_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.FindMethod(System.Type,System.String,System.Reflection.BindingFlags)
+  name.vb: FindMethod(Type, String, BindingFlags)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.FindMethod(System.Type, string, System.Reflection.BindingFlags)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.FindMethod(System.Type, String, System.Reflection.BindingFlags)
+  nameWithType: TypeExtension.FindMethod(Type, string, BindingFlags)
+  nameWithType.vb: TypeExtension.FindMethod(Type, String, BindingFlags)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.FindMethod*
+  name: FindMethod
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_FindMethod_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.FindMethod
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.FindMethod
+  nameWithType: TypeExtension.FindMethod
+- uid: Xarial.XToolkit.Reflection.TypeExtension.GetArgumentsOfGenericType(System.Type,System.Type)
+  name: GetArgumentsOfGenericType(Type, Type)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_GetArgumentsOfGenericType_System_Type_System_Type_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.GetArgumentsOfGenericType(System.Type,System.Type)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.GetArgumentsOfGenericType(System.Type, System.Type)
+  nameWithType: TypeExtension.GetArgumentsOfGenericType(Type, Type)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.GetArgumentsOfGenericType*
+  name: GetArgumentsOfGenericType
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_GetArgumentsOfGenericType_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.GetArgumentsOfGenericType
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.GetArgumentsOfGenericType
+  nameWithType: TypeExtension.GetArgumentsOfGenericType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.GetEnumFlags(System.Type)
+  name: GetEnumFlags(Type)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_GetEnumFlags_System_Type_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.GetEnumFlags(System.Type)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.GetEnumFlags(System.Type)
+  nameWithType: TypeExtension.GetEnumFlags(Type)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.GetEnumFlags*
+  name: GetEnumFlags
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_GetEnumFlags_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.GetEnumFlags
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.GetEnumFlags
+  nameWithType: TypeExtension.GetEnumFlags
+- uid: Xarial.XToolkit.Reflection.TypeExtension.GetMethodWithGenericParameters(System.Type,System.String,System.Type[],System.Reflection.BindingFlags)
+  name: GetMethodWithGenericParameters(Type, string, Type[], BindingFlags)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_GetMethodWithGenericParameters_System_Type_System_String_System_Type___System_Reflection_BindingFlags_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.GetMethodWithGenericParameters(System.Type,System.String,System.Type[],System.Reflection.BindingFlags)
+  name.vb: GetMethodWithGenericParameters(Type, String, Type(), BindingFlags)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.GetMethodWithGenericParameters(System.Type, string, System.Type[], System.Reflection.BindingFlags)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.GetMethodWithGenericParameters(System.Type, String, System.Type(), System.Reflection.BindingFlags)
+  nameWithType: TypeExtension.GetMethodWithGenericParameters(Type, string, Type[], BindingFlags)
+  nameWithType.vb: TypeExtension.GetMethodWithGenericParameters(Type, String, Type(), BindingFlags)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.GetMethodWithGenericParameters*
+  name: GetMethodWithGenericParameters
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_GetMethodWithGenericParameters_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.GetMethodWithGenericParameters
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.GetMethodWithGenericParameters
+  nameWithType: TypeExtension.GetMethodWithGenericParameters
+- uid: Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod(System.Object,System.Reflection.MethodInfo,System.Object[])
+  name: InvokeMethod(object, MethodInfo, params object[])
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_InvokeMethod_System_Object_System_Reflection_MethodInfo_System_Object___
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod(System.Object,System.Reflection.MethodInfo,System.Object[])
+  name.vb: InvokeMethod(Object, MethodInfo, ParamArray Object())
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod(object, System.Reflection.MethodInfo, params object[])
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod(Object, System.Reflection.MethodInfo, ParamArray Object())
+  nameWithType: TypeExtension.InvokeMethod(object, MethodInfo, params object[])
+  nameWithType.vb: TypeExtension.InvokeMethod(Object, MethodInfo, ParamArray Object())
+- uid: Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod*
+  name: InvokeMethod
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_InvokeMethod_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod
+  nameWithType: TypeExtension.InvokeMethod
+- uid: Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod``1(System.Object,System.Reflection.MethodInfo,System.Object[])
+  name: InvokeMethod<TRes>(object, MethodInfo, params object[])
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_InvokeMethod__1_System_Object_System_Reflection_MethodInfo_System_Object___
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod``1(System.Object,System.Reflection.MethodInfo,System.Object[])
+  name.vb: InvokeMethod(Of TRes)(Object, MethodInfo, ParamArray Object())
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod<TRes>(object, System.Reflection.MethodInfo, params object[])
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.InvokeMethod(Of TRes)(Object, System.Reflection.MethodInfo, ParamArray Object())
+  nameWithType: TypeExtension.InvokeMethod<TRes>(object, MethodInfo, params object[])
+  nameWithType.vb: TypeExtension.InvokeMethod(Of TRes)(Object, MethodInfo, ParamArray Object())
+- uid: Xarial.XToolkit.Reflection.TypeExtension.IsAssignableToGenericType(System.Type,System.Type)
+  name: IsAssignableToGenericType(Type, Type)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_IsAssignableToGenericType_System_Type_System_Type_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.IsAssignableToGenericType(System.Type,System.Type)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.IsAssignableToGenericType(System.Type, System.Type)
+  nameWithType: TypeExtension.IsAssignableToGenericType(Type, Type)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.IsAssignableToGenericType*
+  name: IsAssignableToGenericType
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_IsAssignableToGenericType_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.IsAssignableToGenericType
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.IsAssignableToGenericType
+  nameWithType: TypeExtension.IsAssignableToGenericType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  name: TypeExtension.MissingMethodInfo
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html
+  commentId: T:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  nameWithType: TypeExtension.MissingMethodInfo
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  name: Attributes
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Attributes
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  nameWithType: TypeExtension.MissingMethodInfo.Attributes
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes*
+  name: Attributes
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Attributes_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  nameWithType: TypeExtension.MissingMethodInfo.Attributes
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  name: DeclaringType
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_DeclaringType
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  nameWithType: TypeExtension.MissingMethodInfo.DeclaringType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType*
+  name: DeclaringType
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_DeclaringType_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  nameWithType: TypeExtension.MissingMethodInfo.DeclaringType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+  name: GetBaseDefinition()
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetBaseDefinition
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition()
+  nameWithType: TypeExtension.MissingMethodInfo.GetBaseDefinition()
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition*
+  name: GetBaseDefinition
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetBaseDefinition_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+  nameWithType: TypeExtension.MissingMethodInfo.GetBaseDefinition
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Boolean)
+  name: GetCustomAttributes(bool)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetCustomAttributes_System_Boolean_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Boolean)
+  name.vb: GetCustomAttributes(Boolean)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(bool)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(Boolean)
+  nameWithType: TypeExtension.MissingMethodInfo.GetCustomAttributes(bool)
+  nameWithType.vb: TypeExtension.MissingMethodInfo.GetCustomAttributes(Boolean)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type,System.Boolean)
+  name: GetCustomAttributes(Type, bool)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetCustomAttributes_System_Type_System_Boolean_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type,System.Boolean)
+  name.vb: GetCustomAttributes(Type, Boolean)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type, bool)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type, Boolean)
+  nameWithType: TypeExtension.MissingMethodInfo.GetCustomAttributes(Type, bool)
+  nameWithType.vb: TypeExtension.MissingMethodInfo.GetCustomAttributes(Type, Boolean)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes*
+  name: GetCustomAttributes
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetCustomAttributes_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes
+  nameWithType: TypeExtension.MissingMethodInfo.GetCustomAttributes
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  name: GetMethodImplementationFlags()
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetMethodImplementationFlags
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags()
+  nameWithType: TypeExtension.MissingMethodInfo.GetMethodImplementationFlags()
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags*
+  name: GetMethodImplementationFlags
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetMethodImplementationFlags_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  nameWithType: TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+  name: GetParameters()
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetParameters
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters()
+  nameWithType: TypeExtension.MissingMethodInfo.GetParameters()
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters*
+  name: GetParameters
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetParameters_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+  nameWithType: TypeExtension.MissingMethodInfo.GetParameters
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  name: Invoke(object, BindingFlags, Binder, object[], CultureInfo)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Invoke_System_Object_System_Reflection_BindingFlags_System_Reflection_Binder_System_Object___System_Globalization_CultureInfo_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  name.vb: Invoke(Object, BindingFlags, Binder, Object(), CultureInfo)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(object, System.Reflection.BindingFlags, System.Reflection.Binder, object[], System.Globalization.CultureInfo)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(Object, System.Reflection.BindingFlags, System.Reflection.Binder, Object(), System.Globalization.CultureInfo)
+  nameWithType: TypeExtension.MissingMethodInfo.Invoke(object, BindingFlags, Binder, object[], CultureInfo)
+  nameWithType.vb: TypeExtension.MissingMethodInfo.Invoke(Object, BindingFlags, Binder, Object(), CultureInfo)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke*
+  name: Invoke
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Invoke_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke
+  nameWithType: TypeExtension.MissingMethodInfo.Invoke
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type,System.Boolean)
+  name: IsDefined(Type, bool)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_IsDefined_System_Type_System_Boolean_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type,System.Boolean)
+  name.vb: IsDefined(Type, Boolean)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type, bool)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type, Boolean)
+  nameWithType: TypeExtension.MissingMethodInfo.IsDefined(Type, bool)
+  nameWithType.vb: TypeExtension.MissingMethodInfo.IsDefined(Type, Boolean)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined*
+  name: IsDefined
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_IsDefined_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined
+  nameWithType: TypeExtension.MissingMethodInfo.IsDefined
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  name: MethodHandle
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_MethodHandle
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  nameWithType: TypeExtension.MissingMethodInfo.MethodHandle
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle*
+  name: MethodHandle
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_MethodHandle_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  nameWithType: TypeExtension.MissingMethodInfo.MethodHandle
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  name: Name
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Name
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  nameWithType: TypeExtension.MissingMethodInfo.Name
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name*
+  name: Name
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Name_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  nameWithType: TypeExtension.MissingMethodInfo.Name
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  name: ReflectedType
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_ReflectedType
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  nameWithType: TypeExtension.MissingMethodInfo.ReflectedType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType*
+  name: ReflectedType
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_ReflectedType_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  nameWithType: TypeExtension.MissingMethodInfo.ReflectedType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  name: ReturnTypeCustomAttributes
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_ReturnTypeCustomAttributes
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  nameWithType: TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes*
+  name: ReturnTypeCustomAttributes
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_ReturnTypeCustomAttributes_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  nameWithType: TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+- uid: Xarial.XToolkit.Reflection.TypeExtension.TryFindGenericType(System.Type,System.Type)
+  name: TryFindGenericType(Type, Type)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_TryFindGenericType_System_Type_System_Type_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.TryFindGenericType(System.Type,System.Type)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.TryFindGenericType(System.Type, System.Type)
+  nameWithType: TypeExtension.TryFindGenericType(Type, Type)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.TryFindGenericType*
+  name: TryFindGenericType
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_TryFindGenericType_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.TryFindGenericType
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.TryFindGenericType
+  nameWithType: TypeExtension.TryFindGenericType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.TryGetAttribute*
+  name: TryGetAttribute
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_TryGetAttribute_
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.TryGetAttribute
+  isSpec: "True"
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.TryGetAttribute
+  nameWithType: TypeExtension.TryGetAttribute
+- uid: Xarial.XToolkit.Reflection.TypeExtension.TryGetAttribute``1(System.Type,``0@,System.Boolean)
+  name: TryGetAttribute<TAtt>(Type, out TAtt, bool)
+  href: api/Xarial.XToolkit.Reflection.TypeExtension.html#Xarial_XToolkit_Reflection_TypeExtension_TryGetAttribute__1_System_Type___0__System_Boolean_
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.TryGetAttribute``1(System.Type,``0@,System.Boolean)
+  name.vb: TryGetAttribute(Of TAtt)(Type, TAtt, Boolean)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.TryGetAttribute<TAtt>(System.Type, out TAtt, bool)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.TryGetAttribute(Of TAtt)(System.Type, TAtt, Boolean)
+  nameWithType: TypeExtension.TryGetAttribute<TAtt>(Type, out TAtt, bool)
+  nameWithType.vb: TypeExtension.TryGetAttribute(Of TAtt)(Type, TAtt, Boolean)
+- uid: Xarial.XToolkit.TextUtils
+  name: TextUtils
+  href: api/Xarial.XToolkit.TextUtils.html
+  commentId: T:Xarial.XToolkit.TextUtils
+  fullName: Xarial.XToolkit.TextUtils
+  nameWithType: TextUtils
+- uid: Xarial.XToolkit.TextUtils.MatchesAnyFilter(System.String,System.Boolean,System.String[])
+  name: MatchesAnyFilter(string, bool, params string[])
+  href: api/Xarial.XToolkit.TextUtils.html#Xarial_XToolkit_TextUtils_MatchesAnyFilter_System_String_System_Boolean_System_String___
+  commentId: M:Xarial.XToolkit.TextUtils.MatchesAnyFilter(System.String,System.Boolean,System.String[])
+  name.vb: MatchesAnyFilter(String, Boolean, ParamArray String())
+  fullName: Xarial.XToolkit.TextUtils.MatchesAnyFilter(string, bool, params string[])
+  fullName.vb: Xarial.XToolkit.TextUtils.MatchesAnyFilter(String, Boolean, ParamArray String())
+  nameWithType: TextUtils.MatchesAnyFilter(string, bool, params string[])
+  nameWithType.vb: TextUtils.MatchesAnyFilter(String, Boolean, ParamArray String())
+- uid: Xarial.XToolkit.TextUtils.MatchesAnyFilter(System.String,System.String[])
+  name: MatchesAnyFilter(string, params string[])
+  href: api/Xarial.XToolkit.TextUtils.html#Xarial_XToolkit_TextUtils_MatchesAnyFilter_System_String_System_String___
+  commentId: M:Xarial.XToolkit.TextUtils.MatchesAnyFilter(System.String,System.String[])
+  name.vb: MatchesAnyFilter(String, ParamArray String())
+  fullName: Xarial.XToolkit.TextUtils.MatchesAnyFilter(string, params string[])
+  fullName.vb: Xarial.XToolkit.TextUtils.MatchesAnyFilter(String, ParamArray String())
+  nameWithType: TextUtils.MatchesAnyFilter(string, params string[])
+  nameWithType.vb: TextUtils.MatchesAnyFilter(String, ParamArray String())
+- uid: Xarial.XToolkit.TextUtils.MatchesAnyFilter*
+  name: MatchesAnyFilter
+  href: api/Xarial.XToolkit.TextUtils.html#Xarial_XToolkit_TextUtils_MatchesAnyFilter_
+  commentId: Overload:Xarial.XToolkit.TextUtils.MatchesAnyFilter
+  isSpec: "True"
+  fullName: Xarial.XToolkit.TextUtils.MatchesAnyFilter
+  nameWithType: TextUtils.MatchesAnyFilter

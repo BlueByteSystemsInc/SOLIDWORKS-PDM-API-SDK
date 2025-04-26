@@ -31,7 +31,7 @@
       }
     ],
     "sitemap": {
-      "baseUrl": "https://docs.bluebyte.biz",
+      "baseUrl": "https://pdmsdk.bluebyte.biz",
       "priority": 0.5,
       "changefreq": "daily"
     },

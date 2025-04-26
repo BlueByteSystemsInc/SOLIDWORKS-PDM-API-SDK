@@ -1,6 +1,6 @@
 {
   "sitemap": {
-    "baseUrl": "https://docs.bluebyte.biz/",
+    "baseUrl": "https://pdmsdk.bluebyte.biz/",
     "changefreq": "daily",
     "priority": 0.5
   },
@@ -351,6 +351,216 @@
       "output": {
         ".html": {
           "relative_path": "api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.FileFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.FileFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.FileSystemUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.FileSystemUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Helpers.AssemblyResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Helpers.AssemblyResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Helpers.IReferenceResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Helpers.IReferenceResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Helpers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.AppDomainExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.AppDomainExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.AssemblyExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.AssemblyExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.AssemblyReferenceResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.EnumExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.EnumExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.Lambda.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.Lambda.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.ResourceHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.ResourceHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.TypeExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.TypeExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.Reflection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.Reflection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.TextUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.TextUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xarial.XToolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xarial.XToolkit.html"
         }
       },
       "version": ""

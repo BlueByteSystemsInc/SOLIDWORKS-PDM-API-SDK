@@ -1,0 +1,488 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xarial.XToolkit.Reflection.Lambda
+  commentId: T:Xarial.XToolkit.Reflection.Lambda
+  id: Lambda
+  parent: Xarial.XToolkit.Reflection
+  children:
+  - Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression{System.Action},System.Type[])
+  langs:
+  - csharp
+  - vb
+  name: Lambda
+  nameWithType: Lambda
+  fullName: Xarial.XToolkit.Reflection.Lambda
+  type: Class
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/Lambda.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Lambda
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/Lambda.cs
+    startLine: 16
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  syntax:
+    content: public static class Lambda
+    content.vb: Public Module Lambda
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression{System.Action},System.Type[])
+  commentId: M:Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression{System.Action},System.Type[])
+  id: InvokeGenericMethod(System.Linq.Expressions.Expression{System.Action},System.Type[])
+  parent: Xarial.XToolkit.Reflection.Lambda
+  langs:
+  - csharp
+  - vb
+  name: InvokeGenericMethod(Expression<Action>, params Type[])
+  nameWithType: Lambda.InvokeGenericMethod(Expression<Action>, params Type[])
+  fullName: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression<System.Action>, params System.Type[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/Lambda.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: InvokeGenericMethod
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/Lambda.cs
+    startLine: 25
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Invokes generic method by supplying the type arguments
+  remarks: Method body within expression must only contain constant values or variables (no expression). Use cast to match the parameter type (actual cast wil lnot be called)
+  example: []
+  syntax:
+    content: public static object InvokeGenericMethod(Expression<Action> method, params Type[] typeArguments)
+    parameters:
+    - id: method
+      type: System.Linq.Expressions.Expression{System.Action}
+      description: Method body to invoke
+    - id: typeArguments
+      type: System.Type[]
+      description: Type arguments
+    return:
+      type: System.Object
+    content.vb: Public Shared Function InvokeGenericMethod(method As Expression(Of Action), ParamArray typeArguments As Type()) As Object
+  overload: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: ''
+  nameWithType.vb: Lambda.InvokeGenericMethod(Expression(Of Action), ParamArray Type())
+  fullName.vb: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod(System.Linq.Expressions.Expression(Of System.Action), ParamArray System.Type())
+  name.vb: InvokeGenericMethod(Expression(Of Action), ParamArray Type())
+references:
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod*
+  commentId: Overload:Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod
+  href: Xarial.XToolkit.Reflection.Lambda.html#Xarial_XToolkit_Reflection_Lambda_InvokeGenericMethod_System_Linq_Expressions_Expression_System_Action__System_Type___
+  name: InvokeGenericMethod
+  nameWithType: Lambda.InvokeGenericMethod
+  fullName: Xarial.XToolkit.Reflection.Lambda.InvokeGenericMethod
+- uid: System.Linq.Expressions.Expression{System.Action}
+  commentId: T:System.Linq.Expressions.Expression{System.Action}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Action>
+  nameWithType: Expression<Action>
+  fullName: System.Linq.Expressions.Expression<System.Action>
+  nameWithType.vb: Expression(Of Action)
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Action)
+  name.vb: Expression(Of Action)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

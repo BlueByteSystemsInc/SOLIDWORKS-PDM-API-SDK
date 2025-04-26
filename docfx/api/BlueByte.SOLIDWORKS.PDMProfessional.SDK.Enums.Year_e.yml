@@ -21,6 +21,10 @@ items:
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2019
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2020
   - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2021
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2022
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2023
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2024
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2025
   langs:
   - csharp
   - vb
@@ -44,6 +48,8 @@ items:
   syntax:
     content: public enum Year_e
     content.vb: Public Enum Year_e
+  extensionMethods:
+  - System.Enum.Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Action{{TAtt}})
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2006
   commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2006
   id: PDM2006
@@ -492,6 +498,118 @@ items:
     content: PDM2021 = 21
     return:
       type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2022
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2022
+  id: PDM2022
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2022
+  nameWithType: Year_e.PDM2022
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2022
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2022
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 81
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2022.
+  example: []
+  syntax:
+    content: PDM2022 = 22
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2023
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2023
+  id: PDM2023
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2023
+  nameWithType: Year_e.PDM2023
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2023
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2023
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 85
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2023.
+  example: []
+  syntax:
+    content: PDM2023 = 23
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2024
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2024
+  id: PDM2024
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2024
+  nameWithType: Year_e.PDM2024
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2024
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2024
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 89
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2024.
+  example: []
+  syntax:
+    content: PDM2024 = 24
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2025
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2025
+  id: PDM2025
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: PDM2025
+  nameWithType: Year_e.PDM2025
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.PDM2025
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PDM2025
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 93
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional 2025.
+  example: []
+  syntax:
+    content: PDM2025 = 25
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
 references:
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
   commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
@@ -539,6 +657,160 @@ references:
   - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
     name: Enums
     href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html
+- uid: System.Enum.Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Action{{TAtt}})
+  commentId: M:Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  parent: Xarial.XToolkit.Reflection.EnumExtension
+  definition: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  name: TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  nameWithType: EnumExtension.TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  fullName: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute<TAtt>(System.Enum, System.Action<TAtt>)
+  nameWithType.vb: EnumExtension.TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  fullName.vb: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute(Of TAtt)(System.Enum, System.Action(Of TAtt))
+  name.vb: TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: )
+- uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  commentId: M:Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  isExternal: true
+  href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  name: TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  nameWithType: EnumExtension.TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  fullName: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute<TAtt>(System.Enum, System.Action<TAtt>)
+  nameWithType.vb: EnumExtension.TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  fullName.vb: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute(Of TAtt)(System.Enum, System.Action(Of TAtt))
+  name.vb: TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: )
+- uid: Xarial.XToolkit.Reflection.EnumExtension
+  commentId: T:Xarial.XToolkit.Reflection.EnumExtension
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.EnumExtension.html
+  name: EnumExtension
+  nameWithType: EnumExtension
+  fullName: Xarial.XToolkit.Reflection.EnumExtension
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
   commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums

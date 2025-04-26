@@ -30,6 +30,8 @@ items:
   syntax:
     content: public enum LoggerType_e
     content.vb: Public Enum LoggerType_e
+  extensionMethods:
+  - System.Enum.Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Action{{TAtt}})
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
   commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.PDM
   id: PDM
@@ -181,6 +183,160 @@ references:
   - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
     name: Diagnostics
     href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html
+- uid: System.Enum.Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Action{{TAtt}})
+  commentId: M:Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  parent: Xarial.XToolkit.Reflection.EnumExtension
+  definition: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  name: TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  nameWithType: EnumExtension.TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  fullName: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute<TAtt>(System.Enum, System.Action<TAtt>)
+  nameWithType.vb: EnumExtension.TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  fullName.vb: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute(Of TAtt)(System.Enum, System.Action(Of TAtt))
+  name.vb: TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: )
+- uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  commentId: M:Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  isExternal: true
+  href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  name: TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  nameWithType: EnumExtension.TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  fullName: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute<TAtt>(System.Enum, System.Action<TAtt>)
+  nameWithType.vb: EnumExtension.TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  fullName.vb: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute(Of TAtt)(System.Enum, System.Action(Of TAtt))
+  name.vb: TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: )
+- uid: Xarial.XToolkit.Reflection.EnumExtension
+  commentId: T:Xarial.XToolkit.Reflection.EnumExtension
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.EnumExtension.html
+  name: EnumExtension
+  nameWithType: EnumExtension
+  fullName: Xarial.XToolkit.Reflection.EnumExtension
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
 - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
   commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
   parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics

@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AssemblyNameReferenceResolver | SOLIDWORKS PDM SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AssemblyNameReferenceResolver | SOLIDWORKS PDM SDK ">
+      
+      <meta name="description" content="Default assembly name resolver">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/PDMFramework/new/master/apiSpec/new?filename=Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver.md&amp;value=---%0Auid%3A%20Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/fav.png" alt="SOLIDWORKS PDM SDK">
+            SOLIDWORKS PDM SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver">
+
+
+
+  <h1 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver" class="text-break">
+Class AssemblyNameReferenceResolver  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Xarial.html">Xarial</a>.<a class="xref" href="Xarial.XToolkit.html">XToolkit</a>.<a class="xref" href="Xarial.XToolkit.Reflection.html">Reflection</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BlueByte.SOLIDWORKS.PDMProfessional.SDK.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Default assembly name resolver</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AssemblyNameReferenceResolver : IReferenceResolver</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AssemblyNameReferenceResolver</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Xarial.XToolkit.Helpers.IReferenceResolver.html">IReferenceResolver</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html">AppConfigBindingRedirectReferenceResolver</a></div>
+      <div><a class="xref" href="Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html">LocalFolderReferencesResolver</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver__ctor_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver__ctor_System_String_System_String___" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor(System.String,System.String[])">
+  AssemblyNameReferenceResolver(string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssemblyNameReferenceResolver(string name, string[] filterDirs = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the resolver</p>
+</dd>
+    <dt><code>filterDirs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Only resolve the assembly if requesting assembly is in the specified directories</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Name_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Name" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the resolver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Name_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Used in the logs</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetCulture_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetCulture_System_Reflection_AssemblyName_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture(System.Reflection.AssemblyName)">
+  GetCulture(AssemblyName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the culture of the assembly name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetCulture(AssemblyName assmName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Assembly name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text of the culture</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetPublicKeyToken_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetPublicKeyToken_System_Reflection_AssemblyName_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken(System.Reflection.AssemblyName)">
+  GetPublicKeyToken(AssemblyName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the public key token from the assembly name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetPublicKeyToken(AssemblyName assmName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Assembly name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text version of public key token</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetReplacementAssemblyName_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetReplacementAssemblyName_System_Reflection_AssemblyName_System_Reflection_Assembly_System_String__System_Boolean__" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)">
+  GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides the name of the assembly to replace for this missing reference</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract AssemblyName GetReplacementAssemblyName(AssemblyName assmName, Assembly requestingAssembly, out string searchDir, out bool recursiveSearch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Missing assembly name</p>
+</dd>
+    <dt><code>requestingAssembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd><p>Assembly that requests this missing reference</p>
+</dd>
+    <dt><code>searchDir</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Search directory</p>
+</dd>
+    <dt><code>recursiveSearch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to search in sub-directories recursievely</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Assemly to replace</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_LoadAssembly_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_LoadAssembly_Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)">
+  LoadAssembly(AssemblyInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Load the assembly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Assembly LoadAssembly(AssemblyNameReferenceResolver.AssemblyInfo assmInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assmInfo</code> <a class="xref" href="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html">AssemblyNameReferenceResolver</a>.<a class="xref" href="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html">AssemblyInfo</a></dt>
+    <dd><p>Assembly information</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd><p>Loaded assembly</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Match_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Match_System_Reflection_AssemblyName_System_Reflection_AssemblyName_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)">
+  Match(AssemblyName, AssemblyName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two assemblies to see if those match</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool Match(AssemblyName probeAssmName, AssemblyName searchAssmName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>probeAssmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Assembly candidate</p>
+</dd>
+    <dt><code>searchAssmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Target assembly</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if assembly names are matching</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Match_System_Reflection_AssemblyName_System_Reflection_AssemblyName__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use this method to override logic for matching (e.g. full match or only match by file name, version, public key token etc.)</p>
+</div>
+
+
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ProvideProbeAssemblyFilePaths_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ProvideProbeAssemblyFilePaths_System_String_System_Reflection_AssemblyName_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(System.String,System.Reflection.AssemblyName)">
+  ProvideProbeAssemblyFilePaths(string, AssemblyName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returnes probe assemly file paths</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;string&gt; ProvideProbeAssemblyFilePaths(string dir, AssemblyName searchAssmName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Directory to search in</p>
+</dd>
+    <dt><code>searchAssmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Target assembly name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Possible file paths of the assembly file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Resolve_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Resolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)">
+  Resolve(AppDomain, AssemblyName, Assembly)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves the missing assembly reference</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Assembly Resolve(AppDomain appDomain, AssemblyName assmName, Assembly requestingAssembly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appDomain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.appdomain">AppDomain</a></dt>
+    <dd><p>Application domain</p>
+</dd>
+    <dt><code>assmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Assembly name to resolve</p>
+</dd>
+    <dt><code>requestingAssembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd><p>Assembly which requests the missing reference</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd><p>Replacement assembly</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ResolveAmbiguity_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ResolveAmbiguity_System_Collections_Generic_IReadOnlyList_Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo__System_Reflection_AssemblyName_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo},System.Reflection.AssemblyName)">
+  ResolveAmbiguity(IReadOnlyList&lt;AssemblyInfo&gt;, AssemblyName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides the assembly to use if multiple options available</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AssemblyNameReferenceResolver.AssemblyInfo ResolveAmbiguity(IReadOnlyList&lt;AssemblyNameReferenceResolver.AssemblyInfo&gt; assmNames, AssemblyName searchAssmName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assmNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html">AssemblyNameReferenceResolver</a>.<a class="xref" href="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html">AssemblyInfo</a>&gt;</dt>
+    <dd><p>Assembly candidates</p>
+</dd>
+    <dt><code>searchAssmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Target assembly name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html">AssemblyNameReferenceResolver</a>.<a class="xref" href="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html">AssemblyInfo</a></dt>
+    <dd><p>Assembly to use</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ShouldResolve_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve*"></a>
+
+  <h3 id="Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ShouldResolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_" data-uid="Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)">
+  ShouldResolve(AppDomain, AssemblyName, Assembly)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if assembly should be resolved by this resolver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ShouldResolve(AppDomain appDomain, AssemblyName assmName, Assembly requestingAssembly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appDomain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.appdomain">AppDomain</a></dt>
+    <dd><p>App Domain</p>
+</dd>
+    <dt><code>assmName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname">AssemblyName</a></dt>
+    <dd><p>Assembly to resolve</p>
+</dd>
+    <dt><code>requestingAssembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd><p>Requesting assembly</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/PDMFramework/blob/master/src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs/#L22" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

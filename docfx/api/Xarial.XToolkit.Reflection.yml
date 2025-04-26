@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  id: Xarial.XToolkit.Reflection
+  children:
+  - Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+  - Xarial.XToolkit.Reflection.AppDomainExtension
+  - Xarial.XToolkit.Reflection.AssemblyExtension
+  - Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  - Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  - Xarial.XToolkit.Reflection.EnumExtension
+  - Xarial.XToolkit.Reflection.Lambda
+  - Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+  - Xarial.XToolkit.Reflection.ResourceHelper
+  - Xarial.XToolkit.Reflection.TypeExtension
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  type: Namespace
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+references:
+- uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+  commentId: T:Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+  href: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html
+  name: AppConfigBindingRedirectReferenceResolver
+  nameWithType: AppConfigBindingRedirectReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+- uid: Xarial.XToolkit.Reflection.AppDomainExtension
+  commentId: T:Xarial.XToolkit.Reflection.AppDomainExtension
+  href: Xarial.XToolkit.Reflection.AppDomainExtension.html
+  name: AppDomainExtension
+  nameWithType: AppDomainExtension
+  fullName: Xarial.XToolkit.Reflection.AppDomainExtension
+- uid: Xarial.XToolkit.Reflection.AssemblyExtension
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyExtension
+  href: Xarial.XToolkit.Reflection.AssemblyExtension.html
+  name: AssemblyExtension
+  nameWithType: AssemblyExtension
+  fullName: Xarial.XToolkit.Reflection.AssemblyExtension
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  name: AssemblyNameReferenceResolver
+  nameWithType: AssemblyNameReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  name: AssemblyNameReferenceResolver.AssemblyInfo
+  nameWithType: AssemblyNameReferenceResolver.AssemblyInfo
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+    name: AssemblyNameReferenceResolver
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+    name: AssemblyInfo
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+    name: AssemblyNameReferenceResolver
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+    name: AssemblyInfo
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  href: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html
+  name: AssemblyReferenceResolver
+  nameWithType: AssemblyReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+- uid: Xarial.XToolkit.Reflection.EnumExtension
+  commentId: T:Xarial.XToolkit.Reflection.EnumExtension
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.EnumExtension.html
+  name: EnumExtension
+  nameWithType: EnumExtension
+  fullName: Xarial.XToolkit.Reflection.EnumExtension
+- uid: Xarial.XToolkit.Reflection.Lambda
+  commentId: T:Xarial.XToolkit.Reflection.Lambda
+  href: Xarial.XToolkit.Reflection.Lambda.html
+  name: Lambda
+  nameWithType: Lambda
+  fullName: Xarial.XToolkit.Reflection.Lambda
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.html
+  name: AssemblyMatchFilter_e
+  nameWithType: AssemblyMatchFilter_e
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+- uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+  commentId: T:Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+  href: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html
+  name: LocalFolderReferencesResolver
+  nameWithType: LocalFolderReferencesResolver
+  fullName: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+- uid: Xarial.XToolkit.Reflection.ResourceHelper
+  commentId: T:Xarial.XToolkit.Reflection.ResourceHelper
+  href: Xarial.XToolkit.Reflection.ResourceHelper.html
+  name: ResourceHelper
+  nameWithType: ResourceHelper
+  fullName: Xarial.XToolkit.Reflection.ResourceHelper
+- uid: Xarial.XToolkit.Reflection.TypeExtension
+  commentId: T:Xarial.XToolkit.Reflection.TypeExtension
+  href: Xarial.XToolkit.Reflection.TypeExtension.html
+  name: TypeExtension
+  nameWithType: TypeExtension
+  fullName: Xarial.XToolkit.Reflection.TypeExtension
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  commentId: T:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  href: Xarial.XToolkit.Reflection.TypeExtension.html
+  name: TypeExtension.MissingMethodInfo
+  nameWithType: TypeExtension.MissingMethodInfo
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.TypeExtension
+    name: TypeExtension
+    href: Xarial.XToolkit.Reflection.TypeExtension.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+    name: MissingMethodInfo
+    href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.TypeExtension
+    name: TypeExtension
+    href: Xarial.XToolkit.Reflection.TypeExtension.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+    name: MissingMethodInfo
+    href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html

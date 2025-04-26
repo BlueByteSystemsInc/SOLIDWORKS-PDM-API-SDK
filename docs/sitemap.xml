@@ -1,326 +1,452 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.AddInVersionAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.AddInVersionAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CommandVisibilityAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CommandVisibilityAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CompanyNameAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.CompanyNameAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.DescriptionAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.DescriptionAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.IsTaskAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.IsTaskAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.ListenForAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.ListenForAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.MenuAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.NameAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.NameAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.RequiredVersionAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.RequiredVersionAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.TaskFlagsAttribute.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.TaskFlagsAttribute.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Attributes.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskSetupPage.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskSetupPage-1.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.IPDMLogger.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerBase.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerBase.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.ITaskSetupPageNotUserControlException.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.ITaskSetupPageNotUserControlException.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.IdentityInfoException.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.IdentityInfoException.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.PDMSDKException.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.PDMSDKException.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.TaskFailedException.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.TaskFailedException.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/TaskDetails.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.FileFilter.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/TaskLaunch.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.FileSystemUtils.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/TaskRun.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Helpers.AssemblyResolver.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/TaskSetup.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Helpers.IReferenceResolver.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/TaskSetupButton.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Helpers.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/Visual-Studio-SDK-template.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/addinbase_structure.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.AppDomainExtension.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/adding_logic_oncmd.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.AssemblyExtension.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/binding.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/building_project.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/commands.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/creating_new_project.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/debugging_with_sdk.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.EnumExtension.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/dependencyinjection.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.Lambda.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/flags.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.LocalFolderReferencesResolver.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/getting-started.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.ResourceHelper.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/logger.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/taskadd-ins.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.TypeExtension.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/docs/updating_nuget_packages.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.Reflection.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.bluebyte.biz/index.html</loc>
-    <lastmod>2024-06-20T03:40:47-07:00</lastmod>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.TextUtils.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/api/Xarial.XToolkit.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/TaskDetails.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/TaskLaunch.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/TaskRun.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/TaskSetup.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/TaskSetupButton.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/Visual-Studio-SDK-template.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/addinbase_structure.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/adding_logic_oncmd.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/binding.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/building_project.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/commands.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/creating_new_project.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/debugging_with_sdk.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/dependencyinjection.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/flags.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/getting-started.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/logger.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/taskadd-ins.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/docs/updating_nuget_packages.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdmsdk.bluebyte.biz/index.html</loc>
+    <lastmod>2025-04-25T11:17:07-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

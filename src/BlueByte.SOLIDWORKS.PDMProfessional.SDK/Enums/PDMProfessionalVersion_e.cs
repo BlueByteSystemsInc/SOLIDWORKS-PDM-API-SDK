@@ -75,7 +75,24 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
         /// <summary>
         /// PDM Professional 2021.
         /// </summary>
-        PDM2021 = 21
+        PDM2021 = 21,
+        /// <summary>
+        /// PDM Professional 2022.
+        /// </summary>
+        PDM2022 = 22,
+        /// <summary>
+        /// PDM Professional 2023.
+        /// </summary>
+        PDM2023 = 23,
+        /// <summary>
+        /// PDM Professional 2024.
+        /// </summary>
+        PDM2024 = 24,
+        /// <summary>
+        /// PDM Professional 2025.
+        /// </summary>
+        PDM2025 = 25
+        
 
 
 

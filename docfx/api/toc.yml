@@ -70,4 +70,49 @@ items:
     name: IdentityInfoException
   - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Exceptions.PDMSDKException
     name: PDMSDKException
+- uid: Xarial.XToolkit
+  name: Xarial.XToolkit
+  items:
+  - uid: Xarial.XToolkit.FileFilter
+    name: FileFilter
+  - uid: Xarial.XToolkit.FileSystemUtils
+    name: FileSystemUtils
+  - uid: Xarial.XToolkit.TextUtils
+    name: TextUtils
+- uid: Xarial.XToolkit.Helpers
+  name: Xarial.XToolkit.Helpers
+  items:
+  - uid: Xarial.XToolkit.Helpers.AssemblyResolver
+    name: AssemblyResolver
+  - uid: Xarial.XToolkit.Helpers.IReferenceResolver
+    name: IReferenceResolver
+- uid: Xarial.XToolkit.Reflection
+  name: Xarial.XToolkit.Reflection
+  items:
+  - uid: Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+    name: AppConfigBindingRedirectReferenceResolver
+  - uid: Xarial.XToolkit.Reflection.AppDomainExtension
+    name: AppDomainExtension
+  - uid: Xarial.XToolkit.Reflection.AssemblyExtension
+    name: AssemblyExtension
+  - uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+    name: AssemblyMatchFilter_e
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+    name: AssemblyNameReferenceResolver
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+    name: AssemblyNameReferenceResolver.AssemblyInfo
+  - uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+    name: AssemblyReferenceResolver
+  - uid: Xarial.XToolkit.Reflection.EnumExtension
+    name: EnumExtension
+  - uid: Xarial.XToolkit.Reflection.Lambda
+    name: Lambda
+  - uid: Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+    name: LocalFolderReferencesResolver
+  - uid: Xarial.XToolkit.Reflection.ResourceHelper
+    name: ResourceHelper
+  - uid: Xarial.XToolkit.Reflection.TypeExtension
+    name: TypeExtension
+  - uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+    name: TypeExtension.MissingMethodInfo
 memberLayout: SamePage

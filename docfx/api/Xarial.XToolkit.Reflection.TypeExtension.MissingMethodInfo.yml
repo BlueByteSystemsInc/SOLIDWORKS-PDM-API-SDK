@@ -1,0 +1,2023 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  commentId: T:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  id: TypeExtension.MissingMethodInfo
+  parent: Xarial.XToolkit.Reflection
+  children:
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Boolean)
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type,System.Boolean)
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type,System.Boolean)
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  - Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  langs:
+  - csharp
+  - vb
+  name: TypeExtension.MissingMethodInfo
+  nameWithType: TypeExtension.MissingMethodInfo
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  type: Class
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: MissingMethodInfo
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 17
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  syntax:
+    content: 'public class TypeExtension.MissingMethodInfo : MethodInfo, ICustomAttributeProvider, _MemberInfo, _MethodBase, _MethodInfo'
+    content.vb: Public Class TypeExtension.MissingMethodInfo Inherits MethodInfo Implements ICustomAttributeProvider, _MemberInfo, _MethodBase, _MethodInfo
+  inheritance:
+  - System.Object
+  - System.Reflection.MemberInfo
+  - System.Reflection.MethodBase
+  - System.Reflection.MethodInfo
+  implements:
+  - System.Reflection.ICustomAttributeProvider
+  - System.Runtime.InteropServices._MemberInfo
+  - System.Runtime.InteropServices._MethodBase
+  - System.Runtime.InteropServices._MethodInfo
+  inheritedMembers:
+  - System.Reflection.MethodInfo.Equals(System.Object)
+  - System.Reflection.MethodInfo.GetHashCode
+  - System.Reflection.MethodInfo.GetGenericArguments
+  - System.Reflection.MethodInfo.GetGenericMethodDefinition
+  - System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+  - System.Reflection.MethodInfo.CreateDelegate(System.Type)
+  - System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+  - System.Reflection.MethodInfo.MemberType
+  - System.Reflection.MethodInfo.ReturnType
+  - System.Reflection.MethodInfo.ReturnParameter
+  - System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  - System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+  - System.Reflection.MethodBase.GetCurrentMethod
+  - System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+  - System.Reflection.MethodBase.GetMethodBody
+  - System.Reflection.MethodBase.MethodImplementationFlags
+  - System.Reflection.MethodBase.CallingConvention
+  - System.Reflection.MethodBase.IsGenericMethodDefinition
+  - System.Reflection.MethodBase.ContainsGenericParameters
+  - System.Reflection.MethodBase.IsGenericMethod
+  - System.Reflection.MethodBase.IsSecurityCritical
+  - System.Reflection.MethodBase.IsSecuritySafeCritical
+  - System.Reflection.MethodBase.IsSecurityTransparent
+  - System.Reflection.MethodBase.IsPublic
+  - System.Reflection.MethodBase.IsPrivate
+  - System.Reflection.MethodBase.IsFamily
+  - System.Reflection.MethodBase.IsAssembly
+  - System.Reflection.MethodBase.IsFamilyAndAssembly
+  - System.Reflection.MethodBase.IsFamilyOrAssembly
+  - System.Reflection.MethodBase.IsStatic
+  - System.Reflection.MethodBase.IsFinal
+  - System.Reflection.MethodBase.IsVirtual
+  - System.Reflection.MethodBase.IsHideBySig
+  - System.Reflection.MethodBase.IsAbstract
+  - System.Reflection.MethodBase.IsSpecialName
+  - System.Reflection.MethodBase.IsConstructor
+  - System.Reflection.MemberInfo.GetCustomAttributesData
+  - System.Reflection.MemberInfo.CustomAttributes
+  - System.Reflection.MemberInfo.MetadataToken
+  - System.Reflection.MemberInfo.Module
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  id: Name
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: TypeExtension.MissingMethodInfo.Name
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Name
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 19
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Name As String
+  overridden: System.Reflection.MemberInfo.Name
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  id: ReturnTypeCustomAttributes
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: ReturnTypeCustomAttributes
+  nameWithType: TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ReturnTypeCustomAttributes
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 26
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override ICustomAttributeProvider ReturnTypeCustomAttributes { get; }
+    parameters: []
+    return:
+      type: System.Reflection.ICustomAttributeProvider
+    content.vb: Public Overrides ReadOnly Property ReturnTypeCustomAttributes As ICustomAttributeProvider
+  overridden: System.Reflection.MethodInfo.ReturnTypeCustomAttributes
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  id: Attributes
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Attributes
+  nameWithType: TypeExtension.MissingMethodInfo.Attributes
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Attributes
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 27
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override MethodAttributes Attributes { get; }
+    parameters: []
+    return:
+      type: System.Reflection.MethodAttributes
+    content.vb: Public Overrides ReadOnly Property Attributes As MethodAttributes
+  overridden: System.Reflection.MethodBase.Attributes
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  id: MethodHandle
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: MethodHandle
+  nameWithType: TypeExtension.MissingMethodInfo.MethodHandle
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: MethodHandle
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 28
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override RuntimeMethodHandle MethodHandle { get; }
+    parameters: []
+    return:
+      type: System.RuntimeMethodHandle
+    content.vb: Public Overrides ReadOnly Property MethodHandle As RuntimeMethodHandle
+  overridden: System.Reflection.MethodBase.MethodHandle
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  id: DeclaringType
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: DeclaringType
+  nameWithType: TypeExtension.MissingMethodInfo.DeclaringType
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: DeclaringType
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 29
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override Type DeclaringType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Overrides ReadOnly Property DeclaringType As Type
+  overridden: System.Reflection.MemberInfo.DeclaringType
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  commentId: P:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  id: ReflectedType
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: ReflectedType
+  nameWithType: TypeExtension.MissingMethodInfo.ReflectedType
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ReflectedType
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 30
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override Type ReflectedType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Overrides ReadOnly Property ReflectedType As Type
+  overridden: System.Reflection.MemberInfo.ReflectedType
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+  id: GetBaseDefinition
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: GetBaseDefinition()
+  nameWithType: TypeExtension.MissingMethodInfo.GetBaseDefinition()
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetBaseDefinition
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 31
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override MethodInfo GetBaseDefinition()
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: Public Overrides Function GetBaseDefinition() As MethodInfo
+  overridden: System.Reflection.MethodInfo.GetBaseDefinition
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Boolean)
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Boolean)
+  id: GetCustomAttributes(System.Boolean)
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: GetCustomAttributes(bool)
+  nameWithType: TypeExtension.MissingMethodInfo.GetCustomAttributes(bool)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(bool)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetCustomAttributes
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 32
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override object[] GetCustomAttributes(bool inherit)
+    parameters:
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Object[]
+    content.vb: Public Overrides Function GetCustomAttributes(inherit As Boolean) As Object()
+  overridden: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes*
+  nameWithType.vb: TypeExtension.MissingMethodInfo.GetCustomAttributes(Boolean)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(Boolean)
+  name.vb: GetCustomAttributes(Boolean)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type,System.Boolean)
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type,System.Boolean)
+  id: GetCustomAttributes(System.Type,System.Boolean)
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: GetCustomAttributes(Type, bool)
+  nameWithType: TypeExtension.MissingMethodInfo.GetCustomAttributes(Type, bool)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type, bool)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetCustomAttributes
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 33
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override object[] GetCustomAttributes(Type attributeType, bool inherit)
+    parameters:
+    - id: attributeType
+      type: System.Type
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Object[]
+    content.vb: Public Overrides Function GetCustomAttributes(attributeType As Type, inherit As Boolean) As Object()
+  overridden: System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes*
+  nameWithType.vb: TypeExtension.MissingMethodInfo.GetCustomAttributes(Type, Boolean)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes(System.Type, Boolean)
+  name.vb: GetCustomAttributes(Type, Boolean)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  id: GetMethodImplementationFlags
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: GetMethodImplementationFlags()
+  nameWithType: TypeExtension.MissingMethodInfo.GetMethodImplementationFlags()
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetMethodImplementationFlags
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 34
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override MethodImplAttributes GetMethodImplementationFlags()
+    return:
+      type: System.Reflection.MethodImplAttributes
+    content.vb: Public Overrides Function GetMethodImplementationFlags() As MethodImplAttributes
+  overridden: System.Reflection.MethodBase.GetMethodImplementationFlags
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+  id: GetParameters
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: GetParameters()
+  nameWithType: TypeExtension.MissingMethodInfo.GetParameters()
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetParameters
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 35
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override ParameterInfo[] GetParameters()
+    return:
+      type: System.Reflection.ParameterInfo[]
+    content.vb: Public Overrides Function GetParameters() As ParameterInfo()
+  overridden: System.Reflection.MethodBase.GetParameters
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters*
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  id: Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object, BindingFlags, Binder, object[], CultureInfo)
+  nameWithType: TypeExtension.MissingMethodInfo.Invoke(object, BindingFlags, Binder, object[], CultureInfo)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(object, System.Reflection.BindingFlags, System.Reflection.Binder, object[], System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Invoke
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 36
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override object Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: invokeAttr
+      type: System.Reflection.BindingFlags
+    - id: binder
+      type: System.Reflection.Binder
+    - id: parameters
+      type: System.Object[]
+    - id: culture
+      type: System.Globalization.CultureInfo
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function Invoke(obj As Object, invokeAttr As BindingFlags, binder As Binder, parameters As Object(), culture As CultureInfo) As Object
+  overridden: System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke*
+  nameWithType.vb: TypeExtension.MissingMethodInfo.Invoke(Object, BindingFlags, Binder, Object(), CultureInfo)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke(Object, System.Reflection.BindingFlags, System.Reflection.Binder, Object(), System.Globalization.CultureInfo)
+  name.vb: Invoke(Object, BindingFlags, Binder, Object(), CultureInfo)
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type,System.Boolean)
+  commentId: M:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type,System.Boolean)
+  id: IsDefined(System.Type,System.Boolean)
+  parent: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo
+  langs:
+  - csharp
+  - vb
+  name: IsDefined(Type, bool)
+  nameWithType: TypeExtension.MissingMethodInfo.IsDefined(Type, bool)
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type, bool)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: IsDefined
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/TypeExtension.cs
+    startLine: 37
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public override bool IsDefined(Type attributeType, bool inherit)
+    parameters:
+    - id: attributeType
+      type: System.Type
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsDefined(attributeType As Type, inherit As Boolean) As Boolean
+  overridden: System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+  overload: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined*
+  nameWithType.vb: TypeExtension.MissingMethodInfo.IsDefined(Type, Boolean)
+  fullName.vb: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined(System.Type, Boolean)
+  name.vb: IsDefined(Type, Boolean)
+references:
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Reflection.MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  name: MemberInfo
+  nameWithType: MemberInfo
+  fullName: System.Reflection.MemberInfo
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection.ICustomAttributeProvider
+  commentId: T:System.Reflection.ICustomAttributeProvider
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.icustomattributeprovider
+  name: ICustomAttributeProvider
+  nameWithType: ICustomAttributeProvider
+  fullName: System.Reflection.ICustomAttributeProvider
+- uid: System.Runtime.InteropServices._MemberInfo
+  commentId: T:System.Runtime.InteropServices._MemberInfo
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices._memberinfo
+  name: _MemberInfo
+  nameWithType: _MemberInfo
+  fullName: System.Runtime.InteropServices._MemberInfo
+- uid: System.Runtime.InteropServices._MethodBase
+  commentId: T:System.Runtime.InteropServices._MethodBase
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices._methodbase
+  name: _MethodBase
+  nameWithType: _MethodBase
+  fullName: System.Runtime.InteropServices._MethodBase
+- uid: System.Runtime.InteropServices._MethodInfo
+  commentId: T:System.Runtime.InteropServices._MethodInfo
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices._methodinfo
+  name: _MethodInfo
+  nameWithType: _MethodInfo
+  fullName: System.Runtime.InteropServices._MethodInfo
+- uid: System.Reflection.MethodInfo.Equals(System.Object)
+  commentId: M:System.Reflection.MethodInfo.Equals(System.Object)
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.equals
+  name: Equals(object)
+  nameWithType: MethodInfo.Equals(object)
+  fullName: System.Reflection.MethodInfo.Equals(object)
+  nameWithType.vb: MethodInfo.Equals(Object)
+  fullName.vb: System.Reflection.MethodInfo.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Reflection.MethodInfo.GetHashCode
+  commentId: M:System.Reflection.MethodInfo.GetHashCode
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.gethashcode
+  name: GetHashCode()
+  nameWithType: MethodInfo.GetHashCode()
+  fullName: System.Reflection.MethodInfo.GetHashCode()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.gethashcode
+  - name: (
+  - name: )
+- uid: System.Reflection.MethodInfo.GetGenericArguments
+  commentId: M:System.Reflection.MethodInfo.GetGenericArguments
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getgenericarguments
+  name: GetGenericArguments()
+  nameWithType: MethodInfo.GetGenericArguments()
+  fullName: System.Reflection.MethodInfo.GetGenericArguments()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.GetGenericArguments
+    name: GetGenericArguments
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getgenericarguments
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.GetGenericArguments
+    name: GetGenericArguments
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getgenericarguments
+  - name: (
+  - name: )
+- uid: System.Reflection.MethodInfo.GetGenericMethodDefinition
+  commentId: M:System.Reflection.MethodInfo.GetGenericMethodDefinition
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getgenericmethoddefinition
+  name: GetGenericMethodDefinition()
+  nameWithType: MethodInfo.GetGenericMethodDefinition()
+  fullName: System.Reflection.MethodInfo.GetGenericMethodDefinition()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.GetGenericMethodDefinition
+    name: GetGenericMethodDefinition
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getgenericmethoddefinition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.GetGenericMethodDefinition
+    name: GetGenericMethodDefinition
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getgenericmethoddefinition
+  - name: (
+  - name: )
+- uid: System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+  commentId: M:System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.makegenericmethod
+  name: MakeGenericMethod(params Type[])
+  nameWithType: MethodInfo.MakeGenericMethod(params Type[])
+  fullName: System.Reflection.MethodInfo.MakeGenericMethod(params System.Type[])
+  nameWithType.vb: MethodInfo.MakeGenericMethod(ParamArray Type())
+  fullName.vb: System.Reflection.MethodInfo.MakeGenericMethod(ParamArray System.Type())
+  name.vb: MakeGenericMethod(ParamArray Type())
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+    name: MakeGenericMethod
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.makegenericmethod
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+    name: MakeGenericMethod
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.makegenericmethod
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+  commentId: M:System.Reflection.MethodInfo.CreateDelegate(System.Type)
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.createdelegate#system-reflection-methodinfo-createdelegate(system-type)
+  name: CreateDelegate(Type)
+  nameWithType: MethodInfo.CreateDelegate(Type)
+  fullName: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+    name: CreateDelegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.createdelegate#system-reflection-methodinfo-createdelegate(system-type)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+    name: CreateDelegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.createdelegate#system-reflection-methodinfo-createdelegate(system-type)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+  commentId: M:System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.createdelegate#system-reflection-methodinfo-createdelegate(system-type-system-object)
+  name: CreateDelegate(Type, object)
+  nameWithType: MethodInfo.CreateDelegate(Type, object)
+  fullName: System.Reflection.MethodInfo.CreateDelegate(System.Type, object)
+  nameWithType.vb: MethodInfo.CreateDelegate(Type, Object)
+  fullName.vb: System.Reflection.MethodInfo.CreateDelegate(System.Type, Object)
+  name.vb: CreateDelegate(Type, Object)
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+    name: CreateDelegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.createdelegate#system-reflection-methodinfo-createdelegate(system-type-system-object)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+    name: CreateDelegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.createdelegate#system-reflection-methodinfo-createdelegate(system-type-system-object)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Reflection.MethodInfo.MemberType
+  commentId: P:System.Reflection.MethodInfo.MemberType
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.membertype
+  name: MemberType
+  nameWithType: MethodInfo.MemberType
+  fullName: System.Reflection.MethodInfo.MemberType
+- uid: System.Reflection.MethodInfo.ReturnType
+  commentId: P:System.Reflection.MethodInfo.ReturnType
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.returntype
+  name: ReturnType
+  nameWithType: MethodInfo.ReturnType
+  fullName: System.Reflection.MethodInfo.ReturnType
+- uid: System.Reflection.MethodInfo.ReturnParameter
+  commentId: P:System.Reflection.MethodInfo.ReturnParameter
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.returnparameter
+  name: ReturnParameter
+  nameWithType: MethodInfo.ReturnParameter
+  fullName: System.Reflection.MethodInfo.ReturnParameter
+- uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  commentId: M:System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodfromhandle#system-reflection-methodbase-getmethodfromhandle(system-runtimemethodhandle)
+  name: GetMethodFromHandle(RuntimeMethodHandle)
+  nameWithType: MethodBase.GetMethodFromHandle(RuntimeMethodHandle)
+  fullName: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+    name: GetMethodFromHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodfromhandle#system-reflection-methodbase-getmethodfromhandle(system-runtimemethodhandle)
+  - name: (
+  - uid: System.RuntimeMethodHandle
+    name: RuntimeMethodHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtimemethodhandle
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+    name: GetMethodFromHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodfromhandle#system-reflection-methodbase-getmethodfromhandle(system-runtimemethodhandle)
+  - name: (
+  - uid: System.RuntimeMethodHandle
+    name: RuntimeMethodHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtimemethodhandle
+  - name: )
+- uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+  commentId: M:System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodfromhandle#system-reflection-methodbase-getmethodfromhandle(system-runtimemethodhandle-system-runtimetypehandle)
+  name: GetMethodFromHandle(RuntimeMethodHandle, RuntimeTypeHandle)
+  nameWithType: MethodBase.GetMethodFromHandle(RuntimeMethodHandle, RuntimeTypeHandle)
+  fullName: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle, System.RuntimeTypeHandle)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+    name: GetMethodFromHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodfromhandle#system-reflection-methodbase-getmethodfromhandle(system-runtimemethodhandle-system-runtimetypehandle)
+  - name: (
+  - uid: System.RuntimeMethodHandle
+    name: RuntimeMethodHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtimemethodhandle
+  - name: ','
+  - name: " "
+  - uid: System.RuntimeTypeHandle
+    name: RuntimeTypeHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtimetypehandle
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+    name: GetMethodFromHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodfromhandle#system-reflection-methodbase-getmethodfromhandle(system-runtimemethodhandle-system-runtimetypehandle)
+  - name: (
+  - uid: System.RuntimeMethodHandle
+    name: RuntimeMethodHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtimemethodhandle
+  - name: ','
+  - name: " "
+  - uid: System.RuntimeTypeHandle
+    name: RuntimeTypeHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtimetypehandle
+  - name: )
+- uid: System.Reflection.MethodBase.GetCurrentMethod
+  commentId: M:System.Reflection.MethodBase.GetCurrentMethod
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getcurrentmethod
+  name: GetCurrentMethod()
+  nameWithType: MethodBase.GetCurrentMethod()
+  fullName: System.Reflection.MethodBase.GetCurrentMethod()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetCurrentMethod
+    name: GetCurrentMethod
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getcurrentmethod
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetCurrentMethod
+    name: GetCurrentMethod
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getcurrentmethod
+  - name: (
+  - name: )
+- uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+  commentId: M:System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.invoke#system-reflection-methodbase-invoke(system-object-system-object())
+  name: Invoke(object, object[])
+  nameWithType: MethodBase.Invoke(object, object[])
+  fullName: System.Reflection.MethodBase.Invoke(object, object[])
+  nameWithType.vb: MethodBase.Invoke(Object, Object())
+  fullName.vb: System.Reflection.MethodBase.Invoke(Object, Object())
+  name.vb: Invoke(Object, Object())
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+    name: Invoke
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.invoke#system-reflection-methodbase-invoke(system-object-system-object())
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+    name: Invoke
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.invoke#system-reflection-methodbase-invoke(system-object-system-object())
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Reflection.MethodBase.GetMethodBody
+  commentId: M:System.Reflection.MethodBase.GetMethodBody
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodbody
+  name: GetMethodBody()
+  nameWithType: MethodBase.GetMethodBody()
+  fullName: System.Reflection.MethodBase.GetMethodBody()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodBody
+    name: GetMethodBody
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodbody
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodBody
+    name: GetMethodBody
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodbody
+  - name: (
+  - name: )
+- uid: System.Reflection.MethodBase.MethodImplementationFlags
+  commentId: P:System.Reflection.MethodBase.MethodImplementationFlags
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.methodimplementationflags
+  name: MethodImplementationFlags
+  nameWithType: MethodBase.MethodImplementationFlags
+  fullName: System.Reflection.MethodBase.MethodImplementationFlags
+- uid: System.Reflection.MethodBase.CallingConvention
+  commentId: P:System.Reflection.MethodBase.CallingConvention
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.callingconvention
+  name: CallingConvention
+  nameWithType: MethodBase.CallingConvention
+  fullName: System.Reflection.MethodBase.CallingConvention
+- uid: System.Reflection.MethodBase.IsGenericMethodDefinition
+  commentId: P:System.Reflection.MethodBase.IsGenericMethodDefinition
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isgenericmethoddefinition
+  name: IsGenericMethodDefinition
+  nameWithType: MethodBase.IsGenericMethodDefinition
+  fullName: System.Reflection.MethodBase.IsGenericMethodDefinition
+- uid: System.Reflection.MethodBase.ContainsGenericParameters
+  commentId: P:System.Reflection.MethodBase.ContainsGenericParameters
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.containsgenericparameters
+  name: ContainsGenericParameters
+  nameWithType: MethodBase.ContainsGenericParameters
+  fullName: System.Reflection.MethodBase.ContainsGenericParameters
+- uid: System.Reflection.MethodBase.IsGenericMethod
+  commentId: P:System.Reflection.MethodBase.IsGenericMethod
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isgenericmethod
+  name: IsGenericMethod
+  nameWithType: MethodBase.IsGenericMethod
+  fullName: System.Reflection.MethodBase.IsGenericMethod
+- uid: System.Reflection.MethodBase.IsSecurityCritical
+  commentId: P:System.Reflection.MethodBase.IsSecurityCritical
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.issecuritycritical
+  name: IsSecurityCritical
+  nameWithType: MethodBase.IsSecurityCritical
+  fullName: System.Reflection.MethodBase.IsSecurityCritical
+- uid: System.Reflection.MethodBase.IsSecuritySafeCritical
+  commentId: P:System.Reflection.MethodBase.IsSecuritySafeCritical
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.issecuritysafecritical
+  name: IsSecuritySafeCritical
+  nameWithType: MethodBase.IsSecuritySafeCritical
+  fullName: System.Reflection.MethodBase.IsSecuritySafeCritical
+- uid: System.Reflection.MethodBase.IsSecurityTransparent
+  commentId: P:System.Reflection.MethodBase.IsSecurityTransparent
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.issecuritytransparent
+  name: IsSecurityTransparent
+  nameWithType: MethodBase.IsSecurityTransparent
+  fullName: System.Reflection.MethodBase.IsSecurityTransparent
+- uid: System.Reflection.MethodBase.IsPublic
+  commentId: P:System.Reflection.MethodBase.IsPublic
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.ispublic
+  name: IsPublic
+  nameWithType: MethodBase.IsPublic
+  fullName: System.Reflection.MethodBase.IsPublic
+- uid: System.Reflection.MethodBase.IsPrivate
+  commentId: P:System.Reflection.MethodBase.IsPrivate
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isprivate
+  name: IsPrivate
+  nameWithType: MethodBase.IsPrivate
+  fullName: System.Reflection.MethodBase.IsPrivate
+- uid: System.Reflection.MethodBase.IsFamily
+  commentId: P:System.Reflection.MethodBase.IsFamily
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isfamily
+  name: IsFamily
+  nameWithType: MethodBase.IsFamily
+  fullName: System.Reflection.MethodBase.IsFamily
+- uid: System.Reflection.MethodBase.IsAssembly
+  commentId: P:System.Reflection.MethodBase.IsAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isassembly
+  name: IsAssembly
+  nameWithType: MethodBase.IsAssembly
+  fullName: System.Reflection.MethodBase.IsAssembly
+- uid: System.Reflection.MethodBase.IsFamilyAndAssembly
+  commentId: P:System.Reflection.MethodBase.IsFamilyAndAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isfamilyandassembly
+  name: IsFamilyAndAssembly
+  nameWithType: MethodBase.IsFamilyAndAssembly
+  fullName: System.Reflection.MethodBase.IsFamilyAndAssembly
+- uid: System.Reflection.MethodBase.IsFamilyOrAssembly
+  commentId: P:System.Reflection.MethodBase.IsFamilyOrAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isfamilyorassembly
+  name: IsFamilyOrAssembly
+  nameWithType: MethodBase.IsFamilyOrAssembly
+  fullName: System.Reflection.MethodBase.IsFamilyOrAssembly
+- uid: System.Reflection.MethodBase.IsStatic
+  commentId: P:System.Reflection.MethodBase.IsStatic
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isstatic
+  name: IsStatic
+  nameWithType: MethodBase.IsStatic
+  fullName: System.Reflection.MethodBase.IsStatic
+- uid: System.Reflection.MethodBase.IsFinal
+  commentId: P:System.Reflection.MethodBase.IsFinal
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isfinal
+  name: IsFinal
+  nameWithType: MethodBase.IsFinal
+  fullName: System.Reflection.MethodBase.IsFinal
+- uid: System.Reflection.MethodBase.IsVirtual
+  commentId: P:System.Reflection.MethodBase.IsVirtual
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isvirtual
+  name: IsVirtual
+  nameWithType: MethodBase.IsVirtual
+  fullName: System.Reflection.MethodBase.IsVirtual
+- uid: System.Reflection.MethodBase.IsHideBySig
+  commentId: P:System.Reflection.MethodBase.IsHideBySig
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.ishidebysig
+  name: IsHideBySig
+  nameWithType: MethodBase.IsHideBySig
+  fullName: System.Reflection.MethodBase.IsHideBySig
+- uid: System.Reflection.MethodBase.IsAbstract
+  commentId: P:System.Reflection.MethodBase.IsAbstract
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isabstract
+  name: IsAbstract
+  nameWithType: MethodBase.IsAbstract
+  fullName: System.Reflection.MethodBase.IsAbstract
+- uid: System.Reflection.MethodBase.IsSpecialName
+  commentId: P:System.Reflection.MethodBase.IsSpecialName
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isspecialname
+  name: IsSpecialName
+  nameWithType: MethodBase.IsSpecialName
+  fullName: System.Reflection.MethodBase.IsSpecialName
+- uid: System.Reflection.MethodBase.IsConstructor
+  commentId: P:System.Reflection.MethodBase.IsConstructor
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.isconstructor
+  name: IsConstructor
+  nameWithType: MethodBase.IsConstructor
+  fullName: System.Reflection.MethodBase.IsConstructor
+- uid: System.Reflection.MemberInfo.GetCustomAttributesData
+  commentId: M:System.Reflection.MemberInfo.GetCustomAttributesData
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributesdata
+  name: GetCustomAttributesData()
+  nameWithType: MemberInfo.GetCustomAttributesData()
+  fullName: System.Reflection.MemberInfo.GetCustomAttributesData()
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributesData
+    name: GetCustomAttributesData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributesdata
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributesData
+    name: GetCustomAttributesData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributesdata
+  - name: (
+  - name: )
+- uid: System.Reflection.MemberInfo.CustomAttributes
+  commentId: P:System.Reflection.MemberInfo.CustomAttributes
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.customattributes
+  name: CustomAttributes
+  nameWithType: MemberInfo.CustomAttributes
+  fullName: System.Reflection.MemberInfo.CustomAttributes
+- uid: System.Reflection.MemberInfo.MetadataToken
+  commentId: P:System.Reflection.MemberInfo.MetadataToken
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.metadatatoken
+  name: MetadataToken
+  nameWithType: MemberInfo.MetadataToken
+  fullName: System.Reflection.MemberInfo.MetadataToken
+- uid: System.Reflection.MemberInfo.Module
+  commentId: P:System.Reflection.MemberInfo.Module
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.module
+  name: Module
+  nameWithType: MemberInfo.Module
+  fullName: System.Reflection.MemberInfo.Module
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Reflection.MemberInfo.Name
+  commentId: P:System.Reflection.MemberInfo.Name
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.name
+  name: Name
+  nameWithType: MemberInfo.Name
+  fullName: System.Reflection.MemberInfo.Name
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Name
+  name: Name
+  nameWithType: TypeExtension.MissingMethodInfo.Name
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Reflection.MethodInfo.ReturnTypeCustomAttributes
+  commentId: P:System.Reflection.MethodInfo.ReturnTypeCustomAttributes
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.returntypecustomattributes
+  name: ReturnTypeCustomAttributes
+  nameWithType: MethodInfo.ReturnTypeCustomAttributes
+  fullName: System.Reflection.MethodInfo.ReturnTypeCustomAttributes
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_ReturnTypeCustomAttributes
+  name: ReturnTypeCustomAttributes
+  nameWithType: TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReturnTypeCustomAttributes
+- uid: System.Reflection.MethodBase.Attributes
+  commentId: P:System.Reflection.MethodBase.Attributes
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.attributes
+  name: Attributes
+  nameWithType: MethodBase.Attributes
+  fullName: System.Reflection.MethodBase.Attributes
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Attributes
+  name: Attributes
+  nameWithType: TypeExtension.MissingMethodInfo.Attributes
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Attributes
+- uid: System.Reflection.MethodAttributes
+  commentId: T:System.Reflection.MethodAttributes
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodattributes
+  name: MethodAttributes
+  nameWithType: MethodAttributes
+  fullName: System.Reflection.MethodAttributes
+- uid: System.Reflection.MethodBase.MethodHandle
+  commentId: P:System.Reflection.MethodBase.MethodHandle
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.methodhandle
+  name: MethodHandle
+  nameWithType: MethodBase.MethodHandle
+  fullName: System.Reflection.MethodBase.MethodHandle
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_MethodHandle
+  name: MethodHandle
+  nameWithType: TypeExtension.MissingMethodInfo.MethodHandle
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.MethodHandle
+- uid: System.RuntimeMethodHandle
+  commentId: T:System.RuntimeMethodHandle
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtimemethodhandle
+  name: RuntimeMethodHandle
+  nameWithType: RuntimeMethodHandle
+  fullName: System.RuntimeMethodHandle
+- uid: System.Reflection.MemberInfo.DeclaringType
+  commentId: P:System.Reflection.MemberInfo.DeclaringType
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.declaringtype
+  name: DeclaringType
+  nameWithType: MemberInfo.DeclaringType
+  fullName: System.Reflection.MemberInfo.DeclaringType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_DeclaringType
+  name: DeclaringType
+  nameWithType: TypeExtension.MissingMethodInfo.DeclaringType
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.DeclaringType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Reflection.MemberInfo.ReflectedType
+  commentId: P:System.Reflection.MemberInfo.ReflectedType
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.reflectedtype
+  name: ReflectedType
+  nameWithType: MemberInfo.ReflectedType
+  fullName: System.Reflection.MemberInfo.ReflectedType
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_ReflectedType
+  name: ReflectedType
+  nameWithType: TypeExtension.MissingMethodInfo.ReflectedType
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.ReflectedType
+- uid: System.Reflection.MethodInfo.GetBaseDefinition
+  commentId: M:System.Reflection.MethodInfo.GetBaseDefinition
+  parent: System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getbasedefinition
+  name: GetBaseDefinition()
+  nameWithType: MethodInfo.GetBaseDefinition()
+  fullName: System.Reflection.MethodInfo.GetBaseDefinition()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.GetBaseDefinition
+    name: GetBaseDefinition
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getbasedefinition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.GetBaseDefinition
+    name: GetBaseDefinition
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo.getbasedefinition
+  - name: (
+  - name: )
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetBaseDefinition
+  name: GetBaseDefinition
+  nameWithType: TypeExtension.MissingMethodInfo.GetBaseDefinition
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetBaseDefinition
+- uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+  commentId: M:System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributes#system-reflection-memberinfo-getcustomattributes(system-boolean)
+  name: GetCustomAttributes(bool)
+  nameWithType: MemberInfo.GetCustomAttributes(bool)
+  fullName: System.Reflection.MemberInfo.GetCustomAttributes(bool)
+  nameWithType.vb: MemberInfo.GetCustomAttributes(Boolean)
+  fullName.vb: System.Reflection.MemberInfo.GetCustomAttributes(Boolean)
+  name.vb: GetCustomAttributes(Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+    name: GetCustomAttributes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributes#system-reflection-memberinfo-getcustomattributes(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+    name: GetCustomAttributes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributes#system-reflection-memberinfo-getcustomattributes(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetCustomAttributes_System_Boolean_
+  name: GetCustomAttributes
+  nameWithType: TypeExtension.MissingMethodInfo.GetCustomAttributes
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetCustomAttributes
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+  commentId: M:System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributes#system-reflection-memberinfo-getcustomattributes(system-type-system-boolean)
+  name: GetCustomAttributes(Type, bool)
+  nameWithType: MemberInfo.GetCustomAttributes(Type, bool)
+  fullName: System.Reflection.MemberInfo.GetCustomAttributes(System.Type, bool)
+  nameWithType.vb: MemberInfo.GetCustomAttributes(Type, Boolean)
+  fullName.vb: System.Reflection.MemberInfo.GetCustomAttributes(System.Type, Boolean)
+  name.vb: GetCustomAttributes(Type, Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+    name: GetCustomAttributes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributes#system-reflection-memberinfo-getcustomattributes(system-type-system-boolean)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+    name: GetCustomAttributes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.getcustomattributes#system-reflection-memberinfo-getcustomattributes(system-type-system-boolean)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+  commentId: M:System.Reflection.MethodBase.GetMethodImplementationFlags
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodimplementationflags
+  name: GetMethodImplementationFlags()
+  nameWithType: MethodBase.GetMethodImplementationFlags()
+  fullName: System.Reflection.MethodBase.GetMethodImplementationFlags()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+    name: GetMethodImplementationFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodimplementationflags
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+    name: GetMethodImplementationFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getmethodimplementationflags
+  - name: (
+  - name: )
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetMethodImplementationFlags
+  name: GetMethodImplementationFlags
+  nameWithType: TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetMethodImplementationFlags
+- uid: System.Reflection.MethodImplAttributes
+  commentId: T:System.Reflection.MethodImplAttributes
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodimplattributes
+  name: MethodImplAttributes
+  nameWithType: MethodImplAttributes
+  fullName: System.Reflection.MethodImplAttributes
+- uid: System.Reflection.MethodBase.GetParameters
+  commentId: M:System.Reflection.MethodBase.GetParameters
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getparameters
+  name: GetParameters()
+  nameWithType: MethodBase.GetParameters()
+  fullName: System.Reflection.MethodBase.GetParameters()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetParameters
+    name: GetParameters
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getparameters
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetParameters
+    name: GetParameters
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.getparameters
+  - name: (
+  - name: )
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_GetParameters
+  name: GetParameters
+  nameWithType: TypeExtension.MissingMethodInfo.GetParameters
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.GetParameters
+- uid: System.Reflection.ParameterInfo[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  name: ParameterInfo[]
+  nameWithType: ParameterInfo[]
+  fullName: System.Reflection.ParameterInfo[]
+  nameWithType.vb: ParameterInfo()
+  fullName.vb: System.Reflection.ParameterInfo()
+  name.vb: ParameterInfo()
+  spec.csharp:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: (
+  - name: )
+- uid: System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  commentId: M:System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.invoke#system-reflection-methodbase-invoke(system-object-system-reflection-bindingflags-system-reflection-binder-system-object()-system-globalization-cultureinfo)
+  name: Invoke(object, BindingFlags, Binder, object[], CultureInfo)
+  nameWithType: MethodBase.Invoke(object, BindingFlags, Binder, object[], CultureInfo)
+  fullName: System.Reflection.MethodBase.Invoke(object, System.Reflection.BindingFlags, System.Reflection.Binder, object[], System.Globalization.CultureInfo)
+  nameWithType.vb: MethodBase.Invoke(Object, BindingFlags, Binder, Object(), CultureInfo)
+  fullName.vb: System.Reflection.MethodBase.Invoke(Object, System.Reflection.BindingFlags, System.Reflection.Binder, Object(), System.Globalization.CultureInfo)
+  name.vb: Invoke(Object, BindingFlags, Binder, Object(), CultureInfo)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+    name: Invoke
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.invoke#system-reflection-methodbase-invoke(system-object-system-reflection-bindingflags-system-reflection-binder-system-object()-system-globalization-cultureinfo)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.Binder
+    name: Binder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.binder
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+    name: Invoke
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase.invoke#system-reflection-methodbase-invoke(system-object-system-reflection-bindingflags-system-reflection-binder-system-object()-system-globalization-cultureinfo)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.Binder
+    name: Binder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.binder
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_Invoke_System_Object_System_Reflection_BindingFlags_System_Reflection_Binder_System_Object___System_Globalization_CultureInfo_
+  name: Invoke
+  nameWithType: TypeExtension.MissingMethodInfo.Invoke
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.Invoke
+- uid: System.Reflection.BindingFlags
+  commentId: T:System.Reflection.BindingFlags
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  name: BindingFlags
+  nameWithType: BindingFlags
+  fullName: System.Reflection.BindingFlags
+- uid: System.Reflection.Binder
+  commentId: T:System.Reflection.Binder
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.binder
+  name: Binder
+  nameWithType: Binder
+  fullName: System.Reflection.Binder
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+- uid: System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+  commentId: M:System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.isdefined
+  name: IsDefined(Type, bool)
+  nameWithType: MemberInfo.IsDefined(Type, bool)
+  fullName: System.Reflection.MemberInfo.IsDefined(System.Type, bool)
+  nameWithType.vb: MemberInfo.IsDefined(Type, Boolean)
+  fullName.vb: System.Reflection.MemberInfo.IsDefined(System.Type, Boolean)
+  name.vb: IsDefined(Type, Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+    name: IsDefined
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.isdefined
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+    name: IsDefined
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.isdefined
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined*
+  commentId: Overload:Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined
+  href: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.html#Xarial_XToolkit_Reflection_TypeExtension_MissingMethodInfo_IsDefined_System_Type_System_Boolean_
+  name: IsDefined
+  nameWithType: TypeExtension.MissingMethodInfo.IsDefined
+  fullName: Xarial.XToolkit.Reflection.TypeExtension.MissingMethodInfo.IsDefined
