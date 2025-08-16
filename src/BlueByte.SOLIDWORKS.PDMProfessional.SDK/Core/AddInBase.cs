@@ -15,6 +15,24 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Windows.Forms;
 
+namespace BlueByte
+{
+
+}
+
+namespace BlueByte.SOLIDWORKS
+{
+
+}
+
+namespace BlueByte.SOLIDWORKS.PDMProfessional
+{
+}
+
+
+/// <summary>
+/// Base class for PDM Professional Task Add-Ins.
+/// </summary>
 namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 {
     /// <summary>

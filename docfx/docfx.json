@@ -1,6 +1,7 @@
 {
   "metadata": [
     {
+      "namespaceLayout": "nested",
       "src": [
         {
           "src": "C:\\Users\\jlili\\source\\repos\\BlueByteSystemsInc\\OpenSource\\PDMSDK\\src\\BlueByte.SOLIDWORKS.PDMProfessional.SDK",
@@ -9,7 +10,8 @@
           ]
         }
       ],
-      "dest": "api"
+      "dest": "api",
+       "filter": "filter.yml"
     }
   ],
   "build": {
@@ -45,6 +47,10 @@
       "_appName": "SOLIDWORKS PDM SDK",
       "_appTitle": "SOLIDWORKS PDM SDK",
       "_appLogoPath": "images/fav.png",
+      "_appLogoAltText": "Blue Byte Systems Inc",
+      "_appDescription": "SOLIDWORKS PDM SDK Documentation",
+      "_appVersion": "2021.80.0",
+      "_appCopyright": "Copyright © 2024 Blue Byte Systems Inc. All rights reserved.",
       "_enableSearch": true,
       "pdf": false
     }

@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Guide","href":"docs/getting-started.html","tocHref":"docs/toc.html","topicHref":"docs/getting-started.html"},{"name":"Documentation","href":"api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html","tocHref":"api/toc.html","topicHref":"api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html","topicUid":"BlueByte.SOLIDWORKS.PDMProfessional.SDK"}],"pdf":false}
+{"items":[{"name":"Getting Started","href":"docs/getting-started.html","tocHref":"docs/toc.html","topicHref":"docs/getting-started.html"},{"name":"PDM SDK Reference","href":"api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html","topicHref":"api/BlueByte.SOLIDWORKS.PDMProfessional.SDK.html"}],"pdf":false}
