@@ -1,0 +1,453 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  id: AssemblyReferenceResolver
+  parent: Xarial.XToolkit.Reflection
+  children:
+  - Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor(System.AppDomain,System.String,System.String)
+  - Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+  langs:
+  - csharp
+  - vb
+  name: AssemblyReferenceResolver
+  nameWithType: AssemblyReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  type: Class
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AssemblyReferenceResolver
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyReferenceResolver.cs
+    startLine: 24
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Simple resolve for the assembly references
+  remarks: >-
+    Resolver will consider the following rules to load missing references
+        1 - Loading local references only (if requesting assembly is in the working directory)
+        2 - Loading target or newer version
+        3 - Loading from work directory and sub-directories
+        4 - Loading matched name, public key and culture
+        5 - Loading nearest available version
+  example: []
+  syntax:
+    content: 'public class AssemblyReferenceResolver : IDisposable'
+    content.vb: Public Class AssemblyReferenceResolver Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor(System.AppDomain,System.String,System.String)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor(System.AppDomain,System.String,System.String)
+  id: '#ctor(System.AppDomain,System.String,System.String)'
+  parent: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: AssemblyReferenceResolver(AppDomain, string, string)
+  nameWithType: AssemblyReferenceResolver.AssemblyReferenceResolver(AppDomain, string, string)
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.AssemblyReferenceResolver(System.AppDomain, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: .ctor
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyReferenceResolver.cs
+    startLine: 49
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Starts monitoring and loading missin assemblies
+  example: []
+  syntax:
+    content: public AssemblyReferenceResolver(AppDomain appDomain, string workDir, string logName)
+    parameters:
+    - id: appDomain
+      type: System.AppDomain
+      description: Application domain
+    - id: workDir
+      type: System.String
+      description: Working directories to look for the assmebly to load
+    - id: logName
+      type: System.String
+      description: Name of the trace log
+    content.vb: Public Sub New(appDomain As AppDomain, workDir As String, logName As String)
+  overload: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor*
+  nameWithType.vb: AssemblyReferenceResolver.New(AppDomain, String, String)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.New(System.AppDomain, String, String)
+  name.vb: New(AppDomain, String, String)
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+  id: Dispose
+  parent: Xarial.XToolkit.Reflection.AssemblyReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: AssemblyReferenceResolver.Dispose()
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Dispose
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyReferenceResolver.cs
+    startLine: 223
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyReferenceResolver.#ctor
+  href: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyReferenceResolver__ctor_System_AppDomain_System_String_System_String_
+  name: AssemblyReferenceResolver
+  nameWithType: AssemblyReferenceResolver.AssemblyReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.AssemblyReferenceResolver
+  nameWithType.vb: AssemblyReferenceResolver.New
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.New
+  name.vb: New
+- uid: System.AppDomain
+  commentId: T:System.AppDomain
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.appdomain
+  name: AppDomain
+  nameWithType: AppDomain
+  fullName: System.AppDomain
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+  href: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyReferenceResolver_Dispose
+  name: Dispose
+  nameWithType: AssemblyReferenceResolver.Dispose
+  fullName: Xarial.XToolkit.Reflection.AssemblyReferenceResolver.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

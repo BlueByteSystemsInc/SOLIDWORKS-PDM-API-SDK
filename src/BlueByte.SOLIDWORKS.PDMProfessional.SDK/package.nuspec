@@ -4,11 +4,11 @@
     <!--*-->
     <id>BlueByte.SOLIDWORKS.PDMProfessional.SDK</id>
     <!--*-->
-    <version>2025.5.27.1</version>
+    <version>2021.1.82</version>
     <title>BlueByte.SOLIDWORKS.PDMProfessional.SDK</title>
     <!--*-->
-    <authors>Blue Byte Systems Inc.</authors>
-    <owners>Blue Byte Systems Inc.</owners>
+    <authors>BLUE BYTE SYSTEMS INC.</authors>
+    <owners>BLUE BYTE SYSTEMS INC.</owners>
     <projectUrl>https://pdmsdk.bluebyte.biz</projectUrl>
     <repository type="git" url="https://github.com/BlueByteSystemsInc/PDMSDK" />
     <!--
@@ -22,7 +22,7 @@
     <!--*-->
     <description>The BlueByte.SolidWorks.PDMProfessional.SDK (referred to as PDMSDK) is a software development kit designed to simplify and enhance the process of automating and extending SOLIDWORKS PDM Professional functionalities. This SDK acts as a high-level wrapper around the native SOLIDWORKS PDM API, making it more intuitive and developer-friendly.</description>
     <!--*-->
-    <releaseNotes>This release provides an updated set of SOLIDWORKS PDM (EPDM) Interops to 2024, ensuring compatibility with the SOLIDWORKS PDM Professional 2024. </releaseNotes>
+    <releaseNotes>Please see the PDM Intero dependencies.</releaseNotes>
     <copyright>Copyright ©  2025</copyright>
     <tags>solidworks pdm, pdm api, solidworks, addins, task addins</tags>
     <dependencies>

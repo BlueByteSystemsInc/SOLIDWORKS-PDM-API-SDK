@@ -1,11 +1,4 @@
-﻿//*********************************************************************
-//xToolkit
-//Copyright(C) 2023 Xarial Pty Limited
-//Product URL: https://xtoolkit.xarial.com
-//License: https://xtoolkit.xarial.com/license/
-//*********************************************************************
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
@@ -73,6 +66,14 @@ namespace Xarial.XToolkit.Helpers
         private Assembly OnResolveMissingAssembly(object sender, ResolveEventArgs args)
         {
             var assmName = new AssemblyName(args.Name);
+
+            // we also need to ignore the edrawings dlls
+            if (string.IsNullOrEmpty(args.Name) == false && args.Name.Contains("edRemoteWindowProxy")) 
+                //if the name contains edRemoteWindowProxy, don’t resolve it and return NULL.
+            {
+                return null;
+            }
+       
 
             if (!assmName.Name.EndsWith(".resources"))
             {

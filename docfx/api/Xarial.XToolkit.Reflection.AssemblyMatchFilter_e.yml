@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  id: AssemblyMatchFilter_e
+  parent: Xarial.XToolkit.Reflection
+  children:
+  - Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture
+  - Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken
+  - Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version
+  langs:
+  - csharp
+  - vb
+  name: AssemblyMatchFilter_e
+  nameWithType: AssemblyMatchFilter_e
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  type: Enum
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/LocalFolderReferencesResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AssemblyMatchFilter_e
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/LocalFolderReferencesResolver.cs
+    startLine: 15
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum AssemblyMatchFilter_e
+    content.vb: >-
+      <Flags>
+
+      Public Enum AssemblyMatchFilter_e
+  extensionMethods:
+  - System.Enum.Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Action{{TAtt}})
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken
+  commentId: F:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken
+  id: PublicKeyToken
+  parent: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  langs:
+  - csharp
+  - vb
+  name: PublicKeyToken
+  nameWithType: AssemblyMatchFilter_e.PublicKeyToken
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.PublicKeyToken
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/LocalFolderReferencesResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: PublicKeyToken
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/LocalFolderReferencesResolver.cs
+    startLine: 18
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  syntax:
+    content: PublicKeyToken = 1
+    return:
+      type: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture
+  commentId: F:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture
+  id: Culture
+  parent: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: AssemblyMatchFilter_e.Culture
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Culture
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/LocalFolderReferencesResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Culture
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/LocalFolderReferencesResolver.cs
+    startLine: 19
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  syntax:
+    content: Culture = 2
+    return:
+      type: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version
+  commentId: F:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version
+  id: Version
+  parent: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: AssemblyMatchFilter_e.Version
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.Version
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/LocalFolderReferencesResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Version
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/LocalFolderReferencesResolver.cs
+    startLine: 20
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  syntax:
+    content: Version = 4
+    return:
+      type: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+references:
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+- uid: System.Enum.Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Action{{TAtt}})
+  commentId: M:Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  parent: Xarial.XToolkit.Reflection.EnumExtension
+  definition: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  name: TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  nameWithType: EnumExtension.TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  fullName: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute<TAtt>(System.Enum, System.Action<TAtt>)
+  nameWithType.vb: EnumExtension.TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  fullName.vb: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute(Of TAtt)(System.Enum, System.Action(Of TAtt))
+  name.vb: TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: )
+- uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  commentId: M:Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+  isExternal: true
+  href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  name: TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  nameWithType: EnumExtension.TryGetAttribute<TAtt>(Enum, Action<TAtt>)
+  fullName: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute<TAtt>(System.Enum, System.Action<TAtt>)
+  nameWithType.vb: EnumExtension.TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  fullName.vb: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute(Of TAtt)(System.Enum, System.Action(Of TAtt))
+  name.vb: TryGetAttribute(Of TAtt)(Enum, Action(Of TAtt))
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TAtt
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.EnumExtension.TryGetAttribute``1(System.Enum,System.Action{``0})
+    name: TryGetAttribute
+    href: Xarial.XToolkit.Reflection.EnumExtension.html#Xarial_XToolkit_Reflection_EnumExtension_TryGetAttribute__1_System_Enum_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAtt
+  - name: )
+  - name: )
+- uid: Xarial.XToolkit.Reflection.EnumExtension
+  commentId: T:Xarial.XToolkit.Reflection.EnumExtension
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.EnumExtension.html
+  name: EnumExtension
+  nameWithType: EnumExtension
+  fullName: Xarial.XToolkit.Reflection.EnumExtension
+- uid: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyMatchFilter_e
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e.html
+  name: AssemblyMatchFilter_e
+  nameWithType: AssemblyMatchFilter_e
+  fullName: Xarial.XToolkit.Reflection.AssemblyMatchFilter_e

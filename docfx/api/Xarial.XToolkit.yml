@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xarial.XToolkit
+  commentId: N:Xarial.XToolkit
+  id: Xarial.XToolkit
+  children:
+  - Xarial.XToolkit.FileFilter
+  - Xarial.XToolkit.FileSystemUtils
+  - Xarial.XToolkit.Helpers
+  - Xarial.XToolkit.Reflection
+  - Xarial.XToolkit.TextUtils
+  langs:
+  - csharp
+  - vb
+  name: Xarial.XToolkit
+  nameWithType: Xarial.XToolkit
+  fullName: Xarial.XToolkit
+  type: Namespace
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+references:
+- uid: Xarial.XToolkit.Helpers
+  commentId: N:Xarial.XToolkit.Helpers
+  href: Xarial.html
+  name: Xarial.XToolkit.Helpers
+  nameWithType: Xarial.XToolkit.Helpers
+  fullName: Xarial.XToolkit.Helpers
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Helpers
+    name: Helpers
+    href: Xarial.XToolkit.Helpers.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Helpers
+    name: Helpers
+    href: Xarial.XToolkit.Helpers.html
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+- uid: Xarial.XToolkit.FileFilter
+  commentId: T:Xarial.XToolkit.FileFilter
+  parent: Xarial.XToolkit
+  href: Xarial.XToolkit.FileFilter.html
+  name: FileFilter
+  nameWithType: FileFilter
+  fullName: Xarial.XToolkit.FileFilter
+- uid: Xarial.XToolkit.FileSystemUtils
+  commentId: T:Xarial.XToolkit.FileSystemUtils
+  href: Xarial.XToolkit.FileSystemUtils.html
+  name: FileSystemUtils
+  nameWithType: FileSystemUtils
+  fullName: Xarial.XToolkit.FileSystemUtils
+- uid: Xarial.XToolkit.TextUtils
+  commentId: T:Xarial.XToolkit.TextUtils
+  href: Xarial.XToolkit.TextUtils.html
+  name: TextUtils
+  nameWithType: TextUtils
+  fullName: Xarial.XToolkit.TextUtils
+- uid: Xarial.XToolkit
+  commentId: N:Xarial.XToolkit
+  href: Xarial.html
+  name: Xarial.XToolkit
+  nameWithType: Xarial.XToolkit
+  fullName: Xarial.XToolkit
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html

@@ -13,6 +13,10 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 
 
     internal static class Helper
+
+
+        
+ 
     {
         internal static T GetFirstAttribute<T>(object source) where T : Attribute
         {

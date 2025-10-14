@@ -1,0 +1,97 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  id: Core
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  langs:
+  - csharp
+  - vb
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  type: Namespace
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+references:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  name: ITaskPage
+  nameWithType: ITaskPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  name: TaskPage<T>
+  nameWithType: TaskPage<T>
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>
+  nameWithType.vb: TaskPage(Of T)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T)
+  name.vb: TaskPage(Of T)
+  spec.csharp:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+    name: Core
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+    name: Core
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.html

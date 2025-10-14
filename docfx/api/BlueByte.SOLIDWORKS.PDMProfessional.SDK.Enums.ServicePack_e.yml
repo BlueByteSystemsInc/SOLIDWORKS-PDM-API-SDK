@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  id: ServicePack_e
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP0
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP1
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP2
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP3
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP4
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP5
+  langs:
+  - csharp
+  - vb
+  name: ServicePack_e
+  nameWithType: ServicePack_e
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  type: Enum
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ServicePack_e
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 102
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: PDM Professional service. Some service pack for specific year may not exist. Please check <a href="https://help.solidworks.com/2021/English/api/epdmapi/ReleaseNotes-epdmapi.html">this link</a> for the release notes.
+  example: []
+  syntax:
+    content: public enum ServicePack_e
+    content.vb: Public Enum ServicePack_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP0
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP0
+  id: SP0
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  langs:
+  - csharp
+  - vb
+  name: SP0
+  nameWithType: ServicePack_e.SP0
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP0
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: SP0
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 107
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: Service pack.
+  example: []
+  syntax:
+    content: SP0 = 0
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP1
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP1
+  id: SP1
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  langs:
+  - csharp
+  - vb
+  name: SP1
+  nameWithType: ServicePack_e.SP1
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP1
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: SP1
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 112
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: Service pack.
+  example: []
+  syntax:
+    content: SP1 = 1
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP2
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP2
+  id: SP2
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  langs:
+  - csharp
+  - vb
+  name: SP2
+  nameWithType: ServicePack_e.SP2
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP2
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: SP2
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 117
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: Service pack.
+  example: []
+  syntax:
+    content: SP2 = 2
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP3
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP3
+  id: SP3
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  langs:
+  - csharp
+  - vb
+  name: SP3
+  nameWithType: ServicePack_e.SP3
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP3
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: SP3
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 122
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: Service pack.
+  example: []
+  syntax:
+    content: SP3 = 3
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP4
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP4
+  id: SP4
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  langs:
+  - csharp
+  - vb
+  name: SP4
+  nameWithType: ServicePack_e.SP4
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP4
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: SP4
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 127
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: Service pack.
+  example: []
+  syntax:
+    content: SP4 = 4
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP5
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP5
+  id: SP5
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  langs:
+  - csharp
+  - vb
+  name: SP5
+  nameWithType: ServicePack_e.SP5
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.SP5
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: SP5
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Enums/PDMProfessionalVersion_e.cs
+    startLine: 132
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  summary: Service pack.
+  example: []
+  syntax:
+    content: SP5 = 5
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+references:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+    name: Enums
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+    name: Enums
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.html
+  name: ServicePack_e
+  nameWithType: ServicePack_e
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e

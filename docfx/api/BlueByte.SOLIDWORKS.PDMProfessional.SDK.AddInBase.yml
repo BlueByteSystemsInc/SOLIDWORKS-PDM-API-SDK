@@ -1,0 +1,3119 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  id: AddInBase
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.#ctor
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu(System.String,System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CancellationAndSuspensionLogAction
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CatchAllUnhandledException
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension(System.Action,System.Action{System.String})
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Container
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance``1
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.EdmCmdData})
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.IEdmFile5,EPDM.Interop.epdm.IEdmFolder5})
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.IEdmFile5})
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings``1
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Identity
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat(System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes(SimpleInjector.Container)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions(System.Boolean,System.Action{System.Exception})
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Range
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange(System.Int32,System.Int32,System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage(System.Int32,System.String)
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Vault
+  langs:
+  - csharp
+  - vb
+  name: AddInBase
+  nameWithType: AddInBase
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  type: Class
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AddInBase
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 22
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Taskbase class.
+  example: []
+  syntax:
+    content: 'public abstract class AddInBase : IEdmAddIn5'
+    content.vb: Public MustInherit Class AddInBase Implements IEdmAddIn5
+  inheritance:
+  - System.Object
+  implements:
+  - EPDM.Interop.epdm.IEdmAddIn5
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Identity
+  commentId: F:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Identity
+  id: Identity
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: AddInBase.Identity
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Identity
+  type: Field
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Identity
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 37
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Stores identity of the task add-in.
+  example: []
+  syntax:
+    content: public Identity Identity
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+    content.vb: Public Identity As Identity
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash
+  id: BeforeYouCrash
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: BeforeYouCrash
+  nameWithType: AddInBase.BeforeYouCrash
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: BeforeYouCrash
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 46
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Action to execute before task crashes.
+  example: []
+  syntax:
+    content: public Action<Exception> BeforeYouCrash { get; set; }
+    parameters: []
+    return:
+      type: System.Action{System.Exception}
+    content.vb: Public Property BeforeYouCrash As Action(Of Exception)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CatchAllUnhandledException
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CatchAllUnhandledException
+  id: CatchAllUnhandledException
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: CatchAllUnhandledException
+  nameWithType: AddInBase.CatchAllUnhandledException
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CatchAllUnhandledException
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: CatchAllUnhandledException
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 51
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Catch all unhandled exceptions and log them.
+  example: []
+  syntax:
+    content: public bool CatchAllUnhandledException { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CatchAllUnhandledException As Boolean
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CatchAllUnhandledException*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Container
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Container
+  id: Container
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Container
+  nameWithType: AddInBase.Container
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Container
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Container
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 56
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: DI Container.
+  example: []
+  syntax:
+    content: public Container Container { get; }
+    parameters: []
+    return:
+      type: SimpleInjector.Container
+    content.vb: Public Property Container As Container
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Container*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition
+  id: CurrentPosition
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: CurrentPosition
+  nameWithType: AddInBase.CurrentPosition
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: CurrentPosition
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 64
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets or sets the current position.
+  example: []
+  syntax:
+    content: public int CurrentPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The current position.
+    content.vb: Public Property CurrentPosition As Integer
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance
+  id: Instance
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: AddInBase.Instance
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Instance
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 69
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Task instance.
+  example: []
+  syntax:
+    content: public IEdmTaskInstance Instance { get; set; }
+    parameters: []
+    return:
+      type: EPDM.Interop.epdm.IEdmTaskInstance
+    content.vb: Public Property Instance As IEdmTaskInstance
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized
+  id: IsInitialized
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: IsInitialized
+  nameWithType: AddInBase.IsInitialized
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: IsInitialized
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 74
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets whether or not task is initialized (ie container and logger created).
+  example: []
+  syntax:
+    content: public bool IsInitialized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsInitialized As Boolean
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger
+  id: Logger
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: AddInBase.Logger
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Logger
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 79
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets or sets the logger.
+  example: []
+  syntax:
+    content: public ILogger Logger { get; set; }
+    parameters: []
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+    content.vb: Public Property Logger As ILogger
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType
+  id: LoggerType
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: LoggerType
+  nameWithType: AddInBase.LoggerType
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: LoggerType
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 84
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Sets the type of the logger to be used.
+  example: []
+  syntax:
+    content: public LoggerType_e LoggerType { get; set; }
+    parameters: []
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+    content.vb: Public Property LoggerType As LoggerType_e
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages
+  id: Pages
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Pages
+  nameWithType: AddInBase.Pages
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Pages
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 89
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Task Pages
+  example: []
+  syntax:
+    content: public ITaskPage[] Pages { get; set; }
+    parameters: []
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[]
+    content.vb: Public Property Pages As ITaskPage()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties
+  id: Properties
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: AddInBase.Properties
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Properties
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 94
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Properties
+  example: []
+  syntax:
+    content: public IEdmTaskProperties Properties { get; set; }
+    parameters: []
+    return:
+      type: EPDM.Interop.epdm.IEdmTaskProperties
+    content.vb: Public Property Properties As IEdmTaskProperties
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Range
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Range
+  id: Range
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: AddInBase.Range
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Range
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Range
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 102
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets or sets the range.
+  example: []
+  syntax:
+    content: public int Range { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The range.
+    content.vb: Public Property Range As Integer
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Range*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Vault
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Vault
+  id: Vault
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Vault
+  nameWithType: AddInBase.Vault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Vault
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Vault
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 107
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets the vault object.
+  example: []
+  syntax:
+    content: public IEdmVault5 Vault { get; }
+    parameters: []
+    return:
+      type: EPDM.Interop.epdm.IEdmVault5
+    content.vb: Public Property Vault As IEdmVault5
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Vault*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.#ctor
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.#ctor
+  id: '#ctor'
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: AddInBase()
+  nameWithType: AddInBase.AddInBase()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddInBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: .ctor
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 120
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Create a new instance of the addIn base class.
+  example: []
+  syntax:
+    content: public AddInBase()
+    content.vb: Public Sub New()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.#ctor*
+  nameWithType.vb: AddInBase.New()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.New()
+  name.vb: New()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  id: LogType
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: LogType
+  nameWithType: AddInBase.LogType
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: LogType
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 369
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets or sets the type of the log.
+  example: []
+  syntax:
+    content: public Type LogType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+      description: The type of the log.
+    content.vb: Public Property LogType As Type
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  id: OnPDMLoggerInitialized
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnPDMLoggerInitialized()
+  nameWithType: AddInBase.OnPDMLoggerInitialized()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnPDMLoggerInitialized
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 374
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Called when [PDM logger initialized].
+  example: []
+  syntax:
+    content: protected virtual void OnPDMLoggerInitialized()
+    content.vb: Protected Overridable Sub OnPDMLoggerInitialized()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes
+  id: RegisterTypes
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: RegisterTypes()
+  nameWithType: AddInBase.RegisterTypes()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: RegisterTypes
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 382
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when the application is initialized. Register types of calling assembly.
+  example: []
+  syntax:
+    content: protected virtual void RegisterTypes()
+    content.vb: Protected Overridable Sub RegisterTypes()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu(System.String,System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu(System.String,System.String)
+  id: AddContextMenu(System.String,System.String)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: AddContextMenu(string, string)
+  nameWithType: AddInBase.AddContextMenu(string, string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AddContextMenu
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 433
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Adds a context menu item to PDM.
+  example: []
+  syntax:
+    content: protected void AddContextMenu(string menuText, string statusBarHelpText)
+    parameters:
+    - id: menuText
+      type: System.String
+      description: Text that will appear in the context menu.
+    - id: statusBarHelpText
+      type: System.String
+      description: Text that will appear in the statusbar.
+    content.vb: Protected Sub AddContextMenu(menuText As String, statusBarHelpText As String)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu*
+  nameWithType.vb: AddInBase.AddContextMenu(String, String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu(String, String)
+  name.vb: AddContextMenu(String, String)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  id: AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: AddTaskSetupPage(ITaskPage)
+  nameWithType: AddInBase.AddTaskSetupPage(ITaskPage)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AddTaskSetupPage
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 468
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Add setup page to task. Use <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance%60%601" data-throw-if-not-resolved="false"></xref> to create instance of a page that implements <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected void AddTaskSetupPage(ITaskPage taskSetupPage)
+    parameters:
+    - id: taskSetupPage
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+      description: ''
+    content.vb: Protected Sub AddTaskSetupPage(taskSetupPage As ITaskPage)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  id: AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: AddTaskSetupPages(ITaskPage[])
+  nameWithType: AddInBase.AddTaskSetupPages(ITaskPage[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AddTaskSetupPages
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 479
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Add setup pages to task.
+  example: []
+  syntax:
+    content: protected virtual void AddTaskSetupPages(ITaskPage[] taskSetupPages)
+    parameters:
+    - id: taskSetupPages
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[]
+      description: Array of <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Overridable Sub AddTaskSetupPages(taskSetupPages As ITaskPage())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages*
+  nameWithType.vb: AddInBase.AddTaskSetupPages(ITaskPage())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage())
+  name.vb: AddTaskSetupPages(ITaskPage())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  id: AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: AddDetailTaskPage(ITaskPage)
+  nameWithType: AddInBase.AddDetailTaskPage(ITaskPage)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AddDetailTaskPage
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 529
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Adds the detail task page.
+  example: []
+  syntax:
+    content: protected virtual void AddDetailTaskPage(ITaskPage taskDetailPage)
+    parameters:
+    - id: taskDetailPage
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+      description: The task detail page. Please set the container property before calling this method.
+    content.vb: Protected Overridable Sub AddDetailTaskPage(taskDetailPage As ITaskPage)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
+  id: OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnLoadAdditionalAssemblies(DirectoryInfo)
+  nameWithType: AddInBase.OnLoadAdditionalAssemblies(DirectoryInfo)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies(System.IO.DirectoryInfo)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnLoadAdditionalAssemblies
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 573
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Load assemblies that failed loading.
+  example: []
+  syntax:
+    content: protected virtual void OnLoadAdditionalAssemblies(DirectoryInfo addinDirectory)
+    parameters:
+    - id: addinDirectory
+      type: System.IO.DirectoryInfo
+      description: Directory of the add-in.
+    content.vb: Protected Overridable Sub OnLoadAdditionalAssemblies(addinDirectory As DirectoryInfo)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat(System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat(System.String)
+  id: OnLoggerOutputSat(System.String)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnLoggerOutputSat(string)
+  nameWithType: AddInBase.OnLoggerOutputSat(string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat(string)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnLoggerOutputSat
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 581
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Sets the output folder of the logger.
+  example: []
+  syntax:
+    content: protected virtual void OnLoggerOutputSat(string defaultDirectory)
+    parameters:
+    - id: defaultDirectory
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Sub OnLoggerOutputSat(defaultDirectory As String)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat*
+  nameWithType.vb: AddInBase.OnLoggerOutputSat(String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat(String)
+  name.vb: OnLoggerOutputSat(String)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e)
+  id: OnLoggerTypeChosen(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnLoggerTypeChosen(LoggerType_e)
+  nameWithType: AddInBase.OnLoggerTypeChosen(LoggerType_e)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen(BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnLoggerTypeChosen
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 597
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Sets the type of the logger.
+  example: []
+  syntax:
+    content: protected virtual void OnLoggerTypeChosen(LoggerType_e defaultType)
+    parameters:
+    - id: defaultType
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+      description: ''
+    content.vb: Protected Overridable Sub OnLoggerTypeChosen(defaultType As LoggerType_e)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes(SimpleInjector.Container)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes(SimpleInjector.Container)
+  id: OnRegisterAdditionalTypes(SimpleInjector.Container)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnRegisterAdditionalTypes(Container)
+  nameWithType: AddInBase.OnRegisterAdditionalTypes(Container)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes(SimpleInjector.Container)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnRegisterAdditionalTypes
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 606
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Registers additional types.
+  example: []
+  syntax:
+    content: protected virtual void OnRegisterAdditionalTypes(Container container)
+    parameters:
+    - id: container
+      type: SimpleInjector.Container
+      description: ''
+    content.vb: Protected Overridable Sub OnRegisterAdditionalTypes(container As Container)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions(System.Boolean,System.Action{System.Exception})
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions(System.Boolean,System.Action{System.Exception})
+  id: OnUnhandledExceptions(System.Boolean,System.Action{System.Exception})
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnUnhandledExceptions(bool, Action<Exception>)
+  nameWithType: AddInBase.OnUnhandledExceptions(bool, Action<Exception>)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions(bool, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnUnhandledExceptions
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 615
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Sets how to handle unhandled exceptions
+  example: []
+  syntax:
+    content: protected virtual void OnUnhandledExceptions(bool catchAllExceptions, Action<Exception> logAction = null)
+    parameters:
+    - id: catchAllExceptions
+      type: System.Boolean
+      description: ''
+    - id: logAction
+      type: System.Action{System.Exception}
+      description: ''
+    content.vb: Protected Overridable Sub OnUnhandledExceptions(catchAllExceptions As Boolean, logAction As Action(Of Exception) = Nothing)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions*
+  nameWithType.vb: AddInBase.OnUnhandledExceptions(Boolean, Action(Of Exception))
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions(Boolean, System.Action(Of System.Exception))
+  name.vb: OnUnhandledExceptions(Boolean, Action(Of Exception))
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger
+  id: AttachDebugger
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: AttachDebugger()
+  nameWithType: AddInBase.AttachDebugger()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AttachDebugger
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 628
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Attaches the debugger.
+  example: []
+  syntax:
+    content: public void AttachDebugger()
+    content.vb: Public Sub AttachDebugger()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance``1
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance``1
+  id: CreatePageInstance``1
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: CreatePageInstance<T>()
+  nameWithType: AddInBase.CreatePageInstance<T>()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance<T>()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: CreatePageInstance
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 652
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  syntax:
+    content: 'public ITaskPage CreatePageInstance<T>() where T : UserControl, ITaskPage'
+    typeParameters:
+    - id: T
+    return:
+      type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+    content.vb: Public Function CreatePageInstance(Of T As {UserControl, ITaskPage})() As ITaskPage
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance*
+  nameWithType.vb: AddInBase.CreatePageInstance(Of T)()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance(Of T)()
+  name.vb: CreatePageInstance(Of T)()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.EdmCmdData})
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.EdmCmdData})
+  id: ForEachDatum(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.EdmCmdData})
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: ForEachDatum(ref EdmCmdData[], Action<EdmCmdData>)
+  nameWithType: AddInBase.ForEachDatum(ref EdmCmdData[], Action<EdmCmdData>)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum(ref EPDM.Interop.epdm.EdmCmdData[], System.Action<EPDM.Interop.epdm.EdmCmdData>)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ForEachDatum
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 662
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Performs an action on affected data while allowing user to cancel or pause task.
+  example: []
+  syntax:
+    content: public virtual void ForEachDatum(ref EdmCmdData[] affectedData, Action<EdmCmdData> Action)
+    parameters:
+    - id: affectedData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: ''
+    - id: Action
+      type: System.Action{EPDM.Interop.epdm.EdmCmdData}
+      description: ''
+    content.vb: Public Overridable Sub ForEachDatum(affectedData As EdmCmdData(), Action As Action(Of EdmCmdData))
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum*
+  nameWithType.vb: AddInBase.ForEachDatum(EdmCmdData(), Action(Of EdmCmdData))
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum(EPDM.Interop.epdm.EdmCmdData(), System.Action(Of EPDM.Interop.epdm.EdmCmdData))
+  name.vb: ForEachDatum(EdmCmdData(), Action(Of EdmCmdData))
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.IEdmFile5})
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.IEdmFile5})
+  id: ForEachFile(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.IEdmFile5})
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: ForEachFile(ref EdmCmdData[], Action<IEdmFile5>)
+  nameWithType: AddInBase.ForEachFile(ref EdmCmdData[], Action<IEdmFile5>)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(ref EPDM.Interop.epdm.EdmCmdData[], System.Action<EPDM.Interop.epdm.IEdmFile5>)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ForEachFile
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 678
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Performs an action on affected file while allowing user to cancel or pause task.
+  remarks: This ignore EdmCmdData that are not files.
+  example: []
+  syntax:
+    content: public virtual void ForEachFile(ref EdmCmdData[] affectedData, Action<IEdmFile5> Action)
+    parameters:
+    - id: affectedData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: ''
+    - id: Action
+      type: System.Action{EPDM.Interop.epdm.IEdmFile5}
+      description: ''
+    content.vb: Public Overridable Sub ForEachFile(affectedData As EdmCmdData(), Action As Action(Of IEdmFile5))
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile*
+  nameWithType.vb: AddInBase.ForEachFile(EdmCmdData(), Action(Of IEdmFile5))
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(EPDM.Interop.epdm.EdmCmdData(), System.Action(Of EPDM.Interop.epdm.IEdmFile5))
+  name.vb: ForEachFile(EdmCmdData(), Action(Of IEdmFile5))
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.IEdmFile5,EPDM.Interop.epdm.IEdmFolder5})
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.IEdmFile5,EPDM.Interop.epdm.IEdmFolder5})
+  id: ForEachFile(EPDM.Interop.epdm.EdmCmdData[]@,System.Action{EPDM.Interop.epdm.IEdmFile5,EPDM.Interop.epdm.IEdmFolder5})
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: ForEachFile(ref EdmCmdData[], Action<IEdmFile5, IEdmFolder5>)
+  nameWithType: AddInBase.ForEachFile(ref EdmCmdData[], Action<IEdmFile5, IEdmFolder5>)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(ref EPDM.Interop.epdm.EdmCmdData[], System.Action<EPDM.Interop.epdm.IEdmFile5, EPDM.Interop.epdm.IEdmFolder5>)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ForEachFile
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 706
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Performs an action on affected file while allowing user to cancel or pause task.
+  remarks: This ignore EdmCmdData that are not files.
+  example: []
+  syntax:
+    content: public virtual void ForEachFile(ref EdmCmdData[] affectedData, Action<IEdmFile5, IEdmFolder5> Action)
+    parameters:
+    - id: affectedData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: ''
+    - id: Action
+      type: System.Action{EPDM.Interop.epdm.IEdmFile5,EPDM.Interop.epdm.IEdmFolder5}
+      description: ''
+    content.vb: Public Overridable Sub ForEachFile(affectedData As EdmCmdData(), Action As Action(Of IEdmFile5, IEdmFolder5))
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile*
+  nameWithType.vb: AddInBase.ForEachFile(EdmCmdData(), Action(Of IEdmFile5, IEdmFolder5))
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile(EPDM.Interop.epdm.EdmCmdData(), System.Action(Of EPDM.Interop.epdm.IEdmFile5, EPDM.Interop.epdm.IEdmFolder5))
+  name.vb: ForEachFile(EdmCmdData(), Action(Of IEdmFile5, IEdmFolder5))
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+  id: GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: GetAddInInfo(ref EdmAddInInfo, IEdmVault5, IEdmCmdMgr5)
+  nameWithType: AddInBase.GetAddInInfo(ref EdmAddInInfo, IEdmVault5, IEdmCmdMgr5)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo(ref EPDM.Interop.epdm.EdmAddInInfo, EPDM.Interop.epdm.IEdmVault5, EPDM.Interop.epdm.IEdmCmdMgr5)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetAddInInfo
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 739
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when an add-in is setup.
+  example: []
+  syntax:
+    content: public virtual void GetAddInInfo(ref EdmAddInInfo poInfo, IEdmVault5 poVault, IEdmCmdMgr5 poCmdMgr)
+    parameters:
+    - id: poInfo
+      type: EPDM.Interop.epdm.EdmAddInInfo
+      description: Info object.
+    - id: poVault
+      type: EPDM.Interop.epdm.IEdmVault5
+      description: Vault object.
+    - id: poCmdMgr
+      type: EPDM.Interop.epdm.IEdmCmdMgr5
+      description: Command manager object.
+    content.vb: Public Overridable Sub GetAddInInfo(poInfo As EdmAddInInfo, poVault As IEdmVault5, poCmdMgr As IEdmCmdMgr5)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo*
+  implements:
+  - EPDM.Interop.epdm.IEdmAddIn5.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+  nameWithType.vb: AddInBase.GetAddInInfo(EdmAddInInfo, IEdmVault5, IEdmCmdMgr5)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo, EPDM.Interop.epdm.IEdmVault5, EPDM.Interop.epdm.IEdmCmdMgr5)
+  name.vb: GetAddInInfo(EdmAddInInfo, IEdmVault5, IEdmCmdMgr5)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer
+  id: GetContainer
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: GetContainer()
+  nameWithType: AddInBase.GetContainer()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetContainer
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 974
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Returns the container object.
+  example: []
+  syntax:
+    content: public Container GetContainer()
+    return:
+      type: SimpleInjector.Container
+      description: ''
+    content.vb: Public Function GetContainer() As Container
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings``1
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings``1
+  id: GetSettings``1
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: GetSettings<T>()
+  nameWithType: AddInBase.GetSettings<T>()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings<T>()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetSettings
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 984
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Deserialize the view model of the <xref href="BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage%601" data-throw-if-not-resolved="false"></xref>. Use this method in the <xref href="EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskRun" data-throw-if-not-resolved="false"></xref> and <xref href="EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskLaunch" data-throw-if-not-resolved="false"></xref> to get the settings.
+  example: []
+  syntax:
+    content: public virtual T GetSettings<T>()
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: T
+    content.vb: Public Overridable Function GetSettings(Of T)() As T
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings*
+  nameWithType.vb: AddInBase.GetSettings(Of T)()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings(Of T)()
+  name.vb: GetSettings(Of T)()
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize
+  id: Initialize
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: AddInBase.Initialize()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Initialize
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1014
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Initializes task (Registers types and creates logger).
+  example: []
+  syntax:
+    content: public virtual void Initialize()
+    content.vb: Public Overridable Sub Initialize()
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  id: OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnCmd(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: AddInBase.OnCmd(ref EdmCmd, ref EdmCmdData[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnCmd
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1027
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires a response to a command that the add-in is hooked too is being trigger.
+  example: []
+  syntax:
+    content: public virtual void OnCmd(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+    parameters:
+    - id: poCmd
+      type: EPDM.Interop.epdm.EdmCmd
+      description: PDM command
+    - id: ppoData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: Affected data
+    content.vb: Public Overridable Sub OnCmd(poCmd As EdmCmd, ppoData As EdmCmdData())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd*
+  implements:
+  - EPDM.Interop.epdm.IEdmAddIn5.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  nameWithType.vb: AddInBase.OnCmd(EdmCmd, EdmCmdData())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: OnCmd(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  id: HandlesEvents(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: HandlesEvents(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: AddInBase.HandlesEvents(ref EdmCmd, ref EdmCmdData[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: HandlesEvents
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1106
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Triggers when the clicks on a datacard button
+  example: []
+  syntax:
+    content: protected virtual void HandlesEvents(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+    parameters:
+    - id: poCmd
+      type: EPDM.Interop.epdm.EdmCmd
+      description: ''
+    - id: ppoData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: ''
+    content.vb: Protected Overridable Sub HandlesEvents(poCmd As EdmCmd, ppoData As EdmCmdData())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents*
+  nameWithType.vb: AddInBase.HandlesEvents(EdmCmd, EdmCmdData())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: HandlesEvents(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  id: OnTaskDetails(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskDetails(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: AddInBase.OnTaskDetails(ref EdmCmd, ref EdmCmdData[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskDetails
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1118
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when task details are initialized
+  example: []
+  syntax:
+    content: public virtual void OnTaskDetails(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+    parameters:
+    - id: poCmd
+      type: EPDM.Interop.epdm.EdmCmd
+      description: Command
+    - id: ppoData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: Affected documents
+    content.vb: Public Overridable Sub OnTaskDetails(poCmd As EdmCmd, ppoData As EdmCmdData())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails*
+  nameWithType.vb: AddInBase.OnTaskDetails(EdmCmd, EdmCmdData())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: OnTaskDetails(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  id: OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskDialogWindowCreated(IEdmTaskInstance)
+  nameWithType: AddInBase.OnTaskDialogWindowCreated(IEdmTaskInstance)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskInstance)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskDialogWindowCreated
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1132
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when the task dialog window is created. This occurs when you create a new task or edit an existing one.
+  example: []
+  syntax:
+    content: public virtual void OnTaskDialogWindowCreated(IEdmTaskInstance instance)
+    parameters:
+    - id: instance
+      type: EPDM.Interop.epdm.IEdmTaskInstance
+    content.vb: Public Overridable Sub OnTaskDialogWindowCreated(instance As IEdmTaskInstance)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
+  id: OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskDialogWindowCreated(IEdmTaskProperties)
+  nameWithType: AddInBase.OnTaskDialogWindowCreated(IEdmTaskProperties)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated(EPDM.Interop.epdm.IEdmTaskProperties)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskDialogWindowCreated
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1139
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when the task dialog window is created. This occurs when you create a new task or edit an existing one.
+  example: []
+  syntax:
+    content: public virtual void OnTaskDialogWindowCreated(IEdmTaskProperties properties)
+    parameters:
+    - id: properties
+      type: EPDM.Interop.epdm.IEdmTaskProperties
+    content.vb: Public Overridable Sub OnTaskDialogWindowCreated(properties As IEdmTaskProperties)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  id: OnTaskLaunch(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskLaunch(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: AddInBase.OnTaskLaunch(ref EdmCmd, ref EdmCmdData[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskLaunch
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1148
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when a task is launched.
+  example: []
+  syntax:
+    content: public virtual void OnTaskLaunch(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+    parameters:
+    - id: poCmd
+      type: EPDM.Interop.epdm.EdmCmd
+      description: Command
+    - id: ppoData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: Affected documents
+    content.vb: Public Overridable Sub OnTaskLaunch(poCmd As EdmCmd, ppoData As EdmCmdData())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch*
+  nameWithType.vb: AddInBase.OnTaskLaunch(EdmCmd, EdmCmdData())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: OnTaskLaunch(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  id: OnTaskLaunchButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskLaunchButton(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: AddInBase.OnTaskLaunchButton(ref EdmCmd, ref EdmCmdData[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskLaunchButton
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1159
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when user clicks on the launch button.
+  example: []
+  syntax:
+    content: public virtual void OnTaskLaunchButton(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+    parameters:
+    - id: poCmd
+      type: EPDM.Interop.epdm.EdmCmd
+      description: Command
+    - id: ppoData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: Affected documents
+    content.vb: Public Overridable Sub OnTaskLaunchButton(poCmd As EdmCmd, ppoData As EdmCmdData())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton*
+  nameWithType.vb: AddInBase.OnTaskLaunchButton(EdmCmd, EdmCmdData())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: OnTaskLaunchButton(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  id: OnTaskRun(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskRun(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: AddInBase.OnTaskRun(ref EdmCmd, ref EdmCmdData[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskRun
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1169
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when task runs on the executing machine.
+  example: []
+  syntax:
+    content: public virtual void OnTaskRun(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+    parameters:
+    - id: poCmd
+      type: EPDM.Interop.epdm.EdmCmd
+      description: Command
+    - id: ppoData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: Affected documents
+    content.vb: Public Overridable Sub OnTaskRun(poCmd As EdmCmd, ppoData As EdmCmdData())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun*
+  nameWithType.vb: AddInBase.OnTaskRun(EdmCmd, EdmCmdData())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: OnTaskRun(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  id: OnTaskSetup(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskSetup(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: AddInBase.OnTaskSetup(ref EdmCmd, ref EdmCmdData[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskSetup
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1182
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when task is setup.
+  example: []
+  syntax:
+    content: public void OnTaskSetup(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+    parameters:
+    - id: poCmd
+      type: EPDM.Interop.epdm.EdmCmd
+      description: ''
+    - id: ppoData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: ''
+    content.vb: Public Sub OnTaskSetup(poCmd As EdmCmd, ppoData As EdmCmdData())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup*
+  nameWithType.vb: AddInBase.OnTaskSetup(EdmCmd, EdmCmdData())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: OnTaskSetup(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  id: OnTaskSetupButton(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: OnTaskSetupButton(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: AddInBase.OnTaskSetupButton(ref EdmCmd, ref EdmCmdData[])
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: OnTaskSetupButton
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1199
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Fires when user clicks OK button in the task page.
+  example: []
+  syntax:
+    content: public virtual void OnTaskSetupButton(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
+    parameters:
+    - id: poCmd
+      type: EPDM.Interop.epdm.EdmCmd
+      description: Command
+    - id: ppoData
+      type: EPDM.Interop.epdm.EdmCmdData[]
+      description: Affected documents
+    content.vb: Public Overridable Sub OnTaskSetupButton(poCmd As EdmCmd, ppoData As EdmCmdData())
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton*
+  nameWithType.vb: AddInBase.OnTaskSetupButton(EdmCmd, EdmCmdData())
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: OnTaskSetupButton(EdmCmd, EdmCmdData())
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction
+  id: BeforeCancellationAction
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: BeforeCancellationAction
+  nameWithType: AddInBase.BeforeCancellationAction
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: BeforeCancellationAction
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1217
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets or sets the before cancellation action. Use this to perform any clean up action.
+  example: []
+  syntax:
+    content: public Action BeforeCancellationAction { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+      description: The before cancellation action.
+    content.vb: Public Property BeforeCancellationAction As Action
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CancellationAndSuspensionLogAction
+  commentId: P:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CancellationAndSuspensionLogAction
+  id: CancellationAndSuspensionLogAction
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: CancellationAndSuspensionLogAction
+  nameWithType: AddInBase.CancellationAndSuspensionLogAction
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CancellationAndSuspensionLogAction
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: CancellationAndSuspensionLogAction
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1224
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Gets or sets the cancellation and suspension log action.
+  example: []
+  syntax:
+    content: public Action<string> CancellationAndSuspensionLogAction { get; set; }
+    parameters: []
+    return:
+      type: System.Action{System.String}
+      description: The cancellation and suspension log action. Use this action log event before the task gets suspended.
+    content.vb: Public Property CancellationAndSuspensionLogAction As Action(Of String)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CancellationAndSuspensionLogAction*
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange(System.Int32,System.Int32,System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange(System.Int32,System.Int32,System.String)
+  id: SetRange(System.Int32,System.Int32,System.String)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: SetRange(int, int, string)
+  nameWithType: AddInBase.SetRange(int, int, string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange(int, int, string)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: SetRange
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1234
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Sets the progress range. Should be done only once at the start of the task execution
+  remarks: This method also checks for cancellation and suspension requests made by the user.
+  example: []
+  syntax:
+    content: public virtual void SetRange(int range, int currentPosition, string message = null)
+    parameters:
+    - id: range
+      type: System.Int32
+      description: Initialized range
+    - id: currentPosition
+      type: System.Int32
+      description: Initial position
+    - id: message
+      type: System.String
+      description: message
+    content.vb: Public Overridable Sub SetRange(range As Integer, currentPosition As Integer, message As String = Nothing)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: AddInBase.SetRange(Integer, Integer, String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange(Integer, Integer, String)
+  name.vb: SetRange(Integer, Integer, String)
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension(System.Action,System.Action{System.String})
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension(System.Action,System.Action{System.String})
+  id: CheckForCancellationOrSuspension(System.Action,System.Action{System.String})
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: CheckForCancellationOrSuspension(Action, Action<string>)
+  nameWithType: AddInBase.CheckForCancellationOrSuspension(Action, Action<string>)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension(System.Action, System.Action<string>)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: CheckForCancellationOrSuspension
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1254
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Checks for cancellation or suspension.
+  example: []
+  syntax:
+    content: public virtual void CheckForCancellationOrSuspension(Action beforeCancellationAction, Action<string> cancellationAndSuspensionLogAction)
+    parameters:
+    - id: beforeCancellationAction
+      type: System.Action
+      description: The before cancellation action.
+    - id: cancellationAndSuspensionLogAction
+      type: System.Action{System.String}
+      description: The cancellation and suspension log action.
+    content.vb: Public Overridable Sub CheckForCancellationOrSuspension(beforeCancellationAction As Action, cancellationAndSuspensionLogAction As Action(Of String))
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension*
+  exceptions:
+  - type: BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException
+    commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException
+    description: ''
+  nameWithType.vb: AddInBase.CheckForCancellationOrSuspension(Action, Action(Of String))
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension(System.Action, System.Action(Of String))
+  name.vb: CheckForCancellationOrSuspension(Action, Action(Of String))
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage(System.Int32,System.String)
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage(System.Int32,System.String)
+  id: UpdateTaskMessage(System.Int32,System.String)
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase
+  langs:
+  - csharp
+  - vb
+  name: UpdateTaskMessage(int, string)
+  nameWithType: AddInBase.UpdateTaskMessage(int, string)
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage(int, string)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: UpdateTaskMessage
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/Core/AddInBase.cs
+    startLine: 1332
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  summary: Sets the progress bar position.
+  example: []
+  syntax:
+    content: public virtual void UpdateTaskMessage(int currentPosition, string message = null)
+    parameters:
+    - id: currentPosition
+      type: System.Int32
+      description: ''
+    - id: message
+      type: System.String
+      description: ''
+    content.vb: Public Overridable Sub UpdateTaskMessage(currentPosition As Integer, message As String = Nothing)
+  overload: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage*
+  nameWithType.vb: AddInBase.UpdateTaskMessage(Integer, String)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage(Integer, String)
+  name.vb: UpdateTaskMessage(Integer, String)
+references:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: EPDM.Interop.epdm.IEdmAddIn5
+  commentId: T:EPDM.Interop.epdm.IEdmAddIn5
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: IEdmAddIn5
+  nameWithType: IEdmAddIn5
+  fullName: EPDM.Interop.epdm.IEdmAddIn5
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EPDM.Interop.epdm
+  commentId: N:EPDM.Interop.epdm
+  isExternal: true
+  name: EPDM.Interop.epdm
+  nameWithType: EPDM.Interop.epdm
+  fullName: EPDM.Interop.epdm
+  spec.csharp:
+  - uid: EPDM
+    name: EPDM
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop
+    name: Interop
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop.epdm
+    name: epdm
+    isExternal: true
+  spec.vb:
+  - uid: EPDM
+    name: EPDM
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop
+    name: Interop
+    isExternal: true
+  - name: .
+  - uid: EPDM.Interop.epdm
+    name: epdm
+    isExternal: true
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity.html
+  name: Identity
+  nameWithType: Identity
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Identity
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_BeforeYouCrash
+  name: BeforeYouCrash
+  nameWithType: AddInBase.BeforeYouCrash
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeYouCrash
+- uid: System.Action{System.Exception}
+  commentId: T:System.Action{System.Exception}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Exception>
+  nameWithType: Action<Exception>
+  fullName: System.Action<System.Exception>
+  nameWithType.vb: Action(Of Exception)
+  fullName.vb: System.Action(Of System.Exception)
+  name.vb: Action(Of Exception)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CatchAllUnhandledException*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CatchAllUnhandledException
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CatchAllUnhandledException
+  name: CatchAllUnhandledException
+  nameWithType: AddInBase.CatchAllUnhandledException
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CatchAllUnhandledException
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Container*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Container
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Container
+  name: Container
+  nameWithType: AddInBase.Container
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Container
+- uid: SimpleInjector.Container
+  commentId: T:SimpleInjector.Container
+  parent: SimpleInjector
+  isExternal: true
+  name: Container
+  nameWithType: Container
+  fullName: SimpleInjector.Container
+- uid: SimpleInjector
+  commentId: N:SimpleInjector
+  isExternal: true
+  name: SimpleInjector
+  nameWithType: SimpleInjector
+  fullName: SimpleInjector
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CurrentPosition
+  name: CurrentPosition
+  nameWithType: AddInBase.CurrentPosition
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CurrentPosition
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Instance
+  name: Instance
+  nameWithType: AddInBase.Instance
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Instance
+- uid: EPDM.Interop.epdm.IEdmTaskInstance
+  commentId: T:EPDM.Interop.epdm.IEdmTaskInstance
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: IEdmTaskInstance
+  nameWithType: IEdmTaskInstance
+  fullName: EPDM.Interop.epdm.IEdmTaskInstance
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_IsInitialized
+  name: IsInitialized
+  nameWithType: AddInBase.IsInitialized
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.IsInitialized
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Logger
+  name: Logger
+  nameWithType: AddInBase.Logger
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Logger
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger.html
+  name: ILogger
+  nameWithType: ILogger
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.ILogger
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+    name: Diagnostics
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+    name: Diagnostics
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.html
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_LoggerType
+  name: LoggerType
+  nameWithType: AddInBase.LoggerType
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LoggerType
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e.html
+  name: LoggerType_e
+  nameWithType: LoggerType_e
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Diagnostics.LoggerType_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Pages
+  name: Pages
+  nameWithType: AddInBase.Pages
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Pages
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[]
+  isExternal: true
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  name: ITaskPage[]
+  nameWithType: ITaskPage[]
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage[]
+  nameWithType.vb: ITaskPage()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage()
+  name.vb: ITaskPage()
+  spec.csharp:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+    name: ITaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+    name: ITaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  - name: (
+  - name: )
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Properties
+  name: Properties
+  nameWithType: AddInBase.Properties
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Properties
+- uid: EPDM.Interop.epdm.IEdmTaskProperties
+  commentId: T:EPDM.Interop.epdm.IEdmTaskProperties
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: IEdmTaskProperties
+  nameWithType: IEdmTaskProperties
+  fullName: EPDM.Interop.epdm.IEdmTaskProperties
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Range*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Range
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Range
+  name: Range
+  nameWithType: AddInBase.Range
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Range
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Vault*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Vault
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Vault
+  name: Vault
+  nameWithType: AddInBase.Vault
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Vault
+- uid: EPDM.Interop.epdm.IEdmVault5
+  commentId: T:EPDM.Interop.epdm.IEdmVault5
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: IEdmVault5
+  nameWithType: IEdmVault5
+  fullName: EPDM.Interop.epdm.IEdmVault5
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.#ctor*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.#ctor
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase__ctor
+  name: AddInBase
+  nameWithType: AddInBase.AddInBase
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddInBase
+  nameWithType.vb: AddInBase.New
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.New
+  name.vb: New
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_LogType
+  name: LogType
+  nameWithType: AddInBase.LogType
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.LogType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnPDMLoggerInitialized
+  name: OnPDMLoggerInitialized
+  nameWithType: AddInBase.OnPDMLoggerInitialized
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnPDMLoggerInitialized
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_RegisterTypes
+  name: RegisterTypes
+  nameWithType: AddInBase.RegisterTypes
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.RegisterTypes
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddContextMenu_System_String_System_String_
+  name: AddContextMenu
+  nameWithType: AddInBase.AddContextMenu
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddContextMenu
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance``1
+  commentId: M:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance``1
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CreatePageInstance__1
+  name: CreatePageInstance<T>()
+  nameWithType: AddInBase.CreatePageInstance<T>()
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance<T>()
+  nameWithType.vb: AddInBase.CreatePageInstance(Of T)()
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance(Of T)()
+  name.vb: CreatePageInstance(Of T)()
+  spec.csharp:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance``1
+    name: CreatePageInstance
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CreatePageInstance__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance``1
+    name: CreatePageInstance
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CreatePageInstance__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage.html
+  name: ITaskPage
+  nameWithType: ITaskPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.ITaskPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_
+  name: AddTaskSetupPage
+  nameWithType: AddInBase.AddTaskSetupPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+    name: Core
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
+    name: Core
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.html
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddTaskSetupPages_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage___
+  name: AddTaskSetupPages
+  nameWithType: AddInBase.AddTaskSetupPages
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddTaskSetupPages
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AddDetailTaskPage_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Core_ITaskPage_
+  name: AddDetailTaskPage
+  nameWithType: AddInBase.AddDetailTaskPage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AddDetailTaskPage
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnLoadAdditionalAssemblies_System_IO_DirectoryInfo_
+  name: OnLoadAdditionalAssemblies
+  nameWithType: AddInBase.OnLoadAdditionalAssemblies
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoadAdditionalAssemblies
+- uid: System.IO.DirectoryInfo
+  commentId: T:System.IO.DirectoryInfo
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.directoryinfo
+  name: DirectoryInfo
+  nameWithType: DirectoryInfo
+  fullName: System.IO.DirectoryInfo
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnLoggerOutputSat_System_String_
+  name: OnLoggerOutputSat
+  nameWithType: AddInBase.OnLoggerOutputSat
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerOutputSat
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnLoggerTypeChosen_BlueByte_SOLIDWORKS_PDMProfessional_SDK_Diagnostics_LoggerType_e_
+  name: OnLoggerTypeChosen
+  nameWithType: AddInBase.OnLoggerTypeChosen
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnLoggerTypeChosen
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnRegisterAdditionalTypes_SimpleInjector_Container_
+  name: OnRegisterAdditionalTypes
+  nameWithType: AddInBase.OnRegisterAdditionalTypes
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnRegisterAdditionalTypes
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnUnhandledExceptions_System_Boolean_System_Action_System_Exception__
+  name: OnUnhandledExceptions
+  nameWithType: AddInBase.OnUnhandledExceptions
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnUnhandledExceptions
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_AttachDebugger
+  name: AttachDebugger
+  nameWithType: AddInBase.AttachDebugger
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.AttachDebugger
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CreatePageInstance__1
+  name: CreatePageInstance
+  nameWithType: AddInBase.CreatePageInstance
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CreatePageInstance
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_ForEachDatum_EPDM_Interop_epdm_EdmCmdData____System_Action_EPDM_Interop_epdm_EdmCmdData__
+  name: ForEachDatum
+  nameWithType: AddInBase.ForEachDatum
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachDatum
+- uid: EPDM.Interop.epdm.EdmCmdData[]
+  isExternal: true
+  name: EdmCmdData[]
+  nameWithType: EdmCmdData[]
+  fullName: EPDM.Interop.epdm.EdmCmdData[]
+  nameWithType.vb: EdmCmdData()
+  fullName.vb: EPDM.Interop.epdm.EdmCmdData()
+  name.vb: EdmCmdData()
+  spec.csharp:
+  - uid: EPDM.Interop.epdm.EdmCmdData
+    name: EdmCmdData
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: EPDM.Interop.epdm.EdmCmdData
+    name: EdmCmdData
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Action{EPDM.Interop.epdm.EdmCmdData}
+  commentId: T:System.Action{EPDM.Interop.epdm.EdmCmdData}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<EdmCmdData>
+  nameWithType: Action<EdmCmdData>
+  fullName: System.Action<EPDM.Interop.epdm.EdmCmdData>
+  nameWithType.vb: Action(Of EdmCmdData)
+  fullName.vb: System.Action(Of EPDM.Interop.epdm.EdmCmdData)
+  name.vb: Action(Of EdmCmdData)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: EPDM.Interop.epdm.EdmCmdData
+    name: EdmCmdData
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EPDM.Interop.epdm.EdmCmdData
+    name: EdmCmdData
+    isExternal: true
+  - name: )
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_ForEachFile_EPDM_Interop_epdm_EdmCmdData____System_Action_EPDM_Interop_epdm_IEdmFile5__
+  name: ForEachFile
+  nameWithType: AddInBase.ForEachFile
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.ForEachFile
+- uid: System.Action{EPDM.Interop.epdm.IEdmFile5}
+  commentId: T:System.Action{EPDM.Interop.epdm.IEdmFile5}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IEdmFile5>
+  nameWithType: Action<IEdmFile5>
+  fullName: System.Action<EPDM.Interop.epdm.IEdmFile5>
+  nameWithType.vb: Action(Of IEdmFile5)
+  fullName.vb: System.Action(Of EPDM.Interop.epdm.IEdmFile5)
+  name.vb: Action(Of IEdmFile5)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: EPDM.Interop.epdm.IEdmFile5
+    name: IEdmFile5
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmFile5
+    name: IEdmFile5
+    isExternal: true
+  - name: )
+- uid: System.Action{EPDM.Interop.epdm.IEdmFile5,EPDM.Interop.epdm.IEdmFolder5}
+  commentId: T:System.Action{EPDM.Interop.epdm.IEdmFile5,EPDM.Interop.epdm.IEdmFolder5}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<IEdmFile5, IEdmFolder5>
+  nameWithType: Action<IEdmFile5, IEdmFolder5>
+  fullName: System.Action<EPDM.Interop.epdm.IEdmFile5, EPDM.Interop.epdm.IEdmFolder5>
+  nameWithType.vb: Action(Of IEdmFile5, IEdmFolder5)
+  fullName.vb: System.Action(Of EPDM.Interop.epdm.IEdmFile5, EPDM.Interop.epdm.IEdmFolder5)
+  name.vb: Action(Of IEdmFile5, IEdmFolder5)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: EPDM.Interop.epdm.IEdmFile5
+    name: IEdmFile5
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmFolder5
+    name: IEdmFolder5
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmFile5
+    name: IEdmFile5
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmFolder5
+    name: IEdmFolder5
+    isExternal: true
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_GetAddInInfo_EPDM_Interop_epdm_EdmAddInInfo__EPDM_Interop_epdm_IEdmVault5_EPDM_Interop_epdm_IEdmCmdMgr5_
+  name: GetAddInInfo
+  nameWithType: AddInBase.GetAddInInfo
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetAddInInfo
+- uid: EPDM.Interop.epdm.IEdmAddIn5.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+  commentId: M:EPDM.Interop.epdm.IEdmAddIn5.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+  parent: EPDM.Interop.epdm.IEdmAddIn5
+  isExternal: true
+  name: GetAddInInfo(ref EdmAddInInfo, IEdmVault5, IEdmCmdMgr5)
+  nameWithType: IEdmAddIn5.GetAddInInfo(ref EdmAddInInfo, IEdmVault5, IEdmCmdMgr5)
+  fullName: EPDM.Interop.epdm.IEdmAddIn5.GetAddInInfo(ref EPDM.Interop.epdm.EdmAddInInfo, EPDM.Interop.epdm.IEdmVault5, EPDM.Interop.epdm.IEdmCmdMgr5)
+  nameWithType.vb: IEdmAddIn5.GetAddInInfo(EdmAddInInfo, IEdmVault5, IEdmCmdMgr5)
+  fullName.vb: EPDM.Interop.epdm.IEdmAddIn5.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo, EPDM.Interop.epdm.IEdmVault5, EPDM.Interop.epdm.IEdmCmdMgr5)
+  name.vb: GetAddInInfo(EdmAddInInfo, IEdmVault5, IEdmCmdMgr5)
+  spec.csharp:
+  - uid: EPDM.Interop.epdm.IEdmAddIn5.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+    name: GetAddInInfo
+    isExternal: true
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: EPDM.Interop.epdm.EdmAddInInfo
+    name: EdmAddInInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmVault5
+    name: IEdmVault5
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmCmdMgr5
+    name: IEdmCmdMgr5
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: EPDM.Interop.epdm.IEdmAddIn5.GetAddInInfo(EPDM.Interop.epdm.EdmAddInInfo@,EPDM.Interop.epdm.IEdmVault5,EPDM.Interop.epdm.IEdmCmdMgr5)
+    name: GetAddInInfo
+    isExternal: true
+  - name: (
+  - uid: EPDM.Interop.epdm.EdmAddInInfo
+    name: EdmAddInInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmVault5
+    name: IEdmVault5
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.IEdmCmdMgr5
+    name: IEdmCmdMgr5
+    isExternal: true
+  - name: )
+- uid: EPDM.Interop.epdm.EdmAddInInfo
+  commentId: T:EPDM.Interop.epdm.EdmAddInInfo
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: EdmAddInInfo
+  nameWithType: EdmAddInInfo
+  fullName: EPDM.Interop.epdm.EdmAddInInfo
+- uid: EPDM.Interop.epdm.IEdmCmdMgr5
+  commentId: T:EPDM.Interop.epdm.IEdmCmdMgr5
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: IEdmCmdMgr5
+  nameWithType: IEdmCmdMgr5
+  fullName: EPDM.Interop.epdm.IEdmCmdMgr5
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_GetContainer
+  name: GetContainer
+  nameWithType: AddInBase.GetContainer
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetContainer
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  name: TaskPage<T>
+  nameWithType: TaskPage<T>
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage<T>
+  nameWithType.vb: TaskPage(Of T)
+  fullName.vb: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage(Of T)
+  name.vb: TaskPage(Of T)
+  spec.csharp:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage`1
+    name: TaskPage
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core.TaskPage-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskRun
+  commentId: F:EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskRun
+  isExternal: true
+  name: EdmCmd_TaskRun
+  nameWithType: EdmCmdType.EdmCmd_TaskRun
+  fullName: EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskRun
+- uid: EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskLaunch
+  commentId: F:EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskLaunch
+  isExternal: true
+  name: EdmCmd_TaskLaunch
+  nameWithType: EdmCmdType.EdmCmd_TaskLaunch
+  fullName: EPDM.Interop.epdm.EdmCmdType.EdmCmd_TaskLaunch
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_GetSettings__1
+  name: GetSettings
+  nameWithType: AddInBase.GetSettings
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.GetSettings
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_Initialize
+  name: Initialize
+  nameWithType: AddInBase.Initialize
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.Initialize
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnCmd_EPDM_Interop_epdm_EdmCmd__EPDM_Interop_epdm_EdmCmdData____
+  name: OnCmd
+  nameWithType: AddInBase.OnCmd
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnCmd
+- uid: EPDM.Interop.epdm.IEdmAddIn5.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  commentId: M:EPDM.Interop.epdm.IEdmAddIn5.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+  parent: EPDM.Interop.epdm.IEdmAddIn5
+  isExternal: true
+  name: OnCmd(ref EdmCmd, ref EdmCmdData[])
+  nameWithType: IEdmAddIn5.OnCmd(ref EdmCmd, ref EdmCmdData[])
+  fullName: EPDM.Interop.epdm.IEdmAddIn5.OnCmd(ref EPDM.Interop.epdm.EdmCmd, ref EPDM.Interop.epdm.EdmCmdData[])
+  nameWithType.vb: IEdmAddIn5.OnCmd(EdmCmd, EdmCmdData())
+  fullName.vb: EPDM.Interop.epdm.IEdmAddIn5.OnCmd(EPDM.Interop.epdm.EdmCmd, EPDM.Interop.epdm.EdmCmdData())
+  name.vb: OnCmd(EdmCmd, EdmCmdData())
+  spec.csharp:
+  - uid: EPDM.Interop.epdm.IEdmAddIn5.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+    name: OnCmd
+    isExternal: true
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: EPDM.Interop.epdm.EdmCmd
+    name: EdmCmd
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: EPDM.Interop.epdm.EdmCmdData
+    name: EdmCmdData
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: EPDM.Interop.epdm.IEdmAddIn5.OnCmd(EPDM.Interop.epdm.EdmCmd@,EPDM.Interop.epdm.EdmCmdData[]@)
+    name: OnCmd
+    isExternal: true
+  - name: (
+  - uid: EPDM.Interop.epdm.EdmCmd
+    name: EdmCmd
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: EPDM.Interop.epdm.EdmCmdData
+    name: EdmCmdData
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: EPDM.Interop.epdm.EdmCmd
+  commentId: T:EPDM.Interop.epdm.EdmCmd
+  parent: EPDM.Interop.epdm
+  isExternal: true
+  name: EdmCmd
+  nameWithType: EdmCmd
+  fullName: EPDM.Interop.epdm.EdmCmd
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_HandlesEvents_EPDM_Interop_epdm_EdmCmd__EPDM_Interop_epdm_EdmCmdData____
+  name: HandlesEvents
+  nameWithType: AddInBase.HandlesEvents
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.HandlesEvents
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskDetails_EPDM_Interop_epdm_EdmCmd__EPDM_Interop_epdm_EdmCmdData____
+  name: OnTaskDetails
+  nameWithType: AddInBase.OnTaskDetails
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDetails
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskDialogWindowCreated_EPDM_Interop_epdm_IEdmTaskInstance_
+  name: OnTaskDialogWindowCreated
+  nameWithType: AddInBase.OnTaskDialogWindowCreated
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskDialogWindowCreated
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskLaunch_EPDM_Interop_epdm_EdmCmd__EPDM_Interop_epdm_EdmCmdData____
+  name: OnTaskLaunch
+  nameWithType: AddInBase.OnTaskLaunch
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunch
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskLaunchButton_EPDM_Interop_epdm_EdmCmd__EPDM_Interop_epdm_EdmCmdData____
+  name: OnTaskLaunchButton
+  nameWithType: AddInBase.OnTaskLaunchButton
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskLaunchButton
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskRun_EPDM_Interop_epdm_EdmCmd__EPDM_Interop_epdm_EdmCmdData____
+  name: OnTaskRun
+  nameWithType: AddInBase.OnTaskRun
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskRun
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskSetup_EPDM_Interop_epdm_EdmCmd__EPDM_Interop_epdm_EdmCmdData____
+  name: OnTaskSetup
+  nameWithType: AddInBase.OnTaskSetup
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetup
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_OnTaskSetupButton_EPDM_Interop_epdm_EdmCmd__EPDM_Interop_epdm_EdmCmdData____
+  name: OnTaskSetupButton
+  nameWithType: AddInBase.OnTaskSetupButton
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.OnTaskSetupButton
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_BeforeCancellationAction
+  name: BeforeCancellationAction
+  nameWithType: AddInBase.BeforeCancellationAction
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.BeforeCancellationAction
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CancellationAndSuspensionLogAction*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CancellationAndSuspensionLogAction
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CancellationAndSuspensionLogAction
+  name: CancellationAndSuspensionLogAction
+  nameWithType: AddInBase.CancellationAndSuspensionLogAction
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CancellationAndSuspensionLogAction
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_SetRange_System_Int32_System_Int32_System_String_
+  name: SetRange
+  nameWithType: AddInBase.SetRange
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.SetRange
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException.html
+  name: CancellationException
+  nameWithType: CancellationException
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.CancellationException
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_CheckForCancellationOrSuspension_System_Action_System_Action_System_String__
+  name: CheckForCancellationOrSuspension
+  nameWithType: AddInBase.CheckForCancellationOrSuspension
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.CheckForCancellationOrSuspension
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage*
+  commentId: Overload:BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.html#BlueByte_SOLIDWORKS_PDMProfessional_SDK_AddInBase_UpdateTaskMessage_System_Int32_System_String_
+  name: UpdateTaskMessage
+  nameWithType: AddInBase.UpdateTaskMessage
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.AddInBase.UpdateTaskMessage

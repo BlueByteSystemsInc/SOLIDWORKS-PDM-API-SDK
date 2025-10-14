@@ -1,0 +1,87 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  id: Enums
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  children:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  langs:
+  - csharp
+  - vb
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  type: Namespace
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+references:
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags.html
+  name: PDMSDKEdmMenuFlags
+  nameWithType: PDMSDKEdmMenuFlags
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.PDMSDKEdmMenuFlags
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e.html
+  name: ServicePack_e
+  nameWithType: ServicePack_e
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.ServicePack_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  commentId: T:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+  parent: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e.html
+  name: Year_e
+  nameWithType: Year_e
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.Year_e
+- uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  commentId: N:BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  href: BlueByte.html
+  name: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  nameWithType: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  fullName: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+  spec.csharp:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+    name: Enums
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html
+  spec.vb:
+  - uid: BlueByte
+    name: BlueByte
+    href: BlueByte.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS
+    name: SOLIDWORKS
+    href: BlueByte.SOLIDWORKS.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional
+    name: PDMProfessional
+    href: BlueByte.SOLIDWORKS.PDMProfessional.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK
+    name: SDK
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.html
+  - name: .
+  - uid: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums
+    name: Enums
+    href: BlueByte.SOLIDWORKS.PDMProfessional.SDK.Enums.html

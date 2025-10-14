@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -120,6 +120,15 @@
 <li>Use 43 if you want to show the command in the RMB for files with support for single selection only.</li>
 <li>You can cast the value of EdmMenuFlags into an integer as a flag. For example (int)EdmMenuFlags.EdmMenu_Administration will add the menu to the right-click menu of the add-in the administration tool.</li>
 </ul>
+<h2 id="handling-pdm-events-with-handlesattribute">Handling PDM events with HandlesAttribute</h2>
+<p>PDMSDK wires your add-in’s event handlers without requiring GetAddInInfo. Use the <code>HandlesAttribute</code> to subscribe to PDM events.</p>
+<p><code>HandlesAttribute</code> expects one parameter:</p>
+<p><code>EdmCmdType</code> eventName: the PDM event you want to handle (e.g., EdmCmdType.EdmCmd_Menu, EdmCmdType.EdmCmd_PostState).</p>
+<p>The callback method must take the ref parameters as on the <code>OnCmd</code> method. See examples below:</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>use nameof(YourMethod) for refactor-safe method names.</p>
+</div>
 <h1 id="oncmd-implementation">OnCmd Implementation</h1>
 <p>Commands trigger the OnCmd method. Make sure to approprietly check for the invoked command ID with poCmd.meCmdID  and the command type with poCmd.meCmdType (In this case, it will EdmCmdType.EdmCmdMenu).</p>
 <h1 id="command-visibility">Command Visibility</h1>
@@ -212,6 +221,10 @@
             }
             
         }
+
+        [Handles(EdmCmdType.EdmCmd_CardButton)]
+        public void CardButton_Click(ref EdmCmd poCmd, ref EdmCmdData[] ppoData){
+        }
     }
 
 </code></pre>
@@ -267,6 +280,11 @@ Public Partial Class AddIn
         Catch e As Exception
 
         End Try
+    End Sub
+
+&lt;ListenFor(EdmCmdType.EdmCmd_CardButton)&gt;
+    Public Sub HandlesCardButton_Click(ByRef poCmd As EdmCmd, ByRef ppoData As EdmCmdData())
+
     End Sub
 End Class
 </code></pre>

@@ -1,0 +1,1206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  id: AssemblyNameReferenceResolver
+  parent: Xarial.XToolkit.Reflection
+  children:
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor(System.String,System.String[])
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture(System.Reflection.AssemblyName)
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken(System.Reflection.AssemblyName)
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(System.String,System.Reflection.AssemblyName)
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo},System.Reflection.AssemblyName)
+  - Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  langs:
+  - csharp
+  - vb
+  name: AssemblyNameReferenceResolver
+  nameWithType: AssemblyNameReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  type: Class
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: AssemblyNameReferenceResolver
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 21
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Default assembly name resolver
+  example: []
+  syntax:
+    content: 'public abstract class AssemblyNameReferenceResolver : IReferenceResolver'
+    content.vb: Public MustInherit Class AssemblyNameReferenceResolver Implements IReferenceResolver
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Xarial.XToolkit.Reflection.AppConfigBindingRedirectReferenceResolver
+  - Xarial.XToolkit.Reflection.LocalFolderReferencesResolver
+  implements:
+  - Xarial.XToolkit.Helpers.IReferenceResolver
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  commentId: P:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  id: Name
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AssemblyNameReferenceResolver.Name
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  type: Property
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Name
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 52
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Name of the resolver
+  remarks: Used in the logs
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name*
+  implements:
+  - Xarial.XToolkit.Helpers.IReferenceResolver.Name
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor(System.String,System.String[])
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor(System.String,System.String[])
+  id: '#ctor(System.String,System.String[])'
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: AssemblyNameReferenceResolver(string, string[])
+  nameWithType: AssemblyNameReferenceResolver.AssemblyNameReferenceResolver(string, string[])
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyNameReferenceResolver(string, string[])
+  type: Constructor
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: .ctor
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 61
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Default constructor
+  example: []
+  syntax:
+    content: public AssemblyNameReferenceResolver(string name, string[] filterDirs = null)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the resolver
+    - id: filterDirs
+      type: System.String[]
+      description: Only resolve the assembly if requesting assembly is in the specified directories
+    content.vb: Public Sub New(name As String, filterDirs As String() = Nothing)
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor*
+  nameWithType.vb: AssemblyNameReferenceResolver.New(String, String())
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.New(String, String())
+  name.vb: New(String, String())
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  id: Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: Resolve(AppDomain, AssemblyName, Assembly)
+  nameWithType: AssemblyNameReferenceResolver.Resolve(AppDomain, AssemblyName, Assembly)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve(System.AppDomain, System.Reflection.AssemblyName, System.Reflection.Assembly)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Resolve
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 74
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Resolves the missing assembly reference
+  example: []
+  syntax:
+    content: public virtual Assembly Resolve(AppDomain appDomain, AssemblyName assmName, Assembly requestingAssembly)
+    parameters:
+    - id: appDomain
+      type: System.AppDomain
+      description: Application domain
+    - id: assmName
+      type: System.Reflection.AssemblyName
+      description: Assembly name to resolve
+    - id: requestingAssembly
+      type: System.Reflection.Assembly
+      description: Assembly which requests the missing reference
+    return:
+      type: System.Reflection.Assembly
+      description: Replacement assembly
+    content.vb: Public Overridable Function Resolve(appDomain As AppDomain, assmName As AssemblyName, requestingAssembly As Assembly) As Assembly
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve*
+  implements:
+  - Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  id: ShouldResolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: ShouldResolve(AppDomain, AssemblyName, Assembly)
+  nameWithType: AssemblyNameReferenceResolver.ShouldResolve(AppDomain, AssemblyName, Assembly)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve(System.AppDomain, System.Reflection.AssemblyName, System.Reflection.Assembly)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ShouldResolve
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 133
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Checks if assembly should be resolved by this resolver
+  example: []
+  syntax:
+    content: protected virtual bool ShouldResolve(AppDomain appDomain, AssemblyName assmName, Assembly requestingAssembly)
+    parameters:
+    - id: appDomain
+      type: System.AppDomain
+      description: App Domain
+    - id: assmName
+      type: System.Reflection.AssemblyName
+      description: Assembly to resolve
+    - id: requestingAssembly
+      type: System.Reflection.Assembly
+      description: Requesting assembly
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Protected Overridable Function ShouldResolve(appDomain As AppDomain, assmName As AssemblyName, requestingAssembly As Assembly) As Boolean
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve*
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  id: LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: LoadAssembly(AssemblyInfo)
+  nameWithType: AssemblyNameReferenceResolver.LoadAssembly(AssemblyNameReferenceResolver.AssemblyInfo)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly(Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: LoadAssembly
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 152
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Load the assembly
+  example: []
+  syntax:
+    content: protected Assembly LoadAssembly(AssemblyNameReferenceResolver.AssemblyInfo assmInfo)
+    parameters:
+    - id: assmInfo
+      type: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+      description: Assembly information
+    return:
+      type: System.Reflection.Assembly
+      description: Loaded assembly
+    content.vb: Protected Function LoadAssembly(assmInfo As AssemblyNameReferenceResolver.AssemblyInfo) As Assembly
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly*
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture(System.Reflection.AssemblyName)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture(System.Reflection.AssemblyName)
+  id: GetCulture(System.Reflection.AssemblyName)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: GetCulture(AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.GetCulture(AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture(System.Reflection.AssemblyName)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetCulture
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 164
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Gets the culture of the assembly name
+  example: []
+  syntax:
+    content: protected string GetCulture(AssemblyName assmName)
+    parameters:
+    - id: assmName
+      type: System.Reflection.AssemblyName
+      description: Assembly name
+    return:
+      type: System.String
+      description: Text of the culture
+    content.vb: Protected Function GetCulture(assmName As AssemblyName) As String
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture*
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken(System.Reflection.AssemblyName)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken(System.Reflection.AssemblyName)
+  id: GetPublicKeyToken(System.Reflection.AssemblyName)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: GetPublicKeyToken(AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.GetPublicKeyToken(AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken(System.Reflection.AssemblyName)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetPublicKeyToken
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 181
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Gets the public key token from the assembly name
+  example: []
+  syntax:
+    content: protected string GetPublicKeyToken(AssemblyName assmName)
+    parameters:
+    - id: assmName
+      type: System.Reflection.AssemblyName
+      description: Assembly name
+    return:
+      type: System.String
+      description: Text version of public key token
+    content.vb: Protected Function GetPublicKeyToken(assmName As AssemblyName) As String
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken*
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  id: GetReplacementAssemblyName(System.Reflection.AssemblyName,System.Reflection.Assembly,System.String@,System.Boolean@)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  nameWithType: AssemblyNameReferenceResolver.GetReplacementAssemblyName(AssemblyName, Assembly, out string, out bool)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName, System.Reflection.Assembly, out string, out bool)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: GetReplacementAssemblyName
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 208
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Provides the name of the assembly to replace for this missing reference
+  example: []
+  syntax:
+    content: protected abstract AssemblyName GetReplacementAssemblyName(AssemblyName assmName, Assembly requestingAssembly, out string searchDir, out bool recursiveSearch)
+    parameters:
+    - id: assmName
+      type: System.Reflection.AssemblyName
+      description: Missing assembly name
+    - id: requestingAssembly
+      type: System.Reflection.Assembly
+      description: Assembly that requests this missing reference
+    - id: searchDir
+      type: System.String
+      description: Search directory
+    - id: recursiveSearch
+      type: System.Boolean
+      description: True to search in sub-directories recursievely
+    return:
+      type: System.Reflection.AssemblyName
+      description: Assemly to replace
+    content.vb: Protected MustOverride Function GetReplacementAssemblyName(assmName As AssemblyName, requestingAssembly As Assembly, searchDir As String, recursiveSearch As Boolean) As AssemblyName
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName*
+  nameWithType.vb: AssemblyNameReferenceResolver.GetReplacementAssemblyName(AssemblyName, Assembly, String, Boolean)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName(System.Reflection.AssemblyName, System.Reflection.Assembly, String, Boolean)
+  name.vb: GetReplacementAssemblyName(AssemblyName, Assembly, String, Boolean)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)
+  id: Match(System.Reflection.AssemblyName,System.Reflection.AssemblyName)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: Match(AssemblyName, AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.Match(AssemblyName, AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match(System.Reflection.AssemblyName, System.Reflection.AssemblyName)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: Match
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 218
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Compares two assemblies to see if those match
+  remarks: Use this method to override logic for matching (e.g. full match or only match by file name, version, public key token etc.)
+  example: []
+  syntax:
+    content: protected virtual bool Match(AssemblyName probeAssmName, AssemblyName searchAssmName)
+    parameters:
+    - id: probeAssmName
+      type: System.Reflection.AssemblyName
+      description: Assembly candidate
+    - id: searchAssmName
+      type: System.Reflection.AssemblyName
+      description: Target assembly
+    return:
+      type: System.Boolean
+      description: True if assembly names are matching
+    content.vb: Protected Overridable Function Match(probeAssmName As AssemblyName, searchAssmName As AssemblyName) As Boolean
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match*
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo},System.Reflection.AssemblyName)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo},System.Reflection.AssemblyName)
+  id: ResolveAmbiguity(System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo},System.Reflection.AssemblyName)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: ResolveAmbiguity(IReadOnlyList<AssemblyInfo>, AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.ResolveAmbiguity(IReadOnlyList<AssemblyNameReferenceResolver.AssemblyInfo>, AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList<Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo>, System.Reflection.AssemblyName)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ResolveAmbiguity
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 227
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Provides the assembly to use if multiple options available
+  example: []
+  syntax:
+    content: protected virtual AssemblyNameReferenceResolver.AssemblyInfo ResolveAmbiguity(IReadOnlyList<AssemblyNameReferenceResolver.AssemblyInfo> assmNames, AssemblyName searchAssmName)
+    parameters:
+    - id: assmNames
+      type: System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo}
+      description: Assembly candidates
+    - id: searchAssmName
+      type: System.Reflection.AssemblyName
+      description: Target assembly name
+    return:
+      type: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+      description: Assembly to use
+    content.vb: Protected Overridable Function ResolveAmbiguity(assmNames As IReadOnlyList(Of AssemblyNameReferenceResolver.AssemblyInfo), searchAssmName As AssemblyName) As AssemblyNameReferenceResolver.AssemblyInfo
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity*
+  nameWithType.vb: AssemblyNameReferenceResolver.ResolveAmbiguity(IReadOnlyList(Of AssemblyNameReferenceResolver.AssemblyInfo), AssemblyName)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity(System.Collections.Generic.IReadOnlyList(Of Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo), System.Reflection.AssemblyName)
+  name.vb: ResolveAmbiguity(IReadOnlyList(Of AssemblyInfo), AssemblyName)
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(System.String,System.Reflection.AssemblyName)
+  commentId: M:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(System.String,System.Reflection.AssemblyName)
+  id: ProvideProbeAssemblyFilePaths(System.String,System.Reflection.AssemblyName)
+  parent: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: ProvideProbeAssemblyFilePaths(string, AssemblyName)
+  nameWithType: AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(string, AssemblyName)
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(string, System.Reflection.AssemblyName)
+  type: Method
+  source:
+    remote:
+      path: src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+      branch: master
+      repo: https://github.com/BlueByteSystemsInc/PDMFramework.git
+    id: ProvideProbeAssemblyFilePaths
+    path: ../src/BlueByte.SOLIDWORKS.PDMProfessional.SDK/AssemblyResolution/Reflection/AssemblyNameReferenceResolver.cs
+    startLine: 298
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+  namespace: Xarial.XToolkit.Reflection
+  summary: Returnes probe assemly file paths
+  example: []
+  syntax:
+    content: protected virtual IEnumerable<string> ProvideProbeAssemblyFilePaths(string dir, AssemblyName searchAssmName)
+    parameters:
+    - id: dir
+      type: System.String
+      description: Directory to search in
+    - id: searchAssmName
+      type: System.Reflection.AssemblyName
+      description: Target assembly name
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Possible file paths of the assembly file
+    content.vb: Protected Overridable Function ProvideProbeAssemblyFilePaths(dir As String, searchAssmName As AssemblyName) As IEnumerable(Of String)
+  overload: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths*
+  nameWithType.vb: AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(String, AssemblyName)
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths(String, System.Reflection.AssemblyName)
+  name.vb: ProvideProbeAssemblyFilePaths(String, AssemblyName)
+references:
+- uid: Xarial.XToolkit.Reflection
+  commentId: N:Xarial.XToolkit.Reflection
+  href: Xarial.html
+  name: Xarial.XToolkit.Reflection
+  nameWithType: Xarial.XToolkit.Reflection
+  fullName: Xarial.XToolkit.Reflection
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection
+    name: Reflection
+    href: Xarial.XToolkit.Reflection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver
+  commentId: T:Xarial.XToolkit.Helpers.IReferenceResolver
+  parent: Xarial.XToolkit.Helpers
+  href: Xarial.XToolkit.Helpers.IReferenceResolver.html
+  name: IReferenceResolver
+  nameWithType: IReferenceResolver
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Xarial.XToolkit.Helpers
+  commentId: N:Xarial.XToolkit.Helpers
+  href: Xarial.html
+  name: Xarial.XToolkit.Helpers
+  nameWithType: Xarial.XToolkit.Helpers
+  fullName: Xarial.XToolkit.Helpers
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Helpers
+    name: Helpers
+    href: Xarial.XToolkit.Helpers.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Helpers
+    name: Helpers
+    href: Xarial.XToolkit.Helpers.html
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Name
+  name: Name
+  nameWithType: AssemblyNameReferenceResolver.Name
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Name
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver.Name
+  commentId: P:Xarial.XToolkit.Helpers.IReferenceResolver.Name
+  parent: Xarial.XToolkit.Helpers.IReferenceResolver
+  href: Xarial.XToolkit.Helpers.IReferenceResolver.html#Xarial_XToolkit_Helpers_IReferenceResolver_Name
+  name: Name
+  nameWithType: IReferenceResolver.Name
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.#ctor
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver__ctor_System_String_System_String___
+  name: AssemblyNameReferenceResolver
+  nameWithType: AssemblyNameReferenceResolver.AssemblyNameReferenceResolver
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyNameReferenceResolver
+  nameWithType.vb: AssemblyNameReferenceResolver.New
+  fullName.vb: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.New
+  name.vb: New
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Resolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_
+  name: Resolve
+  nameWithType: AssemblyNameReferenceResolver.Resolve
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Resolve
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  commentId: M:Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+  parent: Xarial.XToolkit.Helpers.IReferenceResolver
+  isExternal: true
+  href: Xarial.XToolkit.Helpers.IReferenceResolver.html#Xarial_XToolkit_Helpers_IReferenceResolver_Resolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_
+  name: Resolve(AppDomain, AssemblyName, Assembly)
+  nameWithType: IReferenceResolver.Resolve(AppDomain, AssemblyName, Assembly)
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain, System.Reflection.AssemblyName, System.Reflection.Assembly)
+  spec.csharp:
+  - uid: Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+    name: Resolve
+    href: Xarial.XToolkit.Helpers.IReferenceResolver.html#Xarial_XToolkit_Helpers_IReferenceResolver_Resolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_
+  - name: (
+  - uid: System.AppDomain
+    name: AppDomain
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.appdomain
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.AssemblyName
+    name: AssemblyName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: )
+  spec.vb:
+  - uid: Xarial.XToolkit.Helpers.IReferenceResolver.Resolve(System.AppDomain,System.Reflection.AssemblyName,System.Reflection.Assembly)
+    name: Resolve
+    href: Xarial.XToolkit.Helpers.IReferenceResolver.html#Xarial_XToolkit_Helpers_IReferenceResolver_Resolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_
+  - name: (
+  - uid: System.AppDomain
+    name: AppDomain
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.appdomain
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.AssemblyName
+    name: AssemblyName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: )
+- uid: System.AppDomain
+  commentId: T:System.AppDomain
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.appdomain
+  name: AppDomain
+  nameWithType: AppDomain
+  fullName: System.AppDomain
+- uid: System.Reflection.AssemblyName
+  commentId: T:System.Reflection.AssemblyName
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname
+  name: AssemblyName
+  nameWithType: AssemblyName
+  fullName: System.Reflection.AssemblyName
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ShouldResolve_System_AppDomain_System_Reflection_AssemblyName_System_Reflection_Assembly_
+  name: ShouldResolve
+  nameWithType: AssemblyNameReferenceResolver.ShouldResolve
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ShouldResolve
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_LoadAssembly_Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo_
+  name: LoadAssembly
+  nameWithType: AssemblyNameReferenceResolver.LoadAssembly
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.LoadAssembly
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  commentId: T:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  parent: Xarial.XToolkit.Reflection
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  name: AssemblyNameReferenceResolver.AssemblyInfo
+  nameWithType: AssemblyNameReferenceResolver.AssemblyInfo
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+  spec.csharp:
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+    name: AssemblyNameReferenceResolver
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+    name: AssemblyInfo
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html
+  spec.vb:
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+    name: AssemblyNameReferenceResolver
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+    name: AssemblyInfo
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetCulture_System_Reflection_AssemblyName_
+  name: GetCulture
+  nameWithType: AssemblyNameReferenceResolver.GetCulture
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetCulture
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetPublicKeyToken_System_Reflection_AssemblyName_
+  name: GetPublicKeyToken
+  nameWithType: AssemblyNameReferenceResolver.GetPublicKeyToken
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetPublicKeyToken
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_GetReplacementAssemblyName_System_Reflection_AssemblyName_System_Reflection_Assembly_System_String__System_Boolean__
+  name: GetReplacementAssemblyName
+  nameWithType: AssemblyNameReferenceResolver.GetReplacementAssemblyName
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.GetReplacementAssemblyName
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_Match_System_Reflection_AssemblyName_System_Reflection_AssemblyName_
+  name: Match
+  nameWithType: AssemblyNameReferenceResolver.Match
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.Match
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ResolveAmbiguity_System_Collections_Generic_IReadOnlyList_Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_AssemblyInfo__System_Reflection_AssemblyName_
+  name: ResolveAmbiguity
+  nameWithType: AssemblyNameReferenceResolver.ResolveAmbiguity
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ResolveAmbiguity
+- uid: System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<AssemblyNameReferenceResolver.AssemblyInfo>
+  nameWithType: IReadOnlyList<AssemblyNameReferenceResolver.AssemblyInfo>
+  fullName: System.Collections.Generic.IReadOnlyList<Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo>
+  nameWithType.vb: IReadOnlyList(Of AssemblyNameReferenceResolver.AssemblyInfo)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo)
+  name.vb: IReadOnlyList(Of AssemblyNameReferenceResolver.AssemblyInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+    name: AssemblyNameReferenceResolver
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+    name: AssemblyInfo
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver
+    name: AssemblyNameReferenceResolver
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html
+  - name: .
+  - uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo
+    name: AssemblyInfo
+    href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.AssemblyInfo.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths*
+  commentId: Overload:Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths
+  href: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.html#Xarial_XToolkit_Reflection_AssemblyNameReferenceResolver_ProvideProbeAssemblyFilePaths_System_String_System_Reflection_AssemblyName_
+  name: ProvideProbeAssemblyFilePaths
+  nameWithType: AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths
+  fullName: Xarial.XToolkit.Reflection.AssemblyNameReferenceResolver.ProvideProbeAssemblyFilePaths
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

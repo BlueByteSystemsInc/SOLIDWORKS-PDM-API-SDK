@@ -132,7 +132,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
         /// <summary>
         /// Loads task settings from a file
         /// </summary>
-        public void LoadSettings()
+        public virtual void LoadSettings()
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "Load task settings";
@@ -188,7 +188,7 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK.Core
         /// <summary>
         /// Saves task settings to a file
         /// </summary>
-        public void SaveSettings()
+        public virtual void SaveSettings()
         {
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Title = "Save task settings";

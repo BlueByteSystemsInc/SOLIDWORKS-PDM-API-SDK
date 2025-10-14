@@ -34,6 +34,22 @@ For the flags:
 - Use 43 if you want to show the command in the RMB for files with support for single selection only.
 - You can cast the value of EdmMenuFlags into an integer as a flag. For example (int)EdmMenuFlags.EdmMenu_Administration will add the menu to the right-click menu of the add-in the administration tool.
 
+
+
+## Handling PDM events with HandlesAttribute
+
+PDMSDK wires your add-in’s event handlers without requiring GetAddInInfo. Use the `HandlesAttribute` to subscribe to PDM events.
+
+`HandlesAttribute` expects one parameter:
+
+`EdmCmdType` eventName: the PDM event you want to handle (e.g., EdmCmdType.EdmCmd_Menu, EdmCmdType.EdmCmd_PostState).
+
+The callback method must take the ref parameters as on the `OnCmd` method. See examples below:
+
+>[!TIP]
+> use nameof(YourMethod) for refactor-safe method names.
+
+
 # OnCmd Implementation
 
 Commands trigger the OnCmd method. Make sure to approprietly check for the invoked command ID with poCmd.meCmdID  and the command type with poCmd.meCmdType (In this case, it will EdmCmdType.EdmCmdMenu). 
@@ -127,6 +143,10 @@ You can do that via the [CommandVisibilityAttribute](../api/SOLIDWORKS-PDM-API-S
             }
             
         }
+
+        [Handles(EdmCmdType.EdmCmd_CardButton)]
+        public void CardButton_Click(ref EdmCmd poCmd, ref EdmCmdData[] ppoData){
+        }
     }
 
 ```
@@ -181,6 +201,11 @@ Public Partial Class AddIn
         Catch e As Exception
 
         End Try
+    End Sub
+
+<ListenFor(EdmCmdType.EdmCmd_CardButton)>
+    Public Sub HandlesCardButton_Click(ByRef poCmd As EdmCmd, ByRef ppoData As EdmCmdData())
+
     End Sub
 End Class
 ```

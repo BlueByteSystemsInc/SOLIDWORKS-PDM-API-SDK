@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xarial.XToolkit.Helpers
+  commentId: N:Xarial.XToolkit.Helpers
+  id: Helpers
+  parent: Xarial.XToolkit
+  children:
+  - Xarial.XToolkit.Helpers.AssemblyResolver
+  - Xarial.XToolkit.Helpers.IReferenceResolver
+  langs:
+  - csharp
+  - vb
+  name: Xarial.XToolkit.Helpers
+  nameWithType: Xarial.XToolkit.Helpers
+  fullName: Xarial.XToolkit.Helpers
+  type: Namespace
+  assemblies:
+  - BlueByte.SOLIDWORKS.PDMProfessional.SDK
+references:
+- uid: Xarial.XToolkit.Helpers.AssemblyResolver
+  commentId: T:Xarial.XToolkit.Helpers.AssemblyResolver
+  href: Xarial.XToolkit.Helpers.AssemblyResolver.html
+  name: AssemblyResolver
+  nameWithType: AssemblyResolver
+  fullName: Xarial.XToolkit.Helpers.AssemblyResolver
+- uid: Xarial.XToolkit.Helpers.IReferenceResolver
+  commentId: T:Xarial.XToolkit.Helpers.IReferenceResolver
+  parent: Xarial.XToolkit.Helpers
+  href: Xarial.XToolkit.Helpers.IReferenceResolver.html
+  name: IReferenceResolver
+  nameWithType: IReferenceResolver
+  fullName: Xarial.XToolkit.Helpers.IReferenceResolver
+- uid: Xarial.XToolkit.Helpers
+  commentId: N:Xarial.XToolkit.Helpers
+  href: Xarial.html
+  name: Xarial.XToolkit.Helpers
+  nameWithType: Xarial.XToolkit.Helpers
+  fullName: Xarial.XToolkit.Helpers
+  spec.csharp:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Helpers
+    name: Helpers
+    href: Xarial.XToolkit.Helpers.html
+  spec.vb:
+  - uid: Xarial
+    name: Xarial
+    href: Xarial.html
+  - name: .
+  - uid: Xarial.XToolkit
+    name: XToolkit
+    href: Xarial.XToolkit.html
+  - name: .
+  - uid: Xarial.XToolkit.Helpers
+    name: Helpers
+    href: Xarial.XToolkit.Helpers.html
