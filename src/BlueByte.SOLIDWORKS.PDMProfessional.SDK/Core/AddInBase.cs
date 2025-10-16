@@ -1078,36 +1078,37 @@ namespace BlueByte.SOLIDWORKS.PDMProfessional.SDK
 
 
             var meCmdType = poCmd.meCmdType;
+            var commandID = poCmd.mlCmdID;
+            // do not use 0 as command ID
+            if (commandID == 0)
+                commandID = -1;
+
             var methods = this.GetType().GetMethods();
-            var method = methods.FirstOrDefault(x => x.GetCustomAttribute<HandlesAttribute>() != null &&
-                                  x.GetCustomAttribute<HandlesAttribute>().EventName == meCmdType
-                                  );
-            if (method != null)
+            methods = methods.ToList().Where(x => x.GetCustomAttribute<HandlesAttribute>() != null &&
+                                  x.GetCustomAttribute<HandlesAttribute>().EventName == meCmdType &&
+                                    x.GetCustomAttribute<HandlesAttribute>().EvaluateCommandID(commandID)
+                                  ).ToArray();
+            if (methods != null)
             {
-                var arguments = new object[] { poCmd, ppoData };
-                try
+                foreach (var method in methods)
                 {
-                    method.Invoke(this, arguments);
+                    var arguments = new object[] { poCmd, ppoData };
+                    try
+                    {
+                        method.Invoke(this, arguments);
 
-                }
-                catch (Exception e)
-                {
+                    }
+                    catch (Exception e)
+                    {
 
+                    }
                 }
             }
 
             Logger.Init(this.Identity, this.Instance, string.Empty);
             }
 
-        /// <summary>
-        /// Triggers when the clicks on a datacard button
-        /// </summary>
-        /// <param name="poCmd"></param>
-        /// <param name="ppoData"></param>
-        protected virtual void HandlesEvents(ref EdmCmd poCmd, ref EdmCmdData[] ppoData)
-        {
-            throw new NotImplementedException();
-        }
+      
 
 
 
